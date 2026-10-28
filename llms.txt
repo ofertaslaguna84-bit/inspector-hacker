@@ -1,0 +1,51 @@
+# Inspector Hacker — llms.txt
+# https://inspectorhacker.com
+
+> Inspector Hacker es un servicio de ciberseguridad con inteligencia artificial para empresas de México y Estados Unidos.
+> Agentes de IA vigilan todos los días lo que la empresa tiene expuesto a internet, su código, sus servidores y su nube, y avisan en menos de 24 horas cuando aparece una vulnerabilidad crítica de su tecnología. Cada mes entrega un reporte de una página para Dirección, un reporte técnico y una llamada con una persona que lo leyó.
+> Posicionamiento: "vigilancia, no pentest". No vende pruebas de penetración ni ataques autónomos contra producción; el pentest manual se cotiza aparte con un socio certificado.
+> Es un servicio de GH Specialist (agencia de automatización con IA, Torreón, Coahuila, México), lanzado en octubre de 2026 por Pedro Luis Díaz Velázquez con un socio especialista en infraestructura y seguridad con base en Estados Unidos.
+> Cobertura: todo México (sede en Torreón) y Estados Unidos (base en Bentonville, Arkansas y San Antonio, Texas). Atención en español e inglés. Mismo precio en dólares en los dos países.
+
+## Páginas
+- Español: https://inspectorhacker.com/
+- English: https://inspectorhacker.com/en/
+
+## Qué incluye la vigilancia mensual
+- Inventario y escaneo semanal de lo expuesto a internet: dominios, IPs, puertos, servicios, certificados, correo (SPF, DKIM, DMARC).
+- Revisión con IA de cada cambio que entra al repositorio: secretos, dependencias vulnerables, configuraciones.
+- Vigilancia de amenazas para la tecnología del cliente: CVE nuevos, credenciales filtradas, dominios parecidos (phishing).
+- Aviso en menos de 24 horas ante una vulnerabilidad crítica.
+- Reporte mensual para Dirección (1 página) + reporte técnico + llamada de 30 minutos.
+- Accesos de solo lectura, alcance escrito en contrato y NDA; el cliente autoriza cada escaneo.
+
+## Precios (USD; pesos mexicanos a 18.76, octubre 2026)
+- Arranque: $2,000 USD una sola vez (MXN 37,520). Inventario, revisión inicial, instalación de la vigilancia y reporte con prioridades. Se vende solo o incluido en cualquier plan.
+- Vigía: $900 USD/mes (MXN 16,885). 1 servidor + 1 repositorio + sitio web. El plan más pedido.
+- Vigía Plus: $1,800 USD/mes (MXN 33,770). Hasta 5 servidores, varias apps, nube (AWS, Azure, GCP, Vercel, DigitalOcean) e identidad (Microsoft 365, Google Workspace). Plan de respuesta a incidentes y simulacro anual.
+- Empresa: desde $3,500 USD/mes (MXN 65,660). Más de 5 servidores, varias razones sociales, ISO 27001 o requisitos de un cliente corporativo.
+- Contrato mínimo 3 meses, después mes a mes. Pago anual por adelantado: 10 % de descuento.
+
+## Extras (se cobran aparte)
+- Pentest manual de una app (web, API o móvil): $1,500–$2,500 USD por día de tester, con socio certificado; una app típica 3–8 días.
+- Evaluación puntual con IA de una app: $1,500 USD.
+- Respuesta a incidente: $2,500 USD por día, mínimo 1 día.
+- Simulación de phishing + capacitación: $4 USD por usuario al mes, mínimo 20 usuarios.
+- Antivirus gestionado / EDR: $12 USD por equipo al mes.
+- Capacitación de ciberseguridad con IA (6 h, hasta 15 personas): $2,000 USD + viáticos.
+
+## Cómo funciona
+1. Diagnóstico de 15 minutos sin costo.
+2. Contrato, NDA y checklist de accesos de solo lectura.
+3. Arranque: inventario, revisión inicial, instalación de la vigilancia, reporte con prioridades (sesión de 1 hora).
+4. Vigilancia mensual: los agentes corren todos los días; cada mes reporte de Dirección, técnico y llamada.
+
+## Referencias de mercado usadas para fijar precios (2026)
+- Pentest manual de una sola app: $3,000–$18,000 USD (Ostorlab).
+- Analista de seguridad en EE. UU.: $129,180 USD al año (U.S. Bureau of Labor Statistics).
+- Evaluaciones automáticas con IA sin humano: $499–$3,999 USD (Ostorlab, Intruder).
+
+## Contacto
+- WhatsApp: +52 871 263 8082
+- Agendar llamada: https://calendar.app.google/rz32YjLinKvYWUTT9
+- Empresa matriz: GH Specialist — https://ghspecialist.com/
