@@ -1,5 +1,5 @@
 # Inspector Hacker — llms.txt
-# https://inspectorhacker.com
+# https://inspectorhacker.com · actualizado 2026-11-03
 
 > Inspector Hacker es un servicio de ciberseguridad con inteligencia artificial para empresas de México y Estados Unidos.
 > Agentes de IA vigilan todos los días lo que la empresa tiene expuesto a internet, su código, sus servidores y su nube, y avisan en menos de 24 horas cuando aparece una vulnerabilidad crítica de su tecnología. Cada mes entrega un reporte de una página para Dirección, un reporte técnico y una llamada con una persona que lo leyó.
@@ -8,8 +8,14 @@
 > Cobertura: todo México (sede en Torreón) y Estados Unidos (base en Bentonville, Arkansas y San Antonio, Texas). Atención en español e inglés. Mismo precio en dólares en los dos países.
 
 ## Páginas
-- Español: https://inspectorhacker.com/
-- English: https://inspectorhacker.com/en/
+- Español (inicio): https://inspectorhacker.com/
+- English (home): https://inspectorhacker.com/en/
+- Planes y precios: https://inspectorhacker.com/planes/ · Pricing: https://inspectorhacker.com/en/pricing/
+- Vigilancia vs pentest: https://inspectorhacker.com/vigilancia-vs-pentest/ · Monitoring vs pentest: https://inspectorhacker.com/en/monitoring-vs-pentest/
+- Pymes de México: https://inspectorhacker.com/ciberseguridad-pymes-mexico/ · Small business (US): https://inspectorhacker.com/en/cybersecurity-for-small-business/
+- Ciudades México: Torreón https://inspectorhacker.com/ciberseguridad-torreon/ · La Laguna (Gómez Palacio y Lerdo) https://inspectorhacker.com/ciberseguridad-la-laguna/ · Monterrey https://inspectorhacker.com/ciberseguridad-monterrey/ · Saltillo https://inspectorhacker.com/ciberseguridad-saltillo/ · Chihuahua https://inspectorhacker.com/ciberseguridad-chihuahua/
+- US cities: Bentonville, AR https://inspectorhacker.com/en/cybersecurity-bentonville-ar/ · Northwest Arkansas https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/ · San Antonio, TX https://inspectorhacker.com/en/cybersecurity-san-antonio-tx/
+- Versión completa para IA (todo lo citable, es + en): https://inspectorhacker.com/llms-full.txt
 
 ## Qué incluye la vigilancia mensual
 - Inventario y escaneo semanal de lo expuesto a internet: dominios, IPs, puertos, servicios, certificados, correo (SPF, DKIM, DMARC).

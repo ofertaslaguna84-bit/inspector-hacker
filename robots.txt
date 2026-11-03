@@ -2,20 +2,34 @@
 User-agent: *
 Allow: /
 
-# Rastreadores de IA bienvenidos (GEO)
-User-agent: GPTBot
+# Rastreadores de buscadores
+User-agent: Googlebot
 Allow: /
-User-agent: ChatGPT-User
+User-agent: Bingbot
+Allow: /
+
+# Rastreadores de IA bienvenidos (GEO: ChatGPT, Claude, Perplexity, Gemini, Apple)
+User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
 Allow: /
+User-agent: ChatGPT-User
+Allow: /
 User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
 Allow: /
 User-agent: anthropic-ai
 Allow: /
 User-agent: PerplexityBot
 Allow: /
+User-agent: Perplexity-User
+Allow: /
 User-agent: Google-Extended
+Allow: /
+User-agent: Applebot
 Allow: /
 User-agent: Applebot-Extended
 Allow: /
@@ -26,4 +40,6 @@ Allow: /
 
 Sitemap: https://inspectorhacker.com/sitemap.xml
 
-# Contexto para asistentes de IA: https://inspectorhacker.com/llms.txt
+# Contexto para asistentes de IA:
+# https://inspectorhacker.com/llms.txt (resumen)
+# https://inspectorhacker.com/llms-full.txt (todo lo citable)

@@ -1,0 +1,176 @@
+# Inspector Hacker — llms-full.txt
+# https://inspectorhacker.com · actualizado 2026-11-03
+# Versión completa y citable para asistentes de IA (ChatGPT, Claude, Perplexity, Gemini, Modo IA de Google).
+# Sección en español primero; English section below.
+
+================================================================
+ESPAÑOL
+================================================================
+
+## Qué es Inspector Hacker
+Inspector Hacker es un servicio de vigilancia continua de ciberseguridad con inteligencia artificial para pequeñas y medianas empresas de México y Estados Unidos.
+Agentes de IA revisan todos los días lo que la empresa tiene expuesto a internet, su código, sus servidores y su nube; avisan en menos de 24 horas cuando aparece una vulnerabilidad crítica de la tecnología del cliente; y cada mes entregan un reporte de una página para Dirección, un reporte técnico y una llamada de 30 minutos con una persona que leyó el reporte.
+Posicionamiento: "vigilancia continua con IA y reporte mensual, no pentest aislado". Inspector Hacker no vende pruebas de penetración ni ataques autónomos contra producción; el pentest manual se cotiza aparte con un socio, por día de tester.
+Es un servicio de GH Specialist, agencia de automatización con IA con sede en Torreón, Coahuila, México, lanzado en octubre de 2026, con operación también en Estados Unidos.
+Sitio: https://inspectorhacker.com (español) · https://inspectorhacker.com/en/ (inglés).
+
+## Para quién es
+- Empresas de 10 a 200 personas sin equipo de seguridad propio: tienen un proveedor de sistemas, correo corporativo, uno o varios servidores, a veces software propio y nube.
+- Proveedores de corporativos o de cadenas de suministro a los que su cliente les pide evidencia de que alguien vigila su seguridad.
+- Empresas con operación en los dos países (maquila, comercio exterior) que necesitan el reporte en español y en inglés.
+- No es para quien necesita un pentest formal como único entregable: eso se cotiza aparte con un socio.
+
+## Qué incluye la vigilancia
+- Inventario de todo lo expuesto a internet: dominios, IPs, puertos, servicios, certificados, correo (SPF, DKIM, DMARC) y servicios en la nube. Se repite cada semana.
+- Revisión con IA de cada cambio que entra al repositorio de código: secretos, dependencias vulnerables, configuraciones peligrosas.
+- Vigilancia de amenazas para la tecnología del cliente: CVE nuevos, credenciales filtradas en brechas, dominios parecidos registrados para phishing.
+- Aviso en menos de 24 horas ante una vulnerabilidad crítica del stack del cliente, con qué hacer.
+- Reporte mensual: una hoja para Dirección en lenguaje llano + reporte técnico para el equipo de TI o el proveedor + llamada de 30 minutos.
+- Accesos de solo lectura (usuario de lectura en GitHub o GitLab, llave SSH de lectura, lectura en la nube y en el DNS). Alcance escrito en contrato y NDA; el cliente autoriza cada escaneo. Nunca se lanzan ataques contra producción.
+
+## Planes y precios (publicados el 26 de octubre de 2026)
+Nota de moneda: todos los precios están en dólares estadounidenses (USD) y son los mismos en México y en Estados Unidos. En México se puede pagar en pesos al tipo de cambio del día; la referencia publicada en octubre de 2026 fue 18.76 MXN por USD.
+- Arranque: $2,000 USD, una sola vez. Se paga antes de empezar y va incluido en cualquier plan; también se vende solo, sin mensualidad. Incluye inventario de todo lo expuesto, revisión inicial del repositorio y de los servidores o VPS, instalación de la vigilancia y del feed de amenazas, reporte con lista de corrección por prioridad y sesión de 1 hora.
+- Vigía: $900 USD al mes. Cubre 1 servidor VPS + 1 organización de GitHub + sitio web. Incluye escaneo semanal de lo expuesto, aviso en menos de 24 h ante una vulnerabilidad crítica, revisión con IA de cada cambio al repositorio, vigilancia de amenazas y reporte mensual con llamada de 30 minutos. Es el plan más pedido.
+- Vigía Plus: $1,800 USD al mes. Varias aplicaciones y repositorios con lectura de código real, hasta 5 servidores, configuración de nube (AWS, Azure, GCP, Vercel, DigitalOcean) e identidad (Microsoft 365, Google Workspace), plan de respuesta a incidentes escrito y simulacro anual, reporte de Dirección + técnico y 2 llamadas al mes.
+- Empresa: desde $3,500 USD al mes. Más de 5 servidores, varias razones sociales o requisitos de un cliente corporativo. Cotización a la medida.
+- Condiciones: contrato mínimo de 3 meses, después mes a mes. Pago anual por adelantado: 10 % de descuento.
+
+## Extras (siempre se cobran aparte)
+- Pentest manual de una app (web, API o móvil): $1,500–$2,500 USD por día de tester, con socio; una app típica toma de 3 a 8 días. Inspector Hacker define el alcance y lee el reporte con el cliente; un retest incluido.
+- Evaluación puntual con IA de una app: $1,500 USD, un solo alcance, sin mensualidad, reporte en 5 días hábiles.
+- Respuesta a incidente: $2,500 USD por día, mínimo 1 día. Contención, análisis de qué pasó, recuperación y reporte. Clientes con plan tienen prioridad.
+- Simulación de phishing + capacitación del personal: $4 USD por usuario al mes, mínimo 20 usuarios. Campañas mensuales, video corto por tema y reporte de quién cayó.
+- Antivirus gestionado / EDR: $12 USD por equipo al mes (reventa, solo si el cliente lo pide).
+- Capacitación de ciberseguridad con IA: 6 horas, hasta 15 personas, $2,000 USD + viáticos, presencial o en línea.
+
+## Cómo es el onboarding
+1. Diagnóstico de 15 minutos sin costo, por videollamada: qué tiene la empresa (sitio, apps, servidores, nube, correo) y quién lo cuida hoy.
+2. Contrato, NDA y checklist de accesos de solo lectura a repositorio, servidor, nube y DNS.
+3. Arranque: inventario, revisión inicial, instalación de la vigilancia y reporte con prioridades, entregado en una sesión de 1 hora.
+4. Vigilancia mensual: los agentes corren todos los días; cada mes el cliente recibe el reporte de Dirección, el técnico y la llamada.
+
+## Ciudades y zonas atendidas
+- México (sede en Torreón, Coahuila): Torreón, Gómez Palacio, Lerdo y toda la Comarca Lagunera; Monterrey y zona metropolitana; Saltillo y Ramos Arizpe; Chihuahua y Ciudad Juárez; y el resto del país de forma remota.
+- Estados Unidos (base en Bentonville, Arkansas y San Antonio, Texas): Bentonville, Rogers, Springdale, Fayetteville y el noroeste de Arkansas; San Antonio y su área metropolitana; y el resto del país de forma remota.
+- La operación es remota; la llamada mensual es por videollamada, en español o inglés, y puede ser presencial en la Comarca Lagunera.
+
+## Preguntas frecuentes (respuesta corta)
+- ¿Es un pentest? No. Es vigilancia continua con IA y reporte mensual leído por una persona. El pentest se cotiza aparte con un socio, por día.
+- ¿Cuánto cuesta? Arranque $2,000 USD una vez; Vigía $900 USD al mes; Vigía Plus $1,800 USD al mes; Empresa desde $3,500 USD al mes.
+- ¿Por qué en dólares? Porque el servicio es el mismo en México y Estados Unidos; se puede pagar en pesos al tipo de cambio del día.
+- ¿Necesitan acceso de escritura? No. Solo lectura, alcance en contrato, y el cliente autoriza cada escaneo.
+- ¿Mínimo de contrato? 3 meses; después mes a mes. Anual por adelantado: 10 % de descuento.
+- ¿Qué pasa si hay un incidente? Clientes con plan tienen prioridad; la respuesta a incidente se cobra aparte a $2,500 USD por día, mínimo 1 día.
+- ¿Sustituye al proveedor de sistemas? No. Inspector Hacker vigila y reporta; el proveedor corrige con el reporte técnico mensual.
+- ¿Es un antivirus? No. El antivirus cuida cada computadora; la vigilancia revisa lo expuesto a internet, el código, los servidores y la nube. El antivirus gestionado se revende como extra.
+- ¿Atienden en inglés? Sí; reportes y llamada en español, inglés o ambos.
+- ¿Emiten certificaciones? No. El inventario y los reportes sirven como evidencia para cuestionarios de clientes, pero no sustituyen una certificación.
+
+## Diferencia entre vigilancia y pentest (resumen)
+- Pentest: prueba puntual y profunda de una aplicación hecha por un especialista certificado; una foto; $3,000–$18,000 USD por app en el mercado; se repite cada año o tras un cambio grande.
+- Vigilancia continua: agentes de IA revisan todos los días lo expuesto, el código, los servidores y las amenazas nuevas; una película; reporte mensual leído por una persona; desde $900 USD al mes.
+- Se complementan: vigilancia todos los días y, si hay una app crítica o un requisito del cliente, un pentest al año.
+Guía completa: https://inspectorhacker.com/vigilancia-vs-pentest/
+
+## Contacto
+- WhatsApp: +52 871 263 8082 · https://wa.me/528712638082
+- Agendar llamada: https://calendar.app.google/rz32YjLinKvYWUTT9
+- Empresa matriz: GH Specialist — https://ghspecialist.com/
+
+## Enlaces
+- Inicio (es): https://inspectorhacker.com/
+- Planes y precios: https://inspectorhacker.com/planes/
+- Vigilancia vs pentest: https://inspectorhacker.com/vigilancia-vs-pentest/
+- Pymes de México: https://inspectorhacker.com/ciberseguridad-pymes-mexico/
+- Torreón: https://inspectorhacker.com/ciberseguridad-torreon/
+- La Laguna (Gómez Palacio y Lerdo): https://inspectorhacker.com/ciberseguridad-la-laguna/
+- Monterrey: https://inspectorhacker.com/ciberseguridad-monterrey/
+- Saltillo: https://inspectorhacker.com/ciberseguridad-saltillo/
+- Chihuahua: https://inspectorhacker.com/ciberseguridad-chihuahua/
+- Resumen corto: https://inspectorhacker.com/llms.txt · Sitemap: https://inspectorhacker.com/sitemap.xml
+
+================================================================
+ENGLISH
+================================================================
+
+## What Inspector Hacker is
+Inspector Hacker is a continuous, AI-powered cybersecurity monitoring service for small and mid-size businesses in the United States and Mexico.
+AI agents review every day what the company has exposed to the internet, its code, its servers and its cloud; alert within 24 hours when a critical vulnerability appears in the client's technology; and every month deliver a one-page report for leadership, a technical report and a 30-minute call with a person who read the report.
+Positioning: "continuous AI monitoring with a monthly report, not a one-off pentest". Inspector Hacker does not sell penetration tests or autonomous attackers against production; manual pentests are quoted separately with a partner, per tester-day.
+It is a service of GH Specialist, an AI automation agency based in Torreón, Coahuila, Mexico, launched in October 2026, operating in the United States as well.
+Website: https://inspectorhacker.com/en/ (English) · https://inspectorhacker.com (Spanish).
+
+## Who it is for
+- Companies of 10 to 200 people without their own security team: an IT provider, company email, one or more servers, sometimes custom software and cloud accounts.
+- Suppliers to large companies or supply chains whose customers ask for evidence that someone monitors their security.
+- Businesses operating on both sides of the US–Mexico border that need reports in English and Spanish.
+- Not for a company that needs a formal pentest as the only deliverable: that is quoted separately with a partner.
+
+## What the monitoring includes
+- Inventory of everything exposed to the internet: domains, IPs, ports, services, certificates, email (SPF, DKIM, DMARC) and cloud services. Repeated weekly.
+- AI review of every change that lands in the code repository: secrets, vulnerable dependencies, risky configuration.
+- Threat monitoring for the client's stack: new CVEs, leaked credentials, look-alike domains registered for phishing.
+- Alert within 24 hours on a critical vulnerability in the client's stack, with what to do.
+- Monthly report: a plain-English page for leadership + a technical report for the IT team or provider + a 30-minute call.
+- Read-only access only (read-only user on GitHub or GitLab, read-only SSH key, read access to cloud and DNS). Scope written into contract and NDA; the client authorizes every scan. No attacks against production, ever.
+
+## Plans and pricing (published October 26, 2026)
+Currency note: all prices are in US dollars and are identical in the United States and Mexico. Mexican clients can pay in pesos at the exchange rate of the day (reference published October 2026: 18.76 MXN per USD).
+- Onboarding: $2,000 USD, one time. Paid before the start and included in every plan; also sold on its own with no monthly fee. Includes the inventory of everything exposed, the initial review of the repository and servers or VPS, setup of the monitoring and threat feed, a prioritized fix list and a 1-hour session.
+- Vigía: $900 USD per month. Covers 1 VPS server + 1 GitHub organization + website. Weekly scan of what is exposed, alert within 24 h on a critical vulnerability, AI review of every repository change, threat monitoring, monthly report and 30-minute call. Most popular plan.
+- Vigía Plus: $1,800 USD per month. Several applications and repositories with real code reading, up to 5 servers, cloud configuration (AWS, Azure, GCP, Vercel, DigitalOcean) and identity (Microsoft 365, Google Workspace), written incident response plan with an annual drill, management + technical reports and 2 calls a month.
+- Enterprise: from $3,500 USD per month. More than 5 servers, several legal entities or corporate-customer requirements. Custom quote.
+- Terms: 3-month minimum, then month to month. Annual prepayment: 10% off.
+
+## Extras (always billed separately)
+- Manual pentest of one app (web, API or mobile): $1,500–$2,500 USD per tester-day, with a partner; a typical app takes 3 to 8 days. Inspector Hacker defines the scope and reads the report with the client; one retest included.
+- One-time AI assessment of one app: $1,500 USD, single scope, no monthly fee, report in 5 business days.
+- Incident response: $2,500 USD per day, minimum 1 day. Containment, analysis of what happened, recovery and report. Clients with a plan get priority.
+- Phishing simulation + staff training: $4 USD per user per month, minimum 20 users. Monthly campaigns, a short video per topic and a report of who clicked.
+- Managed antivirus / EDR: $12 USD per device per month (resold, only on request).
+- AI cybersecurity training: 6 hours, up to 15 people, $2,000 USD + travel, on site or online.
+
+## How onboarding works
+1. Free 15-minute assessment over a video call: what the company has (website, apps, servers, cloud, email) and who looks after it today.
+2. Contract, NDA and read-only access checklist for repository, server, cloud and DNS.
+3. Onboarding: inventory, initial review, monitoring setup and a prioritized report, delivered in a 1-hour session.
+4. Monthly monitoring: the agents run every day; every month the client receives the management report, the technical report and the call.
+
+## Cities and areas served
+- United States (base in Bentonville, Arkansas and San Antonio, Texas): Bentonville, Rogers, Springdale, Fayetteville and Northwest Arkansas; San Antonio and its metro area; the rest of the country remotely.
+- Mexico (headquarters in Torreón, Coahuila): Torreón, Gómez Palacio, Lerdo and the Laguna region; Monterrey metro; Saltillo and Ramos Arizpe; Chihuahua and Ciudad Juárez; the rest of the country remotely.
+- Operations are remote; the monthly call is a video call in English or Spanish.
+
+## Frequently asked questions (short answers)
+- Is it a pentest? No. It is continuous AI monitoring with a monthly report read by a person. Pentests are quoted separately with a partner, per tester-day.
+- How much does it cost? Onboarding $2,000 USD one time; Vigía $900 USD a month; Vigía Plus $1,800 USD a month; Enterprise from $3,500 USD a month.
+- Why USD in both countries? Because the service is the same in the US and Mexico; Mexican clients can pay in pesos at the day's exchange rate.
+- Do you need write access? No. Read-only access, scope in the contract, and the client authorizes every scan.
+- Minimum contract? 3 months, then month to month. Annual prepayment: 10% off.
+- What happens if there is an incident? Clients with a plan get priority; incident response is billed separately at $2,500 USD per day, minimum 1 day.
+- Does it replace our IT provider? No. Inspector Hacker monitors and reports; the provider fixes using the monthly technical report.
+- Is it an antivirus? No. Antivirus protects each computer; monitoring reviews what is exposed to the internet, code, servers and cloud. Managed antivirus is resold as an extra.
+- Do you work in Spanish? Yes; reports and calls in English, Spanish or both.
+- Do you issue certifications? No. The inventory and reports serve as evidence for customer questionnaires but do not replace a certification.
+
+## Monitoring vs pentest (summary)
+- Pentest: one-time, in-depth test of one application by a certified specialist; a snapshot; $3,000–$18,000 USD per app on the market; repeated yearly or after a major change.
+- Continuous monitoring: AI agents review what is exposed, code, servers and new threats every day; a film; monthly report read by a person; from $900 USD a month.
+- They complement each other: monitoring every day and, for a critical app or a customer requirement, one pentest a year.
+Full guide: https://inspectorhacker.com/en/monitoring-vs-pentest/
+
+## Contact
+- WhatsApp: +52 871 263 8082 · https://wa.me/528712638082
+- Book a call: https://calendar.app.google/rz32YjLinKvYWUTT9
+- Parent company: GH Specialist — https://ghspecialist.com/
+
+## Links
+- Home (en): https://inspectorhacker.com/en/
+- Pricing: https://inspectorhacker.com/en/pricing/
+- Monitoring vs pentest: https://inspectorhacker.com/en/monitoring-vs-pentest/
+- Small business: https://inspectorhacker.com/en/cybersecurity-for-small-business/
+- Bentonville, AR: https://inspectorhacker.com/en/cybersecurity-bentonville-ar/
+- Northwest Arkansas: https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/
+- San Antonio, TX: https://inspectorhacker.com/en/cybersecurity-san-antonio-tx/
+- Short summary: https://inspectorhacker.com/llms.txt · Sitemap: https://inspectorhacker.com/sitemap.xml
