@@ -1,6 +1,8 @@
 # Inspector Hacker — llms.txt
-# https://inspectorhacker.com · actualizado 2026-11-03
+# https://inspectorhacker.com · actualizado 2026-11-08
 
+> Vigilancia continua de ciberseguridad con IA para pymes en México y EE. UU., sin pentest caro.
+> Continuous AI cybersecurity monitoring for small businesses in Mexico and the US, without an expensive pentest.
 > Inspector Hacker es un servicio de ciberseguridad con inteligencia artificial para empresas de México y Estados Unidos.
 > Agentes de IA vigilan todos los días lo que la empresa tiene expuesto a internet, su código, sus servidores y su nube, y avisan en menos de 24 horas cuando aparece una vulnerabilidad crítica de su tecnología. Cada mes entrega un reporte de una página para Dirección, un reporte técnico y una llamada con una persona que lo leyó.
 > Posicionamiento: "vigilancia, no pentest". No vende pruebas de penetración ni ataques autónomos contra producción; el pentest manual se cotiza aparte con un socio certificado.
@@ -16,6 +18,50 @@
 - Ciudades México: Torreón https://inspectorhacker.com/ciberseguridad-torreon/ · La Laguna (Gómez Palacio y Lerdo) https://inspectorhacker.com/ciberseguridad-la-laguna/ · Monterrey https://inspectorhacker.com/ciberseguridad-monterrey/ · Saltillo https://inspectorhacker.com/ciberseguridad-saltillo/ · Chihuahua https://inspectorhacker.com/ciberseguridad-chihuahua/
 - US cities: Bentonville, AR https://inspectorhacker.com/en/cybersecurity-bentonville-ar/ · Northwest Arkansas https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/ · San Antonio, TX https://inspectorhacker.com/en/cybersecurity-san-antonio-tx/
 - Versión completa para IA (todo lo citable, es + en): https://inspectorhacker.com/llms-full.txt
+
+## Servicios / Services
+- Índice de servicios: https://inspectorhacker.com/servicios/ · Services index: https://inspectorhacker.com/en/services/
+- Monitoreo de ciberseguridad: https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/ · Cybersecurity monitoring: https://inspectorhacker.com/en/services/cybersecurity-monitoring/
+- Auditoría de seguridad web: https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/ · Website security audit: https://inspectorhacker.com/en/services/website-security-audit/
+- Seguridad de servidores y VPS: https://inspectorhacker.com/servicios/seguridad-de-servidores/ · Server and VPS security: https://inspectorhacker.com/en/services/server-security/
+- Protección de correo y phishing: https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/ · Email security and phishing protection: https://inspectorhacker.com/en/services/email-security-phishing-protection/
+- Respuesta a incidentes: https://inspectorhacker.com/servicios/respuesta-a-incidentes/ · Incident response: https://inspectorhacker.com/en/services/incident-response/
+
+## Servicio por ciudad (México, español)
+- Hub: https://inspectorhacker.com/ciudades/
+- Torreón, Coahuila: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/torreon/ · Auditoría de seguridad web https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/torreon/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/torreon/ · Protección de correo y phishing https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/torreon/ · Respuesta a incidentes https://inspectorhacker.com/servicios/respuesta-a-incidentes/torreon/
+- Gómez Palacio, Durango: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/gomez-palacio/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/gomez-palacio/ · Protección de correo y phishing https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/gomez-palacio/
+- Saltillo, Coahuila: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/saltillo/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/saltillo/ · Protección de correo y phishing https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/saltillo/ · Respuesta a incidentes https://inspectorhacker.com/servicios/respuesta-a-incidentes/saltillo/
+- Monterrey, Nuevo León: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/monterrey/ · Auditoría de seguridad web https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/monterrey/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/monterrey/ · Protección de correo y phishing https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/monterrey/ · Respuesta a incidentes https://inspectorhacker.com/servicios/respuesta-a-incidentes/monterrey/
+- Chihuahua, Chihuahua: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/chihuahua/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/chihuahua/ · Protección de correo y phishing https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/chihuahua/
+- Durango, Durango: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/durango/ · Auditoría de seguridad web https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/durango/ · Protección de correo y phishing https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/durango/
+- Ciudad de México, Ciudad de México: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/cdmx/ · Auditoría de seguridad web https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/cdmx/ · Respuesta a incidentes https://inspectorhacker.com/servicios/respuesta-a-incidentes/cdmx/
+- Guadalajara, Jalisco: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/guadalajara/ · Auditoría de seguridad web https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/guadalajara/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/guadalajara/
+- Querétaro, Querétaro: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/queretaro/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/queretaro/ · Respuesta a incidentes https://inspectorhacker.com/servicios/respuesta-a-incidentes/queretaro/
+- Ramos Arizpe, Coahuila: Monitoreo de ciberseguridad https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/ramos-arizpe/ · Seguridad de servidores y VPS https://inspectorhacker.com/servicios/seguridad-de-servidores/ramos-arizpe/ · Protección de correo y phishing https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/ramos-arizpe/
+
+## Service by city (United States, English)
+- Hub: https://inspectorhacker.com/en/cities/
+- San Antonio, Texas: Cybersecurity monitoring https://inspectorhacker.com/en/services/cybersecurity-monitoring/san-antonio-tx/ · Website security audit https://inspectorhacker.com/en/services/website-security-audit/san-antonio-tx/ · Server and VPS security https://inspectorhacker.com/en/services/server-security/san-antonio-tx/ · Email security and phishing protection https://inspectorhacker.com/en/services/email-security-phishing-protection/san-antonio-tx/ · Incident response https://inspectorhacker.com/en/services/incident-response/san-antonio-tx/
+- Bentonville, Arkansas: Cybersecurity monitoring https://inspectorhacker.com/en/services/cybersecurity-monitoring/bentonville-ar/ · Website security audit https://inspectorhacker.com/en/services/website-security-audit/bentonville-ar/ · Server and VPS security https://inspectorhacker.com/en/services/server-security/bentonville-ar/ · Email security and phishing protection https://inspectorhacker.com/en/services/email-security-phishing-protection/bentonville-ar/
+- Rogers, Arkansas: Cybersecurity monitoring https://inspectorhacker.com/en/services/cybersecurity-monitoring/rogers-ar/ · Email security and phishing protection https://inspectorhacker.com/en/services/email-security-phishing-protection/rogers-ar/ · Incident response https://inspectorhacker.com/en/services/incident-response/rogers-ar/
+- Fayetteville, Arkansas: Cybersecurity monitoring https://inspectorhacker.com/en/services/cybersecurity-monitoring/fayetteville-ar/ · Website security audit https://inspectorhacker.com/en/services/website-security-audit/fayetteville-ar/ · Email security and phishing protection https://inspectorhacker.com/en/services/email-security-phishing-protection/fayetteville-ar/
+- Austin, Texas: Cybersecurity monitoring https://inspectorhacker.com/en/services/cybersecurity-monitoring/austin-tx/ · Website security audit https://inspectorhacker.com/en/services/website-security-audit/austin-tx/ · Server and VPS security https://inspectorhacker.com/en/services/server-security/austin-tx/
+- Dallas, Texas: Cybersecurity monitoring https://inspectorhacker.com/en/services/cybersecurity-monitoring/dallas-tx/ · Email security and phishing protection https://inspectorhacker.com/en/services/email-security-phishing-protection/dallas-tx/ · Incident response https://inspectorhacker.com/en/services/incident-response/dallas-tx/
+
+## Blog
+- Español: https://inspectorhacker.com/blog/ · English: https://inspectorhacker.com/en/blog/ (un artículo nuevo casi a diario, alternando idioma)
+- What does a cybersecurity incident really cost a small business?: https://inspectorhacker.com/en/blog/cost-of-a-cybersecurity-incident-small-business/
+- The FTC Safeguards Rule for small businesses, in plain English: https://inspectorhacker.com/en/blog/ftc-safeguards-rule-small-business/
+- Security checklist for Shopify and WooCommerce stores: https://inspectorhacker.com/en/blog/shopify-woocommerce-security-checklist/
+- Your WhatsApp Business or Meta account was hacked: what to check, in order: https://inspectorhacker.com/en/blog/whatsapp-business-meta-account-hacked/
+- When does a small business actually need a pentest?: https://inspectorhacker.com/en/blog/when-do-you-need-a-pentest/
+- Checklist de seguridad para tu tienda en línea en Shopify o WooCommerce: https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/
+- Cómo saber si tu servidor o VPS está expuesto a internet (y revisarlo tú mismo): https://inspectorhacker.com/blog/como-saber-si-tu-servidor-esta-expuesto/
+- Cuánto le cuesta un incidente de ciberseguridad a una pyme (y cómo calcular el tuyo): https://inspectorhacker.com/blog/costo-de-un-incidente-de-ciberseguridad-pyme/
+- Protección de datos personales en México: lo básico que tu pyme debe cumplir con la nueva LFPDPPP: https://inspectorhacker.com/blog/lfpdppp-ciberseguridad-pymes/
+- Ransomware en pymes mexicanas: cómo entra, qué hacer en la primera hora y cómo prevenirlo: https://inspectorhacker.com/blog/ransomware-pymes-mexico/
+- Te hackearon el WhatsApp Business o la cuenta de Meta: qué revisar, en orden: https://inspectorhacker.com/blog/whatsapp-business-hackeado-que-revisar/
 
 ## Qué incluye la vigilancia mensual
 - Inventario y escaneo semanal de lo expuesto a internet: dominios, IPs, puertos, servicios, certificados, correo (SPF, DKIM, DMARC).

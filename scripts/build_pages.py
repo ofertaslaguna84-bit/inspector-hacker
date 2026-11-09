@@ -40,7 +40,8 @@ ORG = {
     "url": SITE + "/",
     "logo": SITE + "/img/logo-negro-1024.png",
     "image": SITE + "/img/og.jpg",
-    "description": "Vigilancia continua de ciberseguridad con inteligencia artificial para pymes de México y Estados Unidos: agentes de IA revisan todos los días lo expuesto a internet, el código, los servidores y la nube; aviso en menos de 24 horas ante una vulnerabilidad crítica y reporte mensual revisado por una persona. Vigilancia, no pentest.",
+    "slogan": "Vigilancia continua de ciberseguridad con IA para pymes en México y EE. UU., sin pentest caro.",
+    "description": "Vigilancia continua de ciberseguridad con IA para pymes en México y EE. UU., sin pentest caro. Agentes de IA revisan todos los días lo expuesto a internet, el código, los servidores y la nube; aviso en menos de 24 horas ante una vulnerabilidad crítica y reporte mensual revisado por una persona. Vigilancia, no pentest.",
     "foundingDate": "2026",
     "parentOrganization": {"@type": "Organization", "name": "GH Specialist", "url": "https://ghspecialist.com/"},
     "address": {"@type": "PostalAddress", "addressLocality": "Torreón", "addressRegion": "Coahuila", "addressCountry": "MX"},
@@ -71,8 +72,8 @@ ORG = {
 # ---------------------------------------------------------------- textos comunes
 ES = dict(
     lang="es-MX", og_locale="es_MX", home="/", home_name="Inicio",
-    nav=[("/", "Inicio"), ("/planes/", "Planes"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest"), ("#ciudades", "Ciudades")],
-    cta_btn="Diagnóstico de 15 min", wa=WA_ES, upd=f"Actualizado el {TODAY} · precios en USD · mismo precio en México y EE. UU.",
+    nav=[("/", "Inicio"), ("/planes/", "Planes"), ("/servicios/", "Servicios"), ("/ciudades/", "Ciudades"), ("/blog/", "Blog")],
+    cta_btn="Diagnóstico de 15 min", wa=WA_ES, upd=f'Actualizado el <time datetime="{TODAY}">{TODAY}</time> · precios en USD · mismo precio en México y EE. UU.',
     plans_lab="Planes", plans_h2="Arranque una vez, vigilancia cada mes",
     plans_lead='Mismo precio en dólares en México y Estados Unidos. Contrato mínimo 3 meses; después mes a mes. Pago anual por adelantado: 10 % de descuento. <a href="/planes/" style="color:var(--cy)">Ver todos los planes y extras →</a>',
     plans=[
@@ -85,14 +86,14 @@ ES = dict(
     cta_h2="¿Sabes qué tienes expuesto a internet hoy?", cta_p="Diagnóstico de 15 minutos sin costo, por videollamada. Te decimos qué tienes, quién lo cuida y con qué plan arrancar.",
     cta_wa="WhatsApp", cta_cal="Agendar llamada",
     foot_a='<b style="color:#fff">Inspector Hacker</b> · Ciberseguridad con IA · Torreón, México · Bentonville y San Antonio, EE. UU.',
-    foot_links=[("/planes/", "Planes"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest"), ("/ciberseguridad-pymes-mexico/", "Pymes México"), ("/llms.txt", "llms.txt")],
+    foot_links=[("/planes/", "Planes"), ("/servicios/", "Servicios"), ("/ciudades/", "Ciudades"), ("/blog/", "Blog"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest"), ("/llms.txt", "llms.txt")],
     foot_b='+52 871 263 8082 · un servicio de <a href="https://ghspecialist.com/" rel="noopener">GH Specialist</a> · © 2026',
     other_lang=("en", "EN", "English version"),
 )
 EN = dict(
     lang="en-US", og_locale="en_US", home="/en/", home_name="Home",
-    nav=[("/en/", "Home"), ("/en/pricing/", "Pricing"), ("/en/monitoring-vs-pentest/", "Monitoring vs pentest"), ("#cities", "Cities")],
-    cta_btn="15-min assessment", wa=WA_EN, upd=f"Updated {TODAY} · prices in USD · same price in the US and Mexico",
+    nav=[("/en/", "Home"), ("/en/pricing/", "Pricing"), ("/en/services/", "Services"), ("/en/cities/", "Cities"), ("/en/blog/", "Blog")],
+    cta_btn="15-min assessment", wa=WA_EN, upd=f'Updated <time datetime="{TODAY}">{TODAY}</time> · prices in USD · same price in the US and Mexico',
     plans_lab="Plans", plans_h2="Onboarding once, monitoring every month",
     plans_lead='Same price in USD in the United States and Mexico. 3-month minimum; month to month after that. Annual prepayment: 10% off. <a href="/en/pricing/" style="color:var(--cy)">See all plans and extras →</a>',
     plans=[
@@ -105,7 +106,7 @@ EN = dict(
     cta_h2="Do you know what you have exposed to the internet today?", cta_p="Free 15-minute assessment over a video call. We tell you what you have, who is looking after it and which plan to start with.",
     cta_wa="WhatsApp", cta_cal="Book a call",
     foot_a='<b style="color:#fff">Inspector Hacker</b> · AI Cybersecurity · Bentonville and San Antonio, USA · Torreón, Mexico',
-    foot_links=[("/en/pricing/", "Pricing"), ("/en/monitoring-vs-pentest/", "Monitoring vs pentest"), ("/en/cybersecurity-for-small-business/", "Small business"), ("/llms.txt", "llms.txt")],
+    foot_links=[("/en/pricing/", "Pricing"), ("/en/services/", "Services"), ("/en/cities/", "Cities"), ("/en/blog/", "Blog"), ("/en/monitoring-vs-pentest/", "Monitoring vs pentest"), ("/llms.txt", "llms.txt")],
     foot_b='+52 871 263 8082 · a service of <a href="https://ghspecialist.com/" rel="noopener">GH Specialist</a> · © 2026',
     other_lang=("es", "ES", "Versión en español"),
 )
@@ -124,8 +125,8 @@ EN_CITIES = [
     ("/en/cybersecurity-san-antonio-tx/", "San Antonio, TX", "Bexar County"),
     ("/en/cybersecurity-for-small-business/", "Small business", "United States"),
 ]
-ES_RELATED = [("/planes/", "Planes y precios", "Arranque, Vigía, Vigía Plus, Empresa"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest", "Cuándo conviene cada una")]
-EN_RELATED = [("/en/pricing/", "Plans and pricing", "Onboarding, Vigía, Vigía Plus, Enterprise"), ("/en/monitoring-vs-pentest/", "Monitoring vs pentest", "When each one makes sense")]
+ES_RELATED = [("/ciudades/", "Todas las ciudades", "Servicios por ciudad en México"), ("/servicios/", "Servicios", "Monitoreo, web, servidores, correo, incidentes"), ("/blog/", "Blog", "Guías prácticas de ciberseguridad"), ("/planes/", "Planes y precios", "Arranque, Vigía, Vigía Plus, Empresa"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest", "Cuándo conviene cada una")]
+EN_RELATED = [("/en/cities/", "All cities", "Services by city in the US"), ("/en/services/", "Services", "Monitoring, web, servers, email, incidents"), ("/en/blog/", "Blog", "Practical cybersecurity guides"), ("/en/pricing/", "Plans and pricing", "Onboarding, Vigía, Vigía Plus, Enterprise"), ("/en/monitoring-vs-pentest/", "Monitoring vs pentest", "When each one makes sense")]
 
 # ---------------------------------------------------------------- páginas
 PAGES = []
@@ -642,12 +643,12 @@ def render(p):
     # ---- JSON-LD
     blocks = [ORG]
     crumbs_name = strip_tags(p["h1"])
+    crumbs = [(L["home_name"], L["home"])] + p.get("crumbs", []) + [(crumbs_name, p["path"])]
     blocks.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": L["home_name"], "item": SITE + L["home"]},
-        {"@type": "ListItem", "position": 2, "name": crumbs_name, "item": url}]})
+        {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (n, u) in enumerate(crumbs)]})
     blocks.append({"@context": "https://schema.org", "@type": "WebPage", "@id": url, "url": url, "name": p["title"],
                    "description": p["desc"], "inLanguage": lang_attr, "isPartOf": {"@type": "WebSite", "url": SITE + "/", "name": "Inspector Hacker"},
-                   "about": {"@id": SITE + "/#org"}, "datePublished": TODAY, "dateModified": TODAY})
+                   "about": {"@id": SITE + "/#org"}, "datePublished": p.get("published", TODAY), "dateModified": p.get("modified", TODAY)})
     blocks.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faq"]]})
     offers = [
@@ -668,7 +669,7 @@ def render(p):
         else:
             area = [{"@type": "Country", "name": "México" if is_es else "United States"}]
         blocks.append({"@context": "https://schema.org", "@type": "Service", "@id": url + "#service", "name": p["service_name"],
-                       "serviceType": "Vigilancia de ciberseguridad con IA" if is_es else "AI cybersecurity monitoring",
+                       "serviceType": p.get("service_type") or ("Vigilancia de ciberseguridad con IA" if is_es else "AI cybersecurity monitoring"),
                        "description": p["desc"], "provider": {"@id": SITE + "/#org"}, "areaServed": area, "availableLanguage": ["es", "en"],
                        "offers": offers, "url": url})
         blocks.append({"@context": "https://schema.org", "@type": "ProfessionalService", "@id": url + "#business", "name": "Inspector Hacker",
@@ -687,9 +688,12 @@ def render(p):
                            {"@type": "Offer", "name": "Phishing simulado + capacitación (por usuario al mes)" if is_es else "Phishing simulation + training (per user per month)", "price": "4", "priceCurrency": "USD"},
                            {"@type": "Offer", "name": "Capacitación 6 h" if is_es else "6-hour training", "price": "2000", "priceCurrency": "USD"}],
                        "url": url})
+    elif p["kind"] == "hub":
+        blocks.append({"@context": "https://schema.org", "@type": "ItemList", "name": strip_tags(p["h1"]), "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": SITE + h, "name": n} for i, (h, n, _s) in enumerate(p.get("grid", []))]})
     else:
-        blocks.append({"@context": "https://schema.org", "@type": "Article", "headline": strip_tags(p["h1"]), "description": p["desc"], "inLanguage": lang_attr,
-                       "author": {"@id": SITE + "/#org"}, "publisher": {"@id": SITE + "/#org"}, "datePublished": TODAY, "dateModified": TODAY,
+        blocks.append({"@context": "https://schema.org", "@type": p.get("article_type", "Article"), "headline": strip_tags(p["h1"]), "description": p["desc"], "inLanguage": lang_attr,
+                       "author": {"@id": SITE + "/#org"}, "publisher": {"@id": SITE + "/#org"}, "datePublished": p.get("published", TODAY), "dateModified": p.get("modified", TODAY),
                        "mainEntityOfPage": url, "image": SITE + "/img/og.jpg"})
 
     # ---- nav
@@ -700,9 +704,9 @@ def render(p):
 
     body_html = ""
     for h2, paras in p["body"]:
-        body_html += f"<h2>{h2}</h2>\n"
+        body_html += f"<h2>{h2}</h2>\n" if h2 else ""
         for para in paras:
-            body_html += para + "\n" if para.startswith("<table") else f"<p>{para}</p>\n"
+            body_html += para + "\n" if para.startswith(("<table", "<ul", "<ol", "<div", "<h3", "<p")) else f"<p>{para}</p>\n"
 
     plans_html = ""
     for name, price, unit, line, items, feat in L["plans"]:
@@ -712,9 +716,25 @@ def render(p):
     faq_html = "".join(f"<details{' open' if i == 0 else ''}><summary>{q}</summary><p>{a}</p></details>" for i, (q, a) in enumerate(p["faq"]))
 
     CUR = ' aria-current="page"'
-    cities_html = "".join(f'<a href="{h}"{CUR if h == p["path"] else ""}><b>{n}</b>{s}</a>' for h, n, s in cities + related)
+    if not p.get("grid"):
+        # páginas de ciudad existentes: enlazan a sus páginas servicio × ciudad
+        from seo_data import SERVICES, CITIES_MX, CITIES_US
+        lang = "es" if is_es else "en"
+        local = []
+        for c in (CITIES_MX if is_es else CITIES_US):
+            if c.get("existing") == p["path"]:
+                for k in c["services"]:
+                    S = SERVICES[k][lang]
+                    base = f"/servicios/{S['slug']}/" if is_es else f"/en/services/{S['slug']}/"
+                    local.append((base + c["slug"] + "/", S["name"], c["name"]))
+        if local:
+            p = dict(p, grid=local, grid_extra=cities + related, grid_h2=("Servicios en esta zona y otras ciudades" if is_es else "Services in this area and other cities"))
+    cities_html = "".join(f'<a href="{h}"{CUR if h == p["path"] else ""}><b>{n}</b>{s}</a>' for h, n, s in (p.get("grid") or []) + (p.get("grid_extra") if p.get("grid") else cities + related))
 
-    geo_region, geo_place, icbm = p["geo"]
+    geo_meta = ""
+    if p.get("geo"):
+        geo_region, geo_place, icbm = p["geo"]
+        geo_meta = f'<meta name="geo.region" content="{geo_region}"><meta name="geo.placename" content="{geo_place}"><meta name="ICBM" content="{icbm}"><meta name="geo.position" content="{icbm.replace(", ", ";")}">\n'
     html = f"""<!DOCTYPE html>
 <html lang="{lang_attr}">
 <head>
@@ -726,11 +746,10 @@ def render(p):
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="author" content="Inspector Hacker · GH Specialist">
 <meta name="theme-color" content="#07090c">
-<meta name="geo.region" content="{geo_region}"><meta name="geo.placename" content="{geo_place}"><meta name="ICBM" content="{icbm}"><meta name="geo.position" content="{icbm.replace(', ', ';')}">
-{hreflang_links(p)}
+{geo_meta}{hreflang_links(p)}
 <link rel="apple-touch-icon" href="/img/logo-negro-1024.png">
 <link rel="icon" href="/img/logo-negro-1024.png" type="image/png">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Inspector Hacker"><meta property="og:url" content="{url}"><meta property="og:title" content="{esc(p["title"])}"><meta property="og:description" content="{esc(p["desc"])}"><meta property="og:image" content="{SITE}/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="{L["og_locale"]}"><meta property="og:locale:alternate" content="{"en_US" if is_es else "es_MX"}">
+<meta property="og:type" content="{p.get("og_type", "website")}"><meta property="og:site_name" content="Inspector Hacker"><meta property="og:url" content="{url}"><meta property="og:title" content="{esc(p["title"])}"><meta property="og:description" content="{esc(p["desc"])}"><meta property="og:image" content="{SITE}/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="{L["og_locale"]}"><meta property="og:locale:alternate" content="{"en_US" if is_es else "es_MX"}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(p["title"])}"><meta name="twitter:description" content="{esc(p["desc"])}"><meta name="twitter:image" content="{SITE}/img/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 {chr(10).join(jsonld(b) for b in blocks)}
@@ -744,11 +763,11 @@ def render(p):
 
 <section class="hero sm"><div class="w">
   <div>
-    <nav class="crumbs" aria-label="breadcrumb"><a href="{L["home"]}">{L["home_name"]}</a><span>›</span>{crumbs_name}</nav>
+    <nav class="crumbs" aria-label="breadcrumb">{"".join(f'<a href="{u}">{n}</a><span>›</span>' for n, u in crumbs[:-1])}{crumbs_name}</nav>
     <div class="kick">{p["kick"]}</div>
     <h1>{p["h1"]}</h1>
     <p class="sub">{p["sub"]}</p>
-    <div class="upd">{L["upd"]}</div>
+    <div class="upd">{p.get("upd") or L["upd"]}</div>
     <div class="btns"><a class="btn btn-cy" href="{L["wa"]}" target="_blank" rel="noopener">{L["cta_btn"]}</a><a class="btn btn-ghost" href="#planes">{"Ver planes" if is_es else "See plans"}</a></div>
   </div>
 </div></section>
@@ -769,7 +788,7 @@ def render(p):
 </div></section>
 
 <section id="{anchor_cities[1:]}"><div class="w">
-  <div class="lab">{L["cities_lab"]}</div><h2>{L["cities_h2"]}</h2>
+  <div class="lab">{p.get("grid_lab") or L["cities_lab"]}</div><h2>{p.get("grid_h2") or L["cities_h2"]}</h2>
   <div class="cities">{cities_html}</div>
 </div></section>
 

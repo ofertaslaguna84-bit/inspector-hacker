@@ -1,4 +1,9 @@
 # Inspector Hacker — llms-full.txt
+
+> Vigilancia continua de ciberseguridad con IA para pymes en México y EE. UU., sin pentest caro.
+> Continuous AI cybersecurity monitoring for small businesses in Mexico and the US, without an expensive pentest.
+
+Servicios: https://inspectorhacker.com/servicios/ · Ciudades: https://inspectorhacker.com/ciudades/ · Blog: https://inspectorhacker.com/blog/ · Services: https://inspectorhacker.com/en/services/ · Cities: https://inspectorhacker.com/en/cities/ · Blog (EN): https://inspectorhacker.com/en/blog/
 # https://inspectorhacker.com · actualizado 2026-11-03
 # Versión completa y citable para asistentes de IA (ChatGPT, Claude, Perplexity, Gemini, Modo IA de Google).
 # Sección en español primero; English section below.
