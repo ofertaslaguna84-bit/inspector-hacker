@@ -1,0 +1,78 @@
+{
+  "lang": "es",
+  "slug": "configurar-spf-dkim-dmarc-dominio-paso-a-paso",
+  "pair": null,
+  "topic": "Cómo configurar SPF, DKIM y DMARC en tu dominio paso a paso para que nadie mande correos a tu nombre",
+  "title": "SPF, DKIM y DMARC: configura tu dominio paso a paso",
+  "h1": "Cómo configurar SPF, DKIM y DMARC en tu dominio paso a paso para que nadie mande correos a tu nombre",
+  "description": "Guía práctica para pymes: configura SPF, DKIM y DMARC en tu dominio, evita suplantación de correo y protege a tus clientes del phishing. Paso a paso.",
+  "date": "2026-11-09",
+  "updated": "2026-11-09",
+  "category": "Protección de correo y phishing",
+  "readingMinutes": 8,
+  "intro": "<p>Si alguien puede mandar correos <em>como si fuera tu empresa</em>, tus clientes reciben facturas falsas, cambios de datos bancarios y enlaces trampa con tu logo. Ese fraude se llama <strong>suplantación de correo</strong> y se combate con tres registros DNS: <strong>SPF, DKIM y DMARC</strong>. La buena noticia: no necesitas un pentest caro ni un experto de tiempo completo para configurarlos. Necesitas acceso a tu proveedor de DNS, paciencia y este paso a paso.</p><p>En esta guía vas a ver qué hace cada registro, cómo publicarlos sin romper tu correo actual y cómo leer los reportes para saber quién está intentando mandar correos a tu nombre. Si quieres el panorama completo de protección, revisa también nuestro servicio de <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>.</p>",
+  "sections": [
+    {
+      "h2": "Qué hace cada registro (y por qué los tres juntos)",
+      "html": "<p>Piensa en los tres registros como tres filtros en cadena:</p><ul><li><strong>SPF</strong> (Sender Policy Framework): una lista de servidores autorizados para enviar correo desde tu dominio. Se publica como registro TXT en el DNS.</li><li><strong>DKIM</strong> (DomainKeys Identified Mail): una firma criptográfica que se agrega a cada correo saliente. El receptor verifica la firma contra una llave pública publicada en tu DNS.</li><li><strong>DMARC</strong> (Domain-based Message Authentication, Reporting and Conformance): la política que le dice al receptor qué hacer cuando un correo <em>no</em> pasa SPF ni DKIM, y a dónde mandar los reportes.</li></ul><p>SPF y DKIM por sí solos no bastan: sin DMARC, un atacante puede seguir usando tu dominio y tú no te enteras. DMARC es el que cierra el círculo y te da visibilidad. La especificación oficial de DMARC la publica el consorcio DMARC.org y las guías de referencia están en <a href=\"https://dmarc.org/overview/\" target=\"_blank\" rel=\"noopener\">dmarc.org</a>.</p><h3>Antes de tocar nada: inventario</h3><ol><li>Haz una lista de <strong>todo</strong> lo que manda correo con tu dominio: tu proveedor de correo (Google Workspace, Microsoft 365, Zoho, hosting con cPanel), tu sistema de facturación, tu CRM, tu tienda en línea, formularios del sitio web y herramientas de marketing.</li><li>Anota desde qué servicio se envían. Muchos usan servidores propios y necesitan su propio registro SPF o su propia firma DKIM.</li><li>Identifica quién administra tu DNS: puede ser tu registrador (GoDaddy, Namecheap, Hostinger), tu hosting o Cloudflare. Ahí es donde vas a publicar los registros.</li></ol><p>Si tu tienda en línea manda correos de confirmación, revisa también el <a href=\"/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/\">checklist de seguridad para tu tienda en línea</a>.</p>"
+    },
+    {
+      "h2": "Paso 1: configura SPF correctamente",
+      "html": "<p>SPF se publica como un registro TXT en el nombre de tu dominio (o subdominio). Solo debe existir <strong>un</strong> registro SPF por dominio; si hay dos, el receptor los invalida.</p><ol><li>Entra al panel de DNS de tu dominio.</li><li>Busca si ya existe un registro TXT que empiece con v=spf1. Si existe, edítalo; no crees otro.</li><li>Arma la lista de emisores autorizados. Ejemplo típico con Google Workspace: v=spf1 include:_spf.google.com ~all. Con Microsoft 365: v=spf1 include:spf.protection.outlook.com ~all. Con un hosting con cPanel: v=spf1 a mx include:tu-hosting.com ~all.</li><li>Agrega un include por cada servicio que envíe correo a tu nombre (marketing, facturación, CRM).</li><li>Termina con ~all (softfail) mientras pruebas. Cuando todo funcione, cambia a -all (fail) para rechazar emisores no autorizados.</li><li>Guarda y espera la propagación del DNS (puede tardar desde minutos hasta algunas horas).</li></ol><p><strong>Cuidado con el límite de 10 búsquedas DNS:</strong> cada include consume búsquedas. Si tienes muchos servicios, tu SPF puede quedar inválido. Herramientas gratuitas como las de <a href=\"https://www.kitterman.com/spf/validate.html\" target=\"_blank\" rel=\"noopener\">Kitterman</a> te dicen cuántas búsquedas usas.</p><h3>Verifica tu SPF</h3><ul><li>Consulta el registro con dig TXT tudominio.com o con una herramienta en línea.</li><li>Manda un correo de prueba a una cuenta externa (Gmail, Outlook) y revisa los encabezados: debe aparecer spf=pass.</li></ul>"
+    },
+    {
+      "h2": "Paso 2: activa DKIM en tu proveedor de correo",
+      "html": "<p>DKIM no se configura “a mano” en el DNS: primero se genera en tu proveedor de correo y luego publicas la llave pública en el DNS. El proceso varía, pero la lógica es la misma.</p><ol><li>Entra al panel de administración de tu correo (Google Workspace, Microsoft 365, Zoho, cPanel).</li><li>Busca la sección de <strong>autenticación</strong>, <strong>DKIM</strong> o <strong>firmas de correo</strong>.</li><li>Genera la llave. El panel te dará un <strong>selector</strong> (por ejemplo google o default) y un valor TXT que empieza con v=DKIM1.</li><li>Copia ese valor y publícalo en tu DNS como registro TXT con el nombre selector._domainkey.tudominio.com. Ejemplo: google._domainkey.tudominio.com.</li><li>Guarda y espera la propagación.</li><li>Regresa al panel del proveedor y presiona “verificar” o “autenticar”.</li></ol><p>Si usas varios servicios de envío (por ejemplo, tu correo corporativo y una plataforma de email marketing), cada uno necesita su propio selector y su propio registro DKIM. No los mezcles.</p><h3>Verifica tu DKIM</h3><ul><li>Manda un correo de prueba a Gmail y abre “Mostrar original”. Debe aparecer dkim=pass con tu dominio.</li><li>Si aparece dkim=none, el registro no está publicado o el selector no coincide.</li></ul>"
+    },
+    {
+      "h2": "Paso 3: publica DMARC en modo observación",
+      "html": "<p>DMARC se publica como un registro TXT en _dmarc.tudominio.com. La política recomendada para empezar es p=none, que solo observa y reporta sin bloquear nada.</p><ol><li>Crea un registro TXT con nombre _dmarc.tudominio.com.</li><li>Valor inicial sugerido: v=DMARC1; p=none; rua=mailto:dmarc@tudominio.com; ruf=mailto:dmarc@tudominio.com; fo=1.</li><li>Explica cada parte: p=none es la política; rua es la dirección donde recibes reportes agregados; ruf es para reportes forenses; fo=1 pide reportes cuando falla la autenticación.</li><li>Usa una dirección real que revises. Si no quieres recibir reportes en tu buzón principal, crea una alias como dmarc@tudominio.com.</li><li>Guarda y espera la propagación.</li><li>Durante 2 a 4 semanas, revisa los reportes. Llegan en XML; puedes leerlos con herramientas gratuitas como <a href=\"https://dmarc.postmarkapp.com/\" target=\"_blank\" rel=\"noopener\">DMARC Postmark</a> o <a href=\"https://dmarcian.com/dmarc-inspector/\" target=\"_blank\" rel=\"noopener\">dmarcian</a>.</li></ol><p>En esta fase vas a descubrir qué servicios legítimos estaban mandando correo sin SPF ni DKIM. Corrígelos antes de endurecer la política.</p>"
+    },
+    {
+      "h2": "Paso 4: endurece la política sin romper el correo",
+      "html": "<p>Cuando los reportes muestren que todo tu correo legítimo pasa SPF y DKIM, es momento de subir la política. Hazlo por etapas:</p><ol><li><strong>Semana 1-2:</strong> mantén p=none y corrige los emisores que fallan.</li><li><strong>Semana 3-4:</strong> cambia a p=quarantine; pct=25. Solo el 25% de los correos que fallan se marcan como sospechosos.</li><li><strong>Semana 5-6:</strong> sube a pct=50 y luego pct=100.</li><li><strong>Cuando estés seguro:</strong> cambia a p=reject. Los correos no autenticados se rechazan.</li><li>Agrega sp=reject para que los subdominios hereden la política estricta.</li><li>Considera adkim=s y aspf=s (alineación estricta) solo si controlas todos tus emisores.</li></ol><p><strong>No saltes directo a p=reject.</strong> Si lo haces sin revisar reportes, puedes bloquear facturas, notificaciones de tu tienda o correos de tu CRM. Un correo de facturación bloqueado cuesta más que el phishing que intentas evitar.</p><h3>Qué revisar en los reportes</h3><ul><li><strong>IPs desconocidas</strong> que mandan correo con tu dominio: posible suplantación.</li><li><strong>Servicios legítimos</strong> que no están en SPF: agrégalos.</li><li><strong>Subdominios</strong> que mandan correo sin política: publica DMARC también en ellos o bloquea su envío.</li></ul>"
+    },
+    {
+      "h2": "Errores comunes que rompen tu correo",
+      "html": "<ul><li><strong>Dos registros SPF:</strong> invalida el SPF completo. Deja solo uno.</li><li><strong>Más de 10 búsquedas DNS en SPF:</strong> el registro se ignora. Simplifica o usa un servicio que aplane el SPF.</li><li><strong>DKIM sin selector correcto:</strong> la firma no valida. Revisa que el nombre del registro coincida con el selector del proveedor.</li><li><strong>DMARC sin dirección de reportes:</strong> no te enteras de nada. Siempre incluye rua.</li><li><strong>Olvidar subdominios:</strong> los atacantes usan facturas.tudominio.com si no está protegido.</li><li><strong>Publicar DMARC en el dominio equivocado:</strong> debe ir en _dmarc.tudominio.com, no en el dominio raíz.</li><li><strong>No documentar:</strong> deja un archivo con qué servicio usa qué selector y qué include. Te salvará cuando cambies de proveedor.</li></ul><p>Si además tu servidor de correo está expuesto, revisa <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor o VPS está expuesto a internet</a>. Y si ya sufriste un incidente, el artículo sobre <a href=\"/blog/costo-de-un-incidente-de-ciberseguridad-pyme/\">cuánto le cuesta un incidente de ciberseguridad a una pyme</a> te ayuda a dimensionarlo.</p>"
+    },
+    {
+      "h2": "Cómo saber si alguien está mandando correos a tu nombre",
+      "html": "<p>DMARC en modo observación te da la respuesta, pero requiere que alguien lea los reportes. Señales de que tu dominio está siendo suplantado:</p><ul><li>Clientes que preguntan por correos que tú no enviaste (facturas, cambios de cuenta bancaria).</li><li>Reportes DMARC con IPs que no reconoces enviando con tu dominio.</li><li>Aumento de correos rebotados o quejas de spam.</li><li>Mensajes en redes sociales o WhatsApp de contactos que recibieron algo raro con tu nombre.</li></ul><p>Si detectas suplantación activa, no respondas al atacante ni reenvíes el correo. Documenta, bloquea y avisa a tus clientes por un canal distinto. Nuestro servicio de <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a> puede ayudarte a contener el problema.</p><p>La configuración de SPF, DKIM y DMARC es un punto de partida, no un destino. Los dominios cambian, los proveedores se actualizan y los atacantes prueban nuevas rutas. Por eso la <a href=\"/servicios/monitoreo-de-ciberseguridad/\">vigilancia continua</a> importa: revisar reportes, detectar cambios en DNS y vigilar señales de suplantación es trabajo recurrente. En Inspector Hacker lo hacemos con IA para pymes, sin pentest caro. Si quieres comparar enfoques, lee <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a> y conoce nuestros <a href=\"/planes/\">planes</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Necesito contratar un servicio externo para configurar SPF, DKIM y DMARC?",
+      "a": "No es obligatorio. Si tienes acceso al DNS y al panel de tu proveedor de correo, puedes hacerlo tú con esta guía. Lo que sí conviene es que alguien revise los reportes DMARC de forma periódica, porque ahí aparecen los intentos de suplantación y los servicios mal configurados."
+    },
+    {
+      "q": "¿Cuánto tarda en hacer efecto un cambio en el DNS?",
+      "a": "Depende del TTL que tengas configurado en tus registros. Puede ser desde unos minutos hasta varias horas. Si vas a hacer cambios importantes, baja el TTL a 300 segundos un día antes, haz el cambio y vuelve a subirlo después."
+    },
+    {
+      "q": "¿Puedo poner p=reject de inmediato?",
+      "a": "No lo recomendamos. Sin reportes previos no sabes qué servicios legítimos están mandando correo sin SPF ni DKIM. Si aplicas reject de golpe, puedes bloquear facturas, notificaciones de tu tienda o correos de tu CRM. Avanza por etapas: none, quarantine con porcentaje y luego reject."
+    },
+    {
+      "q": "¿DMARC también protege los subdominios?",
+      "a": "Solo si publicas el registro en cada subdominio o si usas la etiqueta sp= en tu política principal. Los atacantes suelen usar subdominios olvidados, así que revisa cuáles tienes y protégelos o elimínalos si no los usas."
+    }
+  ],
+  "sources": [
+    {
+      "title": "DMARC.org - Overview",
+      "url": "https://dmarc.org/overview/"
+    },
+    {
+      "title": "NIST - SPF, DKIM y DMARC",
+      "url": "https://www.nist.gov/publications"
+    },
+    {
+      "title": "FTC - Email authentication",
+      "url": "https://www.ftc.gov/business-guidance/resources"
+    }
+  ],
+  "related": [],
+  "generated": true
+}

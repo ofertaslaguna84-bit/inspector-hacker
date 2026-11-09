@@ -45,6 +45,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/como-saber-si-tu-servidor-esta-expuesto/"/>
   </url>
   <url>
+    <loc>https://inspectorhacker.com/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/"/>
+  </url>
+  <url>
     <loc>https://inspectorhacker.com/blog/costo-de-un-incidente-de-ciberseguridad-pyme/</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
