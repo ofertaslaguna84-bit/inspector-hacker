@@ -1,0 +1,74 @@
+{
+  "lang": "en",
+  "slug": "spf-dkim-dmarc-step-by-step-small-business",
+  "pair": null,
+  "topic": "How to set up SPF, DKIM and DMARC step by step so nobody can send email as your business",
+  "title": "Set Up SPF, DKIM and DMARC Step by Step",
+  "h1": "How to Set Up SPF, DKIM and DMARC Step by Step So Nobody Can Send Email as Your Business",
+  "description": "A plain-English, step-by-step guide for small businesses to configure SPF, DKIM and DMARC records and stop email spoofing, with checklists and FAQs.",
+  "date": "2026-11-08",
+  "updated": "2026-11-08",
+  "category": "Email Security",
+  "readingMinutes": 9,
+  "intro": "<p>If someone can send email that looks like it comes from your address, they can invoice your customers, ask your staff for passwords, or damage your reputation in a single afternoon. The good news: three DNS records — SPF, DKIM and DMARC — make it much harder for anyone to send email as your business. You do not need a security team to set them up. You need access to your domain's DNS settings and about an hour of careful work.</p><p>This guide walks you through it in order. Do not skip ahead: DMARC depends on SPF and DKIM being in place first. If you would rather have someone configure and watch this for you, our <a href=\"/en/services/email-security-phishing-protection/\">email security and phishing protection service</a> covers exactly this.</p>",
+  "sections": [
+    {
+      "h2": "What SPF, DKIM and DMARC actually do",
+      "html": "<p>These three records work together, and each covers a different gap:</p><ul><li><strong>SPF (Sender Policy Framework)</strong> is a DNS record that lists which servers are allowed to send email for your domain. A receiving mail server checks the sending server's IP against that list.</li><li><strong>DKIM (DomainKeys Identified Mail)</strong> adds a cryptographic signature to each outgoing message. The receiver verifies the signature using a public key published in your DNS. If the message was altered in transit, the check fails.</li><li><strong>DMARC (Domain-based Message Authentication, Reporting and Conformance)</strong> tells receiving servers what to do when a message fails SPF and DKIM checks, and where to send reports about those failures. It also requires that the visible From address matches the domain that was authenticated.</li></ul><p>SPF alone is easy to bypass because it checks the envelope sender, not what the recipient sees. DKIM alone does not tell anyone what to do when a signature is missing. DMARC is the policy layer that ties them together and gives you visibility. That is why the order matters: SPF first, DKIM second, DMARC last.</p>"
+    },
+    {
+      "h2": "Step 1: Inventory every service that sends email for your domain",
+      "html": "<p>Before you touch DNS, write down every system that sends email using your domain. If you publish an SPF record that omits a legitimate sender, you will break real email — password resets, invoices, newsletters. Check for:</p><ul><li>Your email host (Google Workspace, Microsoft 365, Zoho, your web host's mail server).</li><li>Transactional email tools (receipts, order confirmations, password resets).</li><li>Marketing platforms and newsletter tools.</li><li>CRM, helpdesk, scheduling and invoicing tools.</li><li>Website contact forms and e-commerce platforms.</li><li>Any legacy server or device that sends alerts through your domain.</li></ul><p>Two practical ways to find senders: ask each department or vendor, and read your existing DNS records. If an SPF record already exists, it will list some of them. Also check the headers of a few real messages sent from your systems — the <em>Return-Path</em> and <em>Received</em> lines show which servers are involved.</p><p>Write the list down and keep it somewhere shared. You will update it every time you add or remove a tool.</p>"
+    },
+    {
+      "h2": "Step 2: Publish your SPF record",
+      "html": "<p>SPF is a single TXT record on your root domain. You can only have one SPF record per domain — if you publish two, SPF fails. Here is how to do it:</p><ol><li>Log in to the DNS management panel where your domain's records live (your registrar, Cloudflare, Route 53, or your host).</li><li>Look for an existing TXT record that starts with <strong>v=spf1</strong>. If there is one, edit it. Do not create a second one.</li><li>Build the record from your inventory. A typical record looks like: <strong>v=spf1 include:_spf.google.com include:sendgrid.net ip4:203.0.113.10 -all</strong>. Each <em>include</em> or <em>ip4</em> mechanism authorizes a sender. Your provider's help center publishes the exact include value to use — copy it from there, not from a blog.</li><li>End with <strong>-all</strong> (hard fail) once you are confident the list is complete. While you are still testing, <strong>~all</strong> (soft fail) is safer because it marks unauthorized mail but does not reject it.</li><li>Keep the record under the 10 DNS lookup limit. Each <em>include</em> can trigger additional lookups, and going over the limit causes a permerror. If you are close to the limit, consolidate senders.</li><li>Save, then wait for DNS propagation (often minutes, sometimes a few hours).</li></ol><p>Test with a free SPF checker or by sending a message to a mailbox you control at another provider and reading the authentication results in the headers.</p>"
+    },
+    {
+      "h2": "Step 3: Turn on DKIM at each sender",
+      "html": "<p>DKIM keys are generated by the sending platform, not by you. The usual flow is:</p><ol><li>In your email provider's admin console, find the DKIM or email authentication section.</li><li>Generate a key for your domain. The platform gives you a selector name (something like <em>google</em> or <em>selector1</em>) and a public key value.</li><li>In DNS, create a TXT record at <strong>selector._domainkey.yourdomain.com</strong> with the value the platform provides. Some providers use a CNAME instead — follow their instructions exactly.</li><li>Return to the platform and click verify. It may take a short while for DNS to propagate.</li><li>Repeat for every sending platform that supports DKIM. Many transactional email tools and marketing platforms sign with their own key; enable it there too.</li></ol><p>To confirm, send a test message to a Gmail or Outlook address, open the full headers, and look for <strong>dkim=pass</strong>. If you see <em>dkim=none</em>, the message was not signed — go back and check the selector record.</p>"
+    },
+    {
+      "h2": "Step 4: Publish DMARC in monitoring mode first",
+      "html": "<p>DMARC is a TXT record at <strong>_dmarc.yourdomain.com</strong>. Start in a mode that reports but does not block, so you can find legitimate senders you missed:</p><ol><li>Create a TXT record at <strong>_dmarc.yourdomain.com</strong> with: <strong>v=DMARC1; p=none; rua=mailto:dmarc-reports@yourdomain.com; ruf=mailto:dmarc-reports@yourdomain.com; fo=1</strong>.</li><li>Set up the mailbox that receives reports. Reports arrive as XML attachments, which are hard to read by hand — use a DMARC reporting tool or have your IT provider parse them.</li><li>Wait two to four weeks. Read the reports and identify every source sending mail as your domain. Anything you do not recognize is either a forgotten legitimate tool or someone spoofing you.</li><li>Fix gaps: add missing senders to SPF, enable DKIM where it is missing, and remove tools you no longer use.</li><li>Move to enforcement: change <strong>p=none</strong> to <strong>p=quarantine</strong>, then after another period of clean reports, to <strong>p=reject</strong>. Go one step at a time and watch for delivery problems in your own mail flow.</li><li>Add <strong>sp=reject</strong> so subdomains are covered too, and consider <strong>pct=</strong> to roll out enforcement gradually if you have high mail volume.</li></ol><p><strong>p=reject</strong> is the goal: it tells receiving servers to refuse messages that fail authentication and claim to be from your domain. That is what stops spoofing in practice.</p>"
+    },
+    {
+      "h2": "Step 5: Verify, document and keep it current",
+      "html": "<p>Configuration is not a one-time task. DNS records drift, vendors change, and new tools get added without anyone telling IT. Build a short routine:</p><ul><li><strong>Verify quarterly:</strong> run an SPF, DKIM and DMARC check on your domain and confirm DMARC is still at <strong>p=reject</strong>.</li><li><strong>Check subdomains:</strong> spoofers often use a subdomain that has no records. Publish SPF and DMARC coverage for subdomains you actually use, and remove DNS entries for ones you do not.</li><li><strong>Update on change:</strong> every time you add a marketing tool, helpdesk or e-commerce platform, add its sender to SPF and enable DKIM before launch.</li><li><strong>Watch the reports:</strong> a sudden spike in failed messages from your domain can mean someone is spoofing you, or that a legitimate sender broke.</li><li><strong>Document it:</strong> keep a one-page record of which systems send email, who owns each one, and where the DNS is managed. This saves hours during an incident.</li></ul><p>Email authentication also supports your broader obligations. If you handle customer financial data, read our plain-English guide to <a href=\"/en/blog/ftc-safeguards-rule-small-business/\">the FTC Safeguards Rule</a>, which expects reasonable safeguards for customer information.</p>"
+    },
+    {
+      "h2": "Where this fits in a small-business security program",
+      "html": "<p>SPF, DKIM and DMARC close one specific door: forged sender addresses. They do not stop a compromised mailbox from sending real phishing from a real account, they do not protect you from lookalike domains registered by attackers, and they do not tell you when something else on your network is exposed. Those gaps are why configuration alone is not enough.</p><p>A practical sequence for most small businesses is: lock down email authentication, then keep watching. Watching means checking that your DNS records have not changed, that no new lookalike domain is impersonating you, that your website and servers are not exposing something new, and that your mail flow is behaving normally. That is the difference between a one-time setup and <a href=\"/en/monitoring-vs-pentest/\">continuous monitoring versus a pentest</a> — a pentest is a snapshot, monitoring is the ongoing check.</p><p>If you want a second set of eyes, our <a href=\"/en/services/cybersecurity-monitoring/\">continuous cybersecurity monitoring service</a> is built for businesses without a security team, and our <a href=\"/en/pricing/\">plans and pricing</a> are published openly. You can also start with the basics in our <a href=\"/en/cybersecurity-for-small-business/\">small-business cybersecurity guide</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does it take for SPF, DKIM and DMARC to start working?",
+      "a": "DNS changes usually propagate within minutes to a few hours, depending on your provider's TTL settings. Receiving servers may cache old records longer. Expect to verify results within 24 to 48 hours, and give DMARC reporting two to four weeks before moving from p=none to enforcement."
+    },
+    {
+      "q": "Will setting up DMARC block my legitimate email?",
+      "a": "Not if you start with p=none. In that mode, DMARC only reports and does not change delivery. Once reports show all your legitimate senders passing SPF and DKIM, move to quarantine and then reject. Never jump straight to p=reject without reviewing reports first."
+    },
+    {
+      "q": "Can I have more than one SPF record?",
+      "a": "No. Multiple SPF records on the same domain cause a permanent error and receivers will treat SPF as failing. Merge everything into one TXT record starting with v=spf1, and keep the total DNS lookups under ten."
+    },
+    {
+      "q": "Does DMARC stop someone from registering a similar domain and impersonating us?",
+      "a": "No. DMARC protects your exact domain and its subdomains. Attackers can still register lookalike domains. Catching those requires monitoring for newly registered domains that resemble yours, which is one reason ongoing monitoring matters after the initial setup."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NIST SP 800-177 Rev. 1: Trustworthy Email",
+      "url": "https://csrc.nist.gov/pubs/sp/800/177/r1/final"
+    },
+    {
+      "title": "FTC: Data Breach Response — A Guide for Business",
+      "url": "https://www.ftc.gov/business-guidance/resources/data-breach-response-guide-business"
+    }
+  ],
+  "related": [],
+  "generated": true
+}

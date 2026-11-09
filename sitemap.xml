@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://inspectorhacker.com/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/"/>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://inspectorhacker.com/blog/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/"/>
@@ -490,7 +490,7 @@
   </url>
   <url>
     <loc>https://inspectorhacker.com/en/blog/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/"/>
@@ -522,6 +522,14 @@
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/shopify-woocommerce-security-checklist/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/spf-dkim-dmarc-step-by-step-small-business/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/spf-dkim-dmarc-step-by-step-small-business/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/blog/spf-dkim-dmarc-step-by-step-small-business/"/>
   </url>
   <url>
     <loc>https://inspectorhacker.com/en/blog/whatsapp-business-meta-account-hacked/</loc>
