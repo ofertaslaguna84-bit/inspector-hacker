@@ -1,0 +1,78 @@
+{
+ "lang": "es",
+ "slug": "costo-de-un-incidente-de-ciberseguridad-pyme",
+ "pair": "cost-of-a-cybersecurity-incident-small-business",
+ "title": "¿Cuánto le cuesta un ciberataque a una pyme? Cómo calcularlo",
+ "h1": "Cuánto le cuesta un incidente de ciberseguridad a una pyme (y cómo calcular el tuyo)",
+ "description": "Qué costos trae un ciberataque a una pyme (paro, recuperación, legal, fraude por correo) y una fórmula para estimar el tuyo, con cifras de IBM, FBI y Verizon.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Gestión de riesgo",
+ "readingMinutes": 8,
+ "intro": "<p>\"¿Y a mí cuánto me costaría?\" es la pregunta correcta antes de decidir cuánto invertir en seguridad. El problema es que las cifras que circulan suelen venir de estudios de empresas grandes y no se trasladan directo a una pyme de 30 o 200 personas.</p><p>Aquí verás qué cifras públicas existen (con su fuente y su letra chica) y, más útil, una fórmula para estimar el costo de un incidente <strong>con los números de tu propia empresa</strong>.</p>",
+ "sections": [
+  {
+   "h2": "Lo que dicen los estudios (y su letra chica)",
+   "html": "<ul><li><strong>IBM Cost of a Data Breach 2026:</strong> el costo promedio global de una brecha de datos fue de <a href=\"https://www.ibm.com/reports/data-breach\" rel=\"noopener\">4.99 millones de dólares</a>, 12 % más que el año anterior. Ojo: el estudio se basa en organizaciones que sufrieron brechas importantes, muchas de ellas grandes; úsalo como referencia del tipo de costos, no como el número de tu pyme.</li><li><strong>FBI, Internet Crime Report 2024:</strong> el centro de denuncias del FBI (IC3) recibió <a href=\"https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf\" rel=\"noopener\">859,532 denuncias con pérdidas reportadas por 16,600 millones de dólares</a> en Estados Unidos. El fraude por correo empresarial (BEC) sumó 21,442 denuncias y 2,770 millones de dólares en pérdidas: en promedio, unos 129,000 dólares por denuncia (cálculo propio dividiendo ambas cifras).</li><li><strong>Verizon DBIR 2025:</strong> el pago mediano de rescate por ransomware fue de <a href=\"https://www.verizon.com/about/news/2025-data-breach-investigations-report\" rel=\"noopener\">115,000 dólares</a>, y el 64 % de las víctimas no pagó.</li></ul><p>El mismo reporte del FBI aclara que sus pérdidas por ransomware no incluyen negocio perdido, tiempo, salarios, archivos ni equipo. Es decir: el rescate es solo una parte del costo, y muchas veces no la mayor.</p>"
+  },
+  {
+   "h2": "Las cinco cubetas de costo de un incidente",
+   "html": "<ol><li><strong>Paro de operación.</strong> Horas o días sin facturar, sin producir, sin surtir pedidos, con la nómina corriendo. Suele ser el costo más grande en una pyme.</li><li><strong>Recuperación técnica.</strong> Proveedor de sistemas en horas extra, especialistas en respuesta a incidentes, equipos o licencias nuevas, reconstrucción de servidores.</li><li><strong>Fraude directo.</strong> Transferencias a cuentas falsas por un correo o WhatsApp suplantado (BEC), cargos en tarjetas, anuncios pagados por el atacante.</li><li><strong>Legal y cumplimiento.</strong> Abogados, avisos a clientes y empleados cuyos datos se expusieron (en México, la nueva ley de datos personales lo exige en ciertos casos: <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">lo explicamos aquí</a>), posibles multas y reclamaciones.</li><li><strong>Reputación y ventas.</strong> Clientes que se van, contratos que no se renuevan, proveedores corporativos que te piden auditorías antes de seguir trabajando contigo.</li></ol>"
+  },
+  {
+   "h2": "Una fórmula simple para estimar el tuyo",
+   "html": "<p>Saca estos números con tu contador; en media hora tienes una estimación razonable:</p><ul><li><strong>A. Costo de un día de paro</strong> = (ventas anuales ÷ días hábiles × margen bruto) + nómina diaria de las personas que no pueden trabajar.</li><li><strong>B. Días de paro realistas</strong>: si tus respaldos están probados, quizá 1 a 3 días; si nunca has probado restaurar, piensa en una o dos semanas.</li><li><strong>C. Recuperación técnica</strong>: cotiza con tu proveedor cuánto cobraría por reconstruir servidores y equipos; suma respuesta a incidentes especializada.</li><li><strong>D. Fraude posible</strong>: el monto de la transferencia más grande que tu empresa hace normalmente a un proveedor. Es lo que un correo falso bien hecho intentaría robar.</li><li><strong>E. Legal y avisos</strong>: honorarios de abogado y costo de avisar a tus clientes.</li></ul><p><strong>Costo estimado = (A × B) + C + D + E</strong>, sin contar reputación.</p><p>Ejemplo ilustrativo (números inventados para mostrar la cuenta, no un caso real): una distribuidora con 60 millones de pesos de venta anual, 250 días hábiles y 25 % de margen pierde 60,000 pesos de margen por día, más 40,000 de nómina inactiva: 100,000 pesos por día. Con 5 días de paro son 500,000; súmale 150,000 de recuperación, una transferencia típica de 300,000 a proveedor y 80,000 de legal: más de un millón de pesos.</p>"
+  },
+  {
+   "h2": "Por qué el paro pesa más en una pyme",
+   "html": "<p>Una empresa grande tiene equipos de TI, sitios alternos y seguros. Una pyme normalmente tiene un servidor, un proveedor externo y un respaldo que nadie ha probado. Cada día de paro sale completo de la utilidad. Por eso la variable que más mueve tu fórmula es <strong>B, los días de paro</strong>, y lo que la reduce no es caro: respaldos probados, accesos remotos cerrados y alguien que detecte el problema temprano.</p>"
+  },
+  {
+   "h2": "Cómo bajar cada cubeta",
+   "html": "<ul><li><strong>Paro:</strong> respaldos 3-2-1 con prueba de restauración trimestral (ver <a href=\"/blog/ransomware-pymes-mexico/\">ransomware en pymes</a>).</li><li><strong>Recuperación:</strong> un plan de respuesta de una hoja y un equipo identificado antes del incidente (<a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a>).</li><li><strong>Fraude:</strong> SPF, DKIM y DMARC en tu dominio, y la regla de confirmar por teléfono todo cambio de cuenta bancaria (<a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>).</li><li><strong>Legal:</strong> aviso de privacidad al día e inventario de datos personales.</li><li><strong>Reputación:</strong> detectar pronto y comunicar con claridad.</li></ul>"
+  },
+  {
+   "h2": "Compara contra lo que cuesta vigilar",
+   "html": "<p>Con tu número en la mano, la decisión se vuelve aritmética. La <a href=\"/servicios/monitoreo-de-ciberseguridad/\">vigilancia continua de ciberseguridad con IA</a> cuesta una fracción de un solo día de paro para muchas empresas medianas: los precios están publicados en <a href=\"/planes/\">planes</a>. No sustituye a un pentest cuando un cliente o un regulador te lo exige, pero sí detecta todas las semanas las fallas que causan la mayoría de los incidentes; la diferencia está en <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Cuánto cuesta en promedio una brecha de datos?",
+   "a": "El informe Cost of a Data Breach 2026 de IBM reporta un promedio global de 4.99 millones de dólares, pero se basa en organizaciones con brechas importantes, muchas grandes. Para una pyme conviene calcular con sus propios números."
+  },
+  {
+   "q": "¿Cuál es el costo más grande para una pyme?",
+   "a": "Normalmente el paro de operación: días sin facturar ni producir con la nómina corriendo. Por eso los respaldos probados y la detección temprana son lo que más reduce el costo."
+  },
+  {
+   "q": "¿Cuánto se pierde por fraude de correo empresarial?",
+   "a": "El Internet Crime Report 2024 del FBI registra 21,442 denuncias de BEC con 2,770 millones de dólares en pérdidas en Estados Unidos, unos 129,000 dólares en promedio por denuncia."
+  },
+  {
+   "q": "¿Cómo calculo el costo para mi empresa?",
+   "a": "Multiplica el costo de un día de paro por los días realistas que tardarías en recuperarte y suma recuperación técnica, el fraude posible (tu transferencia típica más grande) y gastos legales."
+  }
+ ],
+ "sources": [
+  {
+   "title": "IBM — Cost of a Data Breach Report 2026",
+   "url": "https://www.ibm.com/reports/data-breach"
+  },
+  {
+   "title": "FBI IC3 — Internet Crime Report 2024 (PDF)",
+   "url": "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf"
+  },
+  {
+   "title": "Verizon — 2025 Data Breach Investigations Report (comunicado)",
+   "url": "https://www.verizon.com/about/news/2025-data-breach-investigations-report"
+  }
+ ],
+ "related": [
+  "/planes/",
+  "/servicios/monitoreo-de-ciberseguridad/",
+  "/servicios/respuesta-a-incidentes/",
+  "/vigilancia-vs-pentest/",
+  "/blog/ransomware-pymes-mexico/"
+ ]
+}

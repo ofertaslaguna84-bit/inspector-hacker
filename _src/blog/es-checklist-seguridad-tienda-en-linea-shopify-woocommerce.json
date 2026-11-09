@@ -1,0 +1,94 @@
+{
+ "lang": "es",
+ "slug": "checklist-seguridad-tienda-en-linea-shopify-woocommerce",
+ "pair": "shopify-woocommerce-security-checklist",
+ "title": "Checklist de seguridad para tiendas Shopify y WooCommerce",
+ "h1": "Checklist de seguridad para tu tienda en línea en Shopify o WooCommerce",
+ "description": "Lista práctica para proteger una tienda Shopify o WooCommerce: dos pasos para el personal, apps y plugins, actualizaciones, pagos, skimming, respaldos y correo.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Comercio electrónico",
+ "readingMinutes": 8,
+ "intro": "<p>Una tienda en línea junta en un solo lugar lo que más le interesa a un atacante: cuentas de clientes, direcciones, pedidos y la página donde la gente escribe su tarjeta. La buena noticia es que la mayoría de los incidentes en tiendas de pymes no vienen de ataques sofisticados, sino de una cuenta de personal sin segundo factor, un plugin abandonado o un correo falso a nombre de la tienda.</p><p>Esta lista separa lo que aplica a Shopify (plataforma administrada) y a WooCommerce (WordPress que tú o tu hosting administran). Imprímela y palomea.</p>",
+ "sections": [
+  {
+   "h2": "1. Cuentas del personal: dos pasos para todos",
+   "html": "<ul><li><strong>Activa la autenticación en dos pasos</strong> en la cuenta del dueño y pide a cada persona del equipo que la active en la suya. En Shopify, según su <a href=\"https://help.shopify.com/es/manual/your-account/account-security/two-step-authentication\" rel=\"noopener\">Centro de ayuda</a>, solo en Shopify Plus la tienda puede exigirla a todo el personal; en los demás planes cada miembro la configura en su cuenta. Shopify también indica que los SMS ya no se pueden configurar como método nuevo y que para cobrar con Shopify Payments necesitas tener la autenticación en dos pasos activa.</li><li>En WooCommerce, la <a href=\"https://developer.woocommerce.com/docs/best-practices/security/security-best-practices\" rel=\"noopener\">guía oficial de buenas prácticas</a> recomienda activar 2FA, limitar los intentos de inicio de sesión y usar contraseñas únicas y fuertes.</li><li><strong>Una cuenta por persona</strong>, con los permisos mínimos: el que empaca no necesita ver reportes financieros ni instalar apps.</li><li>Da de baja el mismo día a exempleados, agencias y freelancers que ya no trabajan contigo.</li></ul>"
+  },
+  {
+   "h2": "2. Apps y plugins: menos es más",
+   "html": "<ul><li>Haz una lista de las apps (Shopify) o plugins (WooCommerce) instalados y quién los pidió. Desinstala lo que no uses.</li><li>Instala solo desde fuentes confiables. WooCommerce recomienda usar los directorios oficiales, revisar periódicamente los plugins, quitar los que ya no tienen mantenimiento o tienen vulnerabilidades conocidas y <strong>nunca usar versiones \"nulled\" o piratas</strong>, que pueden traer código malicioso.</li><li>Revisa los permisos que pide cada app: si una app de reseñas pide acceso a pedidos y clientes, pregunta por qué.</li></ul>"
+  },
+  {
+   "h2": "3. Actualizaciones y entorno de pruebas (WooCommerce)",
+   "html": "<p>En Shopify la plataforma se actualiza sola. En WooCommerce eres tú (o tu hosting) quien actualiza:</p><ul><li>Actualizaciones automáticas para el núcleo de WordPress, como recomienda la guía de WooCommerce.</li><li>Revisión semanal de actualizaciones de WooCommerce, plugins y tema.</li><li>Un sitio de pruebas (staging) para probar actualizaciones grandes antes de pasarlas a la tienda real.</li><li>PHP y base de datos en versiones con soporte; pregúntale a tu hosting.</li><li>Un firewall de aplicación web (WAF), ya sea del hosting, de tu CDN o de un plugin de seguridad, para filtrar intentos de fuerza bruta y ataques conocidos.</li></ul>"
+  },
+  {
+   "h2": "4. Pagos: deja que el proveedor cargue el peso",
+   "html": "<p>El estándar de seguridad de la industria de tarjetas (PCI DSS) aplica a cualquier negocio que almacene, procese o transmita datos de tarjetas, <a href=\"https://www.pcisecuritystandards.org/merchants/\" rel=\"noopener\">sin importar su tamaño</a>, y es tu banco adquirente o la marca de la tarjeta quien define cómo validas el cumplimiento. La forma más sencilla de reducir tu carga:</p><ul><li><strong>Nunca guardes números de tarjeta</strong> en tu sistema, en hojas de cálculo ni en correos.</li><li>Usa pasarelas donde la tarjeta se captura en la página o el formulario del proveedor (Shopify Payments, Stripe, Mercado Pago, PayPal, Conekta, etc.). Shopify declara que está <a href=\"https://www.shopify.com/security\" rel=\"noopener\">certificada como PCI DSS nivel 1</a>.</li><li>En WooCommerce, prefiere integraciones con campos alojados por la pasarela y no plugins que reciben la tarjeta en tu servidor.</li></ul>"
+  },
+  {
+   "h2": "5. Skimming: el código que roba tarjetas en tu checkout",
+   "html": "<p>El skimming digital (o e-skimming) es cuando alguien inyecta un script en tu sitio que copia lo que el cliente escribe en el pago. El PCI Security Standards Council explica que PCI DSS v4.x incluye los <a href=\"https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming\" rel=\"noopener\">requisitos 6.4.3 y 11.6.1</a>, enfocados en que los scripts de la página de pago estén autorizados, se verifique su integridad y se vigile que no los alteren.</p><ul><li>Haz inventario de los scripts de terceros en tu tienda (chat, analítica, píxeles, reseñas) y quita los que no uses.</li><li>Restringe quién puede editar el tema o el código de la tienda.</li><li>Vigila cambios en los archivos del tema y del checkout; un cambio que nadie pidió es una alerta.</li></ul>"
+  },
+  {
+   "h2": "6. Respaldos y correo del dominio",
+   "html": "<ul><li><strong>Respaldos</strong>: en WooCommerce, respaldo automático de base de datos, archivos y medios, con copias fuera del servidor, como recomienda la guía oficial. Prueba restaurarlo. En Shopify, exporta periódicamente productos, clientes y pedidos, y considera una app de respaldo para el tema.</li><li><strong>Correo</strong>: configura SPF, DKIM y DMARC en tu dominio. Google exige desde el 1 de febrero de 2024 que <a href=\"https://support.google.com/a/answer/81126?hl=es\" rel=\"noopener\">quien envía más de 5,000 mensajes al día a Gmail tenga DMARC</a>, y todos los remitentes deben autenticar con SPF o DKIM. Además de mejorar la entrega, evita que suplanten tu tienda para estafar a tus clientes.</li><li>Usa un correo de la empresa (no personal) como dueño de la tienda, del dominio y de la pasarela, con 2FA.</li></ul>"
+  },
+  {
+   "h2": "Una revisión no basta: vigílalo",
+   "html": "<p>Las tiendas cambian todas las semanas: una app nueva, un plugin con vulnerabilidad recién publicada, un script que alguien pegó para una campaña. La <a href=\"/servicios/auditoria-de-seguridad-web/\">auditoría de seguridad web</a> te da la foto inicial y la <a href=\"/servicios/monitoreo-de-ciberseguridad/\">vigilancia continua</a> revisa cada semana el sitio, los cambios y las vulnerabilidades de tus plugins, con aviso en menos de 24 horas si algo es crítico. Sin pentest caro: <a href=\"/vigilancia-vs-pentest/\">aquí explicamos la diferencia</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Shopify es más seguro que WooCommerce?",
+   "a": "Son modelos distintos. En Shopify la plataforma administra servidores y actualizaciones; tú cuidas cuentas, apps y scripts. En WooCommerce también eres responsable del hosting, WordPress, plugins y respaldos. Ambos pueden ser seguros si se mantienen."
+  },
+  {
+   "q": "¿Puedo obligar a mi personal a usar autenticación en dos pasos en Shopify?",
+   "a": "Según el Centro de ayuda de Shopify, solo en Shopify Plus la tienda puede exigirla a toda la organización. En los demás planes cada miembro la activa en su cuenta, así que conviene hacerlo regla interna."
+  },
+  {
+   "q": "¿Tengo que cumplir con PCI DSS si uso una pasarela de pago?",
+   "a": "PCI DSS aplica a cualquier comercio que acepte tarjetas, pero usar una pasarela que captura la tarjeta en su propio formulario reduce mucho lo que te toca. Tu banco adquirente o la pasarela te dirán cómo validar el cumplimiento."
+  },
+  {
+   "q": "¿Qué es el skimming digital?",
+   "a": "Es un script malicioso inyectado en tu tienda que copia los datos de tarjeta que escriben tus clientes en el pago. Se previene limitando scripts de terceros, restringiendo quién edita el código y vigilando cambios en el checkout."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Shopify — Autenticación en dos pasos",
+   "url": "https://help.shopify.com/es/manual/your-account/account-security/two-step-authentication"
+  },
+  {
+   "title": "Shopify — Security",
+   "url": "https://www.shopify.com/security"
+  },
+  {
+   "title": "WooCommerce — Security best practices",
+   "url": "https://developer.woocommerce.com/docs/best-practices/security/security-best-practices"
+  },
+  {
+   "title": "PCI Security Standards Council — Merchants",
+   "url": "https://www.pcisecuritystandards.org/merchants/"
+  },
+  {
+   "title": "PCI SSC — Payment Page Security and Preventing E-Skimming",
+   "url": "https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming"
+  },
+  {
+   "title": "Google — Lineamientos para remitentes de correo",
+   "url": "https://support.google.com/a/answer/81126?hl=es"
+  }
+ ],
+ "related": [
+  "/servicios/auditoria-de-seguridad-web/",
+  "/servicios/monitoreo-de-ciberseguridad/",
+  "/servicios/proteccion-de-correo-y-phishing/",
+  "/vigilancia-vs-pentest/",
+  "/planes/"
+ ]
+}

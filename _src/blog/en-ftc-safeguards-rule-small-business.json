@@ -1,0 +1,101 @@
+{
+ "lang": "en",
+ "slug": "ftc-safeguards-rule-small-business",
+ "pair": null,
+ "title": "FTC Safeguards Rule for Small Businesses: Plain-English Guide",
+ "h1": "The FTC Safeguards Rule for small businesses, in plain English",
+ "description": "Who the FTC Safeguards Rule covers (tax preparers, auto dealers, mortgage brokers and more), what it requires, the 500-consumer breach notice and state laws.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Compliance",
+ "intro": "<p>Many small businesses are surprised to learn that a federal rule written for \"financial institutions\" applies to them. The FTC's Safeguards Rule, issued under the Gramm-Leach-Bliley Act (GLBA), reaches well beyond banks: tax preparers, many auto dealers, mortgage brokers, collection agencies and others. This guide summarizes what the rule asks for, based on the FTC's own guidance, so you can tell whether it applies and where you stand. <strong>It is not legal advice.</strong> If you think you are covered, confirm the details with your attorney or compliance advisor.</p>",
+ "sections": [
+  {
+   "h2": "Who counts as a \"financial institution\"",
+   "html": "<p>Under the rule, a business can be a financial institution because of what it does, not what it calls itself. The FTC's guide, <a href=\"https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know\" rel=\"noopener\">FTC Safeguards Rule: What Your Business Needs to Know</a>, lists examples that include:</p><ul><li>Mortgage lenders, payday lenders and finance companies</li><li>Mortgage brokers and account servicers</li><li>Check cashers and wire transferors</li><li>Collection agencies, credit counselors and other financial advisors</li><li>Tax preparation firms</li><li>Non-federally insured credit unions</li><li>Investment advisers not required to register with the SEC</li><li>Finders</li></ul><p><strong>Auto dealers</strong> deserve their own mention. The FTC's <a href=\"https://www.ftc.gov/business-guidance/resources/automobile-dealers-ftcs-safeguards-rule-frequently-asked-questions\" rel=\"noopener\">FAQ for automobile dealers</a> says dealers that finance or facilitate financing of vehicles for consumers are financial institutions, and so are dealers that lease vehicles for longer than 90 days.</p><p>If you collect financial information from consumers to provide one of these services, assume the rule may apply until someone qualified tells you otherwise.</p>"
+  },
+  {
+   "h2": "What the rule requires",
+   "html": "<p>The core obligation is a written information security program with specific elements. In summary, from the FTC's guidance and the text of <a href=\"https://www.law.cornell.edu/cfr/text/16/314.4\" rel=\"noopener\">16 CFR 314.4</a>:</p><ol><li><strong>A Qualified Individual</strong> who oversees and enforces the program. This can be an employee, or someone from an affiliate or service provider, but your business keeps the responsibility.</li><li><strong>A written risk assessment</strong> of the foreseeable risks to customer information, repeated periodically.</li><li><strong>Safeguards to control those risks</strong>, including access controls, knowing what data you have and where, <strong>encryption</strong> of customer information at rest and in transit (or approved compensating controls), secure development practices, <strong>multi-factor authentication</strong> for anyone accessing customer information, secure disposal, change management and logging of user activity.</li><li><strong>Regular monitoring and testing</strong> of those safeguards (more on this below).</li><li><strong>Staff training</strong> on security awareness.</li><li><strong>Oversight of service providers</strong>: choose providers that can protect the data, require it in contracts and check on them.</li><li><strong>Keeping the program current</strong> as your business and risks change.</li><li><strong>A written incident response plan.</strong></li><li><strong>A written report, at least annually,</strong> from the Qualified Individual to your board or, if you don't have one, a senior officer.</li></ol>"
+  },
+  {
+   "h2": "Monitoring and testing: continuous monitoring vs annual pentests",
+   "html": "<p>This is where most small businesses get stuck. The FTC's guidance says that for information systems, testing can be accomplished through <strong>continuous monitoring</strong> of your system. If you don't have effective continuous monitoring, the rule says you must conduct <strong>annual penetration testing</strong> and <strong>vulnerability assessments, including system-wide scans every six months</strong> designed to test for publicly known security vulnerabilities.</p><p>The rule doesn't prescribe a particular product, and it's up to your Qualified Individual to decide whether your monitoring is effective enough to serve as the alternative. What matters in practice is evidence: a record that systems are being watched, that vulnerabilities are found and fixed, and that someone reviews the results. For the trade-offs, see <a href=\"/en/monitoring-vs-pentest/\">monitoring vs pentest</a> and our article on <a href=\"/en/blog/when-do-you-need-a-pentest/\">when you actually need a pentest</a>.</p>"
+  },
+  {
+   "h2": "Exemption for businesses with fewer than 5,000 consumers",
+   "html": "<p>Smaller financial institutions get partial relief. Under <a href=\"https://www.law.cornell.edu/cfr/text/16/314.6\" rel=\"noopener\">16 CFR 314.6</a>, sections 314.4(b)(1), (d)(2), (h) and (i) do not apply to financial institutions that maintain customer information concerning fewer than 5,000 consumers. In plain terms, those are the provisions on the written risk assessment, the continuous monitoring or annual pentest and semiannual scan requirement, the written incident response plan and the board report.</p><p>Important: the exemption is partial. You still need the rest of the program, including a Qualified Individual, safeguards such as MFA and encryption, training and service provider oversight. And 5,000 consumers is fewer than many businesses think once you count every past customer whose information you still keep.</p>"
+  },
+  {
+   "h2": "Breach notification to the FTC (since May 2024)",
+   "html": "<p>The FTC <a href=\"https://www.ftc.gov/news-events/news/press-releases/2023/10/ftc-amends-safeguards-rule-require-non-banking-financial-institutions-report-data-security-breaches\" rel=\"noopener\">amended the rule in 2023</a> to add a reporting duty. According to the FTC's guidance, the requirement took effect in May 2024: if unencrypted customer information of <strong>at least 500 consumers</strong> is acquired without authorization, you must notify the FTC <strong>as soon as possible, and no later than 30 days after discovery</strong>. The FTC provides an online form for the report.</p><p>That 30-day clock is short. If you haven't written down who decides whether an event is a reportable breach, who gathers the facts and who files, do it now. It's one of the first things an <a href=\"/en/services/incident-response/\">incident response</a> plan should settle.</p>"
+  },
+  {
+   "h2": "State breach laws: Texas and Arkansas",
+   "html": "<p>The federal rule sits on top of state breach notification laws, which apply to most businesses holding residents' personal information, not just financial institutions. Two examples for businesses in our US markets:</p><ul><li><strong>Texas:</strong> under <a href=\"https://texas.public.law/statutes/tex._bus._and_com._code_section_521.053\" rel=\"noopener\">Texas Business and Commerce Code section 521.053</a>, affected individuals must be notified without unreasonable delay and no later than 60 days after you determine a breach occurred, and the Texas Attorney General must be notified within 30 days if the breach involves at least 250 Texas residents.</li><li><strong>Arkansas:</strong> the <a href=\"https://arkansasag.gov/divisions/public-protection/identity/security-or-data-breach/\" rel=\"noopener\">Arkansas Attorney General</a> says breaches affecting the personal information of more than 1,000 individuals must be reported to the AG when the business determines there is a reasonable likelihood of harm to consumers.</li></ul><p>Other states have their own thresholds and deadlines, and customers in several states can trigger several laws at once. Your attorney should map this before an incident, not during one.</p>"
+  },
+  {
+   "h2": "A starter checklist",
+   "html": "<ul><li>Decide, with counsel, whether you are a financial institution under the rule and whether you're under 5,000 consumers.</li><li>Name your Qualified Individual in writing.</li><li>Inventory where customer information lives: tax or DMS software, email, file shares, cloud storage, paper.</li><li>Turn on MFA for every system that touches customer information, starting with email and remote access.</li><li>Confirm encryption at rest and in transit, or document compensating controls.</li><li>Set up monitoring and testing that produces evidence, either continuous monitoring or annual pentest plus scans every six months.</li><li>Write the incident response plan, including the 30-day FTC notice and applicable state laws.</li><li>Review your IT and software providers' contracts for security obligations.</li></ul>"
+  },
+  {
+   "h2": "How continuous monitoring can help",
+   "html": "<p>For a small dealership, tax office or lender, the heavy part of the rule is usually not writing the policy; it's generating ongoing proof that systems are watched and vulnerabilities get fixed. That's what our <a href=\"/en/services/cybersecurity-monitoring/\">cybersecurity monitoring</a> does: weekly scans of what's exposed, AI review of code and configuration changes, alerts within 24 hours for critical vulnerabilities in your stack, and a monthly report your Qualified Individual can keep on file. Whether that meets the rule's continuous monitoring alternative for your business is a decision for your Qualified Individual and counsel. Plans and prices are on our <a href=\"/en/pricing/\">pricing page</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does the FTC Safeguards Rule apply to auto dealers?",
+   "a": "According to the FTC's FAQ for automobile dealers, dealers that finance or facilitate financing of vehicles for consumers are financial institutions under the rule, and so are dealers that lease vehicles for longer than 90 days."
+  },
+  {
+   "q": "Do I have to do an annual penetration test?",
+   "a": "The FTC's guidance says testing can be accomplished through continuous monitoring. Without effective continuous monitoring, you must do annual penetration testing and vulnerability assessments with system-wide scans every six months. Businesses with customer information on fewer than 5,000 consumers are exempt from that specific provision."
+  },
+  {
+   "q": "When do I have to notify the FTC of a breach?",
+   "a": "Since May 2024, if unencrypted information of at least 500 consumers is acquired without authorization, you must notify the FTC as soon as possible and no later than 30 days after discovery."
+  },
+  {
+   "q": "Is this article legal advice?",
+   "a": "No. It summarizes the FTC's public guidance and selected state rules. Confirm whether and how the rule applies to your business with an attorney or compliance professional."
+  }
+ ],
+ "sources": [
+  {
+   "title": "FTC: FTC Safeguards Rule: What Your Business Needs to Know",
+   "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know"
+  },
+  {
+   "title": "FTC: Automobile Dealers and the FTC's Safeguards Rule, FAQ",
+   "url": "https://www.ftc.gov/business-guidance/resources/automobile-dealers-ftcs-safeguards-rule-frequently-asked-questions"
+  },
+  {
+   "title": "FTC press release (Oct 2023): FTC amends Safeguards Rule to require breach reporting",
+   "url": "https://www.ftc.gov/news-events/news/press-releases/2023/10/ftc-amends-safeguards-rule-require-non-banking-financial-institutions-report-data-security-breaches"
+  },
+  {
+   "title": "16 CFR 314.4, Elements (Cornell LII)",
+   "url": "https://www.law.cornell.edu/cfr/text/16/314.4"
+  },
+  {
+   "title": "16 CFR 314.6, Exceptions (Cornell LII)",
+   "url": "https://www.law.cornell.edu/cfr/text/16/314.6"
+  },
+  {
+   "title": "Texas Business and Commerce Code 521.053",
+   "url": "https://texas.public.law/statutes/tex._bus._and_com._code_section_521.053"
+  },
+  {
+   "title": "Arkansas Attorney General: Security or Data Breach",
+   "url": "https://arkansasag.gov/divisions/public-protection/identity/security-or-data-breach/"
+  }
+ ],
+ "related": [
+  "/en/services/cybersecurity-monitoring/",
+  "/en/services/incident-response/",
+  "/en/blog/when-do-you-need-a-pentest/",
+  "/en/cybersecurity-for-small-business/"
+ ],
+ "readingMinutes": 6
+}

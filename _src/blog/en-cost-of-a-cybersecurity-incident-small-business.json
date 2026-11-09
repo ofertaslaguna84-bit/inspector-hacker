@@ -1,0 +1,93 @@
+{
+ "lang": "en",
+ "slug": "cost-of-a-cybersecurity-incident-small-business",
+ "pair": "costo-de-un-incidente-de-ciberseguridad-pyme",
+ "title": "What a Cybersecurity Incident Costs a Small Business",
+ "h1": "What does a cybersecurity incident really cost a small business?",
+ "description": "The real cost categories of a cyber incident for a small business (downtime, recovery, legal, wire fraud), sourced figures and a formula to estimate yours.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Risk and costs",
+ "intro": "<p>Most headline numbers about breach costs come from large organizations, so small business owners either dismiss them (\"that's for big companies\") or panic. Neither helps you decide how much to invest in prevention. This article does two things: it shows what reputable sources actually report, with links so you can check, and it gives you a simple way to estimate what a bad week would cost <em>your</em> business. No scare statistics, no invented averages.</p>",
+ "sections": [
+  {
+   "h2": "What the reputable reports say",
+   "html": "<ul><li><strong>Business email compromise is the costly one.</strong> In the FBI's <a href=\"https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf\" rel=\"noopener\">2025 Internet Crime Report</a>, the Internet Crime Complaint Center (IC3) recorded 24,768 business email compromise (BEC) complaints with $3,046,598,558 in reported losses, second only to investment fraud. Dividing one figure by the other gives roughly $123,000 per complaint on average; that's our arithmetic, not an FBI statistic, and averages hide a wide range.</li><li><strong>Ransomware losses are under-reported.</strong> The same report counts 3,611 ransomware complaints with just over $32.3 million in reported losses, but the FBI notes that this number does not normally include estimates of lost business, time, wages, files or equipment, or third-party remediation services, and that some victims report no loss at all. In other words, the real cost of ransomware is mostly the part that isn't in that number.</li><li><strong>Ransomware is common in breaches.</strong> Verizon's <a href=\"https://www.verizon.com/business/resources/reports/dbir/\" rel=\"noopener\">2026 Data Breach Investigations Report</a> says 48% of breaches now involve ransomware, while noting that ransom payouts are shrinking and many businesses choose not to pay.</li><li><strong>Large-organization breaches are expensive.</strong> IBM's <a href=\"https://www.ibm.com/reports/data-breach\" rel=\"noopener\">Cost of a Data Breach Report 2026</a> puts the global average cost of a data breach at a record US$4.99 million. That study is dominated by larger organizations, so treat it as a ceiling for context, not a forecast for a 20-person company.</li></ul><p>The useful takeaway for a small business: the most likely expensive event is not a Hollywood-style hack but a fraudulent payment or a few days of downtime.</p>"
+  },
+  {
+   "h2": "The cost categories nobody budgets for",
+   "html": "<h3>1. Downtime</h3><p>If you can't invoice, ship, schedule or answer customers, revenue stops while payroll and rent don't. For many small businesses this is the largest line.</p><h3>2. Recovery and investigation</h3><p>Outside incident response, forensic work, rebuilding servers and laptops, restoring backups (if they work), overtime for your IT provider, and replacing compromised hardware.</p><h3>3. Direct fraud losses</h3><p>Wire transfers to a criminal's account after a BEC email, fraudulent ad spend on a hijacked Meta account, gift cards bought on a spoofed request from \"the CEO.\" Money that leaves by wire is often hard to recover, especially if the bank isn't contacted quickly.</p><h3>4. Legal and notification</h3><p>Attorney time, notifying customers, and possibly regulators. For example, Texas requires notice to the Attorney General within 30 days when a breach involves at least 250 Texas residents (<a href=\"https://texas.public.law/statutes/tex._bus._and_com._code_section_521.053\" rel=\"noopener\">Tex. Bus. &amp; Com. Code 521.053</a>), and businesses covered by the <a href=\"https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know\" rel=\"noopener\">FTC Safeguards Rule</a> must notify the FTC within 30 days of discovering a breach affecting at least 500 consumers.</p><h3>5. Customers and reputation</h3><p>Lost deals, customers who quietly move to a competitor, a client that drops you after a security questionnaire, time spent reassuring everyone.</p><h3>6. Insurance effects</h3><p>Deductibles, and potentially higher premiums or stricter requirements at renewal.</p>"
+  },
+  {
+   "h2": "A simple formula to estimate your own exposure",
+   "html": "<p>Grab a spreadsheet and fill in your own numbers. This gives you an order of magnitude, not a precise forecast.</p><p><strong>Incident cost ≈ (Daily gross margin × Days down) + (Hourly staff cost × Staff hours lost) + Recovery services + Direct fraud loss + Legal/notification + Lost customers</strong></p><ul><li><strong>Daily gross margin:</strong> annual gross profit ÷ working days. Use margin, not revenue.</li><li><strong>Days down:</strong> be honest. Without tested backups, think in days to weeks, not hours.</li><li><strong>Staff hours lost:</strong> people who can't work, plus people pulled into the recovery.</li><li><strong>Recovery services:</strong> ask your IT provider and an incident response firm for their day rates now, before you need them.</li><li><strong>Direct fraud loss:</strong> look at your largest typical wire or supplier payment. That is a realistic BEC loss.</li><li><strong>Lost customers:</strong> annual margin from the customers most sensitive to trust (often your largest accounts).</li></ul>"
+  },
+  {
+   "h2": "A worked example (illustrative numbers)",
+   "html": "<p>Imagine a distributor with $600,000 in annual gross margin, 250 working days and 15 employees at an average loaded cost of $35/hour. These numbers are made up for the example; replace them with yours.</p><ul><li>Daily margin: $600,000 ÷ 250 = $2,400. Four days of disruption: <strong>$9,600</strong>.</li><li>Staff time: 15 people × 8 hours × 4 days × $35 = <strong>$16,800</strong>.</li><li>Recovery services: two days of outside incident response at $2,500/day = <strong>$5,000</strong>, plus your IT provider's time.</li><li>One fraudulent supplier payment: <strong>$40,000</strong>.</li></ul><p>Even before legal costs and lost customers, that's over $70,000, mostly from one wire transfer and a few days of disruption. The lesson isn't the exact number; it's which levers are biggest. Here, payment verification and backups matter far more than any fancy tool.</p>"
+  },
+  {
+   "h2": "Cheapest ways to shrink the number",
+   "html": "<ul><li><strong>Payment verification by phone</strong> for any new or changed bank details, using a number you already have, not the one in the email. This targets the largest loss category in the FBI data.</li><li><strong>MFA on email and remote access.</strong> Compromised mailboxes are the starting point of many BEC cases.</li><li><strong>Email authentication</strong> (SPF, DKIM, DMARC) on your domain so it's harder to impersonate you. See <a href=\"/en/services/email-security-phishing-protection/\">email security and phishing protection</a>.</li><li><strong>Offline or immutable backups, tested</strong> with a real restore at least quarterly. This is what turns weeks of downtime into days.</li><li><strong>Patch what faces the internet first.</strong> Servers, VPNs, firewalls and web apps exposed online. Our <a href=\"/en/services/server-security/\">server security</a> page covers the basics.</li><li><strong>A one-page incident plan:</strong> who to call (bank, IT, insurer, attorney), who decides, how you'll talk to customers. CISA's <a href=\"https://www.cisa.gov/resources-tools/resources/stopransomware-guide\" rel=\"noopener\">#StopRansomware Guide</a> is a good free template for the ransomware part.</li></ul>"
+  },
+  {
+   "h2": "If it happens: the first hour",
+   "html": "<ol><li>If money was wired, <strong>call your bank immediately</strong> and ask for a recall, then file a complaint at ic3.gov. Speed matters.</li><li><strong>Isolate</strong> affected machines from the network, but don't wipe them; evidence matters.</li><li><strong>Call your insurer</strong> before hiring outside help if you have cyber coverage; many policies have required providers.</li><li><strong>Change passwords and revoke sessions</strong> from a clean device, starting with email.</li><li>Write down a <strong>timeline</strong> of what you saw and when.</li></ol><p>Our <a href=\"/en/services/incident-response/\">incident response</a> service is billed per day for exactly these situations.</p>"
+  },
+  {
+   "h2": "Prevention as a line item",
+   "html": "<p>Once you've run the formula, compare it with what prevention costs. Our <a href=\"/en/pricing/\">plans</a> are public: continuous monitoring starts at $900 USD a month, with weekly checks of what's exposed, AI review of code changes, alerts within 24 hours for critical vulnerabilities and a monthly report reviewed by a person. It doesn't replace backups or payment controls, but it catches the exposed server, the leaked password or the look-alike domain before they turn into the scenarios above. If you're weighing that against a one-off test, read <a href=\"/en/monitoring-vs-pentest/\">monitoring vs pentest</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "How much does a data breach cost a small business on average?",
+   "a": "There isn't a reliable single average for small businesses. IBM's 2026 report puts the global average at US$4.99 million, but it is dominated by larger organizations. FBI IC3 data shows business email compromise produced over $3 billion in reported losses across 24,768 complaints in 2025. Estimating your own exposure with a formula is more useful than any average."
+  },
+  {
+   "q": "What is the most expensive type of incident for small businesses?",
+   "a": "In FBI IC3's 2025 data, business email compromise had far higher reported losses than ransomware. For many small businesses, a single fraudulent wire transfer or several days of downtime are the most expensive realistic scenarios."
+  },
+  {
+   "q": "Why are reported ransomware losses so low in the FBI report?",
+   "a": "The FBI explains that ransomware loss figures normally don't include lost business, time, wages, files, equipment or third-party remediation, and some victims don't report any loss amount. The real cost is mostly in downtime and recovery."
+  },
+  {
+   "q": "Does cyber insurance cover everything?",
+   "a": "Not necessarily. Policies vary in what they cover, have deductibles and often require specific security controls such as MFA and backups. Review your policy with your broker before an incident."
+  }
+ ],
+ "sources": [
+  {
+   "title": "FBI IC3: 2025 Internet Crime Report (PDF)",
+   "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf"
+  },
+  {
+   "title": "IBM: Cost of a Data Breach Report 2026",
+   "url": "https://www.ibm.com/reports/data-breach"
+  },
+  {
+   "title": "Verizon 2026 Data Breach Investigations Report",
+   "url": "https://www.verizon.com/business/resources/reports/dbir/"
+  },
+  {
+   "title": "CISA: #StopRansomware Guide",
+   "url": "https://www.cisa.gov/resources-tools/resources/stopransomware-guide"
+  },
+  {
+   "title": "FTC: FTC Safeguards Rule: What Your Business Needs to Know",
+   "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know"
+  },
+  {
+   "title": "Texas Business and Commerce Code 521.053",
+   "url": "https://texas.public.law/statutes/tex._bus._and_com._code_section_521.053"
+  }
+ ],
+ "related": [
+  "/en/services/incident-response/",
+  "/en/services/email-security-phishing-protection/",
+  "/en/blog/whatsapp-business-meta-account-hacked/",
+  "/en/pricing/"
+ ],
+ "readingMinutes": 6
+}

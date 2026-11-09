@@ -1,0 +1,90 @@
+{
+ "lang": "es",
+ "slug": "whatsapp-business-hackeado-que-revisar",
+ "pair": "whatsapp-business-meta-account-hacked",
+ "title": "Me hackearon el WhatsApp Business: qué revisar hoy",
+ "h1": "Te hackearon el WhatsApp Business o la cuenta de Meta: qué revisar, en orden",
+ "description": "Guía paso a paso si te robaron el WhatsApp Business, Facebook, Instagram o el portafolio comercial de Meta: recuperar, cerrar sesiones, quitar admins y avisar.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Respuesta a incidentes",
+ "readingMinutes": 8,
+ "intro": "<p>Para muchas pymes en México, el WhatsApp Business es el mostrador, la caja y la agenda al mismo tiempo. Por eso, cuando alguien se lo roba, el daño no es solo técnico: tus clientes reciben mensajes pidiendo depósitos a otra cuenta, tus anuncios de Meta se gastan en campañas que no son tuyas y pierdes el canal por donde te llegan las ventas.</p><p>Esta guía está escrita para el momento del susto. Ve en orden: primero recuperar, luego cerrar las puertas que dejó abierto el atacante, después revisar el dinero y al final avisar. Todo con los enlaces a la ayuda oficial de WhatsApp y Meta, para que no caigas en \"servicios de recuperación\" que en realidad son otra estafa.</p>",
+ "sections": [
+  {
+   "h2": "Primeros 15 minutos: recupera el número de WhatsApp",
+   "html": "<p>WhatsApp funciona amarrado a tu número de teléfono. Si alguien registró tu número en otro aparato (normalmente porque le dictaste un código de 6 dígitos que te llegó por SMS, creyendo que era otra cosa), la forma de sacarlo es volver a registrar el número en tu teléfono.</p><ol><li>Abre WhatsApp Business en tu teléfono y vuelve a iniciar sesión con tu número.</li><li>Escribe el código de 6 dígitos que te llega por SMS o llamada. <strong>Ese código no se le da a nadie</strong>, ni a alguien que dice ser de WhatsApp, del banco o de un proveedor.</li><li>Al completar el registro, la sesión de quien estaba usando tu cuenta se cierra automáticamente.</li></ol><p>Si te pide un PIN o contraseña de verificación en dos pasos que tú nunca pusiste, es que el atacante la activó. El Centro de ayuda indica que en ese caso hay que esperar siete días para volver a intentarlo. Mientras tanto, tu número sigue siendo tuyo; avisa a tus clientes por otros canales (lo vemos más abajo). Los pasos oficiales están en <a href=\"https://faq.whatsapp.com/1131652977717250\" rel=\"noopener\">Cómo recuperar una cuenta comprometida</a>.</p><p>Un detalle importante de esa misma página: <strong>reportar la cuenta antes de recuperarla puede provocar que la bloqueen</strong>. Primero intenta recuperarla y luego reporta.</p>"
+  },
+  {
+   "h2": "Cierra las puertas: dispositivos vinculados y verificación en dos pasos",
+   "html": "<p>Recuperar el número no basta si el atacante dejó una sesión abierta en WhatsApp Web o en una computadora. WhatsApp permite vincular varios dispositivos a la misma cuenta, así que revisa la lista completa:</p><ul><li>En WhatsApp Business ve a <strong>Dispositivos vinculados</strong>, toca cada sesión que no reconozcas y elige <strong>Cerrar sesión</strong>. Si tienes duda, cierra todas y vuelve a vincular solo las computadoras de tu negocio. Guía oficial: <a href=\"https://faq.whatsapp.com/378279804439436\" rel=\"noopener\">Dispositivos vinculados</a>.</li><li>Activa la <strong>verificación en dos pasos</strong> con una contraseña que solo sepa el dueño o el responsable, y registra un correo de recuperación que controle la empresa (no el correo personal de un empleado). Guía: <a href=\"https://faq.whatsapp.com/1920866721452534\" rel=\"noopener\">Verificación en dos pasos</a>.</li><li>Si el WhatsApp del negocio lo usan varias personas, que lo hagan como dispositivos vinculados y no compartiendo el código de registro.</li></ul>"
+  },
+  {
+   "h2": "Facebook, Instagram y el portafolio comercial de Meta",
+   "html": "<p>Muchos robos de WhatsApp vienen acompañados del robo del perfil personal de Facebook del dueño o del administrador de las páginas. Desde ahí el atacante entra al portafolio comercial (antes Business Manager), donde están la página, la cuenta de Instagram, las cuentas publicitarias y, a veces, la cuenta de WhatsApp Business API.</p><ol><li><strong>Asegura primero tu perfil personal.</strong> Desde un dispositivo con el que ya hayas entrado antes, ve a <a href=\"https://www.facebook.com/hacked\" rel=\"noopener\">facebook.com/hacked</a> y sigue el asistente. La página de ayuda <a href=\"https://www.facebook.com/help/1216349518398524\" rel=\"noopener\">\"Mi cuenta de Facebook fue hackeada\"</a> tiene rutas distintas si ya no controlas el correo o el teléfono, si quieres recuperar una página o si encontraste una cuenta que se hace pasar por ti.</li><li><strong>Cambia la contraseña y activa la autenticación en dos pasos</strong> en Facebook e Instagram, de preferencia con app de autenticación o llave de acceso (passkey), no por SMS.</li><li><strong>Revisa quién es administrador</strong> en la configuración del portafolio comercial: personas, socios y apps conectadas. Quita a cualquiera que no reconozcas y deja al menos dos personas de confianza con control total, para que la empresa no dependa de una sola cuenta.</li><li><strong>Revisa las cuentas de Instagram conectadas</strong> y las páginas: el atacante a veces agrega su propia cuenta como administradora para volver a entrar después.</li><li>Revisa las <strong>sesiones activas</strong> en la configuración de seguridad de cada cuenta y cierra las que no sean tuyas.</li></ol><p>Desconfía de cualquier persona que te contacte ofreciendo recuperar la cuenta a cambio de un pago, o de números telefónicos \"de soporte de Facebook\" que aparecen en internet: los canales de recuperación son los del propio Centro de ayuda.</p>"
+  },
+  {
+   "h2": "El dinero: anuncios, métodos de pago y transferencias",
+   "html": "<p>Cuando un atacante controla un portafolio comercial con tarjeta registrada, lo primero que suele hacer es lanzar anuncios. Revisa ya:</p><ul><li><strong>Cuentas publicitarias:</strong> campañas activas que no creaste, cambios de presupuesto y facturación reciente. Pausa todo lo que no reconozcas.</li><li><strong>Métodos de pago:</strong> quita tarjetas que no uses y llama a tu banco para reportar cargos no reconocidos. Si es posible, usa una tarjeta dedicada a publicidad con límite bajo.</li><li><strong>Transferencias de tus clientes:</strong> si el atacante pidió depósitos desde tu WhatsApp, junta capturas de los mensajes, números de cuenta y montos. Te servirán para la denuncia y para el banco.</li></ul>"
+  },
+  {
+   "h2": "Avisa a clientes y equipo sin hacer más ruido",
+   "html": "<p>Tu prioridad es que nadie más deposite. Un aviso corto y concreto funciona mejor que un comunicado largo:</p><ul><li>Publica en tus estados de WhatsApp (en cuanto recuperes la cuenta), en tus redes y en tu sitio: \"Nuestra cuenta de WhatsApp fue suplantada el día X. Nunca te pediremos depósitos a cuentas nuevas por mensaje. Si recibiste una solicitud así, no pagues y llámanos al número fijo.\"</li><li>Avisa a tus empleados que no respondan ni compartan códigos, y que cualquier cambio de cuenta bancaria se confirma por llamada a un número conocido.</li><li>Si tienes clientes grandes o proveedores que te pagan por transferencia, llámalos directamente.</li></ul><p>Si hubo pérdida de dinero, presenta denuncia ante la fiscalía de tu estado y repórtalo a la Policía Cibernética. Guarda toda la evidencia antes de borrar chats.</p>"
+  },
+  {
+   "h2": "Checklist para que no vuelva a pasar",
+   "html": "<ul><li>Verificación en dos pasos activa en WhatsApp Business, Facebook, Instagram y el correo que las recupera.</li><li>El correo de recuperación es de la empresa y lo controla el dueño, no un exempleado ni una agencia.</li><li>Dos administradores de confianza en el portafolio comercial; nadie más con control total.</li><li>Revisión mensual de dispositivos vinculados, administradores y métodos de pago.</li><li>Regla escrita en la empresa: <strong>nadie comparte códigos de verificación</strong> y nadie cambia datos bancarios por mensaje.</li><li>Tu dominio de correo con SPF, DKIM y DMARC, para que no puedan mandar correos falsos a tu nombre mientras suplantan tu WhatsApp. Lo explicamos en <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>.</li></ul>"
+  },
+  {
+   "h2": "Dónde entra la vigilancia continua",
+   "html": "<p>El robo de un WhatsApp casi nunca empieza en WhatsApp: empieza con una contraseña filtrada, un correo sin protección o un dominio parecido al tuyo que alguien registró para engañar a tus clientes. Esas señales se pueden ver antes del ataque si alguien las revisa todos los días. Eso es lo que hace la <a href=\"/servicios/monitoreo-de-ciberseguridad/\">vigilancia de ciberseguridad</a>: avisar de credenciales filtradas, dominios sospechosos y configuraciones débiles, sin necesidad de un pentest caro. Si ya te pasó y necesitas ayuda para cerrar el incidente, mira <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a>; si quieres entender la diferencia entre vigilar y hacer una prueba de penetración, lee <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Puedo recuperar mi WhatsApp Business si el atacante puso verificación en dos pasos?",
+   "a": "Sí. Vuelve a registrar tu número con el código que te llega por SMS. Si te pide un PIN o contraseña que no conoces, el Centro de ayuda de WhatsApp indica esperar siete días y volver a intentarlo. Mientras, avisa a tus clientes por otros canales."
+  },
+  {
+   "q": "¿Debo reportar la cuenta a WhatsApp de inmediato?",
+   "a": "Primero intenta recuperarla. La ayuda oficial de WhatsApp advierte que reportar la cuenta antes de recuperarla puede provocar que la bloqueen."
+  },
+  {
+   "q": "¿Por qué también me robaron Facebook e Instagram?",
+   "a": "Porque suelen estar conectados en el mismo portafolio comercial de Meta o usan el mismo correo y contraseña. Asegura primero tu perfil personal en facebook.com/hacked y luego revisa administradores, cuentas publicitarias y métodos de pago."
+  },
+  {
+   "q": "¿Alguien me puede recuperar la cuenta si le pago?",
+   "a": "Desconfía. Los canales de recuperación son los del Centro de ayuda de WhatsApp y de Meta. Muchos supuestos servicios de recuperación o números de soporte publicados en internet son otra forma de fraude."
+  }
+ ],
+ "sources": [
+  {
+   "title": "WhatsApp — Cómo recuperar una cuenta comprometida",
+   "url": "https://faq.whatsapp.com/1131652977717250"
+  },
+  {
+   "title": "WhatsApp — Verificación en dos pasos",
+   "url": "https://faq.whatsapp.com/1920866721452534"
+  },
+  {
+   "title": "WhatsApp — Dispositivos vinculados",
+   "url": "https://faq.whatsapp.com/378279804439436"
+  },
+  {
+   "title": "Facebook — Mi cuenta fue hackeada",
+   "url": "https://www.facebook.com/help/1216349518398524"
+  },
+  {
+   "title": "Facebook — Asistente para cuentas hackeadas",
+   "url": "https://www.facebook.com/hacked"
+  }
+ ],
+ "related": [
+  "/servicios/respuesta-a-incidentes/",
+  "/servicios/proteccion-de-correo-y-phishing/",
+  "/servicios/monitoreo-de-ciberseguridad/",
+  "/vigilancia-vs-pentest/",
+  "/blog/costo-de-un-incidente-de-ciberseguridad-pyme/"
+ ]
+}

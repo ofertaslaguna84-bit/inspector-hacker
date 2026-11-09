@@ -1,0 +1,94 @@
+{
+ "lang": "es",
+ "slug": "como-saber-si-tu-servidor-esta-expuesto",
+ "pair": null,
+ "title": "Cómo saber si tu servidor está expuesto a internet",
+ "h1": "Cómo saber si tu servidor o VPS está expuesto a internet (y revisarlo tú mismo)",
+ "description": "Revisa en una tarde si tu servidor o VPS tiene escritorio remoto, paneles o bases de datos abiertas a internet, con herramientas gratuitas y sin atacar a nadie.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Servidores",
+ "readingMinutes": 9,
+ "intro": "<p>\"Expuesto\" significa que cualquiera en internet puede llegar a un servicio de tu servidor: el escritorio remoto, el panel del hosting, la base de datos del ERP, la cámara del almacén. No hace falta que alguien te esté buscando a ti: hay buscadores que recorren internet completo de forma permanente y catalogan lo que encuentran abierto, y los atacantes los usan para elegir víctimas fáciles.</p><p>Esta guía te enseña a ver tu servidor como lo ve un desconocido, con herramientas gratuitas. Una regla antes de empezar: <strong>revisa solo direcciones y dominios que sean tuyos o para los que tengas autorización por escrito</strong>. Escanear sistemas ajenos puede ser ilegal y, como mínimo, mala educación.</p>",
+ "sections": [
+  {
+   "h2": "Paso 1: haz la lista de lo que tienes",
+   "html": "<p>No puedes vigilar lo que no sabes que existe. Antes de abrir cualquier herramienta, junta en una hoja:</p><ul><li><strong>Dominios y subdominios</strong>: el sitio, la tienda, el correo, el portal de clientes, ese subdominio de pruebas que hizo el desarrollador.</li><li><strong>Direcciones IP públicas</strong>: la de la oficina (pregúntale a tu proveedor de internet si es fija), la de cada VPS o servidor en la nube (DigitalOcean, AWS, Azure, Google Cloud, un hosting local).</li><li><strong>Quién administra cada cosa</strong> y con qué cuenta.</li></ul><p>Casi siempre aparece algo olvidado: un servidor viejo que nadie apagó o un subdominio que apunta a un servicio que ya no pagas.</p>"
+  },
+  {
+   "h2": "Paso 2: búscate en Shodan",
+   "html": "<p><a href=\"https://www.shodan.io/\" rel=\"noopener\">Shodan</a> se describe como el primer buscador de dispositivos conectados a internet. Escribe la IP pública de tu oficina o de tu servidor y verás qué puertos y servicios tiene catalogados, qué software reporta y desde cuándo.</p><p>Qué buscar en el resultado:</p><ul><li><strong>Puerto 3389</strong> (escritorio remoto de Windows). Si aparece, es la prioridad número uno.</li><li><strong>Puertos de bases de datos</strong>: 1433 (SQL Server), 3306 (MySQL), 5432 (PostgreSQL), 27017 (MongoDB), 6379 (Redis). Una base de datos nunca debería contestarle a todo internet.</li><li><strong>Paneles de administración</strong>: cPanel, Plesk, phpMyAdmin, el panel del firewall o del conmutador telefónico.</li><li><strong>Versiones viejas</strong> de servidores web, VPN o correo.</li><li><strong>Cámaras y grabadores (DVR/NVR)</strong> con su página de inicio de sesión visible.</li></ul>"
+  },
+  {
+   "h2": "Paso 3: confirma con un escaneo de puertos propio",
+   "html": "<p>Shodan muestra lo que vio en su último recorrido; para saber cómo estás hoy, haz tu propio escaneo desde fuera de tu red (por ejemplo, desde el internet del celular, no desde la oficina). <a href=\"https://nmap.org/\" rel=\"noopener\">Nmap</a> es una herramienta gratuita y de código abierto para descubrir redes y auditar seguridad. Un escaneo básico de los puertos más comunes contra tu propia IP te dirá qué contesta.</p><p>Compara el resultado con lo que <em>debería</em> estar abierto. En la mayoría de las pymes la lista correcta es corta: 443 (sitio web con HTTPS), quizá 80 para redirigir a HTTPS y, si tienes correo propio, sus puertos. Todo lo demás debe pasar por una VPN con segundo factor o estar cerrado.</p>"
+  },
+  {
+   "h2": "Paso 4: revisa el escritorio remoto y los accesos del proveedor",
+   "html": "<p>El escritorio remoto abierto es la puerta favorita del ransomware. La guía de CISA lo dice directo: <a href=\"https://www.cisa.gov/stopransomware/ransomware-guide\" rel=\"noopener\">no expongas servicios como el escritorio remoto a la web</a>. Si tu proveedor lo necesita para dar soporte:</p><ul><li>Que entre por VPN con segundo factor, no por RDP directo.</li><li>Que su usuario sea personal (no \"admin\" compartido) y se desactive cuando no está trabajando.</li><li>Que el acceso quede registrado: quién entró y cuándo.</li></ul>"
+  },
+  {
+   "h2": "Paso 5: certificados, cabeceras y correo",
+   "html": "<ul><li><strong>Certificado y configuración TLS</strong>: el <a href=\"https://www.ssllabs.com/ssltest/\" rel=\"noopener\">SSL Server Test de Qualys SSL Labs</a> es gratuito y analiza a fondo la configuración HTTPS de tu servidor. Busca certificados por vencer, protocolos viejos y calificaciones bajas.</li><li><strong>Cabeceras de seguridad del sitio</strong>: el <a href=\"https://developer.mozilla.org/en-US/observatory\" rel=\"noopener\">HTTP Observatory de Mozilla</a> revisa gratis las cabeceras HTTP y otras configuraciones contra buenas prácticas.</li><li><strong>Correo</strong>: confirma que tu dominio tiene SPF, DKIM y DMARC. Sin ellos, cualquiera puede mandar correos a tu nombre. Más en <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>.</li><li><strong>Contraseñas filtradas</strong>: en <a href=\"https://haveibeenpwned.com/\" rel=\"noopener\">Have I Been Pwned</a> revisa los correos de Dirección y de administración; si aparecen en una brecha, cambia esas contraseñas en todos lados.</li></ul>"
+  },
+  {
+   "h2": "Qué hacer con lo que encontraste",
+   "html": "<ol><li><strong>Cierra primero</strong> escritorio remoto, bases de datos y paneles de administración expuestos. Se cierran en el firewall del servidor o del proveedor de nube.</li><li><strong>Actualiza</strong> lo que tenga versión vieja, empezando por lo que está expuesto a internet (VPN, firewall, servidor web, CMS).</li><li><strong>Apaga lo que nadie usa</strong>: servidores olvidados, subdominios de prueba, servicios en la nube sin dueño.</li><li><strong>Documenta</strong> la lista de lo que sí debe estar expuesto. Esa lista es tu línea base para la siguiente revisión.</li></ol>"
+  },
+  {
+   "h2": "El problema: esto cambia cada semana",
+   "html": "<p>Esta revisión es una foto. Mañana el proveedor abre un puerto para \"probar algo\", sale una vulnerabilidad crítica en tu VPN o alguien levanta un servidor nuevo sin avisar. Por eso la revisión manual de una vez al año se queda corta. La <a href=\"/servicios/seguridad-de-servidores/\">vigilancia de servidores</a> repite este inventario cada semana, compara contra tu línea base y te avisa en menos de 24 horas si aparece algo crítico. No es un pentest: es alguien mirando todos los días (lee <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a>). Si tienes sitio o tienda en línea, complementa con la <a href=\"/servicios/auditoria-de-seguridad-web/\">auditoría de seguridad web</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Es legal escanear mi propio servidor?",
+   "a": "Sí, si el servidor es tuyo o tienes autorización por escrito de quien lo administra. Escanear sistemas ajenos sin permiso puede ser ilegal. Avisa también a tu proveedor de nube si su política lo pide."
+  },
+  {
+   "q": "¿Qué puertos deberían estar abiertos en un servidor de pyme?",
+   "a": "Normalmente solo el 443 para el sitio con HTTPS, quizá el 80 para redirigir a HTTPS y los de correo si lo tienes en el mismo servidor. El escritorio remoto, las bases de datos y los paneles de administración deben ir detrás de una VPN con segundo factor."
+  },
+  {
+   "q": "¿Shodan me puede hackear?",
+   "a": "No. Shodan solo cataloga lo que está abierto en internet. El riesgo es que los atacantes usan ese mismo catálogo para encontrar víctimas, por eso conviene que tú lo revises primero."
+  },
+  {
+   "q": "¿Cada cuánto debo revisar lo que tengo expuesto?",
+   "a": "Lo ideal es cada semana, porque los cambios de configuración y las vulnerabilidades nuevas aparecen todo el tiempo. Una revisión anual deja meses de exposición sin ver."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Shodan — buscador de dispositivos conectados a internet",
+   "url": "https://www.shodan.io/"
+  },
+  {
+   "title": "Nmap — utilidad libre para descubrimiento de red y auditoría de seguridad",
+   "url": "https://nmap.org/"
+  },
+  {
+   "title": "CISA — #StopRansomware Guide",
+   "url": "https://www.cisa.gov/stopransomware/ransomware-guide"
+  },
+  {
+   "title": "Qualys SSL Labs — SSL Server Test",
+   "url": "https://www.ssllabs.com/ssltest/"
+  },
+  {
+   "title": "Mozilla MDN — HTTP Observatory",
+   "url": "https://developer.mozilla.org/en-US/observatory"
+  },
+  {
+   "title": "Have I Been Pwned",
+   "url": "https://haveibeenpwned.com/"
+  }
+ ],
+ "related": [
+  "/servicios/seguridad-de-servidores/",
+  "/servicios/auditoria-de-seguridad-web/",
+  "/servicios/monitoreo-de-ciberseguridad/",
+  "/vigilancia-vs-pentest/",
+  "/blog/ransomware-pymes-mexico/"
+ ]
+}

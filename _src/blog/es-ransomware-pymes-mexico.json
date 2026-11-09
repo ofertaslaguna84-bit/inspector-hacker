@@ -1,0 +1,86 @@
+{
+ "lang": "es",
+ "slug": "ransomware-pymes-mexico",
+ "pair": null,
+ "title": "Ransomware en pymes de México: cómo entra y qué hacer",
+ "h1": "Ransomware en pymes mexicanas: cómo entra, qué hacer en la primera hora y cómo prevenirlo",
+ "description": "Cómo entra el ransomware a una pyme en México (escritorio remoto, phishing, contraseñas filtradas), qué hacer en la primera hora y respaldos 3-2-1 que sirven.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Amenazas",
+ "readingMinutes": 9,
+ "intro": "<p>El ransomware es el ataque en el que alguien entra a tus sistemas, cifra tus archivos (y muchas veces los copia antes) y te pide dinero para devolverlos o para no publicarlos. Para una pyme significa que un lunes la nómina, la facturación o el ERP no abren, y que alguien te da un plazo para pagar.</p><p>No es un problema solo de empresas grandes. El <a href=\"https://www.verizon.com/about/news/2025-data-breach-investigations-report\" rel=\"noopener\">Data Breach Investigations Report 2025 de Verizon</a> reporta que el ransomware estuvo presente en el 44 % de las brechas analizadas, y <a href=\"https://therecord.media/ransomware-in-half-of-all-data-breaches-verizon\" rel=\"noopener\">según el mismo informe</a>, en el 88 % de las brechas de pequeñas y medianas empresas, contra 39 % en organizaciones grandes. La buena noticia: la mayoría de las entradas se pueden cerrar con medidas básicas y constantes.</p>",
+ "sections": [
+  {
+   "h2": "Por dónde entra el ransomware a una pyme",
+   "html": "<p>En empresas medianas y chicas de México vemos una y otra vez las mismas tres puertas:</p><ul><li><strong>Escritorio remoto o VPN expuestos a internet.</strong> El proveedor de sistemas abrió el escritorio remoto (RDP) para dar soporte desde su casa y nunca lo cerró, o la VPN no tiene segundo factor. La guía de ransomware de CISA lo dice sin rodeos: <a href=\"https://www.cisa.gov/stopransomware/ransomware-guide\" rel=\"noopener\">no expongas servicios como el escritorio remoto a la web</a>.</li><li><strong>Phishing.</strong> Un correo con una \"factura\", un \"CFDI pendiente\" o un aviso de paquetería que instala un programa o roba una contraseña. CISA lo identifica como uno de los vectores de acceso inicial principales.</li><li><strong>Contraseñas filtradas o repetidas.</strong> La misma contraseña en el correo, el ERP y la VPN, filtrada en la brecha de otro servicio. Verizon reporta que el abuso de credenciales fue el vector inicial en el 22 % de las brechas y la explotación de vulnerabilidades en el 20 % (<a href=\"https://www.verizon.com/about/news/2025-data-breach-investigations-report\" rel=\"noopener\">DBIR 2025</a>).</li></ul><p>Fíjate que ninguna requiere un atacante genio. Requieren que nadie esté mirando qué tienes expuesto ni qué contraseñas se filtraron.</p>"
+  },
+  {
+   "h2": "La primera hora: qué hacer si ves la nota de rescate",
+   "html": "<ol><li><strong>Desconecta, no apagues.</strong> Quita el cable de red o el wifi de los equipos afectados y del servidor. Apagarlos puede borrar evidencia útil que vive en memoria.</li><li><strong>Aísla los respaldos.</strong> Si tienes un disco o NAS de respaldo conectado, desconéctalo de inmediato para que no se cifre también.</li><li><strong>No borres nada ni reinstales todavía.</strong> Toma fotos de la nota de rescate, de los nombres de archivos cifrados y anota la hora en que lo notaste.</li><li><strong>Cambia contraseñas desde un equipo limpio</strong>: correo de Dirección, banca en línea, VPN, administrador del dominio y acceso del proveedor.</li><li><strong>Llama a quien va a responder</strong>: tu proveedor de sistemas, tu aseguradora si tienes póliza de ciber, y un equipo de <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a>.</li><li><strong>Avisa internamente</strong> con un mensaje claro: no prender equipos, no conectar memorias, no responderle al atacante.</li></ol>"
+  },
+  {
+   "h2": "¿Pagar el rescate?",
+   "html": "<p>Es una decisión de negocio que se toma con información, no con pánico. Lo que dicen las autoridades: en el aviso conjunto sobre el grupo RansomHub, el FBI y CISA escriben que <a href=\"https://www.ic3.gov/CSA/2024/240829.pdf\" rel=\"noopener\">no recomiendan pagar el rescate porque pagar no garantiza recuperar los archivos</a> y además financia a los atacantes. Y cada vez menos víctimas pagan: Verizon reporta que el 64 % de las organizaciones afectadas no pagó en su último periodo de análisis, contra 50 % dos años antes, y que el pago mediano fue de 115,000 dólares (<a href=\"https://www.verizon.com/about/news/2025-data-breach-investigations-report\" rel=\"noopener\">DBIR 2025</a>).</p><p>Si tienes respaldos buenos y probados, la conversación cambia por completo: restauras y no negocias.</p>"
+  },
+  {
+   "h2": "Denuncia y reporta",
+   "html": "<p>Presenta denuncia ante la fiscalía de tu estado y repórtalo a la Policía Cibernética (en el ámbito federal, la Guardia Nacional atiende reportes en la línea 088). La denuncia sirve para la aseguradora, para el banco si hubo transferencias y para dejar constancia si se expusieron datos de clientes o empleados.</p><p>Si el ataque tocó datos personales, revisa también tus obligaciones de aviso con la nueva ley de protección de datos: lo explicamos en <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">protección de datos personales para pymes</a>.</p>"
+  },
+  {
+   "h2": "Respaldos 3-2-1 que sí te salvan",
+   "html": "<p>La regla 3-2-1 es sencilla: <strong>3 copias</strong> de tus datos, en <strong>2 medios distintos</strong>, con <strong>1 copia fuera</strong> de la oficina y desconectada. CISA lo resume como mantener <a href=\"https://www.cisa.gov/stopransomware/ransomware-guide\" rel=\"noopener\">respaldos fuera de línea, cifrados, y probar con regularidad que sirven</a>.</p><ul><li>Una copia en la nube con versiones (que puedas regresar a la versión de hace una semana).</li><li>Una copia en un disco que se conecta solo para respaldar y luego se desconecta.</li><li>Las credenciales del respaldo en la nube no son las mismas del servidor ni del dominio.</li><li><strong>Prueba de restauración cada trimestre</strong>: elige una carpeta y la base de datos del ERP y restáuralas en otro equipo. Un respaldo que nunca se ha probado es una esperanza, no un respaldo.</li></ul>"
+  },
+  {
+   "h2": "Checklist de prevención para este mes",
+   "html": "<ul><li>Ningún escritorio remoto, base de datos ni panel de administración abierto directo a internet. Si no sabes, revísalo con nuestra guía <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor está expuesto</a>.</li><li>VPN y correo con segundo factor de autenticación.</li><li>Contraseñas únicas por sistema y gestor de contraseñas para el equipo administrativo.</li><li>Sistemas operativos, firewall, VPN y ERP actualizados; prioriza los equipos expuestos a internet.</li><li>Correo con SPF, DKIM y DMARC y una capacitación corta contra phishing.</li><li>Cuentas de exempleados y de proveedores anteriores dadas de baja.</li><li>Un plan de una hoja: a quién se llama, quién decide y dónde están los respaldos.</li></ul>"
+  },
+  {
+   "h2": "Vigilar todos los días en lugar de esperar al lunes negro",
+   "html": "<p>Casi todos los puntos del checklist cambian con el tiempo: un proveedor abre un puerto, sale una vulnerabilidad nueva de tu VPN, se filtra la contraseña de alguien. Por eso no basta revisarlo una vez al año. La <a href=\"/servicios/monitoreo-de-ciberseguridad/\">vigilancia de ciberseguridad con IA</a> revisa cada semana lo que tienes expuesto y te avisa en menos de 24 horas si aparece algo crítico en tu tecnología. Si tienes servidores propios o en la nube, mira también <a href=\"/servicios/seguridad-de-servidores/\">seguridad de servidores</a>. Los precios están en <a href=\"/planes/\">planes</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿El ransomware solo ataca a empresas grandes?",
+   "a": "No. El DBIR 2025 de Verizon reporta ransomware en el 88 % de las brechas de pequeñas y medianas empresas que analizó, contra 39 % en organizaciones grandes."
+  },
+  {
+   "q": "¿Qué hago primero si veo una nota de rescate?",
+   "a": "Desconecta de la red los equipos afectados sin apagarlos, desconecta los respaldos, toma fotos de la evidencia, cambia contraseñas desde un equipo limpio y llama a tu proveedor y a un equipo de respuesta a incidentes."
+  },
+  {
+   "q": "¿Debo pagar el rescate?",
+   "a": "El FBI y CISA no lo recomiendan porque pagar no garantiza recuperar los archivos. Con respaldos probados normalmente no hace falta negociar."
+  },
+  {
+   "q": "¿Qué es la regla de respaldo 3-2-1?",
+   "a": "Tres copias de los datos, en dos medios distintos, con una copia fuera de la oficina y desconectada. Además hay que probar la restauración con regularidad."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Verizon — 2025 Data Breach Investigations Report (comunicado)",
+   "url": "https://www.verizon.com/about/news/2025-data-breach-investigations-report"
+  },
+  {
+   "title": "The Record — Ransomware in half of all data breaches (DBIR 2025)",
+   "url": "https://therecord.media/ransomware-in-half-of-all-data-breaches-verizon"
+  },
+  {
+   "title": "CISA — #StopRansomware Guide",
+   "url": "https://www.cisa.gov/stopransomware/ransomware-guide"
+  },
+  {
+   "title": "FBI y CISA — #StopRansomware: RansomHub Ransomware (aviso conjunto)",
+   "url": "https://www.ic3.gov/CSA/2024/240829.pdf"
+  }
+ ],
+ "related": [
+  "/servicios/respuesta-a-incidentes/",
+  "/servicios/seguridad-de-servidores/",
+  "/servicios/monitoreo-de-ciberseguridad/",
+  "/planes/",
+  "/blog/costo-de-un-incidente-de-ciberseguridad-pyme/"
+ ]
+}

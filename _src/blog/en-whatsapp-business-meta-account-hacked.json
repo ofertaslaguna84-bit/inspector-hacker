@@ -1,0 +1,89 @@
+{
+ "lang": "en",
+ "slug": "whatsapp-business-meta-account-hacked",
+ "pair": "whatsapp-business-hackeado-que-revisar",
+ "title": "WhatsApp Business or Meta Account Hacked? What to Check",
+ "h1": "Your WhatsApp Business or Meta account was hacked: what to check, in order",
+ "description": "Step-by-step checklist to recover a hacked WhatsApp Business, Facebook Page, Instagram or Meta business portfolio, lock out the intruder and warn customers.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Incident response",
+ "intro": "<p>For a lot of small businesses, WhatsApp Business and the Meta accounts behind Facebook and Instagram <em>are</em> the sales channel. When someone takes them over, the damage is immediate: customers get messages asking for money, ads start running on your card, and you can lose the page you spent years building. This guide is the order we follow when a business calls us with a hijacked account. Work top to bottom, and write down what you find as you go: times, devices, names of unknown admins. You will need those notes for Meta, your bank and possibly the police.</p>",
+ "sections": [
+  {
+   "h2": "First 15 minutes: stop the bleeding",
+   "html": "<p>Before investigating anything, cut off the intruder's ability to keep using your accounts and your money.</p><ol><li><strong>Re-register WhatsApp on your own phone.</strong> Open WhatsApp on the phone with your business number, tap <em>Log back in</em> and enter the 6-digit code that arrives by SMS or call. According to <a href=\"https://faq.whatsapp.com/1131652977717250/?locale=en_US\" rel=\"noopener\">WhatsApp's own help article on compromised accounts</a>, entering that code logs out anyone else using the account. Changing a password alone does not.</li><li><strong>If WhatsApp asks for a two-step verification PIN you never set,</strong> the attacker set it. WhatsApp says you will have to wait 7 days before you can try again without it. Use those days to warn customers through other channels (see below).</li><li><strong>Freeze ad spend.</strong> In Meta Ads Manager, pause every active campaign you did not create and remove or lock the payment method. Call your card issuer if you see charges you don't recognize.</li><li><strong>Change the password of the email account</strong> tied to your Facebook and Instagram logins, and turn on two-factor authentication there first. Whoever controls that inbox can reset everything else.</li></ol>"
+  },
+  {
+   "h2": "WhatsApp Business: what to review once you're back in",
+   "html": "<ul><li><strong>Linked devices.</strong> Go to Settings &gt; Linked devices and log out every computer or browser you don't recognize. A common takeover method is not stealing the phone at all, but adding a WhatsApp Web session.</li><li><strong>Two-step verification.</strong> Turn it on (Settings &gt; Account &gt; Two-step verification) and add a recovery email you control. WhatsApp's <a href=\"https://faq.whatsapp.com/1920866721452534/?locale=en_US\" rel=\"noopener\">two-step verification help page</a> notes it is moving from a 6-digit PIN to a password; either way, store it in a password manager, not in a chat.</li><li><strong>Business profile.</strong> Check the business name, description, website link, catalog prices and any payment details. Attackers like to swap the bank account or payment link.</li><li><strong>Quick replies, greeting and away messages.</strong> These are easy to tamper with and often overlooked.</li><li><strong>WhatsApp Business Platform (API) users:</strong> if your number runs through Meta's Cloud API or a provider, the access lives in your Meta business portfolio, so the next section matters even more.</li></ul><p>Rule for your whole team from today on: <strong>nobody ever shares the 6-digit registration code</strong>, no matter who asks. That code is the key to the account.</p>"
+  },
+  {
+   "h2": "Facebook, Instagram and the Meta business portfolio",
+   "html": "<p>If you lost access to a Facebook Page, Meta's recommended route is its <a href=\"https://www.facebook.com/help/738660629556925\" rel=\"noopener\">hacked Page recovery form</a>, submitted while logged in from a device you've used before. If your personal profile was the one taken, start at <a href=\"https://www.facebook.com/help/1216349518398524\" rel=\"noopener\">Recover a hacked account</a> (facebook.com/hacked). Once you are back in, review the business portfolio (formerly Business Manager) in Meta Business Suite:</p><ul><li><strong>People:</strong> remove every person or admin you don't recognize. Check the date they were added; that tells you roughly when the breach started.</li><li><strong>Partners:</strong> look for unknown partner businesses with access to your Pages, ad accounts or WhatsApp accounts. Attackers sometimes add their own portfolio as a partner instead of a person, so it's easy to miss.</li><li><strong>Ad accounts:</strong> review ad account roles and spend. Meta has a help page for <a href=\"https://www.facebook.com/business/help/524424920973484\" rel=\"noopener\">unrecognized activity on your ad account</a>.</li><li><strong>Payment methods and billing:</strong> remove cards you don't recognize, check invoices for the last 30-60 days and dispute fraudulent charges.</li><li><strong>Instagram:</strong> check the linked email and phone in Accounts Center, active login sessions and whether the account was switched to another business portfolio.</li><li><strong>Security center:</strong> require two-factor authentication for everyone in the portfolio, and turn on Meta's extra protections for high-risk accounts if offered.</li></ul>"
+  },
+  {
+   "h2": "Tell your customers before the scammer does",
+   "html": "<p>The most expensive part of a hijacked WhatsApp is usually not the account itself: it's customers who send money to the impersonator. Communicate fast and plainly:</p><ul><li>Post on your other channels (website banner, Instagram story, email list, Google Business Profile post): <em>\"Our WhatsApp number was compromised on [date]. We will never ask you for transfers or codes by chat. If you received such a message, don't pay and call us at [number].\"</em></li><li>Call your top customers directly, especially any with pending orders or invoices.</li><li>If you take payments by bank transfer, remind customers which account details are correct, and confirm any change of payment details by phone.</li><li>Keep screenshots of the fraudulent messages. If someone already paid, they should contact their bank immediately and file a report; in the US, the FBI collects these at ic3.gov.</li></ul>"
+  },
+  {
+   "h2": "Find out how they got in",
+   "html": "<p>If you don't find the entry point, it can happen again next week. The usual suspects for small businesses:</p><ul><li><strong>A shared registration code:</strong> someone on the team received a call or message from \"support\" asking for the 6-digit code.</li><li><strong>A phishing page</strong> imitating Meta (\"your page will be deleted for copyright violation\") that captured a password and a 2FA code.</li><li><strong>Malware on a shared computer</strong> that stole saved browser sessions. A stolen session cookie can bypass passwords and 2FA, which is why you should log out all sessions and change passwords from a clean device.</li><li><strong>An ex-employee or agency</strong> that still had admin access.</li><li><strong>A reused password</strong> that appeared in an old breach of another service.</li></ul><p>Scan the computers used for social media with up-to-date antivirus, and if a machine is suspicious, reset it before logging into anything again.</p>"
+  },
+  {
+   "h2": "Prevention checklist for next time",
+   "html": "<ul><li>Two-step verification on WhatsApp and two-factor authentication on every Meta account and the email behind it.</li><li>At least two trusted admins on the business portfolio, each with their own login. Never one shared Facebook profile.</li><li>Quarterly review of people, partners, linked devices and payment methods (put it on the calendar).</li><li>A written rule: nobody shares codes; Meta does not ask for them by chat or phone.</li><li>Offboarding checklist: remove access the same day someone leaves or an agency contract ends.</li><li>Email authentication (SPF, DKIM, DMARC) on your domain, so attackers can't easily send emails that look like yours. See our <a href=\"/en/services/email-security-phishing-protection/\">email security and phishing protection</a> service.</li></ul>"
+  },
+  {
+   "h2": "Where continuous monitoring fits",
+   "html": "<p>Account takeovers rarely come out of nowhere. They are usually preceded by a leaked password, a look-alike domain, a phishing campaign aimed at your staff or an old admin nobody removed. That's the kind of signal continuous monitoring is designed to catch early, without paying for a full pentest. If you'd like someone watching those signals every week, see how our <a href=\"/en/services/cybersecurity-monitoring/\">cybersecurity monitoring</a> works, or compare it with a pentest in <a href=\"/en/monitoring-vs-pentest/\">monitoring vs pentest</a>. If you are dealing with an active incident right now, our <a href=\"/en/services/incident-response/\">incident response</a> page explains how we help.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does changing my WhatsApp password kick out the hacker?",
+   "a": "No. According to WhatsApp's help center, you need to log back in with the 6-digit code sent to your phone number; doing that logs out anyone else using the account. Then turn on two-step verification and review linked devices."
+  },
+  {
+   "q": "The hacker set a two-step verification PIN on my WhatsApp. What now?",
+   "a": "WhatsApp says that if you don't know the PIN you must wait 7 days and try again. Meanwhile, warn customers on your other channels and ask them not to send money or codes to anyone writing from your number."
+  },
+  {
+   "q": "How do I recover a hacked Facebook Page for my business?",
+   "a": "Meta recommends its hacked Page recovery form, submitted while logged in from a device you have used before. If your personal profile was hacked, start at facebook.com/hacked. After recovery, review people, partners, ad accounts and payment methods in your business portfolio."
+  },
+  {
+   "q": "Should I report the incident?",
+   "a": "Report it to Meta through the official forms, to your bank or card issuer if there were charges, and keep evidence. In the US, fraud losses can be reported to the FBI at ic3.gov. If customer personal data was exposed, check whether a breach notification law applies to you."
+  }
+ ],
+ "sources": [
+  {
+   "title": "WhatsApp Help Center: How to recover a compromised account",
+   "url": "https://faq.whatsapp.com/1131652977717250/?locale=en_US"
+  },
+  {
+   "title": "WhatsApp Help Center: How to manage two-step verification settings",
+   "url": "https://faq.whatsapp.com/1920866721452534/?locale=en_US"
+  },
+  {
+   "title": "Facebook Help Center: Recover a hacked Facebook Page you manage",
+   "url": "https://www.facebook.com/help/738660629556925"
+  },
+  {
+   "title": "Facebook Help Center: Recover a hacked account",
+   "url": "https://www.facebook.com/help/1216349518398524"
+  },
+  {
+   "title": "Meta Business Help Center: Troubleshoot unrecognized activity on your ad account",
+   "url": "https://www.facebook.com/business/help/524424920973484"
+  }
+ ],
+ "related": [
+  "/en/services/incident-response/",
+  "/en/services/email-security-phishing-protection/",
+  "/en/blog/cost-of-a-cybersecurity-incident-small-business/",
+  "/en/monitoring-vs-pentest/"
+ ],
+ "readingMinutes": 6
+}

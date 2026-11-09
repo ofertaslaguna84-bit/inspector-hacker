@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://inspectorhacker.com/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/"/>
@@ -11,129 +11,815 @@
   </url>
   <url>
     <loc>https://inspectorhacker.com/en/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/"/>
   </url>
   <url>
-    <loc>https://inspectorhacker.com/planes/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://inspectorhacker.com/blog/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/planes/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/planes/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/"/>
   </url>
   <url>
-    <loc>https://inspectorhacker.com/en/pricing/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/planes/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/planes/"/>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/shopify-woocommerce-security-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/"/>
   </url>
   <url>
-    <loc>https://inspectorhacker.com/vigilancia-vs-pentest/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://inspectorhacker.com/blog/como-saber-si-tu-servidor-esta-expuesto/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/como-saber-si-tu-servidor-esta-expuesto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/como-saber-si-tu-servidor-esta-expuesto/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/blog/costo-de-un-incidente-de-ciberseguridad-pyme/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/costo-de-un-incidente-de-ciberseguridad-pyme/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/cost-of-a-cybersecurity-incident-small-business/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/costo-de-un-incidente-de-ciberseguridad-pyme/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/blog/lfpdppp-ciberseguridad-pymes/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/lfpdppp-ciberseguridad-pymes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/lfpdppp-ciberseguridad-pymes/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/blog/ransomware-pymes-mexico/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/ransomware-pymes-mexico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/ransomware-pymes-mexico/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/blog/whatsapp-business-hackeado-que-revisar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/whatsapp-business-hackeado-que-revisar/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/whatsapp-business-meta-account-hacked/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/whatsapp-business-hackeado-que-revisar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/ciberseguridad-chihuahua/</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/monitoring-vs-pentest/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
-  </url>
-  <url>
-    <loc>https://inspectorhacker.com/en/monitoring-vs-pentest/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/monitoring-vs-pentest/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
-  </url>
-  <url>
-    <loc>https://inspectorhacker.com/ciberseguridad-pymes-mexico/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cybersecurity-for-small-business/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
-  </url>
-  <url>
-    <loc>https://inspectorhacker.com/en/cybersecurity-for-small-business/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cybersecurity-for-small-business/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
-  </url>
-  <url>
-    <loc>https://inspectorhacker.com/ciberseguridad-torreon/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-torreon/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-torreon/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-chihuahua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-chihuahua/"/>
   </url>
   <url>
     <loc>https://inspectorhacker.com/ciberseguridad-la-laguna/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-la-laguna/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-la-laguna/"/>
   </url>
   <url>
     <loc>https://inspectorhacker.com/ciberseguridad-monterrey/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-monterrey/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-monterrey/"/>
   </url>
   <url>
-    <loc>https://inspectorhacker.com/ciberseguridad-saltillo/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://inspectorhacker.com/ciberseguridad-pymes-mexico/</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cybersecurity-for-small-business/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/ciberseguridad-saltillo/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-saltillo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-saltillo/"/>
   </url>
   <url>
-    <loc>https://inspectorhacker.com/ciberseguridad-chihuahua/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://inspectorhacker.com/ciberseguridad-torreon/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-torreon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-torreon/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/ciudades/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciudades/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cities/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciudades/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/planes/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/planes/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/planes/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/website-security-audit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/cdmx/</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-chihuahua/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-chihuahua/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/cdmx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/cdmx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/durango/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/durango/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/durango/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/guadalajara/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/guadalajara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/guadalajara/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/monterrey/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/monterrey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/monterrey/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/torreon/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/torreon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/torreon/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/cdmx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/cdmx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/cdmx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/chihuahua/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/chihuahua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/chihuahua/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/durango/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/durango/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/durango/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/gomez-palacio/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/gomez-palacio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/gomez-palacio/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/guadalajara/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/guadalajara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/guadalajara/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/monterrey/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/monterrey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/monterrey/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/queretaro/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/queretaro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/queretaro/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/ramos-arizpe/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/ramos-arizpe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/ramos-arizpe/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/saltillo/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/saltillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/saltillo/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/torreon/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/torreon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/torreon/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/chihuahua/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/chihuahua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/chihuahua/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/durango/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/durango/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/durango/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/gomez-palacio/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/gomez-palacio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/gomez-palacio/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/monterrey/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/monterrey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/monterrey/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/ramos-arizpe/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/ramos-arizpe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/ramos-arizpe/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/saltillo/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/saltillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/saltillo/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/torreon/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/torreon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/torreon/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/respuesta-a-incidentes/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/incident-response/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/respuesta-a-incidentes/cdmx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/cdmx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/cdmx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/respuesta-a-incidentes/monterrey/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/monterrey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/monterrey/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/respuesta-a-incidentes/queretaro/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/queretaro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/queretaro/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/respuesta-a-incidentes/saltillo/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/saltillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/saltillo/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/respuesta-a-incidentes/torreon/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/torreon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/torreon/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/server-security/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/chihuahua/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/chihuahua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/chihuahua/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/gomez-palacio/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/gomez-palacio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/gomez-palacio/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/guadalajara/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/guadalajara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/guadalajara/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/monterrey/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/monterrey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/monterrey/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/queretaro/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/queretaro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/queretaro/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/ramos-arizpe/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/ramos-arizpe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/ramos-arizpe/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/saltillo/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/saltillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/saltillo/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/servicios/seguridad-de-servidores/torreon/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/torreon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/torreon/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/vigilancia-vs-pentest/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/monitoring-vs-pentest/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/cost-of-a-cybersecurity-incident-small-business/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/costo-de-un-incidente-de-ciberseguridad-pyme/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/cost-of-a-cybersecurity-incident-small-business/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/costo-de-un-incidente-de-ciberseguridad-pyme/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/ftc-safeguards-rule-small-business/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/ftc-safeguards-rule-small-business/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/blog/ftc-safeguards-rule-small-business/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/shopify-woocommerce-security-checklist/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/shopify-woocommerce-security-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/whatsapp-business-meta-account-hacked/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/whatsapp-business-hackeado-que-revisar/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/whatsapp-business-meta-account-hacked/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/whatsapp-business-hackeado-que-revisar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/when-do-you-need-a-pentest/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/when-do-you-need-a-pentest/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/blog/when-do-you-need-a-pentest/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/cities/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciudades/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cities/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciudades/"/>
   </url>
   <url>
     <loc>https://inspectorhacker.com/en/cybersecurity-bentonville-ar/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cybersecurity-bentonville-ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/cybersecurity-bentonville-ar/"/>
   </url>
   <url>
-    <loc>https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://inspectorhacker.com/en/cybersecurity-for-small-business/</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cybersecurity-for-small-business/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/ciberseguridad-pymes-mexico/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/"/>
   </url>
   <url>
     <loc>https://inspectorhacker.com/en/cybersecurity-san-antonio-tx/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/cybersecurity-san-antonio-tx/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/cybersecurity-san-antonio-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/monitoring-vs-pentest/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/monitoring-vs-pentest/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/vigilancia-vs-pentest/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/pricing/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/planes/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/planes/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/cybersecurity-monitoring/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/monitoreo-de-ciberseguridad/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/cybersecurity-monitoring/austin-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/austin-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/austin-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/cybersecurity-monitoring/bentonville-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/bentonville-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/bentonville-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/cybersecurity-monitoring/dallas-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/dallas-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/dallas-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/cybersecurity-monitoring/fayetteville-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/fayetteville-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/fayetteville-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/cybersecurity-monitoring/rogers-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/rogers-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/rogers-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/cybersecurity-monitoring/san-antonio-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/san-antonio-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/cybersecurity-monitoring/san-antonio-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/email-security-phishing-protection/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/proteccion-de-correo-y-phishing/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/email-security-phishing-protection/bentonville-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/bentonville-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/bentonville-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/email-security-phishing-protection/dallas-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/dallas-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/dallas-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/email-security-phishing-protection/fayetteville-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/fayetteville-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/fayetteville-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/email-security-phishing-protection/rogers-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/rogers-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/rogers-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/email-security-phishing-protection/san-antonio-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/san-antonio-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/email-security-phishing-protection/san-antonio-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/incident-response/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/incident-response/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/respuesta-a-incidentes/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/incident-response/dallas-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/incident-response/dallas-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/incident-response/dallas-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/incident-response/rogers-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/incident-response/rogers-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/incident-response/rogers-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/incident-response/san-antonio-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/incident-response/san-antonio-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/incident-response/san-antonio-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/server-security/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/server-security/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/seguridad-de-servidores/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/server-security/austin-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/server-security/austin-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/server-security/austin-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/server-security/bentonville-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/server-security/bentonville-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/server-security/bentonville-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/server-security/san-antonio-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/server-security/san-antonio-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/server-security/san-antonio-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/website-security-audit/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/website-security-audit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/servicios/auditoria-de-seguridad-web/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/website-security-audit/austin-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/website-security-audit/austin-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/website-security-audit/austin-tx/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/website-security-audit/bentonville-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/website-security-audit/bentonville-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/website-security-audit/bentonville-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/website-security-audit/fayetteville-ar/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/website-security-audit/fayetteville-ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/website-security-audit/fayetteville-ar/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/services/website-security-audit/san-antonio-tx/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/services/website-security-audit/san-antonio-tx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/services/website-security-audit/san-antonio-tx/"/>
   </url>
 </urlset>

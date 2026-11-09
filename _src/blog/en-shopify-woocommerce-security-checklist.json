@@ -1,0 +1,105 @@
+{
+ "lang": "en",
+ "slug": "shopify-woocommerce-security-checklist",
+ "pair": "checklist-seguridad-tienda-en-linea-shopify-woocommerce",
+ "title": "Shopify & WooCommerce Security Checklist for Small Stores",
+ "h1": "Security checklist for Shopify and WooCommerce stores",
+ "description": "Security checklist for small Shopify or WooCommerce stores: staff 2FA, apps and plugins, updates, firewall, PCI, skimming, backups and email.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "E-commerce security",
+ "intro": "<p>An online store is a target for a simple reason: money and card data pass through it. The good news is that most store compromises come from a short list of preventable gaps, not from sophisticated attacks. This checklist covers both Shopify (hosted, where the platform handles a lot for you) and WooCommerce (self-hosted on WordPress, where you or your developer handle almost everything). Go through it with whoever manages your store and mark each item done, not applicable, or pending with a date.</p>",
+ "sections": [
+  {
+   "h2": "Shopify vs WooCommerce: who is responsible for what",
+   "html": "<p>The platforms split responsibility very differently, and many owners don't realize it.</p><ul><li><strong>Shopify</strong> says it is <a href=\"https://www.shopify.com/security/pci-compliant\" rel=\"noopener\">certified Level 1 PCI DSS compliant</a>, and that the certification covers your store, its shopping cart and web hosting. Shopify patches the servers. Your job is mainly accounts, staff, apps, theme code and your domain.</li><li><strong>WooCommerce</strong> is software you run. WooCommerce's own documentation says <a href=\"https://woocommerce.com/document/pci-dss-compliance-and-woocommerce/\" rel=\"noopener\">PCI DSS compliance is ultimately the responsibility of the store owner</a>, and it extends to your hosting, plugins and admin access policies. WooCommerce notes it never stores full card details itself, but the site that loads the checkout is still yours to protect.</li></ul><p>The <a href=\"https://www.pcisecuritystandards.org/\" rel=\"noopener\">PCI Security Standards Council</a> publishes PCI DSS; the current version referenced on its site is v4.0.1. Your payment provider can tell you which self-assessment questionnaire applies to you.</p>"
+  },
+  {
+   "h2": "1. Accounts and staff access",
+   "html": "<ul><li><strong>Two-step authentication for every staff account.</strong> On Shopify, each staff member turns on <a href=\"https://help.shopify.com/en/manual/your-account/account-security/two-step-authentication\" rel=\"noopener\">two-step authentication</a> for their own account; Shopify notes that only Shopify Plus stores can require it organization-wide, so on other plans you need to check each person. On WooCommerce, add 2FA to every administrator and shop manager login.</li><li><strong>One person, one login.</strong> No shared \"admin\" account. Shared logins make it impossible to know who changed what.</li><li><strong>Least privilege.</strong> Use Shopify's <a href=\"https://help.shopify.com/en/manual/your-account/staff-accounts/staff-permissions\" rel=\"noopener\">staff permissions</a> (or WordPress roles) so a person who packs orders can't install apps or edit the theme.</li><li><strong>Offboarding the same day</strong> someone leaves or an agency contract ends, including collaborator accounts.</li><li><strong>Protect the email behind the store owner account</strong> with 2FA; it is the master key for password resets.</li></ul>"
+  },
+  {
+   "h2": "2. Apps, plugins and themes",
+   "html": "<ul><li>List every installed app or plugin and remove anything you don't actively use. Each one is code with access to your store.</li><li>Review the permissions each Shopify app requests; question any app that wants access to customers or orders without a clear reason.</li><li>On WooCommerce, install plugins only from reputable sources and never use \"nulled\" (pirated) plugins or themes; WooCommerce's <a href=\"https://developer.woocommerce.com/docs/best-practices/security/security-best-practices/\" rel=\"noopener\">security best practices</a> explicitly warn against them and recommend removing unmaintained extensions.</li><li>Keep a record of who edited theme code and when. Unexpected script tags in your theme or checkout are a red flag.</li></ul>"
+  },
+  {
+   "h2": "3. Updates and hardening (mostly WooCommerce)",
+   "html": "<ul><li>Enable automatic WordPress core security updates and update WooCommerce, plugins and themes regularly, testing on a staging copy first.</li><li>Keep PHP and the server's operating system on supported versions. Ask your host in writing who is responsible for this.</li><li>Limit login attempts, restrict XML-RPC and REST API access if you don't use them, and set secure file permissions, all recommended in WooCommerce's developer guidance.</li><li>Put a web application firewall (WAF) in front of the site, either from your host, a CDN or a security plugin. It won't fix a vulnerable plugin, but it blocks a lot of automated attacks while you patch.</li><li>Make sure the admin panel isn't the only thing protecting your server: SSH, database and hosting panels should not be openly exposed to the internet with password-only logins. Our <a href=\"/en/services/server-security/\">server security</a> page covers this.</li></ul>"
+  },
+  {
+   "h2": "4. Checkout, payments and skimming",
+   "html": "<ul><li><strong>Let the payment provider handle card data.</strong> Use hosted or embedded checkout fields from your provider so card numbers never touch your server.</li><li><strong>Watch for skimming.</strong> Card skimmers (often called Magecart-style attacks) inject JavaScript that copies what customers type at checkout. Keep an inventory of the scripts that load on checkout and payment pages and investigate any you didn't add. PCI DSS requirements 6.4.3 and 11.6.1, explained in the PCI Council's <a href=\"https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming\" rel=\"noopener\">guidance on payment page security and e-skimming</a>, focus on making sure payment page scripts are authorized, checked for integrity and monitored for tampering; ask your provider how they apply to your setup.</li><li><strong>Card-testing protection.</strong> Bots use checkout to test stolen cards. Turn on CAPTCHA or your provider's fraud tools and alerts for bursts of failed payments.</li><li><strong>HTTPS everywhere</strong>, with a valid certificate that renews automatically.</li></ul>"
+  },
+  {
+   "h2": "5. Backups and recovery",
+   "html": "<ul><li>WooCommerce: automated full backups (database, files and media), stored off-site, and at least one test restore. A backup you've never restored is a hope, not a plan.</li><li>Shopify: Shopify runs the platform, but your products, customers, theme customizations and app data can still be deleted by a compromised staff account or a bad app. Export key data regularly or use a backup app.</li><li>Write down who you would call and what you would do if the store were defaced or offline for a day. Our <a href=\"/en/services/incident-response/\">incident response</a> page has the basics.</li></ul>"
+  },
+  {
+   "h2": "6. Your domain and email (SPF, DKIM, DMARC)",
+   "html": "<p>Order confirmations, password resets and invoices go out under your domain. If it isn't authenticated, attackers can send convincing fake emails to your customers, and your legitimate mail lands in spam. Google's <a href=\"https://support.google.com/a/answer/81126\" rel=\"noopener\">email sender guidelines</a> require all senders to Gmail to set up SPF or DKIM, and senders of more than 5,000 messages a day to set up SPF, DKIM and DMARC.</p><ul><li>Publish SPF and DKIM for every service that sends as your domain (store platform, newsletter tool, helpdesk).</li><li>Publish a DMARC record, start with monitoring, then move to quarantine or reject once legitimate senders pass.</li><li>Turn on registrar lock and 2FA at your domain registrar; losing the domain means losing the store.</li></ul>"
+  },
+  {
+   "h2": "Keeping it checked, not just checked once",
+   "html": "<p>This list is a snapshot. Stores change every week: new apps, new staff, a theme tweak, a plugin that stops getting updates. That drift is what continuous monitoring is for: weekly checks of what's exposed, alerts for critical vulnerabilities in your stack and a monthly report a person actually reads. Our <a href=\"/en/services/website-security-audit/\">website security audit</a> is a good one-time starting point, and the <a href=\"/en/pricing/\">Vigía plan</a> keeps watching afterwards. If you're wondering whether you need a pentest instead, read <a href=\"/en/blog/when-do-you-need-a-pentest/\">when do you actually need a pentest</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is my Shopify store automatically PCI compliant?",
+   "a": "Shopify says it is certified Level 1 PCI DSS compliant and that this covers your store, its shopping cart and web hosting. You are still responsible for your accounts, staff access, apps and any custom code you add."
+  },
+  {
+   "q": "Who is responsible for PCI compliance on WooCommerce?",
+   "a": "WooCommerce's documentation states that PCI DSS compliance is ultimately the responsibility of the store owner, including hosting, plugins and admin access. Using your payment provider's hosted or embedded card fields reduces how much of your site is in scope."
+  },
+  {
+   "q": "Can I force all Shopify staff to use two-step authentication?",
+   "a": "According to Shopify's help center, only stores on Shopify Plus can require a secure sign-in method for all users. On other plans each staff member enables it on their own account, so check each one."
+  },
+  {
+   "q": "Do I need DMARC for a small store?",
+   "a": "Google requires SPF or DKIM for all senders to Gmail, and SPF, DKIM and DMARC for senders of more than 5,000 messages a day. Even below that volume, DMARC makes it harder for criminals to impersonate your store's emails."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Shopify: PCI compliant hosting",
+   "url": "https://www.shopify.com/security/pci-compliant"
+  },
+  {
+   "title": "Shopify Help Center: Two-step authentication",
+   "url": "https://help.shopify.com/en/manual/your-account/account-security/two-step-authentication"
+  },
+  {
+   "title": "Shopify Help Center: Permissions",
+   "url": "https://help.shopify.com/en/manual/your-account/staff-accounts/staff-permissions"
+  },
+  {
+   "title": "WooCommerce: PCI-DSS compliance and WooCommerce",
+   "url": "https://woocommerce.com/document/pci-dss-compliance-and-woocommerce/"
+  },
+  {
+   "title": "WooCommerce Developer Docs: Security best practices",
+   "url": "https://developer.woocommerce.com/docs/best-practices/security/security-best-practices/"
+  },
+  {
+   "title": "PCI Security Standards Council",
+   "url": "https://www.pcisecuritystandards.org/"
+  },
+  {
+   "title": "Google Workspace Admin Help: Email sender guidelines",
+   "url": "https://support.google.com/a/answer/81126"
+  },
+  {
+   "title": "PCI SSC: Payment Page Security and Preventing E-Skimming (6.4.3 and 11.6.1)",
+   "url": "https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming"
+  }
+ ],
+ "related": [
+  "/en/services/website-security-audit/",
+  "/en/services/server-security/",
+  "/en/services/email-security-phishing-protection/",
+  "/en/pricing/"
+ ],
+ "readingMinutes": 6
+}

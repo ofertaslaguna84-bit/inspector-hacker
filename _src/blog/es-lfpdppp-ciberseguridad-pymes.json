@@ -1,0 +1,78 @@
+{
+ "lang": "es",
+ "slug": "lfpdppp-ciberseguridad-pymes",
+ "pair": null,
+ "title": "Nueva LFPDPPP 2025: qué debe hacer tu pyme en seguridad",
+ "h1": "Protección de datos personales en México: lo básico que tu pyme debe cumplir con la nueva LFPDPPP",
+ "description": "La nueva LFPDPPP (DOF 20 mar 2025) desapareció al INAI. Qué cambió para tu pyme: aviso de privacidad, medidas de seguridad, vulneraciones y multas.",
+ "date": "2026-11-08",
+ "updated": "2026-11-08",
+ "category": "Cumplimiento",
+ "readingMinutes": 8,
+ "intro": "<p>Si tu empresa tiene una base de clientes, expedientes de empleados, una lista de prospectos de WhatsApp o un formulario de contacto en su sitio, tratas datos personales y te aplica la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP). En marzo de 2025 esa ley cambió por completo y la autoridad que la vigilaba, el INAI, desapareció.</p><p>Este artículo resume lo que una pyme necesita saber desde el lado de la seguridad de la información. <strong>No es asesoría legal</strong>: para tu caso concreto, consulta a un abogado especializado en datos personales.</p>",
+ "sections": [
+  {
+   "h2": "Qué cambió en 2025",
+   "html": "<p>El 20 de marzo de 2025 se publicó en el Diario Oficial de la Federación una <a href=\"https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf\" rel=\"noopener\">nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares</a>, que entró en vigor al día siguiente y sustituyó a la ley de 2010. El texto vigente que publica la Cámara de Diputados registra además una reforma del 14 de noviembre de 2025.</p><ul><li><strong>Nueva autoridad.</strong> La ley define como autoridad a la <strong>Secretaría Anticorrupción y Buen Gobierno</strong>, que asume las funciones que tenía el INAI para particulares: vigilar, verificar, resolver procedimientos y sancionar (<a href=\"https://www.garrigues.com/es_ES/noticia/mexico-nueva-ley-federal-proteccion-datos-personales-posesion-particulares-introduce\" rel=\"noopener\">resumen de Garrigues</a>).</li><li><strong>Consentimiento</strong> expreso o tácito, según el caso, y aviso de privacidad que debe identificar datos sensibles y distinguir las finalidades que requieren consentimiento.</li><li><strong>Sanciones en UMA</strong> (Unidad de Medida y Actualización) en lugar de salario mínimo.</li><li>Contra las resoluciones de la Secretaría procede el juicio de amparo.</li></ul>"
+  },
+  {
+   "h2": "El aviso de privacidad: lo mínimo que debe decir",
+   "html": "<p>El artículo 15 de la ley enumera lo que el aviso de privacidad debe contener, al menos:</p><ol><li>Identidad y domicilio del responsable (tu empresa).</li><li>Los datos personales que tratas, identificando los sensibles.</li><li>Las finalidades del tratamiento, distinguiendo las que requieren consentimiento.</li><li>Las opciones para limitar el uso o divulgación de los datos.</li><li>Cómo ejercer los derechos ARCO (acceso, rectificación, cancelación y oposición).</li><li>Cómo vas a comunicar cambios al aviso.</li></ol><p>Omitir alguno de esos elementos es una infracción (artículo 58, fracción V). Si tu aviso es una plantilla de hace años que menciona al INAI, es momento de revisarlo con tu abogado.</p>"
+  },
+  {
+   "h2": "Medidas de seguridad: la parte que es de TI",
+   "html": "<p>El artículo 18 obliga a todo responsable a <strong>establecer y mantener medidas de seguridad administrativas, técnicas y físicas</strong> para proteger los datos personales contra daño, pérdida, alteración, destrucción o uso, acceso o tratamiento no autorizado. Además, no pueden ser menores a las que usas para tu propia información, y deben considerar el riesgo, las consecuencias para las personas, la sensibilidad de los datos y el desarrollo tecnológico.</p><p>Traducido a una pyme, eso se ve así:</p><ul><li><strong>Administrativas:</strong> quién tiene acceso a qué base de datos, acuerdos de confidencialidad con empleados y proveedores (el artículo 20 exige controles de confidencialidad que siguen vigentes aun después de terminar la relación), baja de accesos al salir alguien.</li><li><strong>Técnicas:</strong> segundo factor en correo y sistemas, contraseñas únicas, cifrado de laptops, respaldos, actualizaciones, servidores sin bases de datos expuestas a internet, registro de accesos.</li><li><strong>Físicas:</strong> expedientes en papel bajo llave, el servidor de la oficina en un cuarto cerrado, equipos que se borran antes de venderse o desecharse.</li></ul>"
+  },
+  {
+   "h2": "Si te hackean: vulneraciones de seguridad",
+   "html": "<p>El artículo 19 dice que las vulneraciones de seguridad que <strong>afecten de forma significativa los derechos patrimoniales o morales</strong> de las personas titulares deben informárseles <strong>de forma inmediata</strong>, para que puedan defenderse (por ejemplo, cambiar contraseñas o vigilar sus cuentas).</p><p>Para cumplir eso necesitas tres cosas preparadas antes del incidente:</p><ul><li><strong>Saber qué datos tienes y dónde</strong> (inventario), para poder decir qué se expuso.</li><li><strong>Poder detectar</strong> el incidente pronto: registros de acceso y alguien que los revise.</li><li><strong>Un plan de respuesta</strong> con quién decide, quién redacta el aviso y por qué canal se manda. Lo cubre el servicio de <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a>.</li></ul><p>Además, vulnerar la seguridad de bases de datos, locales, programas o equipos cuando resulte imputable al responsable es una infracción (artículo 58, fracción XI).</p>"
+  },
+  {
+   "h2": "Cuánto pueden costar las multas",
+   "html": "<p>El artículo 59 establece multas de <strong>100 a 160,000 veces la UMA</strong> para infracciones como omitir elementos del aviso de privacidad, y de <strong>200 a 320,000 veces la UMA</strong> para infracciones como incumplir la confidencialidad o vulnerar la seguridad de las bases de datos por causa imputable al responsable. Si las infracciones persisten puede haber multas adicionales, y en datos sensibles las sanciones pueden duplicarse. Consulta el valor vigente de la UMA en el INEGI para convertirlo a pesos.</p>"
+  },
+  {
+   "h2": "Checklist de cumplimiento básico para este trimestre",
+   "html": "<ul><li>Inventario de bases de datos personales: clientes, empleados, prospectos, proveedores; dónde vive cada una y quién tiene acceso.</li><li>Aviso de privacidad actualizado a la ley de 2025 y publicado en tu sitio, con versión simplificada donde captas datos.</li><li>Responsable interno de datos personales y procedimiento para atender solicitudes ARCO.</li><li>Acuerdos de confidencialidad y de tratamiento con empleados, agencias y proveedores de software.</li><li>Medidas técnicas mínimas: segundo factor, respaldos probados, equipos cifrados, nada de bases de datos expuestas (revísalo con <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">esta guía</a>).</li><li>Plan de respuesta a vulneraciones con plantilla de aviso a titulares.</li><li>Evidencia: guarda fechas, reportes y bitácoras. Si un día hay verificación, la evidencia es lo que demuestra que sí tenías medidas.</li></ul>"
+  },
+  {
+   "h2": "Cómo ayuda la vigilancia continua",
+   "html": "<p>La ley pide \"establecer y mantener\" medidas de seguridad: mantener es la parte difícil. La <a href=\"/servicios/monitoreo-de-ciberseguridad/\">vigilancia de ciberseguridad</a> revisa cada semana lo que tienes expuesto, las contraseñas filtradas y las vulnerabilidades de tu tecnología, y te deja un reporte mensual que sirve como evidencia de que las medidas se mantienen. No sustituye a tu abogado ni a una auditoría legal, y no es un pentest (<a href=\"/vigilancia-vs-pentest/\">diferencias aquí</a>). Precios en <a href=\"/planes/\">planes</a>.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿Sigue existiendo el INAI?",
+   "a": "No para este tema. La nueva LFPDPPP, publicada en el DOF el 20 de marzo de 2025, define como autoridad a la Secretaría Anticorrupción y Buen Gobierno, que asumió las funciones de vigilancia, verificación y sanción respecto a los particulares."
+  },
+  {
+   "q": "¿Mi pyme necesita aviso de privacidad?",
+   "a": "Si tratas datos personales de clientes, empleados o prospectos, sí. El artículo 15 de la ley enumera lo mínimo que debe contener. Revisa con un abogado si tu aviso se actualizó a la ley de 2025."
+  },
+  {
+   "q": "¿Tengo que avisar a mis clientes si me hackean?",
+   "a": "El artículo 19 obliga a informar de forma inmediata a las personas titulares cuando una vulneración afecte de forma significativa sus derechos patrimoniales o morales. Conviene tener la plantilla y el proceso listos antes del incidente."
+  },
+  {
+   "q": "¿Este artículo es asesoría legal?",
+   "a": "No. Es un resumen desde el punto de vista de seguridad de la información. Para tu caso concreto consulta a un abogado especializado en protección de datos personales."
+  }
+ ],
+ "sources": [
+  {
+   "title": "Cámara de Diputados — Ley Federal de Protección de Datos Personales en Posesión de los Particulares (texto vigente)",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf"
+  },
+  {
+   "title": "Garrigues — México: nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares",
+   "url": "https://www.garrigues.com/es_ES/noticia/mexico-nueva-ley-federal-proteccion-datos-personales-posesion-particulares-introduce"
+  }
+ ],
+ "related": [
+  "/servicios/monitoreo-de-ciberseguridad/",
+  "/servicios/respuesta-a-incidentes/",
+  "/ciberseguridad-pymes-mexico/",
+  "/vigilancia-vs-pentest/",
+  "/blog/costo-de-un-incidente-de-ciberseguridad-pyme/"
+ ]
+}
