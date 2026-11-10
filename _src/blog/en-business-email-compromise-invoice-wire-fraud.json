@@ -1,0 +1,74 @@
+{
+  "lang": "en",
+  "slug": "business-email-compromise-invoice-wire-fraud",
+  "pair": null,
+  "topic": "Business email compromise: how invoice and wire fraud works and how to stop it",
+  "title": "Business Email Compromise: Stop Invoice and Wire Fraud",
+  "h1": "Business Email Compromise: How Invoice and Wire Fraud Works and How to Stop It",
+  "description": "How business email compromise turns a normal invoice into a wire fraud loss, the red flags to catch, and concrete steps a small business can take to stop it.",
+  "date": "2026-11-10",
+  "updated": "2026-11-10",
+  "category": "Email Security",
+  "readingMinutes": 7,
+  "intro": "<p>Business email compromise (BEC) is one of the most common and most expensive scams hitting small businesses. It does not rely on breaking encryption or exploiting a software bug. It relies on a convincing email, a rushed payment, and a person who wants to do their job well. The attacker impersonates a vendor, a boss, or a colleague and asks for a payment, a change of bank details, or a batch of gift cards. If your team pays invoices by email and moves money by wire or transfer, you are a target.</p><p>This article explains how invoice and wire fraud actually works, what to watch for, and the concrete controls that stop it. No scare tactics, just the steps that close the gap.</p>",
+  "sections": [
+    {
+      "h2": "What business email compromise really is",
+      "html": "<p>BEC is a form of social engineering. The attacker does not need to hack your server. They need one of three things:</p><ul><li><strong>A lookalike address.</strong> A domain that is one character off from your vendor's, or a free webmail address with the vendor's name in it.</li><li><strong>A compromised mailbox.</strong> Real access to a vendor's or employee's inbox, so the reply comes from the real address and the real thread.</li><li><strong>A spoofed display name.</strong> The email shows \"Accounts Payable — Acme Supplies\" but the actual address is unrelated.</li></ul><p>From there, the play is almost always money or data. The most common version in small business is the fake invoice or the \"updated bank details\" request. A close second is the urgent wire from an executive who is \"in a meeting and can't talk.\"</p><p>The reason it works is not that people are careless. It is that the request arrives inside a normal workflow: a real-looking invoice, a real-looking thread, a real deadline. The control that stops it is a process, not a smarter employee.</p>"
+    },
+    {
+      "h2": "How invoice and wire fraud plays out, step by step",
+      "html": "<p>Most cases follow a predictable pattern. Knowing the pattern is half the defense.</p><ol><li><strong>Reconnaissance.</strong> The attacker studies your website, LinkedIn, and public filings to learn who your vendors are, who approves payments, and who signs.</li><li><strong>First contact or thread hijack.</strong> They send a plausible invoice, or they reply inside an existing email thread if they have mailbox access. A reply in an existing thread is far more convincing than a new email.</li><li><strong>The change request.</strong> The email says the vendor has switched banks, or asks you to update payment details before the next invoice. Often it includes a PDF invoice with new account numbers.</li><li><strong>Pressure.</strong> A deadline, a discount for paying today, a warning that service will be cut, or an executive who is \"unavailable\" and needs it handled quietly.</li><li><strong>Payment.</strong> The money leaves by wire or transfer to an account the attacker controls. Once it lands, recovery is difficult and often partial.</li></ol><p>The tell is almost always the same: <strong>the payment details changed, and the request came by email.</strong> A legitimate vendor changing banks will accept a phone call to confirm. A fraudster will resist it.</p>"
+    },
+    {
+      "h2": "Red flags your team should recognize",
+      "html": "<p>Train people to slow down on these signals. Any one of them is a reason to verify by a second channel.</p><ul><li>A change of bank account, routing number, or payment portal, especially mid-relationship.</li><li>Reply-to address or domain that differs from the sender's display name, or a domain that is one letter off.</li><li>Urgency: \"today,\" \"before close of business,\" \"the wire must go out now.\"</li><li>Secrecy: \"don't discuss this with the team,\" \"the CEO wants this handled quietly.\"</li><li>A request to move the conversation to a personal email, WhatsApp, or a new phone number.</li><li>An executive asking for a wire, gift cards, or payroll change while \"in a meeting\" and unable to take a call.</li><li>Invoice formatting that is slightly off: wrong logo, different font, a new PO number, a different remit-to address.</li><li>Grammar or tone that does not match the person's usual writing, even if the address looks right.</li></ul><p>None of these proves fraud on its own. Together they mean: stop, verify, then pay.</p>"
+    },
+    {
+      "h2": "The controls that actually stop wire fraud",
+      "html": "<p>These are the practical controls that close the gap. Most are process, not technology, and most cost little or nothing.</p><h3>1. Out-of-band verification for any payment change</h3><p>Any request to change bank details, payment portal, or remit-to address must be confirmed by phone using a number you already have on file, not a number in the email. Call the vendor contact you already know. This single rule stops the majority of invoice fraud.</p><h3>2. Two-person approval for wires and large payments</h3><p>No single person should be able to initiate and release a wire. Require a second approver who checks the request against the original contract or PO. Make the approver someone who did not receive the email.</p><h3>3. A callback rule for executives</h3><p>If an executive requests a payment, gift cards, or payroll change by email, the request is verified by a call or in person. No exceptions, even for the owner. Fraudsters rely on people not wanting to question the boss.</p><h3>4. Email authentication: SPF, DKIM and DMARC</h3><p>These records make it much harder for someone to send email that appears to come from your domain. They do not stop a compromised mailbox, but they stop a large share of spoofing. Our step-by-step guide walks through setup: <a href=\"/en/blog/spf-dkim-dmarc-step-by-step-small-business/\">How to set up SPF, DKIM and DMARC</a>.</p><h3>5. Payment detail records that cannot be changed by email alone</h3><p>Keep a vendor master file with verified bank details. Changes require a signed form and a verified callback. The email is a request, not an authorization.</p><h3>6. Filtering and warning banners</h3><p>Configure your email platform to flag external senders and lookalike domains. A banner that says \"this email came from outside your organization\" is simple and effective.</p><h3>7. A short, repeated training</h3><p>Ten minutes a quarter beats a two-hour annual session. Use real examples from your own inbox, and rehearse the callback rule until it is habit.</p><p>If you want a broader view of what a breach costs and why controls matter, see <a href=\"/en/blog/cost-of-a-cybersecurity-incident-small-business/\">what a cybersecurity incident really costs a small business</a>.</p>"
+    },
+    {
+      "h2": "If you suspect a fraudulent payment",
+      "html": "<p>Speed matters. Act in this order:</p><ol><li><strong>Call your bank immediately.</strong> Ask them to recall the wire or freeze the transfer. The sooner you call, the better the chance of recovery.</li><li><strong>Notify your vendor by phone</strong> using a known number, so they can warn other customers and check their own mailbox.</li><li><strong>Preserve the evidence.</strong> Do not delete the email. Save the full headers, the invoice attachment, and the sender address.</li><li><strong>Change credentials</strong> for any mailbox that may be compromised, and check forwarding rules and mailbox delegation.</li><li><strong>Report it.</strong> File a complaint with the FBI's Internet Crime Complaint Center at <a href=\"https://www.ic3.gov\" target=\"_blank\" rel=\"noopener\">ic3.gov</a> and with the FTC at <a href=\"https://reportfraud.ftc.gov\" target=\"_blank\" rel=\"noopener\">reportfraud.ftc.gov</a>. Both are official channels and the reports help others.</li><li><strong>Review what failed.</strong> Was there a callback rule? A second approver? Fix the process, not just the inbox.</li></ol><p>If the compromise involved a mailbox or a broader intrusion, an incident response process helps contain it. See <a href=\"/en/services/incident-response/\">incident response</a>.</p>"
+    },
+    {
+      "h2": "Why this keeps happening to small businesses",
+      "html": "<p>Small businesses are targeted because the workflow is simple and the approvals are often informal. One person handles invoices, another signs, and everyone trusts email because it is how business gets done. There is no security team watching, and no one has time to verify every payment.</p><p>The fix is not a bigger security budget. It is a small number of rules that everyone follows, plus visibility into what is actually arriving in your inboxes. That is where continuous monitoring fits: not as a replacement for your process, but as a way to see lookalike domains, spoofed senders, and suspicious login activity before they turn into a payment request. You can read more about how monitoring differs from a one-time test in <a href=\"/en/monitoring-vs-pentest/\">monitoring vs. pentest</a>, and about our <a href=\"/en/services/email-security-phishing-protection/\">email security and phishing protection</a> work.</p>"
+    },
+    {
+      "h2": "A practical starting checklist",
+      "html": "<p>If you do nothing else this month, do these:</p><ul><li>Write down the callback rule and send it to everyone who touches payments.</li><li>Add a second approver for wires and payments above a threshold you set.</li><li>Publish SPF, DKIM and DMARC records for your domain.</li><li>Turn on external-sender banners in your email platform.</li><li>Review mailbox forwarding rules and admin accounts for anything you did not set up.</li><li>Run a 10-minute training on the red flags above, using a real example.</li><li>Keep a verified vendor bank-detail file that email cannot change.</li></ul><p>These steps are cheap, they are concrete, and they close the most common path to a wire fraud loss.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can email authentication like DMARC stop invoice fraud?",
+      "a": "It helps, but it is not enough. SPF, DKIM and DMARC make it harder to spoof your domain, which blocks a large share of fake invoices. They do not stop an attacker who has real access to a vendor's or employee's mailbox, because those emails are legitimately sent. That is why a callback rule and a second approver matter just as much."
+    },
+    {
+      "q": "What should we do if we already sent the wire?",
+      "a": "Call your bank immediately and ask them to recall the transfer or freeze the account. Then notify the vendor by phone using a number you already have, preserve the email and its headers, change any compromised credentials, and report the incident to ic3.gov and reportfraud.ftc.gov. Recovery is not guaranteed, so speed is the main factor."
+    },
+    {
+      "q": "Is a phone call really enough to verify a bank change?",
+      "a": "Yes, if you call a number you already have on file, not a number provided in the email. The point is to reach the person through a channel the attacker does not control. A short call to a known contact is the single most effective control against invoice fraud."
+    },
+    {
+      "q": "Do small businesses really get targeted, or is this only a big-company problem?",
+      "a": "Small businesses are targeted precisely because payment workflows are informal and there is no security team watching. The attacker does not need a sophisticated intrusion; a convincing email and a rushed payment are enough. The controls in this article are designed for teams without a dedicated security staff."
+    }
+  ],
+  "sources": [
+    {
+      "title": "FBI Internet Crime Complaint Center (IC3)",
+      "url": "https://www.ic3.gov"
+    },
+    {
+      "title": "FTC Report Fraud",
+      "url": "https://reportfraud.ftc.gov"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
