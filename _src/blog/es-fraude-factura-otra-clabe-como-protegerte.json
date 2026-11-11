@@ -1,0 +1,74 @@
+{
+  "lang": "es",
+  "slug": "fraude-factura-otra-clabe-como-protegerte",
+  "pair": null,
+  "topic": "Fraude de la factura con otra CLABE: cómo funciona y cómo protegerte",
+  "title": "Fraude de la factura con otra CLABE: cómo protegerte",
+  "h1": "Fraude de la factura con otra CLABE: cómo funciona y cómo protegerte",
+  "description": "Te cambian la CLABE en una factura y pagas al atacante. Aprende cómo opera este fraude, señales de alerta y un procedimiento de verificación para tu pyme.",
+  "date": "2026-11-11",
+  "updated": "2026-11-11",
+  "category": "Fraude y phishing",
+  "readingMinutes": 7,
+  "intro": "<p>Imagina esto: tu proveedor te manda la factura del mes, la revisas por encima, coincides en el monto y transfieres. Días después el proveedor te llama porque no le llegó el pago. La CLABE de la factura no era la suya: alguien la cambió en el camino. Ese es el <strong>fraude de la factura con otra CLABE</strong>, también conocido como fraude de cambio de datos bancarios o <em>business email compromise</em> en su variante de pago.</p><p>No requiere hackear tu banco ni el del proveedor. Requiere algo mucho más simple: que alguien logre que tú (o tu equipo de cuentas por pagar) transfiera a la cuenta equivocada. En pymes con procesos informales de pago, este fraude es especialmente rentable para el atacante y especialmente caro para ti.</p><p>Aquí te explico cómo funciona, qué señales debes vigilar y qué procedimiento puedes implementar esta misma semana para que no te pase.</p>",
+  "sections": [
+    {
+      "h2": "Cómo funciona el fraude de la CLABE, paso a paso",
+      "html": "<p>El patrón es casi siempre el mismo. Cambian los detalles, pero la mecánica se repite:</p><ol><li><strong>Reconocimiento.</strong> El atacante identifica a tu proveedor y a ti como cliente. Puede obtener información de facturas anteriores, correos reenviados, firmas de email, o simplemente observando cómo se comunican.</li><li><strong>Compromiso del correo.</strong> Lo más común es que tome control de un buzón: el del proveedor (para enviarte facturas falsas) o el de alguien de tu equipo (para interceptar y modificar la factura real). También puede crear un dominio parecido al del proveedor, con una letra cambiada.</li><li><strong>Intercepción o suplantación.</strong> Si controla el buzón del proveedor, espera el momento de la facturación. Si controla el tuyo, intercepta el correo con la factura y lo reenvía con la CLABE cambiada. Si solo suplanta, envía un correo con el mismo formato, logo y firma del proveedor.</li><li><strong>El cambio de CLABE.</strong> La factura llega con un mensaje tipo “actualizamos nuestros datos bancarios” o “por favor depositar a esta nueva cuenta”. A veces el cambio es sutil: solo la CLABE, todo lo demás idéntico.</li><li><strong>El pago.</strong> Tu equipo transfiere. El dinero entra a una cuenta de mula (a nombre de un tercero que muchas veces ni sabe que su cuenta se usa para esto) y se dispersa rápido.</li><li><strong>El descubrimiento tardío.</strong> Te enteras cuando el proveedor reclama el pago, días o semanas después. Para entonces, recuperar el dinero es difícil y depende de la velocidad con que actúes.</li></ol><p>La parte incómoda: este fraude no explota una vulnerabilidad técnica de tu banco. Explota un proceso humano. Por eso las herramientas solas no lo detienen; necesitas combinar controles técnicos con un procedimiento de pago que no se pueda saltar.</p>"
+    },
+    {
+      "h2": "Señales de alerta que debes enseñar a tu equipo",
+      "html": "<p>Estas señales no confirman un fraude por sí solas, pero cualquiera de ellas debe detener el pago hasta verificar:</p><ul><li><strong>Cambio de datos bancarios por correo.</strong> Cualquier modificación de CLABE, cuenta o banco que llegue por email es una bandera roja, incluso si el correo parece legítimo.</li><li><strong>Urgencia o presión.</strong> “Es urgente”, “necesitamos el pago hoy”, “si no se paga hoy se cancela el servicio”. La urgencia es la herramienta favorita del atacante para que no verifiques.</li><li><strong>Dominio parecido.</strong> Revisa letra por letra el dominio del remitente. Un guion de más, una “rn” por “m”, un dominio distinto al habitual del proveedor.</li><li><strong>Responder a un correo anterior.</strong> Si el atacante controla el buzón del proveedor, el correo puede llegar dentro del mismo hilo de conversación que ya tenías. Eso lo hace muy creíble.</li><li><strong>Formato distinto.</strong> La factura cambia de plantilla, de logo, de datos fiscales o de remitente, aunque sea un poco.</li><li><strong>Datos de contacto distintos.</strong> El teléfono o el correo de contacto del proveedor en la factura no coinciden con los que tienes registrados.</li><li><strong>Pago a nombre de una persona física</strong> cuando el proveedor es una empresa, o a nombre de un tercero que no reconoces.</li></ul><p>Regla simple para tu equipo: <strong>si cambia la CLABE, se detiene el pago y se verifica por un canal distinto al correo</strong>. Sin excepciones, aunque venga del gerente.</p>"
+    },
+    {
+      "h2": "El procedimiento de verificación que debes implementar",
+      "html": "<p>Esto es lo que realmente te protege. No es tecnología sofisticada: es disciplina de proceso.</p><ol><li><strong>Alta de proveedor con datos bancarios verificados.</strong> Cuando des de alta a un proveedor, pide la CLABE por un canal distinto al correo (teléfono, portal del proveedor, en persona) y guárdala en tu sistema. Esa es la única CLABE válida hasta que se actualice formalmente.</li><li><strong>Doble verificación para cambios bancarios.</strong> Si un proveedor pide cambiar su CLABE, exige confirmación por teléfono a un número que tú tengas registrado, no al que viene en el correo. Documenta quién autorizó y cuándo.</li><li><strong>Segregación de funciones.</strong> Quien captura la factura no debe ser quien autoriza el pago. En pymes pequeñas a veces es la misma persona; si es tu caso, al menos haz que el cambio de CLABE lo autorice el dueño o gerente.</li><li><strong>Conciliación y confirmación de pago.</strong> Después de transferir, envía el comprobante al proveedor por un canal que ya tenías (no respondiendo al correo de la factura) y pide confirmación de recepción.</li><li><strong>Regla de “no cambios por correo”.</strong> Comunícala por escrito a tus proveedores y a tu equipo. Que sepan que tu empresa nunca acepta cambios de CLABE por email.</li><li><strong>Revisión de correos sospechosos.</strong> Capacita a tu equipo para reportar correos que pidan cambios de datos, pagos urgentes o que lleguen de dominios parecidos. Un reporte a tiempo evita una transferencia.</li></ol><p>Si quieres reforzar la parte técnica del correo, revisa nuestra guía para <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">configurar SPF, DKIM y DMARC en tu dominio paso a paso</a>. Eso reduce la suplantación de tu propio dominio, aunque no elimina el riesgo de que comprometan el buzón del proveedor.</p>"
+    },
+    {
+      "h2": "Controles técnicos que reducen el riesgo",
+      "html": "<p>El proceso humano es la base, pero estos controles técnicos te dan margen:</p><ul><li><strong>Autenticación del correo (SPF, DKIM, DMARC).</strong> Ayuda a que nadie mande correos a tu nombre y a que tú detectes correos falsos de tus proveedores. Configúralo en tu dominio y revisa los reportes de DMARC.</li><li><strong>Filtro antiphishing y protección de correo.</strong> Un buen filtro detecta dominios parecidos, adjuntos sospechosos y enlaces maliciosos. Si no tienes uno, es de las primeras cosas a revisar. Puedes ver nuestro servicio de <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>.</li><li><strong>MFA en los buzones.</strong> Si el correo del proveedor o el tuyo se compromete, la autenticación multifactor dificulta el acceso. Actívala en todos los buzones, no solo en los de dirección.</li><li><strong>Alertas de inicio de sesión.</strong> Revisa accesos desde ubicaciones o dispositivos desconocidos en tu correo y en tu banca en línea.</li><li><strong>Verificación de la cuenta destino.</strong> Algunos bancos permiten validar el nombre del titular antes de transferir. Úsalo cuando esté disponible.</li><li><strong>Registro de proveedores y CLABE en un solo lugar.</strong> Que no haya “la CLABE que me mandaron por WhatsApp” fuera del sistema.</li></ul><p>Si sospechas que tu correo o el de un proveedor está comprometido, no esperes: revisa nuestra guía de <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a> y actúa en las primeras horas, que es cuando más se puede contener.</p>"
+    },
+    {
+      "h2": "Qué hacer si ya transferiste a la cuenta equivocada",
+      "html": "<p>Actúa rápido y en este orden:</p><ol><li><strong>Llama a tu banco de inmediato.</strong> Reporta la transferencia como fraude, con número de operación, monto, cuenta destino y fecha. Pide que se inicie el proceso de reclamación y, si aplica, el bloqueo de la cuenta destino.</li><li><strong>Documenta todo.</strong> Guarda el correo original, la factura, el comprobante de transferencia y cualquier comunicación con el proveedor. No borres nada.</li><li><strong>Contacta al proveedor por teléfono.</strong> Confirma que no recibió el pago y pídele que revise si su correo fue comprometido. Que cambie contraseñas y active MFA.</li><li><strong>Reporta el correo fraudulento.</strong> Si usas un proveedor de correo, repórtalo como phishing. Si el dominio suplantado es de un tercero, notifícalo.</li><li><strong>Revisa si hay otros pagos afectados.</strong> El atacante pudo haber intentado lo mismo con otros proveedores o con otros miembros de tu equipo.</li><li><strong>Considera la denuncia.</strong> En México puedes acudir a la Fiscalía o a la policía cibernética de tu entidad; en EE. UU., el <a href=\"https://www.ic3.gov/\" target=\"_blank\" rel=\"noopener\">IC3 del FBI</a> recibe reportes de fraude. Ten a la mano toda la documentación.</li></ol><p>El tiempo es el factor más importante. Cuanto antes reportes, más probabilidad hay de que el banco pueda actuar sobre los fondos.</p>"
+    },
+    {
+      "h2": "Cómo encaja esto en una pyme sin equipo de seguridad",
+      "html": "<p>La mayoría de las pymes mexicanas no tiene un área de seguridad dedicada. Eso no es excusa para no tener controles: significa que necesitas controles simples y repetibles. Un procedimiento de pago con doble verificación, correos con MFA, filtro antiphishing y una regla clara de “no cambios de CLABE por correo” cubren una parte importante del riesgo.</p><p>El problema es que el fraude cambia: nuevos dominios parecidos, nuevas formas de engañar al equipo, nuevos proveedores comprometidos. Por eso conviene revisar de forma continua lo que pasa en tu correo, tus dominios y tus accesos, no solo una vez al año. Si quieres entender la diferencia entre una revisión puntual y un monitoreo continuo, revisa <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a>. Y si tu equipo es pequeño, el <a href=\"/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/\">checklist de seguridad para tu tienda en línea</a> te da una idea de los controles básicos que también aplican a cualquier pyme.</p>"
+    },
+    {
+      "h2": "Vigilancia continua: detectar el cambio antes de que pagues",
+      "html": "<p>El fraude de la CLABE casi nunca empieza con la transferencia. Empieza días antes: un correo sospechoso, un dominio parecido registrado, un acceso extraño a un buzón, una regla de reenvío que alguien creó sin que nadie la autorizara. Esos son los momentos en los que se puede detener.</p><p>La vigilancia continua con IA, como la que hacemos en <a href=\"/servicios/monitoreo-de-ciberseguridad/\">monitoreo de ciberseguridad</a>, sirve para eso: revisar señales de forma permanente y avisarte cuando algo se sale de lo normal, en lugar de esperar a que el problema aparezca en la conciliación bancaria. No reemplaza tu procedimiento de pago; lo complementa. Si quieres ver cómo se estructura un esquema así para una pyme, revisa los <a href=\"/planes/\">planes</a> y decide con calma si tiene sentido para tu operación.</p><p>Mientras tanto, empieza por lo que no cuesta: escribe la regla de “no cambios de CLABE por correo”, capacita a tu equipo y verifica los datos bancarios de tus proveedores actuales. Ese es el mejor punto de partida.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿El banco me devuelve el dinero si transfiero a una CLABE fraudulenta?",
+      "a": "Depende del caso y de la rapidez con que reportes. Los bancos tienen procedimientos de reclamación, pero la recuperación no está garantizada. Por eso lo más importante es reportar de inmediato con número de operación, monto y cuenta destino, y conservar toda la documentación. No existe una garantía automática de devolución."
+    },
+    {
+      "q": "¿Cómo verifico la CLABE de un proveedor sin ofenderlo?",
+      "a": "No se trata de desconfianza, sino de un procedimiento estándar. Explícale que tu empresa verifica datos bancarios por teléfono a un número registrado antes de cualquier pago o cambio. La mayoría de los proveedores lo entiende e incluso lo agradece, porque también los protege."
+    },
+    {
+      "q": "¿Qué hago si recibo un correo del proveedor diciendo que cambió de banco?",
+      "a": "Detén el pago. No respondas al correo ni llames al número que aparece en él. Llama al proveedor a un número que ya tengas registrado y confirma el cambio. Si no puedes confirmarlo, no transfieras y escala el caso a quien autorice pagos en tu empresa."
+    },
+    {
+      "q": "¿Esto le puede pasar a una pyme pequeña?",
+      "a": "Sí. De hecho, las pymes suelen ser blanco porque tienen procesos de pago menos formales y menos controles técnicos. No necesitas ser una empresa grande para recibir una factura con una CLABE cambiada; necesitas un procedimiento que te obligue a verificar antes de pagar."
+    }
+  ],
+  "sources": [
+    {
+      "title": "IC3 — Internet Crime Complaint Center (FBI)",
+      "url": "https://www.ic3.gov/"
+    },
+    {
+      "title": "CISA — Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
