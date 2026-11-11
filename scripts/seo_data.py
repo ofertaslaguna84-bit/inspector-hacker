@@ -307,3 +307,18 @@ dict(key="dallas", slug="dallas-tx", name="Dallas", region="Texas", geo=("US-TX"
      context="Dallas–Fort Worth is one of the largest business regions in the US: corporate headquarters, financial services and insurance, real estate, logistics around DFW Airport and the I-35 and I-20 corridors, and thousands of professional firms and auto dealers. For small and mid-sized businesses here, business email compromise and ransomware are the incidents that actually show up.",
      local="We serve Dallas–Fort Worth remotely, on Central Time, in English or Spanish."),
 ]
+
+
+# ---------------------------------------------------------------- cobertura nacional (11 nov 2026)
+try:
+    from seo_more_cities import CITIES_MX_MORE, CORE as _CORE
+except ImportError:  # ejecutado desde otra carpeta
+    import os, sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from seo_more_cities import CITIES_MX_MORE, CORE as _CORE
+_have = {c["key"] for c in CITIES_MX}
+CITIES_MX += [c for c in CITIES_MX_MORE if c["key"] not in _have]
+for _c in CITIES_MX:  # todas las ciudades de México llevan los 3 servicios núcleo
+    for _k in _CORE:
+        if _k not in _c["services"]:
+            _c["services"].append(_k)

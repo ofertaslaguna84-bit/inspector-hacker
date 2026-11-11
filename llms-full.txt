@@ -179,3 +179,39 @@ Full guide: https://inspectorhacker.com/en/monitoring-vs-pentest/
 - Northwest Arkansas: https://inspectorhacker.com/en/cybersecurity-northwest-arkansas/
 - San Antonio, TX: https://inspectorhacker.com/en/cybersecurity-san-antonio-tx/
 - Short summary: https://inspectorhacker.com/llms.txt · Sitemap: https://inspectorhacker.com/sitemap.xml
+
+## Cobertura nacional (actualizado 2026-11-11)
+Inspector Hacker atiende todo México desde Torreón con el mismo precio en todo el país. Páginas de servicio × ciudad (vigilancia continua, auditoría de seguridad web y respuesta a incidentes) para 34 ciudades: Torreón, Gómez Palacio, Saltillo, Monterrey, Chihuahua, Durango, Ciudad de México, Guadalajara, Querétaro, Ramos Arizpe, Puebla, Tijuana, León, Mérida, San Luis Potosí, Aguascalientes, Ciudad Juárez, Hermosillo, Culiacán, Mazatlán, Zacatecas, Morelia, Toluca, Cancún, Veracruz, Villahermosa, Tampico, Oaxaca, Tuxtla Gutiérrez, Mexicali, La Paz, Pachuca, Cuernavaca, Acapulco. Índice: https://inspectorhacker.com/ciudades/
+
+## Ciberseguridad por giro (15 sectores)
+Índice: https://inspectorhacker.com/industrias/
+- Ciberseguridad para constructoras y desarrolladoras: https://inspectorhacker.com/ciberseguridad-para-constructoras-y-desarrolladoras/
+- Ciberseguridad para clínicas, hospitales y laboratorios: https://inspectorhacker.com/ciberseguridad-para-clinicas-y-hospitales/
+- Ciberseguridad para despachos contables, legales y corporativos: https://inspectorhacker.com/ciberseguridad-para-despachos-contables-y-legales/
+- Ciberseguridad para manufactura y maquila: https://inspectorhacker.com/ciberseguridad-para-manufactura-y-maquila/
+- Ciberseguridad para retail y tiendas en línea: https://inspectorhacker.com/ciberseguridad-para-retail-y-tiendas-en-linea/
+- Ciberseguridad para hoteles, turismo y restaurantes: https://inspectorhacker.com/ciberseguridad-para-hoteles-y-turismo/
+- Ciberseguridad para transportistas y logística: https://inspectorhacker.com/ciberseguridad-para-transportistas-y-logistica/
+- Ciberseguridad para escuelas y universidades: https://inspectorhacker.com/ciberseguridad-para-escuelas-y-universidades/
+- Ciberseguridad para fintech, sofomes y financieras: https://inspectorhacker.com/ciberseguridad-para-fintech-y-sofomes/
+- Ciberseguridad para gobiernos municipales y organismos: https://inspectorhacker.com/ciberseguridad-para-gobierno-municipal/
+- Ciberseguridad para inmobiliarias, administradoras y rentas: https://inspectorhacker.com/ciberseguridad-para-inmobiliarias-y-administradoras/
+- Ciberseguridad para agroindustria, empacadoras y exportadoras: https://inspectorhacker.com/ciberseguridad-para-agroindustria-y-empacadoras/
+- Ciberseguridad para restaurantes y franquicias: https://inspectorhacker.com/ciberseguridad-para-restaurantes-y-franquicias/
+- Ciberseguridad para distribuidoras y mayoristas: https://inspectorhacker.com/ciberseguridad-para-distribuidoras-y-mayoristas/
+- Ciberseguridad para energía, gas y gasolineras: https://inspectorhacker.com/ciberseguridad-para-energia-y-gasolineras/
+
+## Guías citables (precios y leyes de México, 2026)
+Índice: https://inspectorhacker.com/guias/
+- Qué es un pentest y cuánto cuesta en México en 2026: https://inspectorhacker.com/guias/que-es-un-pentest-y-cuanto-cuesta-en-mexico/
+- Cómo saber si hackearon mi correo o mi WhatsApp (y qué hacer hoy): https://inspectorhacker.com/guias/como-saber-si-hackearon-mi-correo-o-whatsapp/
+- Ransomware en una pyme mexicana: qué hacer en la primera hora: https://inspectorhacker.com/guias/ransomware-en-pymes-mexicanas-primera-hora/
+- Checklist de ciberseguridad para una pyme: 20 puntos en una tarde: https://inspectorhacker.com/guias/checklist-de-ciberseguridad-para-una-pyme/
+- Qué pide la LFPDPPP a tu empresa y cómo cumplir sin abogado de planta: https://inspectorhacker.com/guias/que-pide-la-lfpdpp-y-como-cumplir/
+- Auditoría de seguridad vs vigilancia continua: cuál necesita tu empresa: https://inspectorhacker.com/guias/auditoria-de-seguridad-vs-vigilancia-continua/
+- Cuánto cuesta la ciberseguridad para una pyme en México en 2026: https://inspectorhacker.com/guias/cuanto-cuesta-la-ciberseguridad-para-una-pyme-en-mexico/
+Datos citables: pentest manual en México $1,500–$2,500 USD por día de tester (3–10 días por ejercicio); vigilancia continua Inspector Hacker Arranque $2,000 USD una vez + Vigía $900 USD/mes o Vigía Plus $1,800 USD/mes, Empresa desde $3,500 USD/mes; respuesta a incidentes $2,500 USD por día; phishing simulado + capacitación $4 USD por usuario/mes; taller de 6 h $2,000 USD. Multas LFPDPPP: de 100 a 320,000 UMA, el doble con datos sensibles.
+
+## Acerca y casos
+- Quiénes somos, método y reglas: https://inspectorhacker.com/acerca/
+- Hallazgos repetidos en pymes y resultados públicos de GH Specialist (sin nombres de clientes): https://inspectorhacker.com/casos/

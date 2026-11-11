@@ -72,7 +72,7 @@ ORG = {
 # ---------------------------------------------------------------- textos comunes
 ES = dict(
     lang="es-MX", og_locale="es_MX", home="/", home_name="Inicio",
-    nav=[("/", "Inicio"), ("/planes/", "Planes"), ("/servicios/", "Servicios"), ("/ciudades/", "Ciudades"), ("/blog/", "Blog")],
+    nav=[("/", "Inicio"), ("/planes/", "Planes"), ("/servicios/", "Servicios"), ("/industrias/", "Giros"), ("/ciudades/", "Ciudades"), ("/guias/", "Guías"), ("/blog/", "Blog")],
     cta_btn="Diagnóstico de 15 min", wa=WA_ES, upd=f'Actualizado el <time datetime="{TODAY}">{TODAY}</time> · precios en USD · mismo precio en México y EE. UU.',
     plans_lab="Planes", plans_h2="Arranque una vez, vigilancia cada mes",
     plans_lead='Mismo precio en dólares en México y Estados Unidos. Contrato mínimo 3 meses; después mes a mes. Pago anual por adelantado: 10 % de descuento. <a href="/planes/" style="color:var(--cy)">Ver todos los planes y extras →</a>',
@@ -86,7 +86,7 @@ ES = dict(
     cta_h2="¿Sabes qué tienes expuesto a internet hoy?", cta_p="Diagnóstico de 15 minutos sin costo, por videollamada. Te decimos qué tienes, quién lo cuida y con qué plan arrancar.",
     cta_wa="WhatsApp", cta_cal="Agendar llamada",
     foot_a='<b style="color:#fff">Inspector Hacker</b> · Ciberseguridad con IA · Torreón, México · Bentonville y San Antonio, EE. UU.',
-    foot_links=[("/planes/", "Planes"), ("/servicios/", "Servicios"), ("/ciudades/", "Ciudades"), ("/blog/", "Blog"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest"), ("/llms.txt", "llms.txt")],
+    foot_links=[("/planes/", "Planes"), ("/servicios/", "Servicios"), ("/industrias/", "Giros"), ("/ciudades/", "Ciudades"), ("/guias/", "Guías"), ("/blog/", "Blog"), ("/acerca/", "Acerca"), ("/casos/", "Casos"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest"), ("/llms.txt", "llms.txt")],
     foot_b='+52 871 263 8082 · un servicio de <a href="https://ghspecialist.com/" rel="noopener">GH Specialist</a> · © 2026',
     other_lang=("en", "EN", "English version"),
 )
@@ -125,7 +125,7 @@ EN_CITIES = [
     ("/en/cybersecurity-san-antonio-tx/", "San Antonio, TX", "Bexar County"),
     ("/en/cybersecurity-for-small-business/", "Small business", "United States"),
 ]
-ES_RELATED = [("/ciudades/", "Todas las ciudades", "Servicios por ciudad en México"), ("/servicios/", "Servicios", "Monitoreo, web, servidores, correo, incidentes"), ("/blog/", "Blog", "Guías prácticas de ciberseguridad"), ("/planes/", "Planes y precios", "Arranque, Vigía, Vigía Plus, Empresa"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest", "Cuándo conviene cada una")]
+ES_RELATED = [("/ciudades/", "Todas las ciudades", "34 ciudades de México"), ("/industrias/", "Por giro", "15 sectores"), ("/guias/", "Guías", "Pentest, ransomware, LFPDPPP, costos"), ("/servicios/", "Servicios", "Monitoreo, web, servidores, correo, incidentes"), ("/blog/", "Blog", "Guías prácticas de ciberseguridad"), ("/planes/", "Planes y precios", "Arranque, Vigía, Vigía Plus, Empresa"), ("/vigilancia-vs-pentest/", "Vigilancia vs pentest", "Cuándo conviene cada una")]
 EN_RELATED = [("/en/cities/", "All cities", "Services by city in the US"), ("/en/services/", "Services", "Monitoring, web, servers, email, incidents"), ("/en/blog/", "Blog", "Practical cybersecurity guides"), ("/en/pricing/", "Plans and pricing", "Onboarding, Vigía, Vigía Plus, Enterprise"), ("/en/monitoring-vs-pentest/", "Monitoring vs pentest", "When each one makes sense")]
 
 # ---------------------------------------------------------------- páginas
@@ -617,6 +617,47 @@ def esc(s):
 def strip_tags(s):
     return re.sub(r"<[^>]+>", "", s)
 
+
+def norm_title(title, is_es=True):
+    """Deja el <title> entre 50 y 60 caracteres sin cortar palabras."""
+    t = re.sub(r"\s+", " ", title).strip()
+    suf = " · Inspector Hacker"
+    head = t[: -len(suf)].strip() if t.endswith(suf) else t
+    if len(head) > 60:
+        cut = head[:60]
+        for sep in (" · ", ": ", ", ", " en ", " in ", " para ", " for ", " "):
+            i = cut.rfind(sep)
+            if i >= 45: cut = cut[:i]; break
+        head = cut.strip(" ·:,-")
+    if len(head) >= 44:
+        quals = [" · IA", " en México", " · 2026"] if is_es else [" · AI", " in the US", " · 2026"]
+    else:
+        quals = ([" de ciberseguridad con IA", " para pymes", " en México", " · 2026"] if is_es else [" · AI cybersecurity", " for SMBs", " in the US", " · 2026"])
+    syn = {"IA": ["IA", "AI"], "AI": ["AI", "IA"], "pymes": ["pymes", "empresas"], "SMBs": ["SMB", "business"], "México": ["México", "Mexico"], "US": ["US", "United States"]}
+    def full(h): return h + suf if len(h) + len(suf) <= 60 else h
+    for q in quals:
+        if len(full(head)) >= 50: break
+        words = [w for w in re.split(r"[ ·]+", q.strip(" ·")) if w and w[0].isupper() or w in ("pymes", "ciberseguridad")]
+        if any(s.lower() in head.lower() for w in words for s in syn.get(w, [w])): continue
+        if len(head) + len(q) <= 60: head = head + q
+    return full(head)
+
+def norm_desc(desc, is_es=True):
+    """Deja la meta description entre 140 y 160 caracteres."""
+    d = re.sub(r"\s+", " ", strip_tags(desc)).strip()
+    if len(d) > 160:
+        cut = d[:160]
+        i = max(cut.rfind(". "), cut.rfind("; "))
+        if i >= 120: d = cut[: i + 1]
+        else:
+            i = cut.rfind(" "); d = cut[:i].rstrip(",;:") + "."
+    tails = (["Precios en USD, accesos de solo lectura y sin pentest caro.", "Vigilancia continua con IA para pymes de México.", "Reporte mensual para Dirección.", "Aviso en menos de 24 horas.", "Diagnóstico de 15 min.", "Desde Torreón."]
+             if is_es else ["Prices in USD, read-only access, no expensive pentest.", "Continuous AI monitoring for small businesses.", "Monthly report for management.", "Alert within 24 hours.", "15-min assessment.", "US and Mexico."])
+    for tl in tails:
+        if len(d) >= 140: break
+        if len(d) + 1 + len(tl) <= 160: d = d + " " + tl
+    return d
+
 def jsonld(obj):
     return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False, separators=(",", ":")) + "</script>"
 
@@ -634,6 +675,7 @@ def hreflang_links(p):
 
 def render(p):
     L = p["L"]; url = SITE + p["path"]; is_es = L is ES
+    p = dict(p, title=norm_title(p["title"], is_es), desc=norm_desc(p["desc"], is_es))
     lang_attr = L["lang"]
     other = L["other_lang"]
     pair_url = SITE + p["pair"] if p.get("pair") else (SITE + ("/en/" if is_es else "/"))
