@@ -1,0 +1,78 @@
+{
+  "lang": "en",
+  "slug": "rdp-exposed-to-internet-ransomware-front-door",
+  "pair": null,
+  "topic": "Remote desktop (RDP) exposed to the internet: why it is the ransomware front door",
+  "title": "RDP Exposed to the Internet: The Ransomware Front Door",
+  "h1": "Remote desktop (RDP) exposed to the internet: why it is the ransomware front door",
+  "description": "Why an RDP port open to the internet invites ransomware, how attackers find and abuse it, and concrete steps to close that door without breaking remote work.",
+  "date": "2026-11-12",
+  "updated": "2026-11-12",
+  "category": "Cybersecurity",
+  "readingMinutes": 7,
+  "intro": "<p>If someone can reach a Windows login screen on your server from anywhere on the internet, you have a door on the public street. Remote Desktop Protocol (RDP) is the built-in way to control a Windows machine remotely, and it is genuinely useful. The problem is what happens when port 3389 is open to the whole internet: automated scanners find it within hours, and attackers start guessing or reusing passwords. This article explains, in plain terms, why exposed RDP is such a common path into ransomware, how to check whether you are exposed, and what to do about it this week.</p>",
+  "sections": [
+    {
+      "h2": "What RDP is and why exposure happens",
+      "html": "<p>RDP lets a person see and control a Windows desktop or server over a network. It is how many small businesses let staff work from home, how IT providers administer servers, and how accountants reach the machine that runs the billing software. It ships with Windows, it is free, and it is easy to turn on.</p><p>That convenience is exactly why it ends up exposed. Someone enables Remote Desktop so a contractor can connect, then forwards port 3389 on the router so the connection works from outside the office. Nobody documents it. The contractor leaves, the port stays open, and the login screen is now visible to the entire internet.</p><p>This is not a rare mistake. CISA and other government agencies have repeatedly warned that RDP is a favored entry point for ransomware operators, and the FBI has issued advisories about RDP abuse in attacks on businesses. The pattern is consistent: weak or reused credentials, no multi-factor authentication, and a public port.</p>"
+    },
+    {
+      "h2": "Why attackers love an open RDP port",
+      "html": "<p>An exposed RDP service gives an attacker three things at once:</p><ul><li><strong>A map of your network.</strong> The login screen reveals the machine name, the Windows version, and sometimes the domain. That is free reconnaissance.</li><li><strong>A password-guessing target.</strong> Automated tools try common usernames and passwords around the clock. Accounts like <em>Administrator</em>, <em>admin</em>, <em>user</em>, and the owner's first name are tried first.</li><li><strong>A legitimate-looking session.</strong> Once inside over RDP, the attacker is using a real Windows login, not malware. Many security tools see a normal remote session, not an intrusion.</li></ul><p>From there, the playbook is well documented: escalate privileges, disable or uninstall antivirus, move to other machines, steal data, and deploy ransomware. Because the attacker arrived through a valid account, backups and file shares are often reachable too. That is why an RDP breach so frequently becomes a full ransomware event rather than a single compromised PC.</p><p>Credentials are also the weak link. People reuse passwords across work and personal accounts. When one of those passwords appears in a breach elsewhere, attackers try it against your RDP login. This is called credential stuffing, and it needs no technical skill.</p>"
+    },
+    {
+      "h2": "How to check if your RDP is exposed",
+      "html": "<p>You do not need a penetration test to answer the basic question. Start here:</p><ol><li><strong>Ask who uses Remote Desktop.</strong> List every person and vendor who connects to a Windows machine remotely, and how.</li><li><strong>Check your router and firewall.</strong> Look for port forwarding or firewall rules that allow inbound traffic on port 3389 (or any custom RDP port). Write down what you find.</li><li><strong>Check the machines.</strong> On Windows, open Settings and confirm whether Remote Desktop is enabled. On servers, check System Properties and the Remote Desktop settings.</li><li><strong>Look from the outside.</strong> Use a reputable port-checking service to test your public IP address on port 3389. If it reports open, treat it as an active risk.</li><li><strong>Review accounts.</strong> Look for enabled local accounts with weak or shared passwords, and for remote access tools nobody remembers installing.</li></ol><p>If you find an open port and cannot explain who needs it, close it first and ask questions after. A short outage is cheaper than a ransomware recovery.</p>"
+    },
+    {
+      "h2": "The fix: close the door, then reopen it safely",
+      "html": "<p>The goal is not to ban remote work. It is to stop exposing RDP directly to the internet. Work through these in order:</p><ul><li><strong>Remove port forwarding for RDP.</strong> Delete the router rule that sends internet traffic to port 3389. This single step removes most of the risk.</li><li><strong>Use a VPN or a zero-trust remote access tool.</strong> Staff connect to the office network through an encrypted tunnel, then use RDP internally. The RDP port is never visible to the internet.</li><li><strong>Turn on multi-factor authentication</strong> for every remote access path, including the VPN and any remote support tool.</li><li><strong>Enforce strong, unique passwords</strong> and stop shared accounts. Each person gets their own login, and administrators use separate accounts for admin work.</li><li><strong>Limit who can use RDP.</strong> Restrict Remote Desktop access to a named group of users, not everyone.</li><li><strong>Patch Windows and remote access tools promptly.</strong> Unpatched RDP-related vulnerabilities have been exploited in real attacks; vendors publish fixes for a reason.</li><li><strong>Log and alert.</strong> Turn on Windows logon auditing and review failed login attempts. A burst of failures from one IP address is an attack in progress.</li><li><strong>Check backups.</strong> Keep at least one copy offline or immutable, and test restoring it. Ransomware operators target backups first.</li></ul><p>If a vendor manages your servers, ask them directly: is RDP exposed, and how do you connect? Put the answer in writing. Our guide to <a href=\"/en/monitoring-vs-pentest/\">monitoring vs. a pentest</a> explains why this kind of check belongs in ongoing monitoring, not a one-time project.</p>"
+    },
+    {
+      "h2": "What to do if you suspect someone is already inside",
+      "html": "<p>Signs include logins at odd hours, new user accounts you did not create, antivirus suddenly disabled, files renamed or encrypted, and staff unable to open shared drives. If you see these:</p><ol><li>Disconnect affected machines from the network, but do not power them off; memory can hold evidence.</li><li>Change passwords for email, remote access, and administrator accounts from a clean device.</li><li>Contact your IT provider or an incident response specialist immediately.</li><li>Preserve logs and note the timeline of what happened.</li><li>Report the incident. In the US, file a complaint with the FBI's Internet Crime Complaint Center at ic3.gov. If customer data may be involved, check your legal notification duties.</li></ol><p>Do not pay a ransom as a first move. Payment does not guarantee recovery and can mark you as a repeat target. Our article on <a href=\"/en/blog/cost-of-a-cybersecurity-incident-small-business/\">what a cybersecurity incident really costs a small business</a> covers the downstream costs that owners usually miss.</p>"
+    },
+    {
+      "h2": "Where this fits in ongoing protection",
+      "html": "<p>Closing an exposed RDP port is a one-time fix, but the conditions that created it recur: a new hire needs remote access, a vendor installs a tool, a router gets replaced. Exposure tends to come back quietly. That is why continuous monitoring matters more than a single cleanup. Regular external checks, log review, account audits, and patch tracking catch the next open door before someone else does. If you want a structured starting point, review our <a href=\"/en/services/cybersecurity-monitoring/\">cybersecurity monitoring service</a> and the <a href=\"/en/cybersecurity-for-small-business/\">small business cybersecurity guide</a>. You can also see how our plans work on the <a href=\"/en/pricing/\">pricing page</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is RDP safe if I change the port from 3389 to something else?",
+      "a": "No. Changing the port is not a security control. Scanners find RDP on non-standard ports quickly, and the underlying weaknesses, such as weak passwords and missing multi-factor authentication, remain. Put RDP behind a VPN or zero-trust access tool and require MFA."
+    },
+    {
+      "q": "We only allow RDP from certain IP addresses. Is that enough?",
+      "a": "IP allowlisting helps, but it depends on those addresses being fixed and correct. Home internet connections change, and a compromised device at an allowed address still gets in. Combine allowlisting with MFA, strong unique passwords, and logging."
+    },
+    {
+      "q": "Does a firewall alone protect an exposed RDP port?",
+      "a": "Only if the firewall actually blocks inbound port 3389. Many small businesses have a router rule forwarding that port, which bypasses the protection. Check the rules, not just the box."
+    },
+    {
+      "q": "How fast can an exposed RDP machine be attacked?",
+      "a": "Automated scanning is constant, so an exposed machine can receive login attempts within hours of going live. You do not need to be a target; you only need to be reachable."
+    }
+  ],
+  "sources": [
+    {
+      "title": "CISA: Cyber Threats and Advisories",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+    },
+    {
+      "title": "FBI Internet Crime Complaint Center (IC3)",
+      "url": "https://www.ic3.gov/"
+    },
+    {
+      "title": "NIST: Computer Security Resource Center",
+      "url": "https://csrc.nist.gov/"
+    },
+    {
+      "title": "OWASP: Authentication Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
