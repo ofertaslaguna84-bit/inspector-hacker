@@ -1,0 +1,74 @@
+{
+  "lang": "es",
+  "slug": "rdp-abierto-a-internet-puerta-ransomware-pymes",
+  "pair": null,
+  "topic": "Escritorio remoto (RDP) abierto a internet: por qué es la puerta del ransomware en pymes",
+  "title": "RDP abierto a internet: la puerta del ransomware",
+  "h1": "Escritorio remoto (RDP) abierto a internet: por qué es la puerta del ransomware en pymes",
+  "description": "Si tu escritorio remoto (RDP) está abierto a internet, cualquiera puede intentar entrar. Aprende por qué es la puerta del ransomware y cómo cerrarla hoy.",
+  "date": "2026-11-13",
+  "updated": "2026-11-13",
+  "category": "Ciberseguridad para pymes",
+  "readingMinutes": 6,
+  "intro": "<p>Si en tu pyme alguien se conecta a la computadora de la oficina desde su casa usando <strong>Escritorio remoto de Windows</strong> (RDP), y para lograrlo solo escribe la IP pública de la empresa, tienes una puerta abierta a internet. No es una puerta con vigilancia: es una puerta que cualquiera puede tocar, probar contraseñas y, si acierta, sentarse dentro de tu red como si fuera un empleado más.</p><p>El RDP no es malo en sí. El problema es <em>cómo</em> lo expones. En este artículo te explico por qué es una de las vías favoritas del ransomware en pymes, cómo saber si tu empresa está expuesta y qué hacer esta misma semana para cerrar esa puerta sin frenar tu operación.</p>",
+  "sections": [
+    {
+      "h2": "Qué es el RDP y por qué se vuelve una puerta abierta",
+      "html": "<p>El <strong>Protocolo de Escritorio Remoto (RDP)</strong> es la tecnología de Windows que te permite ver y controlar otra computadora a distancia, como si estuvieras sentado frente a ella. Es útil para soporte, para trabajar desde casa o para administrar un servidor.</p><p>El detalle es que RDP escucha en el puerto <strong>3389</strong>. Cuando ese puerto se publica directamente en internet (por ejemplo, con un reenvío de puerto en el módem o una regla en el firewall), cualquier persona del mundo puede intentar conectarse. No necesita conocer tu empresa ni tener un usuario: solo necesita escanear direcciones IP buscando el puerto 3389 abierto.</p><p>Ahí empieza el problema. Un atacante puede:</p><ul><li>Probar contraseñas comunes o credenciales filtradas en otros sitios.</li><li>Usar listas de usuarios y contraseñas que se venden en foros criminales.</li><li>Aprovechar cuentas sin contraseña, con contraseñas débiles o compartidas entre varios empleados.</li><li>Explotar configuraciones débiles del propio servicio.</li></ul><p>Cuando entra, ya está dentro de tu red. Desde ahí puede moverse a otros equipos, revisar carpetas compartidas, instalar herramientas y, en muchos casos, desplegar ransomware. Por eso decimos que el RDP abierto no es solo un riesgo de acceso: es una <strong>puerta de entrada directa al ransomware</strong>.</p>"
+    },
+    {
+      "h2": "Por qué el ransomware ama el RDP abierto en pymes",
+      "html": "<p>El ransomware necesita dos cosas para golpear fuerte: entrar y moverse. El RDP abierto le da ambas con poco esfuerzo.</p><p><strong>Primero, entrar es barato.</strong> No requiere un correo malicioso ni que alguien haga clic en un archivo. Solo requiere que el puerto esté expuesto y que una credencial sea débil o esté filtrada. Para una pyme sin equipo de seguridad dedicado, esto es una combinación peligrosa.</p><p><strong>Segundo, entrar como usuario legítimo confunde a las defensas.</strong> Si el atacante se conecta con un usuario y contraseña válidos, para muchos sistemas parece un empleado trabajando desde otro lugar. Eso le da tiempo para explorar, escalar privilegios y preparar el cifrado de archivos.</p><p><strong>Tercero, el impacto se multiplica.</strong> Un equipo comprometido por RDP puede ser la llave para servidores de archivos, sistemas de facturación, respaldos conectados a la red y correo. Cuando el ransomware se activa, no cifra una sola máquina: cifra lo que alcanza.</p><p>Si quieres entender el panorama completo de cómo entra el ransomware y qué hacer en la primera hora, revisa nuestro artículo <a href=\"/blog/ransomware-pymes-mexico/\">Ransomware en pymes mexicanas: cómo entra, qué hacer en la primera hora y cómo prevenirlo</a>. Y si te interesa dimensionar el golpe, lee <a href=\"/blog/costo-de-un-incidente-de-ciberseguridad-pyme/\">Cuánto le cuesta un incidente de ciberseguridad a una pyme</a>.</p>"
+    },
+    {
+      "h2": "Cómo saber si tu RDP está expuesto (revisión en 10 minutos)",
+      "html": "<p>Antes de cambiar nada, confirma el estado real. Estos pasos los puedes hacer tú o pedirlos a quien te da soporte técnico:</p><ol><li><strong>Pregunta quién usa Escritorio remoto.</strong> Haz una lista de personas, equipos y motivos. Si nadie lo usa, el primer paso es desactivarlo.</li><li><strong>Revisa el módem o router.</strong> Busca la sección de <em>reenvió de puertos</em> (port forwarding) o <em>DMZ</em>. Si ves el puerto 3389 apuntando a una computadora interna, está expuesto.</li><li><strong>Revisa el firewall.</strong> Confirma si hay una regla que permita RDP desde cualquier dirección (0.0.0.0/0 o “any”). Eso es exposición total.</li><li><strong>Revisa el servidor o la PC.</strong> En Windows, verifica que Escritorio remoto esté habilitado solo donde se necesita y que las cuentas tengan contraseñas robustas y únicas.</li><li><strong>Busca conexiones raras.</strong> En el Visor de eventos de Windows, revisa inicios de sesión fallidos repetidos y accesos desde ubicaciones o horarios que no corresponden.</li><li><strong>Revisa si hay cuentas genéricas.</strong> Usuarios como “admin”, “soporte” o “usuario” compartidos entre varias personas son un imán para ataques.</li></ol><p>Si quieres una guía más amplia para detectar servicios expuestos, tenemos <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">Cómo saber si tu servidor o VPS está expuesto a internet (y revisarlo tú mismo)</a>.</p>"
+    },
+    {
+      "h2": "Cómo cerrar la puerta sin detener tu operación",
+      "html": "<p>La meta no es prohibir el trabajo remoto: es dejar de exponer RDP directamente a internet. Estas son las medidas concretas, en orden de prioridad:</p><ol><li><strong>Desactiva RDP donde no se use.</strong> Es la medida más simple y la más efectiva. Si nadie necesita conectarse a esa PC, apágalo.</li><li><strong>Quita el reenvío de puertos 3389.</strong> Elimina la regla del módem o firewall que publica RDP. Si no sabes cuál es, pide a tu proveedor de internet o a tu soporte que lo revise contigo.</li><li><strong>Usa una VPN corporativa.</strong> En lugar de abrir RDP al mundo, permite que los empleados se conecten primero a una VPN y, desde ahí, accedan al escritorio remoto. Así RDP queda dentro de la red privada.</li><li><strong>Implementa acceso remoto con autenticación multifactor (MFA).</strong> Aunque uses VPN, exige un segundo factor. Una contraseña sola ya no es suficiente.</li><li><strong>Cambia contraseñas débiles y elimina cuentas compartidas.</strong> Cada persona debe tener su propio usuario, con contraseña única y larga. Desactiva cuentas de exempleados de inmediato.</li><li><strong>Limita quién puede conectarse.</strong> Configura el firewall para permitir RDP solo desde direcciones IP conocidas (por ejemplo, la IP fija de la oficina o de la VPN), nunca desde “cualquiera”.</li><li><strong>Actualiza Windows y el software de acceso remoto.</strong> Las vulnerabilidades sin parche son otra vía de entrada. Activa las actualizaciones automáticas.</li><li><strong>Monitorea intentos de acceso.</strong> Revisa con regularidad los registros de inicio de sesión. Si ves muchos intentos fallidos, alguien está probando entrar.</li></ol><p>Si tu operación depende de servidores, revisa también <a href=\"/servicios/seguridad-de-servidores/\">seguridad de servidores</a> para asegurar que no haya otros servicios expuestos sin darte cuenta.</p>"
+    },
+    {
+      "h2": "Errores comunes que dejan la puerta abierta",
+      "html": "<p>Estos son patrones que vemos seguido en pymes y que conviene corregir:</p><ul><li><strong>“Es solo por un rato.”</strong> Abrir RDP para una emergencia y olvidar cerrarlo. Ese “rato” puede durar meses.</li><li><strong>Contraseñas compartidas por WhatsApp.</strong> Cuando la credencial circula entre varias personas, deja de ser un control de seguridad.</li><li><strong>Usar el mismo usuario y contraseña en varios sistemas.</strong> Si esa combinación se filtra en otro sitio, el atacante la prueba en tu RDP.</li><li><strong>Confiar solo en el antivirus.</strong> El antivirus ayuda, pero no impide que alguien entre con credenciales válidas.</li><li><strong>No revisar los respaldos.</strong> Un respaldo conectado a la red y sin protección puede ser cifrado junto con todo lo demás. Mantén copias desconectadas y prueba la restauración.</li></ul><p>Si además manejas correo corporativo, complementa con <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>, porque el ransomware también entra por ahí.</p>"
+    },
+    {
+      "h2": "Qué hacer si ya tienes RDP expuesto y sospechas un incidente",
+      "html": "<p>Si encontraste el puerto abierto y además hay señales de acceso no autorizado, actúa en este orden:</p><ol><li><strong>Desconecta el equipo afectado de la red</strong> (cable y Wi-Fi) para evitar propagación.</li><li><strong>No borres evidencia.</strong> No formatees ni reinstales todavía; guarda registros y notas de lo que viste.</li><li><strong>Cambia contraseñas</strong> de las cuentas involucradas desde un equipo que consideres limpio.</li><li><strong>Cierra el acceso remoto</strong> y revisa si hay otras cuentas o servicios comprometidos.</li><li><strong>Revisa respaldos</strong> y confirma que puedes restaurar sin depender de la red afectada.</li><li><strong>Documenta y notifica</strong> según corresponda, sobre todo si hay datos personales involucrados. Para lo básico legal, revisa <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">Protección de datos personales en México: lo básico que tu pyme debe cumplir con la nueva LFPDPPP</a>.</li></ol><p>Si el incidente ya ocurrió, nuestro servicio de <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a> puede ayudarte a contener y ordenar la recuperación.</p>"
+    },
+    {
+      "h2": "Vigilancia continua: saberlo antes de que sea ransomware",
+      "html": "<p>Cerrar el RDP es un paso indispensable, pero no es el final. Los servicios expuestos cambian: alguien abre un puerto para una prueba, se instala un software nuevo, se activa un acceso remoto que nadie recordaba. La exposición no es un evento único; es algo que hay que revisar de forma constante.</p><p>Ahí entra la <strong>vigilancia continua</strong>: revisar de manera periódica qué servicios tienes expuestos, detectar configuraciones débiles, observar intentos de acceso anómalos y avisarte antes de que se conviertan en un incidente. No se trata de un pentest caro que se hace una vez al año y queda en un PDF; se trata de tener ojos sobre tu operación todos los días.</p><p>En Inspector Hacker trabajamos con ese enfoque para pymes en México y EE. UU. Si quieres entender la diferencia, lee <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a>. Y si buscas un punto de partida, revisa nuestros <a href=\"/planes/\">planes</a>: Arranque, Vigía y Vigía Plus, con precios claros y sin letras chiquitas.</p><p>La pregunta no es si tu RDP está abierto hoy, sino si alguien lo está revisando mañana.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Basta con cambiar la contraseña del RDP para estar seguro?",
+      "a": "No. Cambiar la contraseña ayuda, pero si el puerto 3389 sigue abierto a internet, cualquiera puede seguir intentando entrar. Lo correcto es dejar de exponer RDP directamente: desactivarlo donde no se use, quitar el reenvío de puertos y usar VPN con autenticación multifactor."
+    },
+    {
+      "q": "¿Cómo sé si mi empresa tiene el RDP abierto a internet?",
+      "a": "Revisa el módem o router en la sección de reenvío de puertos y busca el puerto 3389. Revisa también las reglas del firewall: si permiten RDP desde cualquier dirección, está expuesto. Si no tienes acceso a esa configuración, pide a tu proveedor de internet o a tu soporte técnico que lo revise contigo."
+    },
+    {
+      "q": "¿Usar una VPN es suficiente para protegerme del ransomware?",
+      "a": "Una VPN reduce mucho el riesgo porque deja de exponer RDP al mundo, pero no es suficiente por sí sola. Debes combinarla con autenticación multifactor, contraseñas únicas, actualizaciones al día, respaldos desconectados y monitoreo de accesos. La seguridad es una suma de capas, no una sola herramienta."
+    },
+    {
+      "q": "¿Qué hago si ya detecté accesos extraños por RDP?",
+      "a": "Desconecta el equipo afectado de la red, no borres evidencia, cambia contraseñas desde un equipo limpio, cierra el acceso remoto y revisa respaldos. Si hay datos personales involucrados, documenta y evalúa tus obligaciones de notificación. Si el incidente ya ocurrió, busca apoyo especializado en respuesta a incidentes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "CISA: Ransomware Guidance and Resources",
+      "url": "https://www.cisa.gov/stopransomware"
+    },
+    {
+      "title": "NIST: Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
