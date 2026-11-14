@@ -1,0 +1,82 @@
+{
+  "lang": "en",
+  "slug": "multi-factor-authentication-where-to-turn-it-on-first",
+  "pair": null,
+  "topic": "Multi-factor authentication: where a small business should turn it on first",
+  "title": "MFA: Where a Small Business Should Turn It On First",
+  "h1": "Multi-factor authentication: where a small business should turn it on first",
+  "description": "A practical order of operations for turning on MFA in a small business: email, admin accounts, remote access, money and cloud apps, plus what to skip.",
+  "date": "2026-11-14",
+  "updated": "2026-11-14",
+  "category": "Cybersecurity Basics",
+  "readingMinutes": 7,
+  "intro": "<p>Multi-factor authentication (MFA) is the single cheapest control that stops most account takeovers. When a password leaks, is guessed, or is reused from another site, MFA is what stands between the attacker and your inbox, your bank details, and your admin panels. The problem for a small business is not <em>whether</em> to turn it on. It is <em>where to start</em>, because you cannot do everything on day one and some accounts matter far more than others.</p><p>This article gives you a practical order. Turn things on from the top down, and stop when you run out of time this week. The top of the list is where an attacker does the most damage with the least effort.</p>",
+  "sections": [
+    {
+      "h2": "The rule behind the order: what an attacker would take first",
+      "html": "<p>Before the checklist, one principle. Prioritize accounts by what an attacker can do <em>after</em> they get in, not by how many people use them.</p><ul><li><strong>Email first.</strong> Your business email is the reset key for almost everything else. Whoever controls the inbox can reset passwords on banking, SaaS, social media, and supplier portals. It is also the channel for invoice fraud and payment redirection.</li><li><strong>Admin and owner accounts second.</strong> A compromised global administrator in Microsoft 365 or Google Workspace can read every mailbox, add forwarding rules, and lock you out.</li><li><strong>Anything reachable from the internet third.</strong> Remote desktop, VPN portals, firewalls, and web admin panels are attacked continuously by automated scanners.</li><li><strong>Money and customer data fourth.</strong> Banking, payment processors, payroll, and your CRM or e-commerce admin.</li></ul><p>If you only protect one thing this month, protect email. If you protect two, protect email and your admin accounts.</p>"
+    },
+    {
+      "h2": "Step 1: Business email and its admin console",
+      "html": "<p>Start with the platform that hosts your mail: Microsoft 365, Google Workspace, or your hosting provider's webmail. Turn on MFA for every user, then enforce it so nobody can skip enrollment indefinitely.</p><ol><li>Enable MFA in the admin console for the whole tenant or domain, not user by user.</li><li>Enforce it with a conditional access policy or the equivalent setting so new users must enroll at first login.</li><li>Start with the owner, the person who pays bills, and anyone who approves invoices or changes bank details.</li><li>Then cover everyone else, including shared mailboxes' delegated users.</li><li>Require MFA on the admin account itself and create a second, separate admin account that is not used for daily email.</li></ol><p>While you are in there, check for mail forwarding rules you did not create and for inbox rules that delete or hide messages. Attackers set these up to intercept invoices. Our guide to <a href=\"/en/blog/business-email-compromise-invoice-wire-fraud/\">business email compromise and invoice fraud</a> walks through what to look for.</p><p>Email authentication (SPF, DKIM, DMARC) is a separate control that stops others from sending mail <em>as</em> your domain. It does not replace MFA, but it belongs in the same project. See <a href=\"/en/blog/spf-dkim-dmarc-step-by-step-small-business/\">how to set up SPF, DKIM and DMARC step by step</a>.</p>"
+    },
+    {
+      "h2": "Step 2: Remote access and anything exposed to the internet",
+      "html": "<p>Remote desktop protocol (RDP), VPN logins, firewall management pages, and server control panels are the front door for ransomware crews. These accounts are attacked by bots around the clock, and a single weak password is enough.</p><ul><li>Put MFA on your VPN and on any remote access gateway.</li><li>If you use RDP, do not expose it directly to the internet. Put it behind a VPN or a gateway that requires MFA. Read why in <a href=\"/en/blog/rdp-exposed-to-internet-ransomware-front-door/\">RDP exposed to the internet: the ransomware front door</a>.</li><li>Enable MFA on firewall, router, and server management interfaces, and change default credentials.</li><li>Enable MFA on your website admin panel (WordPress, Shopify, WooCommerce) and on your hosting and DNS accounts. DNS control means control of your domain.</li></ul><p>If you are unsure what is exposed, that is a discovery question before it is an MFA question. Our <a href=\"/en/services/server-security/\">server security service</a> covers exactly this kind of exposure review.</p>"
+    },
+    {
+      "h2": "Step 3: Money, payroll, and customer data",
+      "html": "<p>Now move to the accounts where a breach costs cash or triggers a legal obligation.</p><ul><li><strong>Online banking and payment processors:</strong> turn on the strongest MFA the bank offers, and require a second approval for new payees or wire transfers.</li><li><strong>Payroll and accounting:</strong> MFA on the payroll platform and the accounting file host.</li><li><strong>CRM and customer databases:</strong> MFA for every user, especially anyone with export rights.</li><li><strong>E-commerce admin:</strong> MFA on the store admin and on the payment gateway. Our <a href=\"/en/blog/shopify-woocommerce-security-checklist/\">Shopify and WooCommerce security checklist</a> covers the rest.</li><li><strong>Social and messaging accounts:</strong> MFA on Facebook Business, Instagram, WhatsApp Business, and Google Business Profile. These are common takeover targets. If one is already compromised, see <a href=\"/en/blog/whatsapp-business-meta-account-hacked/\">your WhatsApp Business or Meta account was hacked</a>.</li></ul><p>If you handle health or financial data, check what your regulator expects. The <a href=\"/en/blog/ftc-safeguards-rule-small-business/\">FTC Safeguards Rule in plain English</a> is a useful starting point for US businesses.</p>"
+    },
+    {
+      "h2": "Step 4: Everything else, and what to skip",
+      "html": "<p>After the high-value accounts, roll MFA out to the rest of your SaaS tools as part of onboarding: project management, file sharing, HR, and support desks. Make MFA a condition of getting an account.</p><p>What you can deprioritize:</p><ul><li>Accounts with no sensitive data and no ability to reset anything else.</li><li>Legacy systems where MFA would break operations. Isolate those instead.</li><li>Shared generic logins. Replace them with named accounts where possible; MFA on a shared account is weak because everyone shares the second factor.</li></ul><p>One more thing: choose the right factor. Push notifications and SMS are better than nothing, but push fatigue and SIM-swap attacks exist. Prefer authenticator apps or hardware security keys for admins and anyone who can move money. NIST's digital identity guidance is the reference standard if you want the technical detail.</p>"
+    },
+    {
+      "h2": "How to roll it out without breaking the business",
+      "html": "<ol><li><strong>Announce it.</strong> Tell staff what is changing, why, and what they need to do. Give a date.</li><li><strong>Pilot with three people</strong> for a week, including one non-technical user.</li><li><strong>Enforce in stages:</strong> admins first, then finance, then everyone.</li><li><strong>Set up recovery.</strong> Decide how a locked-out employee gets back in, and who approves it. Without a recovery plan, people will find workarounds.</li><li><strong>Keep a record.</strong> Note who is enrolled and who is exempt, and review exemptions quarterly.</li><li><strong>Test it.</strong> Ask one person to try logging in without the second factor. It should fail.</li></ol><p>Expect friction in week one and near-zero friction by week three. The bigger risk is not finishing the rollout.</p>"
+    },
+    {
+      "h2": "MFA is a setting; staying protected is a process",
+      "html": "<p>Turning on MFA is a finite project. Keeping it on is not. Accounts get added, people leave, someone disables MFA to troubleshoot and forgets to re-enable it, and new SaaS tools appear without anyone checking the security settings. That drift is where incidents come from.</p><p>This is the gap continuous monitoring fills. Instead of a one-time audit, you get regular checks on the things that quietly change: MFA status across your key accounts, exposed services, email authentication records, and suspicious login behavior. If you want to understand how that differs from a point-in-time test, read <a href=\"/en/monitoring-vs-pentest/\">monitoring vs pentest</a>. For the broader picture of what a small business actually needs, see <a href=\"/en/cybersecurity-for-small-business/\">cybersecurity for small businesses</a>, and our <a href=\"/en/services/cybersecurity-monitoring/\">continuous monitoring service</a> if you would rather have someone else keep watch.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do we need MFA if we already have strong passwords and a password manager?",
+      "a": "Yes. A password manager helps, but passwords still leak through phishing, breaches at other sites, and malware. MFA is the control that limits the damage when a password is stolen. The two work together, they do not replace each other."
+    },
+    {
+      "q": "Is SMS-based MFA good enough?",
+      "a": "It is much better than no MFA. For admins, finance staff, and anyone who can approve payments, prefer an authenticator app or a hardware security key. SMS can be intercepted through SIM-swap attacks, so treat it as a minimum, not a target."
+    },
+    {
+      "q": "What if an employee loses their phone?",
+      "a": "Decide this before you enforce MFA. Have a documented recovery path: a backup code stored securely, a second enrolled device, or an admin-verified reset with identity confirmation. Without a clear process, staff will find workarounds that weaken the control."
+    },
+    {
+      "q": "Does MFA stop ransomware?",
+      "a": "It blocks a very common entry path, which is stolen or guessed credentials on remote access and email. It does not stop every attack, such as unpatched software or malicious attachments. It is one layer, and it should sit alongside patching, backups, and email filtering."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NIST Special Publication 800-63B: Digital Identity Guidelines",
+      "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
+    },
+    {
+      "title": "CISA: More Than a Password",
+      "url": "https://www.cisa.gov/MFA"
+    },
+    {
+      "title": "FTC: Cybersecurity for Small Business",
+      "url": "https://www.ftc.gov/business-guidance/small-businesses"
+    },
+    {
+      "title": "OWASP: Multifactor Authentication Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
