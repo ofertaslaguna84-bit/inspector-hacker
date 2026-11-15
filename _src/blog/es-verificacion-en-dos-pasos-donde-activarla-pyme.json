@@ -1,0 +1,74 @@
+{
+  "lang": "es",
+  "slug": "verificacion-en-dos-pasos-donde-activarla-pyme",
+  "pair": null,
+  "topic": "Verificación en dos pasos: dónde activarla primero en una pyme (correo, banco, SAT, redes)",
+  "title": "Verificación en dos pasos: dónde activarla primero",
+  "h1": "Verificación en dos pasos: dónde activarla primero en una pyme (correo, banco, SAT, redes)",
+  "description": "Guía práctica para dueños de pymes: en qué cuentas activar la verificación en dos pasos primero, cómo hacerlo y qué errores evitar al configurarla.",
+  "date": "2026-11-15",
+  "updated": "2026-11-15",
+  "category": "Ciberseguridad para pymes",
+  "readingMinutes": 6,
+  "intro": "<p>Si tu contraseña se filtra o alguien la adivina, la <strong>verificación en dos pasos (2FA)</strong> es lo que evita que entre a tu correo, a tu banca o a tus redes. No es un candado perfecto, pero es de las medidas con mejor relación costo-beneficio que puede poner una pyme hoy mismo, sin comprar nada.</p><p>El problema es que casi nadie sabe <em>por dónde empezar</em>. Si activas 2FA en todo al mismo tiempo, te saturas y terminas desactivándola. Aquí va un orden claro: primero lo que más duele si lo pierdes, después lo demás. Y al final, cómo revisar que siga bien puesta con el tiempo.</p>",
+  "sections": [
+    {
+      "h2": "Por qué el orden importa (y por qué no es el mismo para todos)",
+      "html": "<p>No todas las cuentas valen lo mismo. Hay tres preguntas que te ayudan a priorizar:</p><ul><li><strong>¿Qué pasa si alguien entra hoy?</strong> Si puede mover dinero, firmar cosas o pedir facturas a tu nombre, va primero.</li><li><strong>¿Qué pasa si <em>tú</em> pierdes el acceso?</strong> Si de ahí depende recuperar todo lo demás (por ejemplo, tu correo), necesita un plan de respaldo antes de activar 2FA.</li><li><strong>¿Quién más tiene la contraseña?</strong> Cuentas compartidas con empleados, contadores o agencias requieren reglas distintas.</li></ul><p>Con eso en mente, este es el orden que recomendamos a pymes: <strong>correo → banco → SAT → redes sociales y herramientas de trabajo</strong>. Abajo lo desglosamos.</p>"
+    },
+    {
+      "h2": "1. Correo electrónico: la llave maestra de todo lo demás",
+      "html": "<p>Tu correo es la puerta de recuperación de casi todo: banco, SAT, redes, proveedores, facturación. Si alguien lo controla, puede pedir “olvidé mi contraseña” en todos lados. Por eso va primero.</p><h3>Qué hacer, en orden</h3><ol><li>Entra a la configuración de seguridad de tu proveedor (Google Workspace, Microsoft 365, Zoho, etc.) y busca la sección de verificación en dos pasos o autenticación multifactor.</li><li>Actívala <strong>primero en la cuenta del dueño o gerente</strong>, no en la de un empleado.</li><li>Elige el método: app autenticadora (Google Authenticator, Microsoft Authenticator, Authy) o llave física. El SMS funciona, pero es el más débil; úsalo solo si no hay otra opción.</li><li>Guarda los <strong>códigos de respaldo</strong> impresos en un lugar físico seguro (caja, archivero con llave). No en el mismo correo.</li><li>Repite con las cuentas de facturación, administración y las de empleados que manejen pagos o datos de clientes.</li><li>Documenta quién tiene 2FA activo y con qué método, en una hoja simple.</li></ol><p>Si tu correo es el punto donde llegan las facturas de proveedores, revisa también <a href=\"/blog/fraude-factura-otra-clabe-como-protegerte/\">el fraude de la factura con otra CLABE</a>: el 2FA no sirve de nada si el atacante convence a tu equipo de pagar a otra cuenta.</p><p>Y si quieres cerrar el otro hueco (que manden correos <em>a tu nombre</em>), configura <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">SPF, DKIM y DMARC en tu dominio</a>. Son cosas distintas, pero se complementan.</p>"
+    },
+    {
+      "h2": "2. Banca en línea y pasarelas de pago",
+      "html": "<p>Aquí el 2FA no es opcional: es dinero. La mayoría de los bancos en México ya lo exigen o lo ofrecen en su app, pero conviene revisar que esté bien puesto y no solo “activado por defecto”.</p><h3>Qué revisar</h3><ul><li><strong>Token o app del banco:</strong> verifica que la persona autorizada sea quien recibe el código, no un empleado que ya no trabaja contigo.</li><li><strong>Alertas de movimientos:</strong> activa notificaciones por correo y por app para cargos y transferencias. El 2FA no avisa; las alertas sí.</li><li><strong>Límites de transferencia:</strong> ajústalos a lo que realmente necesitas. Un límite alto con 2FA sigue siendo un riesgo si el atacante convence a alguien de autorizar.</li><li><strong>Usuarios y permisos:</strong> si tu banca permite varios usuarios, define quién puede autorizar pagos y quién solo consultar.</li><li><strong>Pasarelas (Stripe, Mercado Pago, PayPal, Clip):</strong> activa 2FA en la cuenta administradora y revisa quién tiene acceso de administrador.</li></ul><p>Si vendes en línea, complementa esto con el <a href=\"/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/\">checklist de seguridad para tu tienda en Shopify o WooCommerce</a>.</p>"
+    },
+    {
+      "h2": "3. SAT y trámites fiscales: la cuenta que casi nadie revisa",
+      "html": "<p>La cuenta del SAT (y el acceso a la e.firma o contraseña) es atractiva para un atacante: puede presentar declaraciones, cambiar datos o generar facturas a tu nombre. El 2FA aquí depende del portal y del tipo de acceso, pero hay medidas concretas que sí puedes tomar.</p><h3>Acciones concretas</h3><ol><li>Revisa quién en tu empresa tiene la contraseña del portal del SAT y la e.firma. Si es “la del contador y ya”, formaliza el control: quién la usa, para qué y con qué autorización.</li><li>Guarda la e.firma y su contraseña en un lugar físico controlado, no en el correo ni en un chat.</li><li>Activa las notificaciones del portal (buzón tributario) y revisa que lleguen a un correo con 2FA activo.</li><li>Verifica periódicamente que no haya trámites o declaraciones que tú no hiciste.</li><li>Si usas un servicio de facturación o un PAC, activa 2FA en esa cuenta y limita el número de administradores.</li></ol><p>Ojo: la e.firma no es lo mismo que una contraseña. Si se compromete, el daño puede ser mayor. Trátala como tratarías la llave de tu oficina.</p>"
+    },
+    {
+      "h2": "4. Redes sociales y herramientas de trabajo",
+      "html": "<p>El hackeo de una cuenta de redes puede costar más de lo que parece: pierdes la página, los seguidores, la publicidad y la confianza. Y si es WhatsApp Business, pierdes el canal de ventas.</p><h3>Qué activar y en qué orden</h3><ul><li><strong>Meta (Facebook e Instagram):</strong> activa 2FA en la cuenta administradora del negocio y en el Business Manager. Revisa quién tiene rol de administrador.</li><li><strong>WhatsApp Business:</strong> activa la verificación en dos pasos en la app y revisa los dispositivos vinculados. Si ya te hackearon, sigue <a href=\"/blog/whatsapp-business-hackeado-que-revisar/\">esta guía en orden</a>.</li><li><strong>Google Workspace / Microsoft 365:</strong> además del 2FA, revisa las reglas de reenvío y los dispositivos conectados.</li><li><strong>Herramientas de trabajo:</strong> Slack, Notion, tu CRM, tu plataforma de e-commerce, tu hosting. Activa 2FA en las cuentas con permisos de administrador.</li><li><strong>Contraseñas:</strong> usa un gestor de contraseñas para no reutilizarlas. El 2FA no protege una contraseña repetida en diez sitios.</li></ul><p>Si tu equipo usa servidores o VPS, revisa también <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor está expuesto a internet</a>: el 2FA no cubre un escritorio remoto abierto.</p>"
+    },
+    {
+      "h2": "Errores comunes al activar 2FA (y cómo evitarlos)",
+      "html": "<ul><li><strong>Activar 2FA sin códigos de respaldo.</strong> Si pierdes el teléfono, pierdes la cuenta. Imprime los códigos y guárdalos fuera del correo.</li><li><strong>Usar solo SMS.</strong> Es mejor que nada, pero es vulnerable a SIM swapping. Migra a app autenticadora o llave física cuando puedas.</li><li><strong>Poner 2FA solo en la cuenta del dueño.</strong> Los empleados con acceso a pagos o datos también necesitan.</li><li><strong>No revisar quién tiene acceso.</strong> Un exempleado con 2FA activo sigue siendo un riesgo. Da de baja accesos al salir.</li><li><strong>No documentar nada.</strong> Si mañana alguien más administra, debe saber qué cuentas tienen 2FA y con qué método.</li></ul><p>Si ya tuviste un incidente, no empieces por el 2FA: primero contiene el daño. Aquí tienes <a href=\"/blog/ransomware-pymes-mexico/\">qué hacer en la primera hora ante un ransomware</a> y <a href=\"/blog/costo-de-un-incidente-de-ciberseguridad-pyme/\">cómo calcular lo que te costaría</a>.</p>"
+    },
+    {
+      "h2": "Cómo saber que el 2FA sigue bien puesto (y no solo el primer día)",
+      "html": "<p>Activar 2FA es un paso, no un estado. Las cuentas cambian: entra gente nueva, se van otras, se agregan apps, se migran correos. Lo que hoy está protegido, mañana puede no estarlo.</p><p>Algunas prácticas que sí puedes sostener:</p><ul><li>Revisa cada trimestre quién tiene acceso de administrador en correo, banca, SAT y redes.</li><li>Ten una lista simple de cuentas críticas y su método de 2FA.</li><li>Cuando alguien salga de la empresa, revoca accesos el mismo día.</li><li>Vigila inicios de sesión inusuales y reglas de reenvío en el correo.</li><li>Revisa si tu dominio o tus cuentas aparecen en filtraciones conocidas.</li></ul><p>Eso es justo lo que hacemos en <a href=\"/servicios/monitoreo-de-ciberseguridad/\">nuestro servicio de monitoreo de ciberseguridad</a>: vigilancia continua con IA para detectar señales de que algo se está moviendo, sin necesidad de un pentest caro. Si quieres entender la diferencia, aquí está <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a>. Y si prefieres ver cómo encaja en tu caso, revisa los <a href=\"/planes/\">planes</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Es obligatorio activar la verificación en dos pasos en mi pyme?",
+      "a": "No existe una obligación general para todas las cuentas, pero muchas plataformas (banca, correo, redes) la ofrecen o la exigen. Más que una obligación legal, es una medida práctica: si manejas dinero, datos de clientes o facturación, el riesgo de no tenerla es alto. Revisa las condiciones de cada proveedor y las recomendaciones de la autoridad correspondiente."
+    },
+    {
+      "q": "¿Qué método de 2FA conviene más: SMS, app o llave física?",
+      "a": "En general, una app autenticadora o una llave física son más seguras que el SMS, porque el SMS puede interceptarse con técnicas como el SIM swapping. Si tu proveedor solo ofrece SMS, actívalo de todos modos y considera migrar cuando sea posible. Para cuentas muy críticas (banca, correo del dueño), vale la pena usar app o llave física."
+    },
+    {
+      "q": "¿Qué hago si pierdo el teléfono donde tengo el 2FA?",
+      "a": "Usa los códigos de respaldo que guardaste al activarlo. Si no los tienes, tendrás que pasar por el proceso de recuperación del proveedor, que puede tardar días. Por eso es clave imprimir los códigos y guardarlos en un lugar físico seguro, separado del correo y del teléfono."
+    },
+    {
+      "q": "¿El 2FA me protege de un ransomware o de un hackeo con IA?",
+      "a": "El 2FA reduce mucho el riesgo de que alguien entre solo con una contraseña filtrada, pero no protege de todo: un atacante puede engañar a una persona para que apruebe un inicio de sesión (phishing de 2FA) o aprovechar un servidor mal configurado. Por eso se combina con otras medidas: contraseñas únicas, actualizaciones, revisión de accesos y vigilancia continua."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NIST: Digital Identity Guidelines (SP 800-63B)",
+      "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
+    },
+    {
+      "title": "SAT: Portal principal",
+      "url": "https://www.sat.gob.mx/"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
