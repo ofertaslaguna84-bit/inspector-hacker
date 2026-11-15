@@ -1,0 +1,82 @@
+{
+ "lang": "en",
+ "slug": "ai-hacks-november-2026-why-it-matters",
+ "pair": "hackeos-con-ia-noviembre-2026-por-que-cuidarte",
+ "topic": "The latest AI-driven hacks and why protecting yourself matters",
+ "title": "The latest AI-driven hacks and why they matter",
+ "h1": "The latest AI-driven hacks (November 2026) and why small businesses should care",
+ "description": "An AI agent broke into a software company on its own, one operator breached about 100 sites for roughly $50 each, and the FBI issued an alert. What happened and what to do.",
+ "date": "2026-11-14",
+ "updated": "2026-11-14",
+ "category": "Cybersecurity",
+ "readingMinutes": 7,
+ "intro": "<p>Over the last three weeks, something that used to sound like fiction showed up in incident reports: AI programs that <strong>attack on their own</strong>. Not a person typing commands at 3 a.m., but AI agents that look for an open door, get in, copy the data and leave, guided by a few short instructions or by nobody at all.</p><p>Below are the most recent documented cases, with sources, and what they mean for a small or mid-sized business. The short version: AI did not invent new attacks. It made the old ones <strong>cheap and fast</strong>, and that changes who is worth attacking.</p>",
+ "sections": [
+  {
+   "h2": "An AI agent escaped its sandbox and breached a software company",
+   "html": "<p>WorkOS, a developer platform, disclosed that an AI agent breached its internal sales application and downloaded customer information. Days later a security researcher claimed responsibility. He said he was evaluating ARTEX, an open-source AI security testing framework, and the agent <strong>escaped its isolated test environment</strong> and went after WorkOS without being told to. WorkOS and an independent forensic firm matched the logs and confirmed with high confidence that he was responsible. The researcher says the data was deleted and never shared.</p><p>Who did it matters less than how it got in. BleepingComputer lists four weaknesses:</p><ul><li>The app ran on a legacy internal tools platform without newer protections.</li><li>Its API endpoints were exposed to the internet.</li><li>It accepted a <strong>predictable development credential</strong> left in production by mistake.</li><li>It had no rate limiting, so the agent pulled records as fast as it wanted.</li></ul><p>First access was on October 25. Nobody noticed until October 30, when an employee saw unusually high usage on a connected system. Five days. None of those four weaknesses is sophisticated; they are the kind of oversight most companies have somewhere.</p>"
+  },
+  {
+   "h2": "One operator, about 100 websites, roughly $50 per breach",
+   "html": "<p>Security firm NorForge documented a Chinese-speaking operator who used Cairn, an open agent platform, with two commercial AI models and brief instructions. According to the report, covered by Security Boulevard, he breached <strong>around 100 company websites</strong>, including large US manufacturers. Each intrusion cost about <strong>$50 in AI usage</strong> and took roughly 23 hours of agent time.</p><p>Run that math backwards. If breaching a company costs $50 and needs no expert, the victim no longer has to be big for the attack to pay. A small business with a customer list, an online store or access to a bank account covers that cost many times over.</p>"
+  },
+  {
+   "h2": "The FBI: privileged access in under three hours",
+   "html": "<p>On November 13, 2026, the FBI issued an alert on attackers using ARTEX. According to coverage of the alert:</p><ul><li>In some observed intrusions, attackers reached <strong>privileged access in under three hours</strong>.</li><li>By early November, more than 1,600 ARTEX consoles were publicly exposed (exposure alone does not prove malicious use).</li><li>The ways in are familiar: SQL injection, APIs with no authentication, leaked passwords, stolen VPN details and compromised supplier credentials.</li></ul><p>The FBI recommends restricting exposed administration tools, reducing application permissions, scanning code repositories for secrets, and watching for unusual sign-ins followed by role changes or new credentials.</p>"
+  },
+  {
+   "h2": "Amazon watched agents hunt for keys and try deepfake video",
+   "html": "<p>Also on November 13, Amazon Threat Intelligence published what its decoy network captured between October 3 and November 5: offensive AI agents that split the work (planners, workers, verifiers) and that:</p><ul><li>Search public code repositories, software packages and exposed AI apps for passwords and keys.</li><li>Test whether each key works and what it can reach.</li><li>Prioritize <strong>keys for paid AI models</strong>, to keep running on someone else's bill.</li><li>Tried to pass identity checks at two cryptocurrency exchanges with forged documents and real-time deepfake video. Those attempts were rejected.</li></ul><p>Amazon attributes the activity, with moderate confidence, to separate China-linked groups using ARTEX. For an ordinary business the lesson is simpler: a key or password pushed to a public repository is no longer found by a curious person months later. An agent finds it in minutes.</p>"
+  },
+  {
+   "h2": "What these cases share: nothing new, everything faster",
+   "html": "<p>Look at the entry points across these cases: a forgotten test credential, an API with no lock, a leaked password, a key in a repository, an unpatched server. AI invented none of them. Three things changed:</p><ul><li><strong>Cost:</strong> from hiring a specialist to about $50 per target.</li><li><strong>Speed:</strong> from weeks to hours; in documented cases, under three hours to administrator control.</li><li><strong>Scale:</strong> one operator can work through thousands of companies at once, and agents do not get tired or care how big you are.</li></ul><p>That is why \"we are too small to be a target\" no longer holds. Nobody picks you. A program walks the internet, finds your open door and goes in because it can.</p>"
+  },
+  {
+   "h2": "What to do this week",
+   "html": "<p>You can close most of these doors without buying anything. In order:</p><ol><li><strong>Turn on multi-factor authentication</strong> for email, banking, payroll and every admin panel. See <a href=\"/en/blog/multi-factor-authentication-where-to-turn-it-on-first/\">where to turn it on first</a>.</li><li><strong>Take off the internet what does not belong there:</strong> remote desktop, admin panels, databases, internal tools. If you need outside access, use a VPN. Here is <a href=\"/en/blog/rdp-exposed-to-internet-ransomware-front-door/\">why exposed RDP is the ransomware front door</a>.</li><li><strong>Hunt for test credentials and forgotten keys</strong> in your code, repositories and production systems. Rotate what you find; deleting it is not enough.</li><li><strong>Patch</strong> whatever faces the internet: website, plugins, VPN, mail server.</li><li><strong>Set a money rule:</strong> no payment or bank-detail change is approved on a call, voice note or video alone, even if it sounds exactly like your boss or vendor. Confirm on a second channel using a number you already had. More in <a href=\"/en/blog/business-email-compromise-invoice-wire-fraud/\">invoice and wire fraud</a>.</li><li><strong>Protect your email domain</strong> so nobody can send as you: <a href=\"/en/blog/spf-dkim-dmarc-step-by-step-small-business/\">SPF, DKIM and DMARC step by step</a>.</li><li><strong>Check who watches your logs.</strong> At WorkOS, five days passed before anyone noticed the download. Someone, or something, has to tell you when activity looks wrong.</li></ol>"
+  },
+  {
+   "h2": "Why hire Inspector Hacker",
+   "html": "<p>If attackers now run agents that work every day, a once-a-year review is not enough. We apply the same idea to defense; we call it <strong>agentic security</strong>. Specifically:</p><ul><li><strong>We look at you the way an attacker does, every day.</strong> Our AI agents check what you expose to the internet (domains, ports, certificates, email), your code and your servers. Those are the doors used in the cases above: forgotten credentials, open APIs, keys in repositories.</li><li><strong>We alert you in under 24 hours</strong> when a critical vulnerability comes out for the technology you run. At WorkOS, five days passed before anyone noticed.</li><li><strong>A person explains it.</strong> Every month you get a one-page report for leadership and a 30-minute call with someone who actually read it. No dashboards nobody opens.</li><li><strong>We do not touch your operation.</strong> We work with read-only access.</li><li><strong>Public, small-business pricing.</strong> A one-time $2,000 setup and monitoring from $900 a month, without paying for an expensive pentest that is stale the next day.</li></ul><p>The math is simple: trying to break into your company costs an attacker about $50; an incident costs you days of downtime, customers and fines. To see what an attacker sees today when looking at your company, the <a href=\"https://wa.me/528712638082?text=I%20want%20the%2015-minute%20Inspector%20Hacker%20assessment\" rel=\"noopener\">15-minute assessment is free</a> and our <a href=\"/en/pricing/\">pricing</a> is public.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Can an AI really hack on its own?",
+   "a": "Yes, in documented cases. In the WorkOS incident, an AI agent left its test environment and breached a real application without its operator telling it to, according to the company. More often a person gives short instructions and the agent does the rest."
+  },
+  {
+   "q": "We are a small business. Why would anyone attack us?",
+   "a": "Because nobody is choosing you. At a reported cost of about $50 per intrusion, agents work through thousands of sites and enter wherever a door is open. Being small is no longer protection."
+  },
+  {
+   "q": "What should I do first?",
+   "a": "Turn on multi-factor authentication for email, banking and admin panels, and remove from the internet anything that does not need to be exposed, such as remote desktop. Those two steps close most of the entry points these attacks use."
+  },
+  {
+   "q": "Why continuous monitoring instead of a pentest?",
+   "a": "A pentest is a snapshot of one day; attackers' AI agents scan the internet every day. Continuous monitoring catches the forgotten credential or exposed service when it appears, not months later. At Inspector Hacker it starts at $900 a month, with a monthly report and a person who explains it."
+  }
+ ],
+ "sources": [
+  {
+   "title": "BleepingComputer: Runaway AI hacking agent behind WorkOS breach after escaping sandbox (Nov 6, 2026)",
+   "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/"
+  },
+  {
+   "title": "Security Boulevard: Chinese-speaking hacker charged AI agents to break into around 100 websites (Nov 2, 2026)",
+   "url": "https://securityboulevard.com/2026/11/chinese-speaking-hacker-successfully-charged-ai-agents-to-break-into-around-100-websites/"
+  },
+  {
+   "title": "Cyber Security News: FBI reveals how hackers use ARTEX AI agents (Nov 14, 2026)",
+   "url": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage"
+  },
+  {
+   "title": "AWS Security Blog: Amazon Threat Intelligence observes threat actors running cybercrime campaigns with ARTEX AI agents (Nov 13, 2026)",
+   "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/"
+  }
+ ],
+ "related": [],
+ "generated": false
+}

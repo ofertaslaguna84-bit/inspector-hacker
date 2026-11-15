@@ -78,6 +78,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/fraude-factura-otra-clabe-como-protegerte/"/>
   </url>
   <url>
+    <loc>https://inspectorhacker.com/blog/hackeos-con-ia-noviembre-2026-por-que-cuidarte/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/hackeos-con-ia-noviembre-2026-por-que-cuidarte/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/ai-hacks-november-2026-why-it-matters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/hackeos-con-ia-noviembre-2026-por-que-cuidarte/"/>
+  </url>
+  <url>
     <loc>https://inspectorhacker.com/blog/lfpdppp-ciberseguridad-pymes/</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -1384,6 +1393,15 @@
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/"/>
+  </url>
+  <url>
+    <loc>https://inspectorhacker.com/en/blog/ai-hacks-november-2026-why-it-matters/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://inspectorhacker.com/blog/hackeos-con-ia-noviembre-2026-por-que-cuidarte/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/ai-hacks-november-2026-why-it-matters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/hackeos-con-ia-noviembre-2026-por-que-cuidarte/"/>
   </url>
   <url>
     <loc>https://inspectorhacker.com/en/blog/business-email-compromise-invoice-wire-fraud/</loc>

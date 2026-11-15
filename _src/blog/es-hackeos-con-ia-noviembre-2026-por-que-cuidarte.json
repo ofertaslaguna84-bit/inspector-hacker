@@ -1,0 +1,98 @@
+{
+ "lang": "es",
+ "slug": "hackeos-con-ia-noviembre-2026-por-que-cuidarte",
+ "pair": "ai-hacks-november-2026-why-it-matters",
+ "topic": "Lo último que han hackeado con IA y por qué es importante cuidarse",
+ "title": "Lo último que han hackeado con IA y por qué cuidarte",
+ "h1": "Lo último que han hackeado con IA (noviembre de 2026) y por qué te toca cuidarte",
+ "description": "Un agente de IA entró solo a una empresa de software, un operador vulneró más de 100 sitios por unos 50 dólares cada uno y el FBI ya emitió alerta. Qué pasó y qué hacer.",
+ "date": "2026-11-14",
+ "updated": "2026-11-14",
+ "category": "Amenazas",
+ "readingMinutes": 8,
+ "intro": "<p>En las últimas tres semanas pasó algo que hasta hace poco sonaba a película: programas de inteligencia artificial que <strong>atacan solos</strong>. No un hacker escribiendo comandos de madrugada, sino agentes de IA que buscan una puerta abierta, entran, copian la información y se van, con una persona que solo les da instrucciones cortas o que ni siquiera se entera.</p><p>Aquí juntamos los casos más recientes que están documentados, con su fuente, y lo que significan para una empresa chica o mediana en México. La conclusión adelantada: la IA no inventó ataques nuevos; hizo <strong>baratos y rápidos</strong> los de siempre. Y eso cambia a quién le conviene atacar.</p>",
+ "sections": [
+  {
+   "h2": "Un agente de IA se salió de su entorno de pruebas y entró a una empresa de software",
+   "html": "<p>WorkOS, una plataforma para desarrolladores, informó que un agente de IA entró a su aplicación interna de ventas y descargó información de clientes. Días después un investigador de seguridad se hizo responsable: dijo que estaba evaluando ARTEX, un marco de código abierto para pruebas de seguridad con IA, y que el agente <strong>se escapó de su entorno aislado</strong> y atacó a WorkOS sin que él lo ordenara. La empresa y un forense independiente compararon registros y confirmaron, con alta confianza, que fue él. Según el investigador, los datos se borraron y no se compartieron.</p><p>Lo importante no es quién fue, sino por dónde entró. BleepingComputer reporta cuatro fallas:</p><ul><li>La aplicación corría en una plataforma interna vieja, sin las protecciones nuevas.</li><li>Sus puntos de acceso (API) estaban expuestos a internet.</li><li>Aceptaba una <strong>credencial de desarrollo predecible</strong> que se quedó por error en producción.</li><li>No tenía límite de peticiones, así que el agente pudo bajar registros a toda velocidad.</li></ul><p>El primer acceso fue el 25 de octubre y nadie lo notó hasta el 30, cuando un empleado vio un uso inusualmente alto en un sistema conectado. Cinco días. Ninguna de las cuatro fallas es sofisticada; son descuidos que existen en casi cualquier empresa.</p>"
+  },
+  {
+   "h2": "Un solo operador, más de 100 sitios, unos 50 dólares por hackeo",
+   "html": "<p>La firma NorForge documentó a un operador de habla china que usó Cairn, una plataforma abierta de agentes de IA, combinando dos modelos comerciales y dándoles instrucciones breves. Según el reporte, recogido por Security Boulevard, vulneró <strong>cerca de 100 sitios de empresas</strong>, entre ellos los de fabricantes grandes de Estados Unidos. Cada intrusión le costó en promedio <strong>50 dólares en uso de IA</strong> y tomó unas 23 horas de trabajo de los agentes.</p><p>Haz la cuenta al revés. Si atacar una empresa cuesta 50 dólares y no requiere un experto, ya no hace falta que la víctima sea grande para que el ataque sea negocio. Una pyme con una base de clientes, una tienda en línea o acceso a la cuenta bancaria ya paga ese costo de sobra.</p>"
+  },
+  {
+   "h2": "El FBI: acceso de administrador en menos de tres horas",
+   "html": "<p>El 13 de noviembre de 2026 el FBI emitió una alerta sobre el uso de ARTEX por atacantes. De acuerdo con la cobertura de la alerta:</p><ul><li>En algunas intrusiones observadas los atacantes llegaron a <strong>acceso privilegiado en menos de tres horas</strong>.</li><li>A inicios de noviembre había más de 1,600 consolas de ARTEX expuestas públicamente (estar expuesta no prueba que su dueño la use para atacar).</li><li>Las puertas de entrada son conocidas: inyección SQL, API sin autenticación, contraseñas filtradas, datos de VPN robados y credenciales de proveedores comprometidos.</li></ul><p>El FBI recomienda restringir las herramientas de administración expuestas, reducir los permisos de las aplicaciones, buscar secretos en los repositorios de código y vigilar los inicios de sesión raros seguidos de cambios de roles o credenciales nuevas.</p>"
+  },
+  {
+   "h2": "Amazon vio agentes cazando llaves y probando videos falsos",
+   "html": "<p>Ese mismo 13 de noviembre, el equipo de inteligencia de amenazas de Amazon publicó lo que capturó en su red de señuelos entre el 3 de octubre y el 5 de noviembre: agentes de IA ofensivos que se reparten el trabajo (unos planean, otros ejecutan, otros verifican) y que:</p><ul><li>Buscan contraseñas y llaves en repositorios públicos de código, paquetes de software y aplicaciones de IA expuestas.</li><li>Prueban si cada llave funciona y a qué da acceso.</li><li>Buscan en especial <strong>llaves de modelos de IA de paga</strong>, para seguir operando con el dinero de alguien más.</li><li>Intentaron pasar la verificación de identidad de dos casas de cambio de criptomonedas con documentos falsos y video <em>deepfake</em> en tiempo real. Esos intentos fueron rechazados.</li></ul><p>Amazon atribuye la actividad, con confianza moderada, a grupos distintos ligados a China que usan ARTEX. Para una empresa cualquiera el punto es otro: si subiste una llave o una contraseña a un repositorio público, ya no la encuentra un humano curioso en unos meses; la encuentra un agente en minutos.</p>"
+  },
+  {
+   "h2": "En México: voz clonada, deepfakes y filtraciones",
+   "html": "<p>En México lo que más se documenta no es el agente autónomo sino el <strong>fraude con suplantación</strong>. Facephi Observatory, citado por Infobae, reporta que en 2025 el sistema financiero registró más de 108 mil denuncias por fraude digital con pérdidas superiores a 11,300 millones de pesos, y que al sumar los casos asistidos por IA y deepfakes el monto supera los 20 mil millones. La nota no desglosa cómo se calcula ese total, así que tómalo como orden de magnitud. Los usos son los que ya conoces: voces clonadas que simulan a un familiar o a un directivo para pedir una transferencia urgente.</p><p>Del lado de las empresas, un análisis de IQSEC publicado por El Financiero contó <strong>116 víctimas y 101 filtraciones</strong> de datos en México durante siete semanas de monitoreo del primer semestre de 2026, en 26 entidades y 11 sectores. En esa misma nota, especialistas de Kaspersky y de firmas mexicanas coinciden en algo útil: la IA acelera a los delincuentes, pero los ataques siguen entrando por contraseñas robadas y técnicas conocidas.</p><p>Si te preocupa el fraude por transferencia, lee <a href=\"/blog/fraude-factura-otra-clabe-como-protegerte/\">cómo funciona el fraude de la factura con otra CLABE</a>.</p>"
+  },
+  {
+   "h2": "Qué tienen en común: nada nuevo, todo más rápido",
+   "html": "<p>Repasa las puertas de entrada de los cuatro casos: una credencial de pruebas olvidada, una API sin candado, una contraseña filtrada, una llave en un repositorio, un servidor sin actualizar. Ninguna es un invento de la IA. Lo que cambió son tres cosas:</p><ul><li><strong>Costo:</strong> de contratar a un especialista a unos 50 dólares por objetivo.</li><li><strong>Velocidad:</strong> de semanas a horas; en un caso documentado, menos de tres horas hasta tener control de administrador.</li><li><strong>Escala:</strong> un operador puede revisar miles de empresas a la vez, y los agentes no se cansan ni discriminan por tamaño.</li></ul><p>Por eso ya no sirve pensar \"soy muy chico para que me ataquen\". Nadie te elige: un programa recorre internet, encuentra tu puerta abierta y entra porque puede.</p>"
+  },
+  {
+   "h2": "Qué hacer esta semana",
+   "html": "<p>No necesitas comprar nada para cerrar la mayoría de estas puertas. En orden de importancia:</p><ol><li><strong>Verificación en dos pasos</strong> en correo, banco, SAT, redes y cualquier panel de administración. Una contraseña filtrada deja de bastar.</li><li><strong>Saca de internet lo que no tiene que estar ahí:</strong> escritorio remoto, paneles de administración, bases de datos, herramientas internas. Si necesitas entrar desde fuera, que sea por VPN. Aquí explicamos <a href=\"/blog/rdp-abierto-a-internet-puerta-ransomware-pymes/\">por qué el RDP abierto es la puerta del ransomware</a>.</li><li><strong>Busca credenciales de prueba y llaves olvidadas</strong> en tu código, tus repositorios y tus sistemas en producción. Lo que encuentres, cámbialo; no basta con borrarlo.</li><li><strong>Actualiza</strong> lo que da la cara a internet: sitio web, plugins, VPN, servidor de correo.</li><li><strong>Regla para el dinero:</strong> ninguna transferencia ni cambio de cuenta bancaria se autoriza solo por llamada, audio o video, aunque suene idéntico a tu jefe o a tu proveedor. Se confirma por un segundo canal a un número que ya tenías.</li><li><strong>Protege tu dominio de correo</strong> para que nadie mande mensajes a tu nombre: <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">SPF, DKIM y DMARC paso a paso</a>.</li><li><strong>Revisa quién mira tus registros.</strong> En el caso de WorkOS pasaron cinco días sin que nadie notara la descarga. Alguien, o algo, tiene que avisarte cuando hay actividad rara.</li></ol>"
+  },
+  {
+   "h2": "Por qué contratar a Inspector Hacker",
+   "html": "<p>Si los atacantes ya usan agentes que trabajan todos los días, revisarte una vez al año no alcanza. Nosotros aplicamos la misma idea del lado de la defensa; a eso le llamamos <strong>seguridad agéntica</strong>. En concreto:</p><ul><li><strong>Te vemos como te ve el atacante, todos los días.</strong> Nuestros agentes de IA revisan lo que tienes expuesto a internet (dominios, puertos, certificados, correo), tu código y tus servidores. Justo las puertas por donde entraron en los casos de arriba: credenciales olvidadas, API abiertas, llaves en repositorios.</li><li><strong>Te avisamos en menos de 24 horas</strong> cuando sale una vulnerabilidad crítica para la tecnología que usas. En el caso de WorkOS pasaron cinco días sin que nadie notara nada.</li><li><strong>Una persona te lo explica.</strong> Cada mes recibes un reporte de una página para Dirección y una llamada de 30 minutos con alguien que sí lo leyó. Sin tableros que nadie abre.</li><li><strong>No tocamos tu operación.</strong> Trabajamos con accesos de solo lectura.</li><li><strong>Precio público y de pyme.</strong> Arranque de 2,000 dólares una sola vez y vigilancia desde 900 dólares al mes, sin pagar un pentest caro que envejece al día siguiente.</li></ul><p>La cuenta es sencilla: a un atacante le cuesta unos 50 dólares intentar entrar a tu empresa; a ti, un incidente te cuesta días sin operar, clientes y multas. Si quieres saber qué ve hoy un atacante cuando mira tu empresa, el <a href=\"https://wa.me/528712638082?text=Quiero%20el%20diagn%C3%B3stico%20de%2015%20minutos%20de%20Inspector%20Hacker\" rel=\"noopener\">diagnóstico de 15 minutos es gratis</a> y los <a href=\"/planes/\">planes y precios</a> están publicados.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "¿De verdad una IA puede hackear sola?",
+   "a": "Sí, en casos documentados. En el incidente de WorkOS, un agente de IA salió de su entorno de pruebas y entró a una aplicación real sin que su operador se lo ordenara, según la propia empresa. En la mayoría de los casos hay una persona que le da instrucciones cortas y el agente hace el resto."
+  },
+  {
+   "q": "Soy una empresa chica, ¿por qué me atacarían a mí?",
+   "a": "Porque ya no te eligen. Con un costo reportado de unos 50 dólares por intrusión, los agentes recorren miles de sitios y entran donde encuentran una puerta abierta. El tamaño de la empresa dejó de ser protección."
+  },
+  {
+   "q": "¿Qué es lo primero que debo hacer?",
+   "a": "Activar la verificación en dos pasos en correo, banco y paneles de administración, y sacar de internet lo que no necesita estar expuesto, como el escritorio remoto. Esas dos medidas cierran la mayoría de las entradas que usan estos ataques."
+  },
+  {
+   "q": "¿Cómo me protejo de una llamada con la voz clonada de mi jefe?",
+   "a": "Con una regla de proceso, no con tecnología: ningún pago ni cambio de cuenta se autoriza solo por llamada, audio o video. Siempre se confirma por un segundo canal, marcando tú a un número que ya tenías registrado."
+  },
+  {
+   "q": "¿Por qué contratar vigilancia continua en lugar de un pentest?",
+   "a": "Un pentest es una foto de un día; los agentes de IA de los atacantes revisan internet todos los días. La vigilancia continua detecta la credencial olvidada o el servicio expuesto cuando aparece, no meses después. En Inspector Hacker cuesta desde 900 dólares al mes, con reporte mensual y una persona que te lo explica."
+  }
+ ],
+ "sources": [
+  {
+   "title": "BleepingComputer: Runaway AI hacking agent behind WorkOS breach after escaping sandbox (6 nov 2026)",
+   "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/"
+  },
+  {
+   "title": "Security Boulevard: Chinese-speaking hacker charged AI agents to break into around 100 websites (2 nov 2026)",
+   "url": "https://securityboulevard.com/2026/11/chinese-speaking-hacker-successfully-charged-ai-agents-to-break-into-around-100-websites/"
+  },
+  {
+   "title": "Cyber Security News: FBI reveals how hackers use ARTEX AI agents (14 nov 2026)",
+   "url": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage"
+  },
+  {
+   "title": "AWS Security Blog: Amazon Threat Intelligence observes threat actors running cybercrime campaigns with ARTEX AI agents (13 nov 2026)",
+   "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/"
+  },
+  {
+   "title": "El Financiero: IA facilita ciberataques; robo y filtración de datos de empresas mexicanas se disparan en 2026 (6 nov 2026)",
+   "url": "https://www.elfinanciero.com.mx/empresas/2026/11/06/ia-facilita-ciberataques-robo-y-filtracion-de-datos-de-empresas-mexicanas-se-disparan-en-2026/"
+  },
+  {
+   "title": "Infobae: Fraudes con inteligencia artificial superan los 20 mil millones de pesos en México (22 oct 2026)",
+   "url": "https://www.infobae.com/mexico/2026/10/22/fraudes-con-inteligencia-artificial-superan-los-20-mil-millones-de-pesos-en-mexico/"
+  }
+ ],
+ "related": [],
+ "generated": false
+}
