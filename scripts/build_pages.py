@@ -796,10 +796,11 @@ def render(p):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 {chr(10).join(jsonld(b) for b in blocks)}
 <style>{CSS}{EXTRA_CSS}</style>
+<style>@media(min-width:861px){{.brand b{{white-space:nowrap}}}}@media(max-width:860px){{.brand b{{font-size:15px;line-height:1.15}}}}</style>
 </head>
 <body>
 <header><div class="w hdr">
-  <a class="brand" href="{L["home"]}"><img src="/img/logo-blanco.png" alt="Inspector Hacker"><b>INSPECTOR <span>HACKER</span></b></a>
+  <a class="brand" href="{L["home"]}"><img src="/img/logo-blanco.png" alt="Inspector Hacker"><b>INSPECTOR <span>HACKER</span><i style="display:block;font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:#9fb3c8;font-style:normal;margin-top:2px">{"Agentic Security" if L["home"]=="/en/" else "Seguridad Agéntica"}</i></b></a>
   <nav>{nav}</nav>
 </div></header>
 

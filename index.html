@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,9,12,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .hdr{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:flex;align-items:center;gap:12px}.brand img{height:42px;width:42px}.brand b{font-size:18px;letter-spacing:.06em}.brand b span{color:var(--cy)}
-nav{display:flex;gap:22px;align-items:center}nav a{font-size:14px;color:var(--ink2)}nav a:hover{color:#fff}
+nav{display:flex;gap:13px;align-items:center;margin-left:16px}nav a:not(.btn){white-space:nowrap;font-size:13px!important}nav .btn{white-space:nowrap;padding-left:14px;padding-right:14px}nav a{font-size:14px;color:var(--ink2)}nav a:hover{color:#fff}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:600;font-size:14px;border:1px solid var(--line);color:#fff;transition:.2s}
 .btn-cy{background:var(--cy);color:#06252b;border-color:var(--cy)}.btn-cy:hover{background:#5ee0f3}
 .btn-ghost:hover{border-color:#fff}
@@ -73,10 +73,11 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--ink3);font-si
 @media(max-width:860px){.hero .w{grid-template-columns:1fr}nav a:not(.btn){display:none}.hero{padding-top:120px}.tbl td:nth-child(2){white-space:normal}}
 .cities{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.cities a{display:block;background:var(--bg3);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:14.5px;color:var(--ink2)}.cities a:hover{border-color:var(--cy);color:#fff}.cities a b{display:block;color:#fff;margin-bottom:3px}
 </style>
+<style>@media(min-width:861px){.brand b{white-space:nowrap}}@media(max-width:860px){.brand b{font-size:15px;line-height:1.15}}@media(max-width:1400px){nav a[href="#extras"],nav a[href="#como"]{display:none}}@media(max-width:1150px){nav a[href="#faq"],nav a[href="/guias/"],nav a[href="/ciudades/"]{display:none}}</style>
 </head>
 <body>
 <header><div class="w hdr">
-  <a class="brand" href="#"><img src="img/logo-blanco.png" alt="Inspector Hacker"><b>INSPECTOR <span>HACKER</span></b></a>
+  <a class="brand" href="#"><img src="img/logo-blanco.png" alt="Inspector Hacker"><b>INSPECTOR <span>HACKER</span><i style="display:block;font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:#9fb3c8;font-style:normal;margin-top:2px">Seguridad Agéntica</i></b></a>
   <nav><a href="#que">Qué hacemos</a><a href="#planes">Planes</a><a href="#extras">Extras</a><a href="#como">Cómo funciona</a><a href="#faq">Preguntas</a><a href="/servicios/">Servicios</a><a href="/industrias/">Giros</a><a href="/ciudades/">Ciudades</a><a href="/guias/">Guías</a><a href="/blog/">Blog</a><a href="https://inspectorhacker.com/en/" hreflang="en" lang="en" title="English version">EN</a><a class="btn btn-cy" href="https://wa.me/528712638082?text=Quiero%20el%20diagnóstico%20de%2015%20minutos%20de%20Inspector%20Hacker" target="_blank" rel="noopener">Diagnóstico de 15 min</a></nav>
 </div></header>
 
