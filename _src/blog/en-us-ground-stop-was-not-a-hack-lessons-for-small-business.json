@@ -1,0 +1,74 @@
+{
+ "lang": "en",
+ "slug": "us-ground-stop-was-not-a-hack-lessons-for-small-business",
+ "pair": "paro-de-vuelos-estados-unidos-no-fue-hackeo-lecciones-pymes",
+ "topic": "The US ground stop of November 13, 2026: it was not a hack, and what a business can learn from it",
+ "title": "The US ground stop was not a hack, and that is the worrying part",
+ "h1": "The US ground stop was not a hack. What did happen could happen to your business",
+ "description": "On November 13, 2026, the United States halted departures for more than four hours. Officials see no sign of a hack: it was a cabling change. Lessons for small businesses.",
+ "date": "2026-11-15",
+ "updated": "2026-11-15",
+ "category": "Cybersecurity",
+ "readingMinutes": 6,
+ "intro": "<p>On Friday, November 13, 2026, the US Federal Aviation Administration (FAA) halted departures nationwide for more than four hours. Social media immediately said the airports had been hacked. So far, officials say there is no sign of that: the network went down during an equipment change. That is the part that matters to your business, because it does not take an attacker to stop you from operating.</p>",
+ "sections": [
+  {
+   "h2": "What happened, according to what has been reported",
+   "html": "<p>The FAA ordered the nationwide ground stop on November 13 because of a communications failure at its air traffic control centers, and lifted it at 8:15 p.m. Eastern, more than four hours later, according to SecurityWeek. Thousands of flights were affected and delays were expected for several days.</p><p>Transportation Secretary Sean Duffy explained the cause identified so far: a contractor was replacing copper cabling with fiber optics at a facility in Arkansas, and the network equipment received more than a thousand connection attempts every four or five seconds. That affected some radars, and the FAA stopped departures as a safety measure, according to Fortune. A second piece of equipment in Texas, updated weeks earlier, started sending data to the network at the same time; why is still under investigation.</p>"
+  },
+  {
+   "h2": "Was it a cyberattack?",
+   "html": "<p>Based on what is known today, no. Duffy said they have no indication that it was a hack. Homeland Security Secretary Markwayne Mullin said it does not look like a cyberattack, while making clear that they are still reviewing and have not ruled it out yet. The FBI is assisting with the investigation and the official cause has not been announced.</p><p>There is a precedent: the nationwide ground stop of January 2023 happened because a contractor deleted files by mistake. That was not an attack either.</p>"
+  },
+  {
+   "h2": "The hack that did happen that week",
+   "html": "<p>Meanwhile, in Japan, the railway company Keisei reported that someone gained unauthorized access, on the night of November 11, to the reservation system for the Skyliner, the train that connects Tokyo with Narita Airport. Up to 3.37 million records with names, phone numbers and email addresses may have been exposed. Online reservations were suspended with no date for their return, and passengers have to buy from ticket machines or ticket counters.</p><p>One case was an internal mistake and the other an intruder. The result for the customer was the same: the service stopped working.</p>"
+  },
+  {
+   "h2": "Four lessons for a small or mid-sized business",
+   "html": "<ol><li><strong>Changes take down more systems than attackers do.</strong> An update, a switch of internet provider or a server migration done during business hours can leave you unable to sell. Do them in off hours, with a written plan for going back to the previous state.</li><li><strong>Your vendor is part of your risk.</strong> In the flight case, the change was being made by a contractor. Ask whoever provides your support what they are going to touch, when, and what happens if it goes wrong.</li><li><strong>Old equipment does not handle surprises.</strong> Officials spoke of aging systems that were overwhelmed. A modem, a server or a point-of-sale system without updates fails the same way under an unusual load as under an attack.</li><li><strong>Have a way to operate without the system.</strong> Keisei kept selling at the ticket counter. Can your business take payments, invoice and serve customers if the system is down for a full day?</li></ol>"
+  },
+  {
+   "h2": "How to tell whether it was a failure or an attack",
+   "html": "<p>Officials could say early on that they saw no traces of an attack because they had logs to review. Most small businesses do not: when something goes down, nobody can say whether it was a mistake or an intruder. The minimum is to keep the access logs for your email, your server and your admin panel, and to have someone review them when something odd happens.</p>"
+  },
+  {
+   "h2": "Why hire Inspector Hacker",
+   "html": "<p>If attackers now run agents that work every day, a once-a-year review is not enough. We apply the same idea to defense; we call it <strong>agentic security</strong>. Specifically:</p><ul><li><strong>We look at you the way an attacker does, every day.</strong> Our AI agents check what you expose to the internet (domains, ports, certificates, email), your code and your servers. Those are the doors used in the cases above: forgotten credentials, open APIs, keys in repositories.</li><li><strong>We alert you in under 24 hours</strong> when a critical vulnerability comes out for the technology you run. At WorkOS, five days passed before anyone noticed.</li><li><strong>A person explains it.</strong> Every month you get a one-page report for leadership and a 30-minute call with someone who actually read it. No dashboards nobody opens.</li><li><strong>We do not touch your operation.</strong> We work with read-only access.</li><li><strong>Public, small-business pricing.</strong> A one-time $2,000 setup and monitoring from $900 a month, without paying for an expensive pentest that is stale the next day.</li></ul><p>The math is simple: trying to break into your company costs an attacker about $50; an incident costs you days of downtime, customers and fines. To see what an attacker sees today when looking at your company, the <a href=\"https://wa.me/528712638082?text=I%20want%20the%2015-minute%20Inspector%20Hacker%20assessment\" rel=\"noopener\">15-minute assessment is free</a> and our <a href=\"/en/pricing/\">pricing</a> is public.</p>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Were US airports hacked in November 2026?",
+   "a": "Based on the information published as of November 15, 2026, no. The Transportation Secretary said there is no indication of a hack and attributed the ground stop to a cabling change that overwhelmed the network. The investigation remains open and the FBI is assisting."
+  },
+  {
+   "q": "How long did the ground stop last?",
+   "a": "More than four hours. The FAA lifted it at 8:15 p.m. Eastern on November 13, 2026."
+  },
+  {
+   "q": "What happened with the train to Narita Airport?",
+   "a": "Keisei reported unauthorized access to its Skyliner reservation system on the night of November 11. Up to 3.37 million records with names, phone numbers and email addresses may have been exposed."
+  },
+  {
+   "q": "What should my business do with this news?",
+   "a": "Check three things: that system changes are made outside business hours and with a rollback plan, that your vendors warn you before they touch anything, and that you can operate for a day without the system."
+  }
+ ],
+ "sources": [
+  {
+   "title": "SecurityWeek: No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update (Nov 14, 2026)",
+   "url": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/"
+  },
+  {
+   "title": "Fortune: the FAA ground stop investigation and the FBI's role (Nov 15, 2026)",
+   "url": "https://fortune.com/2026/11/15/cyberattack-hack-faa-air-traffic-control-communications-router-fbi-probe-sean-duffy-ground-stop/"
+  },
+  {
+   "title": "News On Japan: Keisei Skyliner Reservation System Hacked, Up to 3.37 Million Records at Risk (Nov 16, 2026)",
+   "url": "https://newsonjapan.com/article/151383.php"
+  }
+ ],
+ "related": [],
+ "generated": false
+}
