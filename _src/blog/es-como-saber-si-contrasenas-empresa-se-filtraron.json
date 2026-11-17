@@ -1,0 +1,74 @@
+{
+  "lang": "es",
+  "slug": "como-saber-si-contrasenas-empresa-se-filtraron",
+  "pair": null,
+  "topic": "Cómo saber si las contraseñas de tu empresa se filtraron y qué hacer",
+  "title": "Contraseñas filtradas: cómo saberlo y qué hacer",
+  "h1": "Cómo saber si las contraseñas de tu empresa se filtraron y qué hacer",
+  "description": "Aprende a detectar si las contraseñas de tu empresa circulan en filtraciones, cómo confirmarlo sin exponerte y qué pasos seguir hoy mismo en tu pyme.",
+  "date": "2026-11-17",
+  "updated": "2026-11-17",
+  "category": "Ciberseguridad para pymes",
+  "readingMinutes": 7,
+  "intro": "<p>Si alguien tiene la contraseña de tu correo, de tu panel de facturación o de tu banco, no necesita hackear nada: entra como si fuera tú. Las filtraciones de contraseñas no son un tema lejano de película; pasan cuando un proveedor externo sufre un incidente, cuando un empleado reutiliza su contraseña personal en el trabajo o cuando un correo de phishing se lleva las credenciales. La buena noticia es que puedes revisarlo tú mismo en una tarde y actuar antes de que se convierta en un problema mayor.</p><p>Esta guía es para dueños y gerentes de pymes, sin lenguaje técnico innecesario. Al final vas a saber cómo revisar si tus cuentas aparecen en filtraciones conocidas, qué hacer en las primeras horas y cómo evitar que vuelva a pasar.</p>",
+  "sections": [
+    {
+      "h2": "Qué significa realmente que una contraseña “se filtró”",
+      "html": "<p>Una filtración de contraseñas ocurre cuando los datos de acceso de una cuenta (usuario y contraseña, a veces también correo y teléfono) quedan expuestos porque un sitio o servicio fue comprometido, porque alguien los robó con phishing o porque se publicaron por error. Lo importante es entender dos cosas:</p><ul><li><strong>No siempre es culpa de tu empresa.</strong> Puede ser un proveedor, una tienda en línea donde compraste algo o un servicio que usas para trabajo.</li><li><strong>El riesgo real es la reutilización.</strong> Si la misma contraseña se usa en el correo, el banco y el SAT, una sola filtración abre varias puertas a la vez.</li></ul><p>También hay filtraciones que no son de contraseñas sino de correos y datos de contacto. Esas alimentan el phishing: correos que parecen de un proveedor real y que piden “confirmar tu contraseña” o “actualizar tus datos bancarios. Puedes ver cómo funciona ese patrón en <a href=\"/blog/fraude-factura-otra-clabe-como-protegerte/\">fraude de la factura con otra CLABE</a>.</p>"
+    },
+    {
+      "h2": "Cómo revisar si tus cuentas aparecen en filtraciones (paso a paso)",
+      "html": "<p>Antes de empezar: usa una computadora de confianza, no una red pública, y no escribas contraseñas en formularios que no conozcas. Lo que vas a revisar es si un correo aparece en una filtración, no la contraseña en sí.</p><ol><li><strong>Haz una lista de cuentas críticas.</strong> Correo principal, correo de facturación, acceso al banco en línea, portal del SAT, panel de la tienda en línea, redes sociales de la empresa, WhatsApp Business, herramientas de nómina y cualquier acceso remoto a servidores.</li><li><strong>Revisa correo por correo en un servicio de verificación de filtraciones.</strong> Sitios reconocidos como <em>Have I Been Pwned</em> (haveibeenpwned.com) permiten consultar si un correo aparece en brechas conocidas. Es una consulta de solo lectura: no pide tu contraseña.</li><li><strong>Anota qué servicio filtró los datos y de cuándo es la brecha.</strong> Si la filtración es vieja y ya cambiaste esa contraseña, el riesgo baja. Si es reciente, actúa ese mismo día.</li><li><strong>Pregunta a tu proveedor de correo y a tus herramientas críticas.</strong> Varios servicios muestran alertas de seguridad o sesiones activas. Revisa si hay inicios de sesión desde ciudades o dispositivos que no reconoces.</li><li><strong>Revisa también los correos personales de los dueños y gerentes.</strong> Muchas veces el correo personal es la llave de recuperación del correo de la empresa.</li></ol><p>Si además quieres revisar si tu servidor o panel está expuesto a internet, tenemos una guía práctica en <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor o VPS está expuesto</a>.</p>"
+    },
+    {
+      "h2": "Señales de que alguien ya está usando tus credenciales",
+      "html": "<p>Una filtración no siempre se nota de inmediato. Estas señales deben encender alarmas:</p><ul><li>Correos que enviaste tú no aparecen en tu bandeja de enviados, o contactos reciben mensajes que tú no escribiste.</li><li>Reglas de reenvío automático en tu correo que no creaste.</li><li>Intentos de inicio de sesión fallidos repetidos o avisos de “nuevo dispositivo” en horarios raros.</li><li>Cambios en métodos de pago, cuentas bancarias de proveedores o datos de facturación.</li><li>Empleados reportan correos internos que piden pagos urgentes o cambiar contraseñas.</li><li>En el banco: movimientos pequeños de prueba o alertas que no reconoces.</li></ul><p>Si detectas cualquiera de estas señales, no esperes al final del día. Aísla la cuenta, cambia contraseñas desde un dispositivo limpio y avisa a tu equipo por un canal distinto al correo comprometido. Si el incidente ya escaló, revisa nuestra guía de <a href=\"/blog/ransomware-pymes-mexico/\">ransomware en pymes mexicanas</a> para saber qué hacer en la primera hora.</p>"
+    },
+    {
+      "h2": "Qué hacer hoy mismo si confirmaste una filtración",
+      "html": "<p>Actúa en este orden. La prioridad es cortar el acceso y evitar que el atacante se mueva a otras cuentas.</p><ol><li><strong>Cambia la contraseña de la cuenta afectada</strong> desde un dispositivo de confianza. Usa una contraseña larga y distinta a todas las demás.</li><li><strong>Cambia también las cuentas donde usaste la misma contraseña.</strong> Empieza por correo, banco, SAT y accesos de administración.</li><li><strong>Cierra todas las sesiones activas</strong> de esa cuenta (busca “cerrar sesión en todos los dispositivos” en la configuración de seguridad).</li><li><strong>Activa la verificación en dos pasos</strong> en correo, banco, SAT, redes sociales y herramientas de trabajo. Te decimos dónde empezar en <a href=\"/blog/verificacion-en-dos-pasos-donde-activarla-pyme/\">verificación en dos pasos para pymes</a>.</li><li><strong>Revisa reglas de reenvío, firmas y métodos de recuperación</strong> del correo. Los atacantes suelen dejar una puerta trasera.</li><li><strong>Avisa a tu equipo</strong> con un mensaje claro: qué pasó, qué no deben hacer (no hacer clic en enlaces del correo afectado) y a quién reportar.</li><li><strong>Documenta lo ocurrido:</strong> fecha, cuentas afectadas, acciones tomadas. Te servirá si hay que reportar o si el banco pide evidencia.</li><li><strong>Considera reportar</strong> ante la autoridad correspondiente si hubo fraude o exposición de datos personales. En México, la protección de datos personales tiene obligaciones que conviene revisar en <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">lo básico de la LFPDPPP para pymes</a>.</li></ol>"
+    },
+    {
+      "h2": "Cómo evitar que vuelva a pasar (sin gastar de más)",
+      "html": "<p>La mayoría de los incidentes por contraseñas se reducen con medidas simples y constantes:</p><ul><li><strong>Un gestor de contraseñas para el equipo.</strong> Permite contraseñas únicas y largas sin que nadie las memorice. Define quién administra las cuentas críticas.</li><li><strong>Verificación en dos pasos obligatoria</strong> en todo lo que toque dinero, datos de clientes o accesos de administración.</li><li><strong>Regla de oro:</strong> nunca reutilizar la contraseña del trabajo en cuentas personales, y viceversa.</li><li><strong>Revisión trimestral de accesos:</strong> quien salió de la empresa debe perder acceso el mismo día.</li><li><strong>Correo protegido:</strong> configura SPF, DKIM y DMARC para que nadie mande correos a tu nombre. La guía está en <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">cómo configurar SPF, DKIM y DMARC</a>.</li><li><strong>Capacitación breve y frecuente</strong> sobre phishing, con ejemplos reales de la empresa.</li></ul><p>Si tienes tienda en línea, revisa también el <a href=\"/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/\">checklist de seguridad para Shopify o WooCommerce</a>. Y si quieres entender por qué esto no se resuelve con un pentest aislado, lee <a href=\"/vigilancia-vs-pentest/\">vigilancia continua vs pentest</a>.</p>"
+    },
+    {
+      "h2": "El papel de la vigilancia continua en las credenciales",
+      "html": "<p>Revisar filtraciones una vez al año no alcanza: las brechas se publican casi a diario y las credenciales robadas se venden y se reutilizan en cuestión de horas. La vigilancia continua consiste en monitorear de forma permanente señales como correos comprometidos, accesos anómalos, configuraciones débiles de correo y exposición de servicios, para que alguien te avise cuando algo cambia, no cuando ya pasó.</p><p>En Inspector Hacker trabajamos con ese enfoque para pymes en México y EE. UU. Puedes ver cómo funciona en <a href=\"/servicios/monitoreo-de-ciberseguridad/\">monitoreo de ciberseguridad</a> y comparar alcances en <a href=\"/planes/\">planes</a>. Si prefieres empezar por entender tu exposición actual, el <a href=\"/servicios/auditoria-de-seguridad-web/\">servicio de auditoría de seguridad web</a> es un buen punto de partida. Lo importante no es contratar algo hoy: es dejar de depender de la suerte con las contraseñas de tu empresa.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Es seguro escribir mi correo en un sitio para revisar filtraciones?",
+      "a": "Sí, si usas un servicio reconocido y solo consultas el correo. Esos sitios no necesitan tu contraseña. Nunca escribas contraseñas en formularios de verificación de filtraciones; si un sitio te las pide, desconfía."
+    },
+    {
+      "q": "Me aparezco en una filtración vieja, ¿debo cambiar todo?",
+      "a": "Cambia la contraseña de esa cuenta y de cualquier otra donde hayas usado la misma. Si ya la habías cambiado después de la fecha de la brecha, el riesgo es menor, pero conviene activar verificación en dos pasos y revisar sesiones activas."
+    },
+    {
+      "q": "¿Cuánto tarda un atacante en usar una contraseña filtrada?",
+      "a": "Puede ser cuestión de horas o incluso minutos si la filtración es reciente y la cuenta es valiosa. Por eso lo urgente es cambiar la contraseña y cerrar sesiones, no investigar primero."
+    },
+    {
+      "q": "¿Esto aplica si mi empresa es pequeña y no maneja datos sensibles?",
+      "a": "Sí. Las pymes son objetivo porque tienen accesos a dinero, correo y clientes, y suelen tener menos controles. Una cuenta de correo comprometida puede derivar en fraude a proveedores o clientes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Have I Been Pwned — verificación de correos en filtraciones",
+      "url": "https://haveibeenpwned.com/"
+    },
+    {
+      "title": "CISA — reconocimiento de phishing y buenas prácticas",
+      "url": "https://www.cisa.gov/recognize-and-report-phishing"
+    },
+    {
+      "title": "OWASP — autenticación y gestión de credenciales",
+      "url": "https://owasp.org/www-project-top-ten/"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
