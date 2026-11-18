@@ -1,0 +1,74 @@
+{
+  "lang": "en",
+  "slug": "3-2-1-backups-small-business",
+  "pair": null,
+  "topic": "3-2-1 backups for small businesses: how to set them up and prove they work",
+  "title": "3-2-1 Backups for Small Business: Set Up and Prove",
+  "h1": "3-2-1 Backups for Small Businesses: How to Set Them Up and Prove They Work",
+  "description": "A plain guide to 3-2-1 backups for small businesses: what the rule means, how to set it up step by step, and how to test and document that restores actually work.",
+  "date": "2026-11-18",
+  "updated": "2026-11-18",
+  "category": "Cybersecurity",
+  "readingMinutes": 7,
+  "intro": "<p>Ransomware, a deleted folder, a failed laptop drive, a hacked admin account: the fastest way to lose a business is to lose the data and have no clean copy. The 3-2-1 rule is the simplest backup standard that works for small companies. It says: keep <strong>3 copies</strong> of your data, on <strong>2 different types of media</strong>, with <strong>1 copy off-site</strong>. This article explains how to set it up in practice and, more importantly, how to prove your backups actually restore.</p><p>If you run a small business in Mexico or the US and you are not sure your backups would survive a ransomware attack, start here. Backups are also the foundation of any serious <a href=\"/en/services/cybersecurity-monitoring/\">cybersecurity monitoring</a> program.</p>",
+  "sections": [
+    {
+      "h2": "What 3-2-1 actually means (and why it still works)",
+      "html": "<p>The 3-2-1 rule is old and still valid because it protects against different failure modes at once:</p><ul><li><strong>3 copies:</strong> the original data plus two backups. If one copy is corrupted or encrypted by ransomware, you still have another.</li><li><strong>2 different media types:</strong> for example, a local disk or NAS plus cloud storage. This avoids a single flaw (a bad drive model, a bug in one backup tool) destroying every copy.</li><li><strong>1 off-site:</strong> a copy outside your office and outside your network. If the building floods, a laptop is stolen, or ransomware spreads across shared drives, the off-site copy survives.</li></ul><p>The rule is not about buying an expensive appliance. It is about not depending on a single copy in a single place. A small business can meet 3-2-1 with a local backup drive plus a reputable cloud backup service, as long as the cloud copy is isolated from your normal user accounts.</p><p>One modern addition matters: at least one copy should be <strong>immutable or offline</strong> (not deletable or encryptable by an attacker who has your admin credentials). Ransomware operators now look for and destroy backups before encrypting. Your off-site copy should be protected by separate credentials and, ideally, object lock or versioning.</p>"
+    },
+    {
+      "h2": "Step 1: Decide what data actually matters",
+      "html": "<p>You cannot back up everything well. Start with a short inventory:</p><ol><li><strong>Business-critical data:</strong> accounting files, customer records, contracts, invoices, project files, source code, design files.</li><li><strong>Systems:</strong> email, the website, the e-commerce store, line-of-business apps, servers.</li><li><strong>Configuration:</strong> domain settings, DNS, firewall rules, SaaS admin accounts, SSL certificates.</li><li><strong>Identities:</strong> who has admin access to each system, and how to recover accounts.</li></ol><p>Write this down in a simple spreadsheet: system, owner, where the data lives, how often it changes, and how much data you can afford to lose (recovery point objective) and how long you can be down (recovery time objective). This list becomes your backup plan and your test checklist.</p><p>Do not forget cloud SaaS. Many small businesses assume Microsoft 365 or Google Workspace is backed up by the provider. Providers protect the service, not your deleted files or a compromised mailbox. Check what retention you actually have and consider a third-party SaaS backup for email and shared drives.</p>"
+    },
+    {
+      "h2": "Step 2: Build the three copies",
+      "html": "<p>A practical small-business setup looks like this:</p><ol><li><strong>Copy 1 – production:</strong> the live data on your computers, server, or SaaS.</li><li><strong>Copy 2 – local backup:</strong> an automated backup to a NAS or external drive in the office. Fast to restore, good for accidental deletion.</li><li><strong>Copy 3 – off-site:</strong> an automated backup to a reputable cloud service or a rotated drive stored at another location. This is your ransomware and disaster copy.</li></ol><p>Rules that make this work:</p><ul><li><strong>Automate it.</strong> Manual backups get skipped. Schedule daily or more often for critical data.</li><li><strong>Use separate credentials.</strong> The backup system should not use the same admin account as your file server. If an attacker gets that account, they should not be able to delete the off-site copy.</li><li><strong>Turn on versioning or object lock</strong> on the off-site copy so a corrupted or encrypted file does not overwrite a good version.</li><li><strong>Encrypt backups</strong> at rest and in transit, and store the encryption key somewhere separate from the backup.</li><li><strong>Include the website and store.</strong> For Shopify or WooCommerce, export products, orders, customers, and theme files on a schedule. See our <a href=\"/en/blog/shopify-woocommerce-security-checklist/\">security checklist for Shopify and WooCommerce stores</a>.</li><li><strong>Protect email.</strong> A mailbox takeover is a common first step in fraud. Back up mailboxes and review <a href=\"/en/blog/business-email-compromise-invoice-wire-fraud/\">how invoice and wire fraud works</a>.</li></ul><p>If you have a server or remote access in place, also read <a href=\"/en/blog/rdp-exposed-to-internet-ransomware-front-door/\">why exposed RDP is the ransomware front door</a>. Backups are your last line of defense, not your first.</p>"
+    },
+    {
+      "h2": "Step 3: Test restores (the part almost everyone skips)",
+      "html": "<p>A backup you have never restored is a hope, not a backup. Build a simple test routine:</p><ol><li><strong>Monthly file restore test:</strong> pick 3–5 random files from different systems and restore them to a clean folder. Verify they open and the content is current.</li><li><strong>Quarterly full restore test:</strong> restore a server, a mailbox, or the website to a test environment. Measure how long it takes. Compare it to your recovery time objective.</li><li><strong>Ransomware simulation:</strong> confirm that the off-site copy cannot be deleted or encrypted using normal admin credentials. Try to delete a backup version with the day-to-day account and confirm it fails.</li><li><strong>Check backup logs weekly:</strong> look for failed jobs, skipped files, and storage that is filling up. A backup job that has been failing silently for a month is a common and painful discovery.</li><li><strong>Record the result:</strong> date, what was restored, who did it, how long it took, and any problems. Keep this log. It is your proof.</li></ol><p>Document the restore steps so someone other than the person who set it up can follow them. If the only person who knows how to restore is on vacation, you do not have a recovery plan.</p>"
+    },
+    {
+      "h2": "Step 4: Prove it with documentation",
+      "html": "<p>“We have backups” is not evidence. What you want is a short, dated record you can show an insurer, a client, or an auditor:</p><ul><li><strong>Backup inventory:</strong> systems covered, frequency, retention, location, and who owns each backup.</li><li><strong>Restore log:</strong> the results of each test, including failures and fixes.</li><li><strong>Access list:</strong> who can access backup systems and admin consoles, and whether multi-factor authentication is on. If not, start with our guide on <a href=\"/en/blog/multi-factor-authentication-where-to-turn-it-on-first/\">where to turn on MFA first</a>.</li><li><strong>Runbook:</strong> step-by-step recovery instructions, including who to call and in what order.</li><li><strong>Retention policy:</strong> how long you keep daily, weekly, and monthly copies, and why. Check any legal or contractual retention requirements for your industry.</li></ul><p>This documentation also helps after an incident. If you ever need <a href=\"/en/services/incident-response/\">incident response</a>, the first questions will be: what is backed up, where is the clean copy, and how fast can you restore it.</p>"
+    },
+    {
+      "h2": "Common mistakes that break 3-2-1",
+      "html": "<ul><li><strong>Backups on the same network share</strong> as the data. Ransomware encrypts both.</li><li><strong>Same credentials</strong> for production and backup. One phished admin password can wipe everything.</li><li><strong>No off-site copy.</strong> A fire, flood, theft, or office-wide ransomware event takes out the local drive too.</li><li><strong>No retention.</strong> If the corruption happened three weeks ago and you only keep seven days, every copy is bad.</li><li><strong>Never testing.</strong> The backup job says “success” but the archive is empty or the database dump is truncated.</li><li><strong>Forgetting SaaS and cloud.</strong> Email, shared drives, and store data need their own backup and retention settings.</li></ul><p>Fixing these is usually cheaper than an outage. For context on what downtime and data loss can cost, read <a href=\"/en/blog/cost-of-a-cybersecurity-incident-small-business/\">what a cybersecurity incident really costs a small business</a>.</p>"
+    },
+    {
+      "h2": "How backups fit into continuous monitoring",
+      "html": "<p>Backups are a control, and controls fail quietly. A backup job stops running after a storage change. An admin leaves and the credentials are not rotated. A new SaaS tool is adopted and nobody backs it up. These problems are invisible until the day you need to restore.</p><p>That is why backups belong in a monitoring routine, not a one-time project. Continuous monitoring checks the things that break silently: backup job status, exposed services, suspicious admin logins, and changes to critical configurations. It does not replace your backup plan; it tells you when the plan is no longer working. If you want to understand how ongoing monitoring compares to a one-off test, read <a href=\"/en/pricing/\">our plans and pricing</a> or see <a href=\"/en/monitoring-vs-pentest/\">monitoring vs. pentest</a>. The goal is simple: know your backups exist, know they restore, and know quickly when either stops being true.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need to follow 3-2-1 exactly?",
+      "a": "It is a guideline, not a law. The core idea is redundancy across copies, media, and locations. For a very small business, a local automated backup plus an isolated cloud copy with versioning satisfies the spirit of the rule. What matters is that no single failure, theft, or ransomware event can destroy every copy."
+    },
+    {
+      "q": "How often should I test a restore?",
+      "a": "Test small file restores monthly and a larger restore, such as a server, mailbox, or website, quarterly. Measure the time it takes and compare it to how long your business can afford to be down. Record each test in a simple log with the date, what was restored, and the result."
+    },
+    {
+      "q": "Are cloud backups enough on their own?",
+      "a": "Not automatically. A cloud copy is valuable, but if it uses the same admin credentials as your production systems, an attacker who takes over that account can delete it. Use separate credentials, enable versioning or object lock, and keep at least one copy that is isolated from your day-to-day accounts."
+    },
+    {
+      "q": "Does Microsoft 365 or Google Workspace back up my email?",
+      "a": "The provider protects the service and offers limited retention and recovery features, but it is not a full backup of your data against deletion, ransomware, or a compromised mailbox. Check your retention settings and consider a dedicated SaaS backup for email and shared drives if that data is critical to your business."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NIST – Contingency Planning Guide for Federal Information Systems (SP 800-34 Rev. 1)",
+      "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+    },
+    {
+      "title": "FTC – Data Breach Response: A Guide for Business",
+      "url": "https://www.ftc.gov/business-guidance/resources/data-breach-response-guide-business"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
