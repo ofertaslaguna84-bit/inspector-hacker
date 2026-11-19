@@ -1,0 +1,70 @@
+{
+  "lang": "es",
+  "slug": "respaldos-3-2-1-pymes-como-hacerlos-y-probar-que-sirven",
+  "pair": null,
+  "topic": "Respaldos 3-2-1 para pymes: cómo hacerlos y cómo probar que sirven",
+  "title": "Respaldos 3-2-1 para pymes: hazlos y pruébalos",
+  "h1": "Respaldos 3-2-1 para pymes: cómo hacerlos y cómo probar que sirven",
+  "description": "Guía práctica para pymes: arma tu respaldo 3-2-1, define qué guardar, dónde y cada cuánto, y comprueba con pruebas reales que tus copias sí restauran.",
+  "date": "2026-11-19",
+  "updated": "2026-11-19",
+  "category": "Continuidad y respaldos",
+  "readingMinutes": 6,
+  "intro": "<p>Un respaldo que nunca has restaurado es solo una esperanza. En una pyme, el día que se cae el servidor, alguien borra la carpeta equivocada o un ransomware cifra la computadora de facturación, lo único que importa es una pregunta: <strong>¿puedes recuperar tu operación hoy y sin pagar rescate?</strong></p><p>La regla <strong>3-2-1</strong> es la forma más simple y probada de responder que sí: <strong>3 copias</strong> de tus datos, en <strong>2 tipos de medio distintos</strong> y <strong>1 copia fuera de tu oficina</strong>. En este artículo te explico cómo armarlo en tu empresa, qué guardar primero y, sobre todo, cómo <em>probar</em> que tus respaldos sirven antes de necesitarlos de verdad.</p>",
+  "sections": [
+    {
+      "h2": "Qué significa 3-2-1 en la práctica (y qué NO es)",
+      "html": "<p>La regla 3-2-1 viene de la práctica de continuidad de negocio y la retoma el CISA en su guía de respaldos contra ransomware. Se lee fácil, pero muchas pymes la cumplen solo en papel. Así se traduce a tu empresa:</p><ul><li><strong>3 copias:</strong> el original (tu sistema en producción) más dos respaldos. No cuentes como copia el mismo archivo sincronizado en la misma nube: si borras el original, se borra allá también.</li><li><strong>2 medios distintos:</strong> por ejemplo, un disco externo o NAS en la oficina y almacenamiento en la nube. Dos carpetas en el mismo servidor no son dos medios.</li><li><strong>1 fuera de sitio:</strong> una copia que no esté en tu red. Si te roban el equipo, se inunda la oficina o el ransomware cifra todo lo conectado, esa copia te salva.</li></ul><p>Lo que <strong>no</strong> es 3-2-1: guardar todo en Google Drive o OneDrive y dormir tranquilo. La sincronización no es respaldo: replica errores y borrados en segundos. Tampoco lo es un respaldo que nunca se ha restaurado ni uno que vive conectado 24/7 a la misma red que el resto.</p><p>Si tu preocupación principal es ransomware, complementa esto con nuestra guía de <a href=\"/blog/ransomware-pymes-mexico/\">ransomware en pymes mexicanas</a>, donde explicamos cómo entra y qué hacer en la primera hora.</p>"
+    },
+    {
+      "h2": "Paso 1: decide qué respaldar y con qué prioridad",
+      "html": "<p>No todo vale lo mismo. Antes de comprar discos o contratar nube, haz un inventario simple en una hoja de cálculo:</p><ol><li><strong>Datos críticos (RPO corto):</strong> base de datos de facturación, sistema de punto de venta, contabilidad, nómina, expedientes de clientes, carpetas compartidas de operación.</li><li><strong>Datos importantes:</strong> correo, documentos de proyectos, imágenes de producto, configuraciones de tu sitio web.</li><li><strong>Datos recuperables:</strong> instaladores, software descargable, archivos temporales. Estos no necesitan respaldo frecuente.</li></ol><p>Para cada elemento crítico define dos números:</p><ul><li><strong>RPO (cuánto dato puedes perder):</strong> si respaldas la base cada 24 horas, tu RPO es de hasta 24 horas. Si facturas todo el día, quizá necesites respaldos cada hora.</li><li><strong>RTO (cuánto tiempo puedes estar caído):</strong> ¿puedes operar 4 horas sin el sistema? ¿Un día? Eso define qué tan rápido debe ser tu restauración.</li></ul><p>Escribe también <strong>quién es el dueño</strong> de cada respaldo: nombre y puesto. Un respaldo sin responsable es un respaldo que nadie revisa.</p>"
+    },
+    {
+      "h2": "Paso 2: arma la arquitectura 3-2-1 con lo que ya tienes",
+      "html": "<p>No necesitas infraestructura de enterprise. Un esquema realista para una pyme de 5 a 50 personas:</p><ul><li><strong>Copia 1 — local rápida:</strong> un NAS o disco externo en la oficina con respaldos automáticos diarios. Sirve para restaurar rápido un archivo borrado.</li><li><strong>Copia 2 — local en otro medio:</strong> cintas, un segundo disco rotativo o un servidor distinto. La idea es no depender de un solo equipo.</li><li><strong>Copia 3 — fuera de sitio:</strong> almacenamiento en la nube con versionado e inmutabilidad si tu proveedor lo permite (objetos con bloqueo de borrado). Esta es la que te salva de ransomware e incendios.</li></ul><p>Reglas de oro al configurar:</p><ol><li><strong>Credenciales separadas:</strong> la cuenta que hace respaldos no debe ser la misma con la que entras a diario. Si te comprometen el usuario administrador, no quieres que el atacante pueda borrar tus copias.</li><li><strong>Cifrado en reposo y en tránsito:</strong> tus respaldos contienen datos personales de clientes y empleados. Revisa lo básico de la <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">LFPDPPP aplicada a pymes</a>.</li><li><strong>Versionado y retención:</strong> guarda al menos varias versiones diarias y semanales. Un respaldo sobrescrito cada noche no te protege de un cifrado silencioso que tardó días en detectarse.</li><li><strong>Desconecta:</strong> si usas discos externos, que no estén montados todo el tiempo. Un disco conectado es un disco cifrable.</li></ol><p>Si tu sitio web o tienda en línea guarda pedidos y clientes, revisa también el <a href=\"/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/\">checklist de seguridad para tu tienda en línea</a>: los respaldos de la base de datos y de los archivos del servidor son parte del mismo plan.</p>"
+    },
+    {
+      "h2": "Paso 3: automatiza, monitorea y documenta",
+      "html": "<p>Un respaldo manual es un respaldo que se olvida. Configura y verifica:</p><ol><li><strong>Programación:</strong> respaldos diarios automáticos de datos críticos y semanales de lo importante. Ajusta según tu RPO.</li><li><strong>Alertas:</strong> que el sistema te avise por correo o WhatsApp si un respaldo falla. Revisa esas alertas semanalmente, no cuando ya hay problema.</li><li><strong>Registro:</strong> una bitácora con fecha, tamaño, duración y resultado de cada respaldo. Si algo falla, quieres saber desde cuándo.</li><li><strong>Documentación de restauración:</strong> un documento de una o dos páginas con los pasos exactos para restaurar cada sistema, incluyendo a quién llamar si tu proveedor de nube o tu hosting no responde.</li></ol><p>Si tu servidor o VPS está expuesto a internet, el respaldo no sustituye la prevención. Revisa <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor está expuesto</a> y considera <a href=\"/servicios/seguridad-de-servidores/\">seguridad de servidores</a> como parte del mismo plan.</p>"
+    },
+    {
+      "h2": "Paso 4: prueba la restauración (la parte que casi nadie hace)",
+      "html": "<p>Aquí está el corazón del artículo: <strong>probar que sirven</strong>. Una prueba de restauración no es abrir el archivo y ver que existe; es recuperar y usar los datos.</p><p>Haz una prueba mensual o trimestral con este protocolo:</p><ol><li><strong>Elige un archivo o base de prueba</strong> que no sea producción, pero que sea representativo (por ejemplo, una copia de la base de facturación del mes pasado).</li><li><strong>Restaura en un entorno aislado</strong> (una máquina virtual o un equipo que no esté en la red de producción).</li><li><strong>Verifica integridad:</strong> abre los archivos, corre consultas, revisa que los totales cuadren y que las fechas sean las esperadas.</li><li><strong>Mide el tiempo:</strong> anota cuánto tardaste desde que iniciaste hasta que el sistema quedó usable. Compáralo con tu RTO.</li><li><strong>Documenta el resultado:</strong> qué funcionó, qué falló, qué corregiste. Firma y fecha.</li></ol><p>Pruebas adicionales que valen la pena:</p><ul><li><strong>Prueba de borrado accidental:</strong> simula que alguien borró una carpeta compartida y recupérala desde el respaldo.</li><li><strong>Prueba de ransomware simulado:</strong> en un entorno de laboratorio, cifra archivos de prueba y verifica que tu copia inmutable o desconectada sigue intacta.</li><li><strong>Prueba de credenciales:</strong> confirma que puedes restaurar sin la cuenta de administrador comprometida.</li></ul><p>Si nunca has hecho una prueba, empieza esta semana con un solo archivo crítico. Es la forma más barata de descubrir que tu respaldo estaba roto.</p>"
+    },
+    {
+      "h2": "Errores comunes que rompen un 3-2-1",
+      "html": "<ul><li><strong>Confundir sincronización con respaldo:</strong> si borras en el original, se borra en la nube. Usa versionado y retención.</li><li><strong>Respaldos conectados 24/7:</strong> el ransomware cifra todo lo que alcanza, incluidos los discos montados.</li><li><strong>Una sola cuenta para todo:</strong> el atacante que entra con el administrador puede borrar tus copias. Separa credenciales y usa cuentas de solo escritura para respaldos.</li><li><strong>No probar:</strong> el respaldo que nunca restauraste es una suposición, no una garantía.</li><li><strong>Sin documentación:</strong> si la persona que configuró todo se va, nadie sabe cómo restaurar.</li><li><strong>Ignorar el correo y el sitio web:</strong> también son datos. Revisa <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">SPF, DKIM y DMARC</a> y protege el correo con <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>.</li></ul>"
+    },
+    {
+      "h2": "Cómo encaja la vigilancia continua en tu plan de respaldos",
+      "html": "<p>Los respaldos te devuelven la operación; la vigilancia continua te avisa antes de necesitarlos. Un esquema 3-2-1 bien hecho se complementa con monitoreo de tu red, servidores, correo y accesos para detectar señales tempranas: un inicio de sesión raro, un intento de RDP desde una IP desconocida, un cambio inesperado en permisos o un proceso que empieza a cifrar archivos.</p><p>En Inspector Hacker hacemos vigilancia continua con IA para pymes en México y EE. UU., sin el costo de un pentest tradicional. Si quieres entender la diferencia, lee <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a> y revisa los <a href=\"/planes/\">planes</a>: Arranque, Vigía y Vigía Plus. No se trata de que contrates algo hoy, sino de que sepas que un respaldo probado y una vigilancia activa son dos capas del mismo plan de continuidad.</p><p>Si ya tienes un incidente en curso, empieza por <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a> y no borres nada: tus respaldos y registros son evidencia.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cada cuánto debo probar mis respaldos?",
+      "a": "Como mínimo una vez al trimestre para los datos críticos y una vez al mes para lo más sensible (facturación, base de datos de clientes). Si cambiaste de proveedor, de servidor o de esquema de respaldo, haz una prueba inmediata antes de dar por cerrado el cambio."
+    },
+    {
+      "q": "¿Guardar todo en la nube cuenta como 3-2-1?",
+      "a": "No por sí solo. La nube puede ser una de tus copias, pero necesitas al menos otra en un medio distinto y una fuera de sitio. Además, la sincronización de archivos no es respaldo: si borras o cifras el original, se replica. Usa versionado, retención e inmutabilidad si tu proveedor lo permite."
+    },
+    {
+      "q": "¿Qué hago si mi respaldo falla en la prueba?",
+      "a": "No lo ignores. Documenta el error, revisa credenciales, espacio, permisos y versión del software de respaldo. Si el problema es del proveedor, abre ticket y guarda la evidencia. Mientras tanto, genera una copia manual de los datos críticos y no esperes a la siguiente programación."
+    },
+    {
+      "q": "¿Necesito un pentest para saber si mis respaldos están seguros?",
+      "a": "No necesariamente. Un pentest mide vulnerabilidades de tus sistemas; para respaldos lo que necesitas es una prueba de restauración, control de accesos y vigilancia de actividad anómala. Si quieres entender el alcance de cada enfoque, revisa nuestra comparación de vigilancia vs pentest."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NIST — SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems",
+      "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
