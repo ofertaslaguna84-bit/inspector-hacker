@@ -1,0 +1,86 @@
+{
+  "lang": "en",
+  "slug": "wordpress-security-small-business-monthly-minimum",
+  "pair": null,
+  "topic": "WordPress security for small businesses: the monthly minimum",
+  "title": "WordPress Security: The Monthly Minimum",
+  "h1": "WordPress Security for Small Businesses: The Monthly Minimum",
+  "description": "A practical monthly routine to keep your WordPress site safe: updates, backups, access control, monitoring and recovery, explained for small-business owners.",
+  "date": "2026-11-20",
+  "updated": "2026-11-20",
+  "category": "Website Security",
+  "readingMinutes": 7,
+  "intro": "<p>Most small-business websites run on WordPress. That makes them a target, not because anyone is specifically after you, but because automated tools scan thousands of sites a day looking for the ones that were never updated, never backed up and never watched. You do not need an expensive project to fix that. You need a short list of things done every month, by someone, with proof that they were done.</p><p>This article is that list. It is the monthly minimum we would want any small business to hold itself to before spending money on anything more advanced. If you want the wider context first, start with <a href=\"/en/cybersecurity-for-small-business/\">cybersecurity for small business</a>.</p>",
+  "sections": [
+    {
+      "h2": "Why WordPress specifically needs a monthly routine",
+      "html": "<p>WordPress is popular, extensible and mostly maintained by volunteers and small teams. Core, themes and plugins receive security releases regularly. Each release fixes something, which also tells anyone reading the changelog roughly what was broken. A site that is three months behind is not \"a bit outdated\"; it is a published list of known weaknesses.</p><p>The other half of the problem is people. WordPress sites accumulate user accounts: the owner, the web designer who left, an intern, a plugin that created its own admin user. Every account with admin rights is a way in. Monthly work is mostly about closing those two gaps, software and access, and making sure you can recover when something still goes wrong.</p><p>None of this requires a security team. It requires a calendar entry, a checklist and someone with the authority to press the update button.</p>"
+    },
+    {
+      "h2": "The monthly checklist (60 to 90 minutes)",
+      "html": "<p>Do these in order, once a month, and write down the date and who did it. A simple shared document is enough.</p><ol><li><strong>Back up first, and verify it.</strong> Take a full backup of files and database before touching anything. Then restore it to a staging copy or at least open the archive and confirm the database file is there and not empty. An unverified backup is a hope, not a backup. Our guide to <a href=\"/en/blog/3-2-1-backups-small-business/\">3-2-1 backups for small businesses</a> explains how to set this up and prove it works.</li><li><strong>Update WordPress core, themes and plugins.</strong> Remove plugins and themes you do not use instead of updating them. For anything abandoned (no update in a long time, removed from the official directory), replace it or delete it.</li><li><strong>Review user accounts.</strong> List every user and their role. Delete accounts that are not needed today. Downgrade anyone who does not need administrator rights. Every administrator should have a named person behind it, not \"admin\" or \"webmaster\".</li><li><strong>Turn on multi-factor authentication</strong> for every administrator and editor. If your site or your hosting panel supports it, this is the single highest-value control you have. See <a href=\"/en/blog/multi-factor-authentication-where-to-turn-it-on-first/\">where to turn MFA on first</a>.</li><li><strong>Check for leaked passwords.</strong> Make sure no administrator is reusing a password that appears in a public breach. The process is described in <a href=\"/en/blog/how-to-check-if-your-company-passwords-were-leaked/\">how to check if your company's passwords were leaked</a>.</li><li><strong>Look at the logs.</strong> Failed login attempts, new administrator accounts, file changes you did not make, unexpected outgoing traffic. You are not hunting; you are looking for things that do not belong.</li><li><strong>Confirm the site actually loads correctly</strong> on mobile and desktop, and that forms and checkout still work after updates. Security work that breaks the contact form is not finished work.</li></ol>"
+    },
+    {
+      "h2": "Configuration settings worth locking down once",
+      "html": "<p>These are one-time changes, but check them every few months because updates and plugins can quietly undo them.</p><ul><li><strong>Disable file editing from the dashboard.</strong> In <em>wp-config.php</em>, set DISALLOW_FILE_EDIT to true so a compromised admin account cannot edit PHP directly from the browser.</li><li><strong>Limit login attempts</strong> and add a login lockout or rate limit. Automated password guessing is constant and boring; blocking it costs nothing.</li><li><strong>Force HTTPS</strong> across the whole site, including the admin area.</li><li><strong>Turn off directory listing</strong> and remove unused themes and plugins from the server, not just deactivate them.</li><li><strong>Keep the database prefix and admin username non-obvious</strong> where your setup allows it. This is a small hurdle, not a defense, but it filters out lazy automated attempts.</li><li><strong>Restrict access to <em>wp-admin</em> and <em>xmlrpc.php</em></strong> if you do not need them publicly reachable. Many hosts offer this as a toggle.</li></ul><p>If your site is also a store, the checklist in <a href=\"/en/blog/shopify-woocommerce-security-checklist/\">security checklist for Shopify and WooCommerce stores</a> covers the commerce-specific items such as payment plugins and order data handling.</p>"
+    },
+    {
+      "h2": "Monitoring: what \"someone is watching\" actually means",
+      "html": "<p>Monthly checks catch drift. They do not catch an intrusion that starts on day three and runs until the next review. That gap is what monitoring fills, and it is worth being precise about what it looks like in practice.</p><ul><li><strong>Uptime and availability checks</strong> from outside your network, so you learn about downtime before your customers tell you.</li><li><strong>File integrity monitoring</strong> on WordPress core, themes and plugins, alerting when files change outside an approved update window.</li><li><strong>Login and account alerts</strong> for new administrator accounts, repeated failures and logins from unexpected locations.</li><li><strong>Malware and blacklist checks</strong> so you find out before Google or a browser flags your site and your traffic collapses.</li><li><strong>Certificate and domain expiry</strong> reminders. An expired certificate or lapsed domain takes a site down just as effectively as an attack.</li></ul><p>Monitoring without a response plan is just noise. Decide in advance who gets the alert, who can take the site offline, and who calls the host. If you do not have that person internally, that is exactly the gap a monitoring service is meant to cover. The difference between this and a one-off test is explained in <a href=\"/en/monitoring-vs-pentest/\">monitoring vs pentest</a>.</p>"
+    },
+    {
+      "h2": "When something does go wrong: the first hour",
+      "html": "<p>Keep this written down somewhere you can reach without your work laptop.</p><ol><li><strong>Do not delete anything yet.</strong> Take a fresh backup and preserve logs before you start cleaning. Evidence disappears fast.</li><li><strong>Change passwords</strong> for hosting, WordPress administrators, database and email, starting with the hosting control panel. Reset all WordPress sessions.</li><li><strong>Take the site offline or into maintenance mode</strong> if it is serving malicious content or card-skimming code. Protecting visitors comes before protecting your uptime.</li><li><strong>Identify the entry point</strong> before restoring. Restoring an old backup onto a still-compromised host or plugin just restarts the clock.</li><li><strong>Check email and DNS</strong> as well. Attackers who get into a site often pivot to email and domain settings. If email is involved, see <a href=\"/en/blog/business-email-compromise-invoice-wire-fraud/\">business email compromise</a>.</li><li><strong>Tell the people who need to know</strong>, including your host and, if customer data was exposed, your legal advisor. Obligations vary by jurisdiction and contract.</li></ol><p>For the broader financial picture of what an incident involves, read <a href=\"/en/blog/cost-of-a-cybersecurity-incident-small-business/\">what a cybersecurity incident really costs a small business</a>.</p>"
+    },
+    {
+      "h2": "What the monthly minimum does not cover",
+      "html": "<p>Be honest about the limits. A monthly checklist will not find a logic flaw in a custom plugin, a permission problem in your hosting setup, or a misconfiguration in your server that exposes more than your website. Those need a targeted review, and sometimes a penetration test. If you are unsure which you need, <a href=\"/en/blog/when-do-you-need-a-pentest/\">when does a small business actually need a pentest</a> lays out the decision.</p><p>It also will not help if nobody owns it. The most common failure we see is not a missing tool; it is a checklist that was assigned to everyone and therefore to no one.</p>"
+    },
+    {
+      "h2": "Making it continuous",
+      "html": "<p>The monthly minimum works best when it is not a solo effort remembered on the first Monday of the month. The realistic version for a small business is: a named internal owner who does the updates and account review, plus an external layer that watches the site between those reviews and tells a human when something changes.</p><p>That is the model behind <a href=\"/en/services/cybersecurity-monitoring/\">continuous cybersecurity monitoring</a>: the routine stays yours, the watching does not depend on someone remembering. If you want to see how that fits a small-business budget, the plans are on the <a href=\"/en/pricing/\">pricing page</a>. Start with the checklist above either way. A business that does the monthly minimum and nothing else is already far ahead of where most small sites sit.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I really need to update WordPress every month?",
+      "a": "Yes. Core, theme and plugin releases include security fixes, and the changelogs are public. A site that is months behind is running known weaknesses that automated scanners look for. Update monthly at minimum, and immediately for critical security releases."
+    },
+    {
+      "q": "Is a security plugin enough to protect my WordPress site?",
+      "a": "No. A security plugin helps with login limiting, file integrity checks and malware scanning, but it cannot fix weak passwords, unused administrator accounts, missing backups or an abandoned plugin. Treat it as one layer, not the plan."
+    },
+    {
+      "q": "How do I know my backup will actually work?",
+      "a": "Restore it. At least once, restore the backup to a staging copy or a separate environment and confirm the site loads and the database is complete. Repeat that test periodically, and keep one copy off the hosting account entirely."
+    },
+    {
+      "q": "We are a five-person company. Is this overkill?",
+      "a": "The checklist takes about an hour a month. Compare that to the cost of a defaced site, a blacklisted domain or a store that stops taking orders. Small businesses are targeted precisely because the basics are often skipped."
+    }
+  ],
+  "sources": [
+    {
+      "title": "CISA: Cybersecurity Best Practices",
+      "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+    },
+    {
+      "title": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    },
+    {
+      "title": "OWASP Top 10",
+      "url": "https://owasp.org/www-project-top-ten/"
+    },
+    {
+      "title": "WordPress: Hardening WordPress",
+      "url": "https://developer.wordpress.org/advanced-administration/security/hardening/"
+    },
+    {
+      "title": "FTC: Cybersecurity for Small Business",
+      "url": "https://www.ftc.gov/business-guidance/small-businesses/cybersecurity"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
