@@ -1,0 +1,78 @@
+{
+  "lang": "es",
+  "slug": "seguridad-wordpress-pymes-revision-mensual",
+  "pair": null,
+  "topic": "Seguridad de WordPress para pymes: lo mínimo que debes revisar cada mes",
+  "title": "Seguridad WordPress: revisión mensual para pymes",
+  "h1": "Seguridad de WordPress para pymes: lo mínimo que debes revisar cada mes",
+  "description": "Revisa cada mes lo mínimo de seguridad en tu WordPress: actualizaciones, usuarios, respaldos, plugins y accesos. Guía práctica para dueños de pymes en México.",
+  "date": "2026-11-21",
+  "updated": "2026-11-21",
+  "category": "Ciberseguridad para pymes",
+  "readingMinutes": 7,
+  "intro": "<p>Si tu sitio está en WordPress, tienes en tus manos el sistema de gestión de contenidos más usado del mundo. Eso también lo vuelve un blanco constante: no porque alguien te quiera especialmente, sino porque hay bots que recorren internet buscando plugins viejos, contraseñas débiles y formularios abiertos. La buena noticia es que <strong>la mayoría de los incidentes en WordPress se evitan con una revisión mensual ordenada</strong>, de 30 a 60 minutos, sin ser experto.</p><p>Esta guía es la lista mínima que tú o tu responsable de sistemas deben repasar cada mes. No es un pentest ni un análisis profundo: es higiene básica. Si quieres entender por qué esto es distinto de una prueba de penetración, revisa <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a>. Y si tu sitio es una tienda, complementa con el <a href=\"/blog/checklist-seguridad-tienda-en-linea-shopify-woocommerce/\">checklist de seguridad para tu tienda en línea</a>.</p>",
+  "sections": [
+    {
+      "h2": "1. Actualiza WordPress, temas y plugins (y elimina lo que no usas)",
+      "html": "<p>La causa más común de sitios comprometidos es software desactualizado. No necesitas actualizar todo el mismo día, pero sí revisar cada mes que no haya quedado nada pendiente.</p><ul><li><strong>Núcleo de WordPress:</strong> entra a <em>Escritorio → Actualizaciones</em> y aplica lo pendiente. Si ves una actualización de seguridad, no la dejes para la siguiente semana.</li><li><strong>Plugins y temas:</strong> actualiza uno por uno, no todos de golpe, y verifica que el sitio siga funcionando. Si algo se rompe, sabrás cuál fue.</li><li><strong>Borra lo que no usas:</strong> plugins desactivados, temas que no ocupas y usuarios de prueba. Un plugin abandonado sigue siendo código en tu servidor.</li><li><strong>Revisa el estado del plugin:</strong> en el repositorio oficial de WordPress aparece si está actualizado con tu versión. Si lleva mucho sin recibir mantenimiento, búscalo con alternativa.</li></ul><p>Regla práctica: si un plugin no se ha actualizado en más de un año y no es crítico, desinstálalo. Menos piezas, menos superficie de ataque.</p>"
+    },
+    {
+      "h2": "2. Audita usuarios, contraseñas y verificación en dos pasos",
+      "html": "<p>Muchos hackeos a WordPress no entran por una falla técnica, sino por una cuenta con contraseña débil o reutilizada. Cada mes revisa quién puede entrar a tu sitio.</p><ol><li>Entra a <em>Usuarios</em> y confirma que cada cuenta corresponde a alguien que todavía trabaja contigo. Elimina o suspende las que no.</li><li>Revisa que nadie tenga rol de <strong>administrador</strong> sin necesitarlo. Editor o autor suele bastar para quien solo publica contenido.</li><li>Cambia la contraseña del usuario <em>admin</em> si existe con ese nombre; mejor usa un usuario distinto y difícil de adivinar.</li><li>Activa <strong>verificación en dos pasos</strong> para todas las cuentas administrativas. Aquí tienes el orden recomendado: <a href=\"/blog/verificacion-en-dos-pasos-donde-activarla-pyme/\">dónde activarla primero en una pyme</a>.</li><li>Si sospechas que una contraseña se filtró, revisa esta guía: <a href=\"/blog/como-saber-si-contrasenas-empresa-se-filtraron/\">cómo saber si las contraseñas de tu empresa se filtraron</a>.</li></ol><p>Un detalle que casi nadie revisa: los enlaces de restablecimiento de contraseña y las notificaciones de cambio de correo deben llegar a un buzón que tú controles, no a un correo personal de alguien que ya se fue.</p>"
+    },
+    {
+      "h2": "3. Confirma que tus respaldos existen y sí restauran",
+      "html": "<p>Un respaldo que nunca has probado es solo una esperanza. Cada mes haz una prueba pequeña: restaura un archivo o una copia del sitio en un entorno de prueba y confirma que abre.</p><ul><li><strong>Frecuencia:</strong> respaldo automático al menos diario de base de datos y archivos, si publicas contenido seguido.</li><li><strong>Dónde se guardan:</strong> no en el mismo servidor del sitio. Si te cifran el servidor, se va todo junto.</li><li><strong>Cuántos guardas:</strong> conserva varias versiones (por ejemplo, diarios de la última semana y semanales del mes).</li><li><strong>Quién puede descargarlos:</strong> limita el acceso a respaldos; son una copia completa de tu negocio.</li></ul><p>Si quieres una estructura clara, usa la lógica de <a href=\"/blog/respaldos-3-2-1-pymes-como-hacerlos-y-probar-que-sirven/\">respaldos 3-2-1 para pymes</a>. Y si tu WordPress vive en un VPS propio, revisa también si ese servidor está expuesto: <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor o VPS está expuesto a internet</a>.</p>"
+    },
+    {
+      "h2": "4. Revisa plugins de formularios, comentarios y archivos subidos",
+      "html": "<p>Los formularios de contacto son la puerta de entrada favorita de spam y de intentos de inyección. Cada mes:</p><ul><li>Confirma que el plugin de formularios esté actualizado y que tenga <strong>validación y límite de envíos</strong>.</li><li>Activa un captcha o una pregunta simple si estás recibiendo basura.</li><li>Revisa la carpeta de <em>uploads</em>: no debería haber archivos <em>.php</em> ahí. Si aparecen, es señal de alerta.</li><li>Desactiva comentarios en páginas que no los necesitan y modera los que lleguen.</li><li>Revisa que la lista de administradores no haya cambiado sin tu autorización.</li></ul><p>Si tu sitio permite registro de usuarios, desconfía: la mayoría de las pymes no lo necesita. Cerrar el registro abierto elimina una vía común de cuentas falsas.</p>"
+    },
+    {
+      "h2": "5. Revisa accesos al panel y al hosting",
+      "html": "<p>El panel de WordPress no es lo único que hay que cuidar. También el acceso a tu hosting, al gestor de archivos y a la base de datos.</p><ol><li>Cambia la contraseña del panel de hosting si no la has cambiado en meses, y actívala con doble factor si tu proveedor lo permite.</li><li>Revisa los usuarios FTP y las llaves SSH: elimina los que no uses.</li><li>Confirma que el certificado SSL esté vigente y que el sitio cargue en <em>https</em>.</li><li>Revisa los registros de acceso recientes: muchos intentos fallidos desde una misma IP merecen atención.</li><li>Si usas correo en el mismo dominio, revisa SPF, DKIM y DMARC: <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">cómo configurarlos paso a paso</a>.</li></ol><p>Este último punto importa porque un WordPress comprometido suele usarse para mandar correos de phishing a tu nombre. Si quieres reforzar esa capa, revisa <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a>.</p>"
+    },
+    {
+      "h2": "6. Vigila señales raras: tráfico, archivos y avisos",
+      "html": "<p>No necesitas ser analista para notar cosas fuera de lugar. Cada mes dedica diez minutos a revisar señales:</p><ul><li>El sitio carga más lento de lo normal o manda errores intermitentes.</li><li>Aparecen páginas, enlaces o usuarios que tú no creaste.</li><li>Recibes avisos de tu hosting sobre consumo excesivo de recursos.</li><li>Google Search Console muestra páginas indexadas que no reconoces.</li><li>Clientes te avisan de correos extraños enviados desde tu dominio.</li></ul><p>Ante cualquiera de estas señales, no borres todo de inmediato: primero respalda, luego investiga. Si el sitio ya está comprometido, sigue un orden: <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a>. Y si el problema es de servidor, revisa <a href=\"/servicios/seguridad-de-servidores/\">seguridad de servidores</a>.</p>"
+    },
+    {
+      "h2": "7. De la revisión mensual a la vigilancia continua",
+      "html": "<p>Hacer esta lista una vez al mes es un gran avance frente a no hacer nada. Pero un mes es mucho tiempo: un plugin vulnerable puede ser explotado en horas, y tú lo descubrirías en tu siguiente revisión. Ahí es donde la revisión manual se queda corta.</p><p>La vigilancia continua no reemplaza tu lista mensual: la cubre entre revisiones. Se trata de tener ojos sobre tu sitio, tu servidor y tu correo de forma permanente, con alertas cuando algo cambia, en lugar de enterarte por un cliente o por Google. Si quieres comparar enfoques, revisa <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a> y conoce <a href=\"/servicios/monitoreo-de-ciberseguridad/\">monitoreo de ciberseguridad</a>. Si tu sitio es tu principal canal de ventas, una <a href=\"/servicios/auditoria-de-seguridad-web/\">auditoría de seguridad web</a> te da el punto de partida. Y si quieres ver cómo encaja en tu presupuesto, revisa los <a href=\"/planes/\">planes</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cada cuánto debo actualizar WordPress?",
+      "a": "Revisa actualizaciones al menos una vez al mes y aplica de inmediato las que sean de seguridad. Actualiza plugins uno por uno para detectar cuál causa problemas. Si tu sitio es crítico, revisa cada semana."
+    },
+    {
+      "q": "¿Necesito un plugin de seguridad para WordPress?",
+      "a": "Ayuda, pero no sustituye lo básico: actualizaciones, contraseñas fuertes, doble factor y respaldos probados. Un plugin mal configurado puede dar falsa tranquilidad. Primero ordena lo esencial y luego evalúa si necesitas capas adicionales."
+    },
+    {
+      "q": "¿Cómo sé si mi WordPress ya fue hackeado?",
+      "a": "Señales típicas: usuarios o páginas que no creaste, archivos .php en uploads, el sitio más lento, avisos de tu hosting o correos extraños enviados desde tu dominio. Ante la duda, respalda antes de tocar nada y revisa los registros de acceso."
+    },
+    {
+      "q": "¿Puedo hacer esta revisión yo mismo sin ser técnico?",
+      "a": "Sí, la mayor parte. Actualizar, revisar usuarios, activar doble factor y confirmar respaldos se hace desde el panel de WordPress. Para revisar registros, archivos del servidor o una posible intrusión, conviene apoyo especializado."
+    }
+  ],
+  "sources": [
+    {
+      "title": "WordPress.org — Actualizaciones y seguridad",
+      "url": "https://wordpress.org/documentation/article/updating-wordpress/"
+    },
+    {
+      "title": "OWASP — Top 10",
+      "url": "https://owasp.org/www-project-top-ten/"
+    },
+    {
+      "title": "NIST — Small Business Cybersecurity Corner",
+      "url": "https://www.nist.gov/itl/smallbusinesscyber"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
