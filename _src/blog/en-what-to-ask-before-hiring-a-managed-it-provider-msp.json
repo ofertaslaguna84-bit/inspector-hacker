@@ -1,0 +1,78 @@
+{
+  "lang": "en",
+  "slug": "what-to-ask-before-hiring-a-managed-it-provider-msp",
+  "pair": null,
+  "topic": "What to ask before hiring a managed IT provider (MSP)",
+  "title": "What to Ask Before Hiring a Managed IT Provider",
+  "h1": "What to Ask Before Hiring a Managed IT Provider (MSP)",
+  "description": "A practical checklist for small businesses: the questions that separate a real managed IT provider from one that just watches a dashboard and sends invoices.",
+  "date": "2026-11-22",
+  "updated": "2026-11-22",
+  "category": "Cybersecurity",
+  "readingMinutes": 6,
+  "intro": "<p>Hiring a managed IT provider (MSP) is one of the biggest trust decisions a small business makes. That provider will hold admin access to your email, your files, your servers and your payment systems. If they do their job well, you never notice. If they do it badly, you find out on the worst possible day.</p><p>Most MSP sales calls sound the same. The difference shows up in the details: what they actually monitor, how fast they respond, who has access to what, and what happens when something breaks at 2 a.m. Below is a set of concrete questions to ask before you sign, plus what a good answer looks like.</p><p>If you want context on how monitoring fits next to other security work, see <a href=\"/en/monitoring-vs-pentest/\">monitoring vs. pentest</a>.</p>",
+  "sections": [
+    {
+      "h2": "1. Start with scope: what exactly are they managing?",
+      "html": "<p>“We manage your IT” means nothing until it is written down. Ask them to list, in the contract, every asset and service they cover.</p><ul><li><strong>Which devices and servers?</strong> Laptops, desktops, servers, firewalls, routers, printers, phones.</li><li><strong>Which cloud accounts?</strong> Microsoft 365 or Google Workspace, file storage, line-of-business apps.</li><li><strong>Which websites and stores?</strong> If you run WordPress, Shopify or WooCommerce, ask who is responsible for updates and patching. See our <a href=\"/en/blog/wordpress-security-small-business-monthly-minimum/\">WordPress monthly minimum</a>.</li><li><strong>What is explicitly excluded?</strong> Get the exclusions in writing too. That list is often longer than the coverage list.</li></ul><p>A good MSP will happily hand you a written scope with a per-asset breakdown. A vague answer here is a warning sign, not a minor detail.</p>"
+    },
+    {
+      "h2": "2. Ask how they detect problems, not just how they fix them",
+      "html": "<p>Many providers are reactive: you call, they fix. That model works for a broken printer. It does not work for ransomware, business email compromise or a leaked password.</p><p>Ask these questions:</p><ul><li><strong>Do you monitor our systems continuously, or only when we open a ticket?</strong> Continuous means alerts are reviewed on a schedule, not only after a complaint.</li><li><strong>What do you alert us about?</strong> Ask for examples: failed logins, new admin accounts, exposed remote desktop, suspicious email rules, unusual outbound traffic.</li><li><strong>Who reviews the alerts, and during what hours?</strong> “The system alerts us” is not an answer. A person has to look.</li><li><strong>How do you reach us, and how fast?</strong> Ask for a written response-time commitment for different severity levels.</li></ul><p>Remote desktop exposed to the internet is a classic example of something that should be caught by monitoring, not by luck. Our article on <a href=\"/en/blog/rdp-exposed-to-internet-ransomware-front-door/\">RDP exposed to the internet</a> explains why.</p>"
+    },
+    {
+      "h2": "3. Get specific about access and credentials",
+      "html": "<p>The MSP will need privileged access. That is normal. What matters is how that access is controlled.</p><ol><li><strong>Do your technicians use multi-factor authentication on every admin account?</strong> The answer must be yes, with no exceptions.</li><li><strong>Do you use a shared admin password, or individual accounts?</strong> Individual accounts with logging are the standard. Shared passwords destroy accountability.</li><li><strong>Can you show us an access log?</strong> Ask to see what a log looks like before you sign, not after an incident.</li><li><strong>What happens to our credentials when we leave?</strong> There must be a written offboarding step: revoke access, rotate passwords, return devices.</li></ol><p>If your own team is still weak on login security, fix that in parallel. Our guide on <a href=\"/en/blog/multi-factor-authentication-where-to-turn-it-on-first/\">where to turn on MFA first</a> is a practical starting point.</p>"
+    },
+    {
+      "h2": "4. Ask about backups and prove they work",
+      "html": "<p>Backups are where providers cut corners most often, because nobody checks until they need them. Do not accept “we back up daily” as a complete answer.</p><ul><li><strong>What is backed up?</strong> Files, email, databases, servers, cloud apps.</li><li><strong>How often, and how long do you keep copies?</strong></li><li><strong>Are backups isolated from the main network?</strong> A backup that ransomware can encrypt is not a backup.</li><li><strong>When did you last test a restore, and can you show the result?</strong> A restore test report is the only proof that matters.</li></ul><p>Our article on <a href=\"/en/blog/3-2-1-backups-small-business/\">3-2-1 backups</a> explains the model and how to prove it works. Ask your MSP to follow it.</p>"
+    },
+    {
+      "h2": "5. Ask about email security and phishing",
+      "html": "<p>Most small-business incidents start with an email. Ask how the provider handles it.</p><ul><li><strong>Will you set up SPF, DKIM and DMARC for our domain?</strong> This stops others from sending email as your business. Step-by-step guide: <a href=\"/en/blog/spf-dkim-dmarc-step-by-step-small-business/\">SPF, DKIM and DMARC</a>.</li><li><strong>Do you filter inbound attachments and links?</strong></li><li><strong>Do you train staff, and how often?</strong> Training without testing is theater. Ask for both.</li><li><strong>What is the process if someone clicks a bad link?</strong> You want a written playbook, not improvisation.</li></ul><p>Invoice and wire fraud deserves its own question. Read <a href=\"/en/blog/business-email-compromise-invoice-wire-fraud/\">Business Email Compromise</a> and ask the MSP how they would detect it in your environment.</p>"
+    },
+    {
+      "h2": "6. Ask what happens during an incident",
+      "html": "<p>The moment you need an MSP most is the moment you have the least time to interview them. Settle this before signing.</p><ol><li><strong>Who do we call, at what number, at 3 a.m.?</strong> Get a name and a number, not a general inbox.</li><li><strong>What is your incident response process?</strong> Containment, evidence preservation, communication, recovery. Ask them to walk you through it.</li><li><strong>Do you handle ransomware, or do you hand it off?</strong> Know where their responsibility ends.</li><li><strong>Is incident response included or billed separately?</strong> Get the answer in writing.</li><li><strong>Do you carry cyber liability insurance?</strong> Ask for the certificate.</li></ol><p>For background on why this matters financially, see <a href=\"/en/blog/cost-of-a-cybersecurity-incident-small-business/\">what a cybersecurity incident really costs a small business</a>.</p>"
+    },
+    {
+      "h2": "7. Check the contract, the reporting and the exit",
+      "html": "<p>Finally, treat it like any other vendor relationship. Ask for:</p><ul><li><strong>A monthly report</strong> showing what was monitored, what was patched, what alerts fired and what was done about them.</li><li><strong>Clear pricing</strong> with no surprise line items for “emergency work.”</li><li><strong>Notice and exit terms</strong> that let you leave without losing your data or your access.</li><li><strong>Data ownership language</strong> confirming your data is yours.</li></ul><p>If you are regulated, ask how they support your obligations. Our plain-English summary of the <a href=\"/en/blog/ftc-safeguards-rule-small-business/\">FTC Safeguards Rule</a> is a useful reference. For a broader view of what small-business security should include, see <a href=\"/en/cybersecurity-for-small-business/\">cybersecurity for small businesses</a>.</p><p>One last point: a good MSP will tell you what they do <em>not</em> do. If every question gets a confident “yes, we handle that,” ask for the detail behind each yes. Specific answers build trust. Blanket promises do not.</p><p>And remember that a provider watching your systems is not the same as a provider testing them. If you are unsure which you need, read <a href=\"/en/blog/when-do-you-need-a-pentest/\">when a small business actually needs a pentest</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is a managed IT provider the same as a cybersecurity provider?",
+      "a": "Not necessarily. Many MSPs focus on uptime, helpdesk and device management. Cybersecurity monitoring is a separate discipline with different tools, alerting and response processes. Ask directly which of the two you are buying, and get the answer in writing."
+    },
+    {
+      "q": "How much should an MSP cost?",
+      "a": "Pricing varies widely by number of devices, users and services included, so there is no reliable universal figure. Instead of comparing headline prices, compare written scope: what is monitored, response times, backup testing, email security and incident response. A cheaper plan that excludes those items is not cheaper in practice."
+    },
+    {
+      "q": "What is the single most important question to ask?",
+      "a": "Ask them to show you a real monthly report from a client environment with sensitive details removed. That one document reveals what they actually monitor, how they document work and whether alerts get reviewed by a person."
+    },
+    {
+      "q": "Can we keep our current IT person and still add monitoring?",
+      "a": "Yes. Many small businesses keep internal or break-fix IT support and add continuous security monitoring on top. The key is a written handoff: who receives alerts, who acts on them and who is accountable when something is missed."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    },
+    {
+      "title": "FTC: Data Security",
+      "url": "https://www.ftc.gov/business-guidance/privacy-security/data-security"
+    },
+    {
+      "title": "SBA: Cybersecurity for Small Businesses",
+      "url": "https://www.sba.gov/business-guide/manage-your-business/strengthen-your-cybersecurity"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
