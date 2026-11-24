@@ -1,0 +1,78 @@
+{
+  "lang": "en",
+  "slug": "ai-powered-phishing-no-typos",
+  "pair": null,
+  "topic": "AI-powered phishing: how to spot fake emails and texts that no longer have typos",
+  "title": "AI Phishing: Spot Fake Emails and Texts Without Typos",
+  "h1": "AI-Powered Phishing: How to Spot Fake Emails and Texts That No Longer Have Typos",
+  "description": "AI wrote the phishing email, so typos are gone. Learn the real signals small businesses can use to spot fake emails and texts, plus steps to verify and report.",
+  "date": "2026-11-24",
+  "updated": "2026-11-24",
+  "category": "Email Security",
+  "readingMinutes": 7,
+  "intro": "<p>For years, the standard advice was simple: bad spelling and awkward grammar meant a phishing email. That advice is now unreliable. Language models write clean, fluent, well-formatted messages in seconds, in English or Spanish, matching the tone of a real vendor, bank or coworker. The typo test still catches lazy attacks, but it no longer protects you from the ones that matter.</p><p>This article explains what changed, which signals still work, and the concrete steps a small business can put in place this week. If you want the technical controls that back this up, see our <a href=\"/en/services/email-security-phishing-protection/\">email security and phishing protection service</a>.</p>",
+  "sections": [
+    {
+      "h2": "Why the typo test stopped working",
+      "html": "<p>Phishing used to be a volume game run on a budget. Attackers wrote one template, sent it to thousands of addresses, and accepted that most recipients would notice the broken English. AI changed the economics in two ways:</p><ul><li><strong>Cost of quality dropped to near zero.</strong> A convincing, personalized message no longer requires a skilled writer. It requires a prompt.</li><li><strong>Personalization scaled.</strong> Public information from your website, LinkedIn, press mentions and social media can be pulled together into a message that references your actual projects, your actual suppliers and your actual colleagues.</li></ul><p>The result is messages that read better than most legitimate internal email. The Federal Trade Commission publishes ongoing guidance on how scammers use new technology to make their messages more convincing; the details change, the pattern does not.</p><p>So the question is no longer \"does this look badly written?\" It is \"does this request make sense, from this sender, through this channel, right now?\"</p>"
+    },
+    {
+      "h2": "The signals that still work: context, not grammar",
+      "html": "<p>When the text is clean, you have to judge the situation instead of the prose. These are the checks that still catch AI-written phishing:</p><ul><li><strong>Urgency plus a channel switch.</strong> A message that creates time pressure and then moves you to another channel (\"reply to my personal Gmail,\" \"text me at this number,\" \"join this WhatsApp\") is a classic pattern. Legitimate finance and HR requests rarely need to leave your company systems.</li><li><strong>A request that breaks the normal process.</strong> New bank details, a change to payroll direct deposit, a gift card purchase, a wire \"just this once.\" The content is the tell, not the spelling. Our article on <a href=\"/en/blog/business-email-compromise-invoice-wire-fraud/\">business email compromise and invoice fraud</a> walks through how these play out.</li><li><strong>Sender address that is close but not exact.</strong> Check the full address, not the display name. On mobile, tap the sender name to expand it. Look for extra words, hyphens, or a different domain ending.</li><li><strong>Links that do not match the claim.</strong> Hover or long-press before clicking. The visible text and the real destination are often different. Watch for lookalike domains that swap letters or add a word.</li><li><strong>Attachments you did not ask for.</strong> An invoice, a \"secure document,\" a voicemail file, or a shipping label from a company you do not buy from.</li><li><strong>MFA or login prompts you did not trigger.</strong> Repeated password reset emails or push notifications can mean someone already has your password. See <a href=\"/en/blog/multi-factor-authentication-where-to-turn-it-on-first/\">where to turn on multi-factor authentication first</a>.</li></ul><p>None of these require you to be a security expert. They require you to slow down for thirty seconds on money, credentials and access.</p>"
+    },
+    {
+      "h2": "Texts and messaging apps: the fastest-growing front door",
+      "html": "<p>SMS and messaging apps are attractive to attackers because phone screens hide sender details and people read texts fast. Common patterns for small businesses include:</p><ul><li><strong>Fake delivery notices</strong> with a small fee or a reschedule link.</li><li><strong>Fake bank alerts</strong> about a blocked card or a suspicious charge, with a number to call.</li><li><strong>\"Wrong number\" openers</strong> that turn into a friendly conversation and eventually a business or investment pitch.</li><li><strong>Owner or boss impersonation</strong> asking an employee to buy gift cards or send money quietly.</li><li><strong>WhatsApp or Meta account takeover attempts</strong> asking you to read back a verification code. That code is the attacker's login. If this already happened, read <a href=\"/en/blog/whatsapp-business-meta-account-hacked/\">what to check when your WhatsApp Business or Meta account is hacked</a>.</li></ul><p>Rule of thumb: if a text asks you to click, pay, call a number in the message, or share a code, verify through a channel you already trust — the number on your bank card, the phone number in your vendor contract, or a message to the person in your company directory.</p>"
+    },
+    {
+      "h2": "A five-step verification routine your team can actually follow",
+      "html": "<p>Write this down, post it, and repeat it in team meetings. It works for email, text and chat.</p><ol><li><strong>Stop at money, credentials and access.</strong> Any request involving payment, bank detail changes, passwords, MFA codes, remote access or new software gets verified. No exceptions, including from the boss.</li><li><strong>Verify out of band.</strong> Use a phone number or chat channel you already had, not the one in the message. Call the person. For vendors, use the contact in your own records.</li><li><strong>Check the full sender address and the real link destination</strong> before you click. If you already clicked, do not enter credentials.</li><li><strong>Report it internally, even if you are unsure.</strong> A false alarm costs two minutes. A missed one can cost far more — see <a href=\"/en/blog/cost-of-a-cybersecurity-incident-small-business/\">what a cybersecurity incident really costs a small business</a>.</li><li><strong>If you entered credentials or approved an MFA prompt,</strong> change the password immediately, revoke active sessions, and tell whoever handles IT. Speed matters more than embarrassment.</li></ol><p>Make reporting easy: one mailbox, one chat channel, no blame. People who fear punishment hide mistakes, and hidden mistakes become incidents.</p>"
+    },
+    {
+      "h2": "Technical controls that reduce the volume before it reaches people",
+      "html": "<p>Training helps, but you should not depend on every employee catching every message. Layer controls so fewer bad messages arrive:</p><ul><li><strong>Publish SPF, DKIM and DMARC for your own domain.</strong> This makes it much harder for someone to send email pretending to be your business. Step-by-step: <a href=\"/en/blog/spf-dkim-dmarc-step-by-step-small-business/\">SPF, DKIM and DMARC setup</a>.</li><li><strong>Turn on MFA everywhere it is offered,</strong> starting with email, banking, accounting, and any admin panel. Prefer app-based or hardware keys over SMS where available.</li><li><strong>Use a password manager</strong> so people do not reuse passwords and so a fake login page is less likely to hand over a working credential. Check exposure with <a href=\"/en/blog/how-to-check-if-your-company-passwords-were-leaked/\">how to check if your company's passwords were leaked</a>.</li><li><strong>Close remote access that faces the internet.</strong> Exposed remote desktop is a favorite entry point; see <a href=\"/en/blog/rdp-exposed-to-internet-ransomware-front-door/\">RDP exposed to the internet</a>.</li><li><strong>Keep browsers, email clients and phones updated,</strong> and remove unused email forwarding rules and old accounts.</li><li><strong>Confirm your payment callbacks in writing</strong> with vendors and banks, and require two people for bank detail changes.</li></ul><p>If you run a store, the same logic applies to admin and customer messages: our <a href=\"/en/blog/shopify-woocommerce-security-checklist/\">Shopify and WooCommerce security checklist</a> covers the basics.</p>"
+    },
+    {
+      "h2": "What to do in the first hour after a suspicious message or a click",
+      "html": "<p>Have this ready before you need it:</p><ol><li><strong>Do not delete the message.</strong> Report it and keep it for investigation.</li><li><strong>Disconnect if you entered credentials or ran a file.</strong> Ask IT to sign the account out of all sessions and reset the password.</li><li><strong>Check mail rules and forwarding.</strong> Attackers often add a hidden rule to keep reading your inbox after a password change.</li><li><strong>Notify your bank immediately</strong> if any payment or bank detail change was involved. Wire recalls are time-sensitive.</li><li><strong>Tell the people who may receive the same message,</strong> especially if the attacker is now impersonating you.</li><li><strong>Write down what happened</strong> — time, sender, link, what was clicked. This shortens any later investigation.</li></ol><p>If you need help containing it, our <a href=\"/en/services/incident-response/\">incident response service</a> exists for exactly this situation.</p>"
+    },
+    {
+      "h2": "Why this is a monitoring problem, not a one-time cleanup",
+      "html": "<p>AI phishing is not a project you finish. The messages change weekly, your staff changes, your vendors change, and new domains impersonating your brand appear without warning. A single training session in January does not cover a cleverly written text in September.</p><p>What actually reduces risk is a routine: someone watching for lookalike domains and leaked credentials tied to your company, email authentication kept in place and checked, MFA coverage reviewed, and a verification habit that survives staff turnover. That is the difference between <a href=\"/en/monitoring-vs-pentest/\">continuous monitoring and a one-time pentest</a>: a pentest answers \"how bad is it today,\" while monitoring answers \"is anything changing right now.\"</p><p>You do not need an enterprise budget to start. Pick the two controls with the biggest effect for your business — usually email authentication plus MFA on email and banking — and put the verification routine in writing. Then review it monthly. If you want a second set of eyes on an ongoing basis, our <a href=\"/en/services/cybersecurity-monitoring/\">continuous cybersecurity monitoring</a> is built for small businesses in Mexico and the US, and you can see <a href=\"/en/pricing/\">plans and pricing</a> without a sales call.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "If AI phishing has no typos, how do I tell a fake email from a real one?",
+      "a": "Judge the situation, not the writing. Ask: is this asking for money, credentials or access? Is it creating urgency or pushing me to another channel? Does the full sender address match? Does the link destination match the claim? Then verify using a phone number or contact you already had, never the one in the message."
+    },
+    {
+      "q": "Are texts more dangerous than emails now?",
+      "a": "They are not necessarily more dangerous, but they are easier to fall for because phone screens hide sender details and people read texts quickly. Treat any text that asks you to click a link, pay, call a number in the message, or share a verification code as unverified until you check it through a channel you trust."
+    },
+    {
+      "q": "What should an employee do if they already clicked a link or entered a password?",
+      "a": "Report it immediately, without fear of blame. Change the password, sign out of all active sessions, check for new email forwarding rules, and tell whoever handles IT. If a payment or bank detail change was involved, contact the bank right away because wire recalls are time-sensitive."
+    },
+    {
+      "q": "Do we still need phishing awareness training?",
+      "a": "Yes, but it should focus on verification habits rather than spotting typos. Short, regular reminders about the five-step routine, plus easy internal reporting, work better than a long annual session. Pair training with technical controls like SPF, DKIM, DMARC and multi-factor authentication so fewer bad messages reach people at all."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Federal Trade Commission — Scams and phishing consumer advice",
+      "url": "https://consumer.ftc.gov/scams"
+    },
+    {
+      "title": "CISA — Recognizing and avoiding phishing attacks",
+      "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+    },
+    {
+      "title": "FBI Internet Crime Complaint Center (IC3)",
+      "url": "https://www.ic3.gov/"
+    }
+  ],
+  "related": [],
+  "generated": true
+}

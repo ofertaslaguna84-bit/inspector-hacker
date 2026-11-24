@@ -1461,6 +1461,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/blog/hackeos-con-ia-noviembre-2026-por-que-cuidarte/"/>
   </url>
   <url>
+    <loc>https://inspectorhacker.com/en/blog/ai-powered-phishing-no-typos/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://inspectorhacker.com/en/blog/ai-powered-phishing-no-typos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://inspectorhacker.com/en/blog/ai-powered-phishing-no-typos/"/>
+  </url>
+  <url>
     <loc>https://inspectorhacker.com/en/blog/business-email-compromise-invoice-wire-fraud/</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
