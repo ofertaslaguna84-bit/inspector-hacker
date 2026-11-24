@@ -1,0 +1,82 @@
+{
+  "lang": "es",
+  "slug": "que-revisar-antes-de-contratar-proveedor-sistemas-ti",
+  "pair": null,
+  "topic": "Qué revisar antes de contratar a un proveedor de sistemas o de TI",
+  "title": "Qué revisar antes de contratar a un proveedor de TI",
+  "h1": "Qué revisar antes de contratar a un proveedor de sistemas o de TI",
+  "description": "Guía práctica para pymes: qué pedir, verificar y poner por escrito antes de contratar a un proveedor de sistemas o TI y no heredar riesgos.",
+  "date": "2026-11-23",
+  "updated": "2026-11-23",
+  "category": "Ciberseguridad para pymes",
+  "readingMinutes": 6,
+  "intro": "<p>Contratar a un proveedor de sistemas o de TI es una de esas decisiones que se sienten técnicas, pero que en realidad son de negocio. Ese proveedor va a tener llaves de tu correo, de tu servidor, de tu facturación y quizá de tu banco. Si eliges mal, no solo pierdes dinero: puedes heredar un incidente de seguridad, una fuga de datos o un pleito legal.</p><p>Esta guía no es para desconfiar de todos. Es para que hagas las preguntas correctas, pidas evidencia y dejes todo por escrito <strong>antes</strong> de firmar. Si quieres el panorama completo de lo que hacemos en vigilancia continua, revisa <a href=\"/servicios/\">nuestros servicios</a>; si vienes de una búsqueda más amplia, empieza por <a href=\"/blog/\">el blog</a>.</p>",
+  "sections": [
+    {
+      "h2": "1. Define qué le vas a entregar (y qué no)",
+      "html": "<p>Antes de ver proveedores, haz una lista de los accesos que necesitará. Mientras más amplia sea la lista, más alto el riesgo. Sé específico:</p><ul><li><strong>Correo y dominio:</strong> ¿necesita el panel de DNS? ¿Puede crear buzones? ¿Quién controla el registro del dominio?</li><li><strong>Servidores y hosting:</strong> ¿tendrá acceso root o administrador? ¿Podrá instalar software?</li><li><strong>Facturación y ERP:</strong> ¿solo lectura o también puede modificar datos fiscales y cuentas bancarias?</li><li><strong>Redes sociales y WhatsApp Business:</strong> ¿quién será administrador y quién solo editor?</li><li><strong>Banca en línea:</strong> aquí la regla es simple: <em>nadie externo debe tener acceso transaccional</em>. Si lo pide, es una bandera roja.</li></ul><p>Escribe esa lista y clasifícala en tres niveles: acceso total, acceso limitado y sin acceso. Esa clasificación será la base del contrato y de la configuración de cuentas. Si el proveedor se incomoda porque le pides cuentas separadas y no una sola cuenta compartida, es una señal.</p>"
+    },
+    {
+      "h2": "2. Pide evidencia, no promesas",
+      "html": "<p>Muchos proveedores dicen \"somos seguros\". Eso no significa nada. Pide cosas verificables y con nombre y apellido:</p><ul><li><strong>Referencias reales</strong> de al menos dos clientes con un servicio parecido al tuyo. Pregunta por incidentes, no solo por cumplimiento.</li><li><strong>Proceso documentado</strong> de altas y bajas de accesos: cómo crean usuarios, cómo los revocan cuando alguien sale.</li><li><strong>Manejo de contraseñas:</strong> ¿usan un gestor de contraseñas o las guardan en una hoja de Excel? Pregúntalo directo.</li><li><strong>Verificación en dos pasos</strong> en sus propias cuentas y en las que administrarán para ti. Si ellos no la usan, difícilmente la van a configurar bien. Aquí tienes una guía de <a href=\"/blog/verificacion-en-dos-pasos-donde-activarla-pyme/\">dónde activarla primero en una pyme</a>.</li><li><strong>Respaldos:</strong> ¿quién los hace, con qué frecuencia y cómo se prueban? La regla 3-2-1 es un buen punto de partida; explícala en <a href=\"/blog/respaldos-3-2-1-pymes-como-hacerlos-y-probar-que-sirven/\">esta guía de respaldos 3-2-1</a>.</li><li><strong>Respuesta a incidentes:</strong> ¿qué hacen en la primera hora si les hackean el correo o el servidor? ¿Tienen un contacto y un procedimiento?</li></ul><p>No necesitas un auditor certificado para hacer estas preguntas. Necesitas que las respuestas existan y que puedas comprobarlas con documentos o con una llamada.</p>"
+    },
+    {
+      "h2": "3. Revisa el contrato con lupa (estas cláusulas importan)",
+      "html": "<p>El contrato es donde se gana o se pierde la discusión cuando algo sale mal. Busca que incluya, como mínimo:</p><ol><li><strong>Propiedad de cuentas y datos:</strong> el dominio, el hosting, las cuentas de correo y los respaldos deben quedar a nombre de tu empresa, no del proveedor.</li><li><strong>Devolución de accesos al terminar:</strong> plazos claros para entregar contraseñas, transferir dominios y borrar sus accesos.</li><li><strong>Confidencialidad y protección de datos personales:</strong> si manejan datos de tus clientes o empleados, deben comprometerse a tratarlos conforme a la ley. En México aplica la LFPDPPP; lo básico está en <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">esta explicación de la LFPDPPP para pymes</a>.</li><li><strong>Notificación de incidentes:</strong> obligación de avisarte en un plazo definido (por ejemplo, 24 o 48 horas) si sospechan una brecha.</li><li><strong>Subcontratación:</strong> ¿pueden pasar tus accesos a terceros sin avisarte? Debe requerir tu autorización.</li><li><strong>Responsabilidad:</strong> qué pasa si un error suyo causa una fuga o una pérdida de datos. No tiene que ser una indemnización enorme, pero debe haber consecuencias.</li></ol><p>Si el contrato es una hoja con tres bullets, pide que lo amplíen. Un proveedor serio no se ofende; uno improvisado sí.</p>"
+    },
+    {
+      "h2": "4. Valida la parte técnica que puedes ver tú mismo",
+      "html": "<p>No necesitas ser experto para detectar descuidos básicos. Antes de contratar, revisa:</p><ul><li><strong>Su propio sitio web:</strong> ¿tiene HTTPS? ¿Muestra un certificado válido? Si su sitio está caído o sin cifrado, es una mala señal.</li><li><strong>Su correo:</strong> ¿el dominio del proveedor tiene SPF, DKIM y DMARC configurados? Puedes revisarlo con herramientas públicas de DNS. Si no protegen su propio correo, ¿cómo van a proteger el tuyo? Te explicamos el proceso en <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">cómo configurar SPF, DKIM y DMARC</a>.</li><li><strong>Sus perfiles y canales de contacto:</strong> ¿tienen una dirección física, un teléfono fijo, un RFC verificable? Desconfía de quien solo existe por WhatsApp.</li><li><strong>Su respuesta a un correo de prueba:</strong> envía una pregunta técnica sencilla y mide tiempo y calidad de respuesta. Así se comportarán cuando tengas una urgencia real.</li></ul><p>Este tipo de revisiones se parecen a las que hacemos en una <a href=\"/servicios/auditoria-de-seguridad-web/\">auditoría de seguridad web</a>: no buscan humillar a nadie, buscan saber qué tan ordenado está lo básico.</p>"
+    },
+    {
+      "h2": "5. Pregunta por lo que casi nadie pregunta",
+      "html": "<p>Hay temas incómodos que separan a un proveedor maduro de uno que solo sabe instalar cosas:</p><ul><li><strong>¿Qué hacen si un empleado suyo renuncia?</strong> ¿Cómo revocan sus accesos a las cuentas de tus clientes? Pide el procedimiento.</li><li><strong>¿Usan cuentas genéricas o cuentas nominales?</strong> Cada persona debe tener su propia cuenta, con su propio segundo factor. Nada de \"admin/admin\" compartido.</li><li><strong>¿Cómo manejan el escritorio remoto (RDP)?</strong> Si lo dejan abierto a internet, es una puerta conocida para ransomware. Te explicamos por qué en <a href=\"/blog/rdp-abierto-a-internet-puerta-ransomware-pymes/\">RDP abierto a internet</a>.</li><li><strong>¿Tienen un plan si ellos mismos son víctimas de un ataque?</strong> Un proveedor comprometido puede arrastrar a sus clientes. Pregunta cómo te avisarían y qué harían.</li><li><strong>¿Pueden mostrarte un reporte mensual de lo que hicieron?</strong> Cambios, parches, respaldos, incidentes. Si no documentan, no hay forma de saber qué pasó.</li></ul><p>Ninguna respuesta debe ser \"eso lo vemos sobre la marcha\". La improvisación en seguridad se paga caro; en <a href=\"/blog/costo-de-un-incidente-de-ciberseguridad-pyme/\">este artículo calculamos el costo de un incidente para una pyme</a>.</p>"
+    },
+    {
+      "h2": "6. Decide con criterios, no con precio",
+      "html": "<p>El proveedor más barato casi nunca es el más conveniente, pero el más caro tampoco garantiza nada. Usa una lista de verificación con pesos:</p><ol><li>¿Entregó evidencia de referencias y procesos? (alto peso)</li><li>¿El contrato protege la propiedad de tus cuentas y datos? (alto peso)</li><li>¿Usa cuentas nominales y segundo factor? (alto peso)</li><li>¿Tiene procedimiento de respuesta a incidentes? (alto peso)</li><li>¿Su comunicación fue clara y en tiempo? (medio)</li><li>¿El precio cabe en tu presupuesto? (medio, no el único)</li></ol><p>Si un proveedor falla en los primeros cuatro puntos, no importa cuánto cobre: el riesgo se queda contigo. Y recuerda que tú sigues siendo el responsable legal de los datos de tus clientes, aunque el proveedor haga la operación.</p>"
+    },
+    {
+      "h2": "7. Después de firmar: no desaparezcas",
+      "html": "<p>Contratar es el inicio, no el final. Mantén un mínimo de control:</p><ul><li>Conserva una cuenta de administrador propia en tu correo, dominio y hosting. No cedas el control total.</li><li>Revisa cada trimestre quién tiene acceso y para qué.</li><li>Pide un reporte mensual sencillo: qué se actualizó, qué respaldos se probaron, qué alertas hubo.</li><li>Ten un plan B: si mañana el proveedor desaparece, ¿puedes recuperar tus cuentas y tus datos?</li></ul><p>La mayoría de las pymes no tiene equipo interno para vigilar esto todos los días. Por eso existe la vigilancia continua: revisar señales de exposición, filtraciones de contraseñas, configuraciones de correo y servidores de forma constante, sin esperar a un pentest anual. Si quieres entender la diferencia, lee <a href=\"/vigilancia-vs-pentest/\">vigilancia continua vs pentest</a>. Y si ya tienes proveedor y quieres saber cómo se ve ese acompañamiento, revisa <a href=\"/servicios/monitoreo-de-ciberseguridad/\">monitoreo de ciberseguridad</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Necesito que el proveedor tenga certificaciones para contratarlo?",
+      "a": "No es obligatorio, pero ayuda. Más importante que una certificación es que pueda mostrarte procesos documentados: altas y bajas de accesos, manejo de contraseñas, respaldos probados y un procedimiento de respuesta a incidentes. Pide evidencia y verifica con referencias reales."
+    },
+    {
+      "q": "¿Qué hago si el proveedor pide una sola cuenta de administrador para todo?",
+      "a": "Es una bandera roja. Cada persona debe tener su propia cuenta con su propio segundo factor, y tú debes conservar una cuenta de administrador propia en dominio, correo y hosting. Una cuenta compartida hace imposible saber quién hizo qué y complica revocar accesos cuando alguien sale."
+    },
+    {
+      "q": "¿Puedo pedir que me entreguen los respaldos y las contraseñas al terminar el contrato?",
+      "a": "Sí, y debe quedar por escrito antes de firmar. El contrato tiene que establecer plazos para transferir dominios, entregar respaldos, devolver accesos y borrar las cuentas del proveedor. Si no está en el contrato, la salida puede volverse un problema técnico y legal."
+    },
+    {
+      "q": "¿Cómo sé si mi proveedor está haciendo un buen trabajo de seguridad?",
+      "a": "Pide un reporte mensual con cambios, parches, respaldos probados y alertas atendidas. Revisa tú mismo lo básico: HTTPS en su sitio, SPF/DKIM/DMARC en su dominio, cuentas nominales y segundo factor. Si no documenta, no hay forma de saber qué pasó."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    },
+    {
+      "title": "CISA: Cyber Guidance for Small Businesses",
+      "url": "https://www.cisa.gov/cyber-guidance-small-businesses"
+    },
+    {
+      "title": "FTC: Data Breach Response Guide for Business",
+      "url": "https://www.ftc.gov/business-guidance/resources/data-breach-response-guide-business"
+    },
+    {
+      "title": "OWASP: Top 10",
+      "url": "https://owasp.org/www-project-top-ten/"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
