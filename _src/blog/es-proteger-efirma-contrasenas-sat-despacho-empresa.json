@@ -1,0 +1,82 @@
+{
+  "lang": "es",
+  "slug": "proteger-efirma-contrasenas-sat-despacho-empresa",
+  "pair": null,
+  "topic": "Cómo proteger la e.firma y las contraseñas del SAT en tu despacho o empresa",
+  "title": "Protege la e.firma y contraseñas del SAT en tu empresa",
+  "h1": "Cómo proteger la e.firma y las contraseñas del SAT en tu despacho o empresa",
+  "description": "Guía práctica para dueños y gerentes de pymes: protege la e.firma, la contraseña del SAT y los accesos de tu despacho con medidas concretas y verificables.",
+  "date": "2026-11-25",
+  "updated": "2026-11-25",
+  "category": "Ciberseguridad para pymes",
+  "readingMinutes": 7,
+  "intro": "<p>La <strong>e.firma</strong> y la <strong>contraseña del SAT</strong> no son “papeles del contador”: son llaves digitales que pueden firmar declaraciones, abrir trámites y comprometer a tu empresa. En un despacho o una pyme, el problema típico no es un hacker sofisticado, sino un archivo <em>.cer</em> y <em>.key</em> guardados en una carpeta compartida, una contraseña anotada en un chat o un USB que pasa de mano en mano.</p><p>Esta guía te da pasos concretos para ordenar el acceso, reducir el daño si algo se filtra y dejar evidencia de quién hizo qué. Si quieres el panorama completo de protección para tu negocio, revisa <a href=\"/ciberseguridad-pymes-mexico/\">ciberseguridad para pymes en México</a>.</p>",
+  "sections": [
+    {
+      "h2": "Qué estás protegiendo realmente (y por qué importa)",
+      "html": "<p>La e.firma es un certificado digital con una llave privada. Quien tenga tu <strong>archivo .key</strong>, tu <strong>contraseña de la llave privada</strong> y tu <strong>archivo .cer</strong> puede firmar documentos en tu nombre. La contraseña del SAT, por su parte, abre el portal y muchos trámites. Juntas son una combinación de alto riesgo: no se “prestan”, no se comparten por WhatsApp y no viven en el escritorio de la computadora.</p><ul><li><strong>Riesgo de suplantación:</strong> firmar declaraciones, solicitudes o actos que tú no autorizaste.</li><li><strong>Riesgo de fuga:</strong> un correo de phishing que pide “actualizar tu e.firma” y entrega los archivos a un tercero.</li><li><strong>Riesgo operativo:</strong> si el contador se va o pierde el USB, tu empresa se queda sin acceso en plena fecha límite.</li></ul><p>El SAT publica guías oficiales sobre el uso y resguardo de la e.firma en <a href=\"https://www.sat.gob.mx/\" target=\"_blank\" rel=\"noopener\">sat.gob.mx</a>. Léelas con tu equipo y no solo con el área fiscal.</p>"
+    },
+    {
+      "h2": "Reglas mínimas para el manejo de la e.firma",
+      "html": "<p>Define una política escrita, aunque sea de una página. Estas reglas son el punto de partida:</p><ol><li><strong>Una e.firma por persona, no por empresa compartida.</strong> Si el SAT te permite generar certificados para representantes o apoderados, hazlo; así cada quien firma con el suyo y puedes revocar sin frenar toda la operación.</li><li><strong>Separa los archivos.</strong> El <em>.cer</em> puede vivir en un repositorio controlado; el <em>.key</em> y su contraseña nunca deben estar juntos en el mismo lugar ni en el mismo correo.</li><li><strong>Guarda la llave privada cifrada.</strong> Usa una bóveda de contraseñas con cifrado o un contenedor cifrado en un equipo que no salga de la oficina. Nada de carpetas compartidas abiertas.</li><li><strong>Contraseña de la llave privada distinta a todas las demás.</strong> Larga, única y guardada solo en la bóveda. No la reutilices del correo ni del banco.</li><li><strong>Prohibido el USB personal.</strong> Si necesitas mover la e.firma, usa un dispositivo asignado, cifrado y registrado. Mejor aún: evita moverla.</li><li><strong>Registro de uso.</strong> Anota quién usó la e.firma, para qué trámite y cuándo. En una pyme basta una hoja de cálculo protegida o una bitácora en tu sistema.</li></ol><p>Si tu equipo usa verificación en dos pasos en otros sistemas, aplica la misma disciplina al SAT. Te explico el orden en <a href=\"/blog/verificacion-en-dos-pasos-donde-activarla-pyme/\">dónde activar la verificación en dos pasos primero</a>.</p>"
+    },
+    {
+      "h2": "Contraseñas del SAT: cómo administrarlas sin caos",
+      "html": "<p>La contraseña del portal del SAT suele quedar en manos de una sola persona y nadie más sabe cómo recuperarla. Eso es un riesgo, no un control. Ordena así:</p><ul><li><strong>Cuentas nominales:</strong> cada usuario con su propia contraseña. Si el SAT lo permite para tu tipo de acceso, evita la cuenta genérica “despacho@”.</li><li><strong>Bóveda de contraseñas de la empresa:</strong> guarda ahí las credenciales críticas con roles definidos. El dueño debe tener un mecanismo de recuperación de emergencia, no la contraseña escrita en un papel.</li><li><strong>Contraseñas largas y únicas:</strong> mínimo 16 caracteres, generadas por la bóveda. Nada de “Empresa2024!” ni variaciones del nombre del despacho.</li><li><strong>Segundo factor donde exista:</strong> activa el mecanismo adicional que ofrezca el portal y protege el correo asociado con su propio segundo factor.</li><li><strong>Revisión trimestral:</strong> da de baja accesos de quien ya no trabaja contigo el mismo día de la salida. Esto incluye correo, bóveda, SAT y cualquier sistema fiscal.</li></ul><p>Si sospechas que una contraseña se filtró, no esperes: sigue el procedimiento de <a href=\"/blog/como-saber-si-contrasenas-empresa-se-filtraron/\">cómo saber si las contraseñas de tu empresa se filtraron</a>.</p>"
+    },
+    {
+      "h2": "Phishing y fraude dirigidos al área fiscal",
+      "html": "<p>El ataque más común contra despachos no rompe la criptografía: convence a una persona. Correos que imitan al SAT, mensajes de “regulariza tu situación fiscal”, enlaces a portales falsos y archivos adjuntos con macros. También el fraude de la factura con otra CLABE, que se apoya en la urgencia y en la confianza interna.</p><ol><li><strong>Verifica el dominio del remitente</strong> antes de abrir cualquier enlace. El SAT no te pide la llave privada por correo.</li><li><strong>No abras enlaces de correos:</strong> entra al portal escribiendo la dirección a mano.</li><li><strong>Confirma por voz</strong> cualquier cambio de datos bancarios o solicitud urgente. Llama al número que ya tenías, no al que viene en el correo.</li><li><strong>Capacita a recepción y a administración:</strong> el phishing llega primero a quien contesta el teléfono.</li><li><strong>Refuerza el correo:</strong> configura SPF, DKIM y DMARC para que nadie mande correos a tu nombre. La guía paso a paso está en <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">cómo configurar SPF, DKIM y DMARC</a>.</li></ol><p>Para el equipo, refuerza la protección con <a href=\"/servicios/proteccion-de-correo-y-phishing/\">protección de correo y phishing</a> y revisa el fraude de la factura en <a href=\"/blog/fraude-factura-otra-clabe-como-protegerte/\">cómo funciona el fraude de la factura con otra CLABE</a>.</p>"
+    },
+    {
+      "h2": "El equipo y la red: donde se escapan los archivos",
+      "html": "<p>De poco sirve una política si la computadora del contador tiene la sesión abierta y el antivirus vencido. Medidas concretas:</p><ul><li><strong>Equipos asignados y con contraseña de inicio de sesión.</strong> Bloqueo automático a los 5 minutos.</li><li><strong>Cifrado de disco</strong> en laptops que salen de la oficina. Si se pierde el equipo, la e.firma no queda legible.</li><li><strong>Actualizaciones automáticas</strong> del sistema operativo y del navegador. Programa el reinicio, no lo dejes “para después”.</li><li><strong>Antivirus y EDR</strong> con alertas, no solo instalado.</li><li><strong>Respaldos 3-2-1</strong> de los archivos fiscales y prueba de restauración. Sigue la guía de <a href=\"/blog/respaldos-3-2-1-pymes-como-hacerlos-y-probar-que-sirven/\">respaldos 3-2-1 para pymes</a>.</li><li><strong>Sin escritorio remoto abierto a internet.</strong> Si usas RDP, ciérralo o protégelo con VPN. Revisa <a href=\"/blog/rdp-abierto-a-internet-puerta-ransomware-pymes/\">por qué el RDP abierto es la puerta del ransomware</a>.</li></ul><p>Si tu despacho tiene servidor propio o VPS con el sistema fiscal, verifica su exposición con <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor está expuesto a internet</a>.</p>"
+    },
+    {
+      "h2": "Plan de respuesta si se pierde la e.firma o se filtra una contraseña",
+      "html": "<p>Ten este plan impreso y accesible, porque en la crisis nadie busca en la nube. Adáptalo a tu operación:</p><ol><li><strong>Contén:</strong> cambia la contraseña del SAT y de la bóveda; revoca sesiones activas si el portal lo permite.</li><li><strong>Revoca el certificado</strong> ante el SAT si la llave privada pudo quedar expuesta. Consulta el procedimiento oficial en <a href=\"https://www.sat.gob.mx/\" target=\"_blank\" rel=\"noopener\">sat.gob.mx</a>.</li><li><strong>Revisa movimientos:</strong> consulta declaraciones, acuses y trámites recientes para detectar firmas que no reconoces.</li><li><strong>Documenta:</strong> fecha, hora, qué archivo se perdió, quién tuvo acceso y qué acciones tomaste. Te servirá para el SAT y para cualquier reclamación.</li><li><strong>Avisa a tu equipo</strong> con instrucciones claras y un solo canal oficial.</li><li><strong>Cambia también</strong> las contraseñas del correo asociado y de cualquier sistema donde se reutilizó la misma clave.</li></ol><p>Si el incidente escala (acceso no autorizado, ransomware o robo de datos), activa tu protocolo de <a href=\"/servicios/respuesta-a-incidentes/\">respuesta a incidentes</a> y revisa las obligaciones de datos personales en <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">lo básico de la LFPDPPP para pymes</a>.</p>"
+    },
+    {
+      "h2": "Cómo saber que tus controles siguen funcionando",
+      "html": "<p>Una política sin verificación se degrada en semanas. Establece una revisión mensual sencilla: confirma que la bóveda tiene los accesos correctos, que no hay contraseñas viejas activas, que los respaldos se probaron y que nadie dejó la e.firma en una carpeta compartida. Documenta la revisión con fecha y responsable.</p><p>Ese trabajo de revisión constante es justo lo que cubre la <strong>vigilancia continua</strong>: en lugar de esperar al pentest anual o a la crisis, se monitorean señales de exposición, filtraciones y comportamientos anómalos durante todo el mes. En Inspector Hacker lo hacemos con IA para pymes que no pueden pagar un pentest caro; puedes comparar enfoques en <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a> y ver el detalle del <a href=\"/servicios/monitoreo-de-ciberseguridad/\">monitoreo de ciberseguridad</a>. Si tu despacho está en el norte del país, revisa <a href=\"/ciberseguridad-monterrey/\">ciberseguridad en Monterrey</a>.</p><p>La meta no es complicarte la vida: es que la e.firma y las contraseñas del SAT dejen de ser un secreto compartido y se conviertan en un proceso controlado, con responsables claros y evidencia de que se cumple.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Puedo compartir la e.firma de la empresa con mi contador?",
+      "a": "Lo recomendable es que cada persona use su propio certificado y que la empresa conserve el control de la llave privada. Si por operación debes permitir el uso por un tercero, hazlo con un contrato, registro de uso, archivos separados y la posibilidad de revocar el acceso. Nunca compartas el .key y su contraseña por correo o mensajería."
+    },
+    {
+      "q": "¿Cada cuánto debo cambiar la contraseña del SAT?",
+      "a": "No hay una regla universal que aplique a todas las empresas. Lo práctico es cambiarla cuando haya rotación de personal, sospecha de filtración o incidente, y revisarla en tu ciclo trimestral de accesos. Lo más importante es que sea única, larga y esté en una bóveda de contraseñas, no en un papel o en un chat."
+    },
+    {
+      "q": "¿Qué hago primero si me llega un correo que parece del SAT pidiendo mi e.firma?",
+      "a": "No respondas ni abras enlaces. Verifica el dominio del remitente, entra al portal escribiendo la dirección a mano y confirma por teléfono con el SAT o con tu asesor usando un número que ya tengas. El SAT no solicita tu llave privada ni tu contraseña por correo."
+    },
+    {
+      "q": "¿La vigilancia continua reemplaza una auditoría o un pentest?",
+      "a": "No necesariamente. La vigilancia continua detecta señales de exposición y comportamientos anómalos durante el mes; una auditoría o un pentest revisan a profundidad en un momento dado. Para muchas pymes, empezar con vigilancia continua y revisiones periódicas es más realista que esperar al pentest anual."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Servicio de Administración Tributaria (SAT)",
+      "url": "https://www.sat.gob.mx/"
+    },
+    {
+      "title": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    },
+    {
+      "title": "CISA: Protecting Against Phishing",
+      "url": "https://www.cisa.gov/secure-our-world/teach-employees-avoid-phishing"
+    },
+    {
+      "title": "OWASP: Password Storage Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
