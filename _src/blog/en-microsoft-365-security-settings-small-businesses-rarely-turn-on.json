@@ -1,0 +1,82 @@
+{
+  "lang": "en",
+  "slug": "microsoft-365-security-settings-small-businesses-rarely-turn-on",
+  "pair": null,
+  "topic": "Microsoft 365 security settings small businesses rarely turn on",
+  "title": "Microsoft 365 Security Settings SMBs Rarely Turn On",
+  "h1": "Microsoft 365 Security Settings Small Businesses Rarely Turn On",
+  "description": "Most small businesses pay for Microsoft 365 but leave key security settings off. Here are the ones to turn on first, in plain steps, and why they matter.",
+  "date": "2026-11-26",
+  "updated": "2026-11-26",
+  "category": "Cybersecurity",
+  "readingMinutes": 7,
+  "intro": "<p>Microsoft 365 is the default office suite for a huge number of small businesses. It also ships with a long list of security features that are <strong>off by default</strong> or buried in admin menus nobody opens after setup. The result is predictable: weak sign-in protection, mail rules that let attackers impersonate your domain, and audit logs that get deleted before anyone notices a problem.</p><p>You do not need to enable everything. You need to turn on the handful of settings that block the most common attacks against small businesses: stolen passwords, business email compromise, and silent mailbox takeovers. Below is a practical order of operations you can hand to whoever manages your Microsoft 365 tenant, whether that is an internal person or an IT provider.</p>",
+  "sections": [
+    {
+      "h2": "1. Start with identity: MFA and legacy authentication",
+      "html": "<p>Most account takeovers start with a password that leaked somewhere else. Multi-factor authentication (MFA) is the single highest-value setting in Microsoft 365, and it is still not universal in small tenants.</p><ul><li><strong>Turn on MFA for every account</strong>, including shared mailboxes that people sign into directly and any admin account. Start with email admins, finance, and anyone who can approve payments.</li><li><strong>Block legacy authentication.</strong> Older mail protocols (POP, IMAP, SMTP AUTH, older Exchange ActiveSync) cannot do MFA and are a common bypass. In the Microsoft 365 admin center, use authentication policies to block legacy auth, then fix the few devices that break.</li><li><strong>Kill unused accounts.</strong> Disable accounts for former employees the same day they leave, and review accounts with no sign-in in 90 days.</li><li><strong>Separate admin accounts.</strong> Nobody should read email and administer the tenant from the same login. Create a dedicated admin account per person and use it only for admin work.</li></ul><p>If you are unsure where to begin, our guide on <a href=\"/en/blog/multi-factor-authentication-where-to-turn-it-on-first/\">where to turn on MFA first</a> walks through the priority order.</p>"
+    },
+    {
+      "h2": "2. Turn on the security defaults or a baseline policy set",
+      "html": "<p>Microsoft offers a free baseline called <strong>Security Defaults</strong> that enforces MFA for users and admins and blocks legacy auth. It is a reasonable starting point for very small tenants with no dedicated IT staff.</p><ul><li>In the Microsoft 365 admin center, go to <em>Settings &gt; Org settings &gt; Security defaults</em> and enable it — but only if you are not already using Conditional Access policies, because the two can conflict.</li><li>If you have Microsoft 365 Business Premium or an Entra ID plan that supports Conditional Access, use policies instead: require MFA for all users, block sign-ins from countries you do not operate in, and block risky sign-ins.</li><li>Document what you enabled and the date. When something breaks, you want to know what changed.</li></ul><p>Microsoft's own documentation on Security Defaults and Conditional Access is the reference to follow; do not rely on a blog post (including this one) for exact menu names, since Microsoft renames things regularly.</p>"
+    },
+    {
+      "h2": "3. Lock down email: anti-phishing, anti-spoofing, and external tagging",
+      "html": "<p>Email is where small businesses get hurt. Business email compromise — a fake invoice, a changed bank account, a \"quick favor\" from the boss — relies on mail that looks legitimate. Microsoft 365 has settings for this, but several are off or too permissive out of the box.</p><ul><li><strong>Enable anti-phishing policies</strong> in Microsoft Defender for Office 365 (included in Business Premium) and turn on mailbox intelligence and impersonation protection for your executives and finance staff.</li><li><strong>Turn on external sender tagging.</strong> Add a banner or tag to email from outside your organization so staff can see when a message claiming to be a colleague is actually external.</li><li><strong>Set SPF, DKIM, and DMARC</strong> for your domain. Without DMARC, anyone can send email that claims to be from your business. Our step-by-step guide on <a href=\"/en/blog/spf-dkim-dmarc-step-by-step-small-business/\">SPF, DKIM, and DMARC</a> covers the setup.</li><li><strong>Review mail flow rules</strong> (transport rules) quarterly. Attackers who get into a mailbox often create a hidden rule that forwards or deletes messages. Look for rules you did not create.</li><li><strong>Disable auto-forwarding to external addresses</strong> unless there is a documented business reason.</li></ul><p>For the mechanics of invoice and wire fraud, see <a href=\"/en/blog/business-email-compromise-invoice-wire-fraud/\">Business Email Compromise</a>.</p>"
+    },
+    {
+      "h2": "4. Turn on logging, alerting, and audit retention",
+      "html": "<p>Many small tenants have almost no visibility. When something goes wrong, there is no record of who signed in, from where, or what they did.</p><ul><li><strong>Turn on unified audit logging</strong> and confirm the retention period. Default retention is short; if you need to investigate an incident weeks later, the evidence may already be gone.</li><li><strong>Enable alert policies</strong> for suspicious activity: mass deletion, unusual admin activity, malware detected, and sign-ins from unfamiliar locations.</li><li><strong>Send alerts to a monitored mailbox</strong>, not to the admin account that nobody checks. Better: route them to your IT provider or monitoring service.</li><li><strong>Review sign-in logs monthly</strong> for failed sign-in spikes and successful sign-ins from countries where you have no staff.</li></ul><p>Logging is also a compliance issue for some businesses. If the FTC Safeguards Rule applies to you, read <a href=\"/en/blog/ftc-safeguards-rule-small-business/\">the FTC Safeguards Rule in plain English</a>.</p>"
+    },
+    {
+      "h2": "5. Protect devices and files: BitLocker, device compliance, and sharing links",
+      "html": "<p>A stolen laptop with a saved Microsoft 365 session is a breach waiting to happen. These settings are usually one toggle away but rarely enabled in small tenants.</p><ul><li><strong>Require device encryption</strong> (BitLocker on Windows, FileVault on Mac) and store recovery keys in your tenant, not on a sticky note.</li><li><strong>Require devices to be compliant or managed</strong> before they can access email and files, if your license supports it.</li><li><strong>Set sharing link defaults</strong> in SharePoint and OneDrive to \"specific people\" instead of \"anyone with the link.\" Review links that are set to anonymous access.</li><li><strong>Enable versioning and recycle bin retention</strong> so a ransomware event or accidental deletion does not wipe out files permanently.</li><li><strong>Turn on alerts for mass file downloads</strong> and external sharing spikes.</li></ul><p>Backups are a separate layer. Microsoft 365 is not a backup service; see <a href=\"/en/blog/3-2-1-backups-small-business/\">3-2-1 backups for small businesses</a>.</p>"
+    },
+    {
+      "h2": "6. A simple checklist you can run this month",
+      "html": "<p>If you only do six things, do these, in this order:</p><ol><li>Enable MFA for all users and admins; block legacy authentication.</li><li>Turn on Security Defaults or a Conditional Access baseline.</li><li>Publish SPF, DKIM, and DMARC for your domain.</li><li>Enable anti-phishing and impersonation protection; turn on external sender tagging.</li><li>Confirm audit logging is on and alerts go to a monitored inbox.</li><li>Require device encryption and tighten file-sharing defaults.</li></ol><p>Write down what you changed, who changed it, and when. If you work with an IT provider, ask them to show you the settings, not just tell you they are on. Our list of <a href=\"/en/blog/what-to-ask-before-hiring-a-managed-it-provider-msp/\">questions to ask before hiring an MSP</a> helps here.</p>"
+    },
+    {
+      "h2": "7. Why one-time setup is not enough",
+      "html": "<p>Microsoft 365 settings drift. A new employee gets an exception, a vendor adds a mail flow rule, a license lapses, someone disables MFA \"just for this trip,\" and the baseline quietly erodes. Attackers do not need a sophisticated exploit; they need one account without MFA or one mailbox with a hidden forwarding rule.</p><p>That is why the settings above should be checked on a schedule, not once. Continuous monitoring means someone is actually looking at sign-in anomalies, new admin roles, mail rule changes, and sharing changes — and can act before a small mistake becomes an incident. If you want to understand how that differs from a one-time pentest, read <a href=\"/en/monitoring-vs-pentest/\">monitoring vs. pentest</a>. And if you want a plain-language overview of what ongoing protection looks like for a small business, start at <a href=\"/en/cybersecurity-for-small-business/\">cybersecurity for small business</a>.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need Microsoft 365 Business Premium to be secure?",
+      "a": "No, but the license determines which controls you get. Security Defaults, MFA, and basic anti-spam are available broadly. Defender for Office 365 features like impersonation protection and Conditional Access generally require Business Premium or add-ons. Check your current license in the admin center before buying anything."
+    },
+    {
+      "q": "Will turning on MFA break email on phones and scanners?",
+      "a": "It can break older devices and multifunction printers that use basic authentication. The fix is to use app passwords where supported, or move printers and scanners to a modern authentication method or a dedicated relay. Plan a short pilot with a few users before rolling out to everyone."
+    },
+    {
+      "q": "How often should we review Microsoft 365 security settings?",
+      "a": "At minimum quarterly, and after any staffing change, new device rollout, or vendor onboarding. High-risk items like admin roles, mail flow rules, and external sharing should be reviewed monthly. Automated alerting covers the gap between reviews."
+    },
+    {
+      "q": "We already have an IT provider. Do we still need to check this?",
+      "a": "Yes. Ask for a screenshot or walkthrough of each setting. Providers vary widely, and settings can be changed by anyone with admin rights. A short quarterly review with your provider, documented in writing, prevents surprises."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft: Security defaults in Microsoft 365",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/security-defaults"
+    },
+    {
+      "title": "Microsoft: Set up SPF, DKIM, and DMARC",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/email-authentication-spf-configure"
+    },
+    {
+      "title": "CISA: More Than a Password (MFA guidance)",
+      "url": "https://www.cisa.gov/MFA"
+    },
+    {
+      "title": "NIST: Digital Identity Guidelines (SP 800-63B)",
+      "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
