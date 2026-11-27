@@ -1,0 +1,74 @@
+{
+  "lang": "es",
+  "slug": "phishing-con-ia-sin-faltas-de-ortografia",
+  "pair": null,
+  "topic": "Phishing con IA: cómo reconocer correos y mensajes falsos que ya no tienen faltas de ortografía",
+  "title": "Phishing con IA: correos falsos sin faltas de ortografía",
+  "h1": "Phishing con IA: cómo reconocer correos y mensajes falsos que ya no tienen faltas de ortografía",
+  "description": "El phishing con IA ya escribe perfecto y en tu idioma. Aprende a detectarlo por señales de contexto, no por la ortografía, con pasos concretos para tu pyme.",
+  "date": "2026-11-27",
+  "updated": "2026-11-27",
+  "category": "Ciberseguridad para pymes",
+  "readingMinutes": 7,
+  "intro": "<p>Durante años te enseñaron a detectar phishing por las faltas de ortografía, el logo borroso y el “estimado cliente”. Eso ya no sirve. Con modelos de lenguaje, un atacante escribe en segundos un correo impecable, en español de México, con el tono de tu proveedor, tu banco o tu propio jefe. La IA no solo corrige la redacción: también traduce, personaliza y adapta el mensaje a lo que sabe de ti.</p><p>Esto no significa que estés indefenso. Significa que debes cambiar el detector: deja de buscar errores de escritura y empieza a revisar <strong>contexto, identidad y presión</strong>. En esta guía tienes señales concretas, pasos accionables y qué hacer cuando alguien de tu equipo ya hizo clic. Si quieres el panorama completo de protección de correo, revisa <a href=\"/servicios/proteccion-de-correo-y-phishing/\">nuestro servicio de protección de correo y phishing</a>.</p>",
+  "sections": [
+    {
+      "h2": "Por qué la ortografía dejó de ser una señal confiable",
+      "html": "<p>El phishing clásico se delataba por la forma: errores, frases raras, dominios chuecos. La IA generativa bajó el costo de escribir bien. Hoy un atacante puede producir cientos de variantes del mismo correo, cada una con el nombre correcto del destinatario, referencias a su puesto y un tono formal o informal según el objetivo.</p><p>Lo que <strong>no</strong> cambió es la estructura del engaño. Todo phishing necesita que hagas algo: abrir un archivo, entrar a un enlace, pagar, cambiar una contraseña, responder con datos. Ahí está tu oportunidad de detección.</p><ul><li><strong>La IA mejora la redacción, no la lógica del negocio.</strong> Un correo perfecto que te pide pagar una factura fuera de proceso sigue siendo sospechoso.</li><li><strong>El canal importa.</strong> Si tu proveedor siempre te habla por WhatsApp y de pronto te manda un correo con un enlace, el cambio de canal es la señal.</li><li><strong>La urgencia sigue siendo el motor.</strong> “Hoy”, “antes de las 5”, “se cancela el servicio”, “el SAT requiere respuesta inmediata”.</li></ul><p>La recomendación práctica: entrena a tu equipo para evaluar <em>quién</em> escribe, <em>desde dónde</em> y <em>qué te pide</em>, antes de juzgar cómo está escrito.</p>"
+    },
+    {
+      "h2": "Señales que sí siguen delatando un mensaje falso",
+      "html": "<p>Estas pistas no dependen de la ortografía. Revísalas en este orden:</p><ol><li><strong>El dominio real del remitente.</strong> No el nombre visible. En Gmail o Outlook expande el remitente y compara letra por letra. Cuidado con dominios que agregan palabras: <em>tuempresa-facturas.com</em> no es <em>tuempresa.com</em>.</li><li><strong>El enlace antes de hacer clic.</strong> Pasa el cursor (en celular, mantén presionado) y lee la URL completa. Si el texto dice “portal bancario” pero la URL es un acortador o un dominio raro, detente.</li><li><strong>El cambio de canal o de formato.</strong> Tu contador siempre manda XML o PDF por el portal; este correo pide una transferencia por chat. Ese cambio es la señal.</li><li><strong>La petición fuera de proceso.</strong> Pago a nueva CLABE, cambio de datos bancarios, “reenvía este código”, “compra tarjetas de regalo”, “instala esta actualización”.</li><li><strong>La presión emocional.</strong> Miedo (multa, demanda, bloqueo), prisa (cierre de operaciones), autoridad (gerente, SAT, banco) o premio (reembolso, bonificación).</li><li><strong>El archivo adjunto inesperado.</strong> HTML, ZIP con contraseña, “factura” en formato que no usan, documentos que piden “habilitar contenido”.</li><li><strong>El saludo y el contexto.</strong> Un mensaje que sabe tu nombre pero se equivoca en el área, el proyecto o el horario de tu empresa.</li></ol><p>Si dos o más señales coinciden, no respondas ni reenvíes: escala. Para el detalle técnico de correo, revisa <a href=\"/blog/configurar-spf-dkim-dmarc-dominio-paso-a-paso/\">cómo configurar SPF, DKIM y DMARC en tu dominio paso a paso</a>; eso reduce que alguien mande correos a tu nombre.</p>"
+    },
+    {
+      "h2": "Los tres escenarios que más van a intentar contra tu pyme",
+      "html": "<p>La IA no inventó ataques nuevos, pero hace más creíbles los de siempre. Estos son los que debes tener mapeados:</p><h3>1. Fraude de pago o cambio de datos bancarios</h3><p>Un correo “del proveedor” avisa que cambió de cuenta y adjunta una factura impecable. La redacción es perfecta; el problema es que la CLABE es nueva. Regla dura: <strong>cualquier cambio de datos bancarios se confirma por teléfono a un número que ya tenías registrado</strong>, nunca al que viene en el correo. Puedes profundizar en <a href=\"/blog/fraude-factura-otra-clabe-como-protegerte/\">fraude de la factura con otra CLABE</a>.</p><h3>2. Suplantación de autoridad interna</h3><p>Un mensaje del “director” pide pagar algo urgente o compartir un código de verificación. La IA imita el estilo de escritura. La defensa es de proceso: los pagos y accesos críticos tienen doble autorización y no se autorizan por correo ni por WhatsApp.</p><h3>3. Robo de sesión y de códigos</h3><p>Un correo de “inicio de sesión sospechoso” te lleva a una página idéntica a la real y te pide usuario, contraseña y el código de dos pasos. Si entregas el código, el atacante entra. Por eso la <a href=\"/blog/verificacion-en-dos-pasos-donde-activarla-pyme/\">verificación en dos pasos</a> debe ser con app o llave física, no solo por SMS, y nunca se comparte.</p><p>También considera el mensaje por WhatsApp o redes: el mismo texto perfecto llega por ahí. Si sospechas que ya tomaron una cuenta, sigue la guía de <a href=\"/blog/whatsapp-business-hackeado-que-revisar/\">WhatsApp Business hackeado: qué revisar, en orden</a>.</p>"
+    },
+    {
+      "h2": "Protocolo de 10 minutos para tu equipo",
+      "html": "<p>No necesitas un manual de 40 páginas. Necesitas una regla simple que todos puedan seguir bajo presión:</p><ol><li><strong>Detente.</strong> No hagas clic, no respondas, no reenvíes. Toma captura de pantalla.</li><li><strong>Verifica por otro canal.</strong> Llama al remitente a un número que ya tengas registrado, no al del mensaje. Si es interno, acércate o usa el chat corporativo.</li><li><strong>Reporta.</strong> Envía el correo a la persona o buzón de seguridad que definas. Si no tienes uno, créalo hoy.</li><li><strong>No borres la evidencia.</strong> El equipo de TI o tu proveedor necesita el correo original y las cabeceras para bloquear el dominio.</li><li><strong>Si ya hiciste clic:</strong> desconecta el equipo de la red, no apagues ni borres nada, avisa de inmediato y cambia contraseñas desde otro dispositivo limpio.</li><li><strong>Si diste contraseña:</strong> cámbiala ya, cierra sesiones activas y revisa reglas de reenvío en el correo.</li><li><strong>Si diste un código de dos pasos:</strong> revoca sesiones, revisa dispositivos conectados y activa métodos más fuertes.</li></ol><p>Documenta cada intento, aunque no pase nada. Los intentos fallidos te dicen qué proveedores, bancos o personas están siendo suplantados. Ese registro es oro para ajustar filtros y capacitación.</p>"
+    },
+    {
+      "h2": "Qué configurar esta semana en tu correo y en tus procesos",
+      "html": "<p>Estas acciones reducen el impacto aunque alguien caiga:</p><ul><li><strong>SPF, DKIM y DMARC.</strong> Publica los registros y sube DMARC a cuarentena o rechazo cuando tengas confianza. Es la base para que no manden correos con tu dominio.</li><li><strong>Filtros y reglas de bloqueo.</strong> Bloquea dominios suplantados, adjuntos HTML y macros no solicitadas. Revisa reglas de reenvío automático en las cuentas.</li><li><strong>Doble autorización en pagos.</strong> Ningún cambio de CLABE, proveedor o monto se ejecuta con un solo correo. Requiere llamada de verificación y aprobación de dos personas.</li><li><strong>Contraseñas y 2FA.</strong> Gestor de contraseñas, verificación en dos pasos en correo, banco, SAT y redes. Revisa si tus contraseñas ya se filtraron con <a href=\"/blog/como-saber-si-contrasenas-empresa-se-filtraron/\">cómo saber si las contraseñas de tu empresa se filtraron</a>.</li><li><strong>Capacitación corta y frecuente.</strong> Cinco minutos al mes con ejemplos reales de tu empresa valen más que una charla anual.</li><li><strong>Protección de datos.</strong> Si manejas datos personales, revisa lo básico de la <a href=\"/blog/lfpdppp-ciberseguridad-pymes/\">LFPDPPP y ciberseguridad para pymes</a>.</li></ul><p>Si tu operación depende de servidores o tienda en línea, suma las revisiones de <a href=\"/blog/seguridad-wordpress-pymes-revision-mensual/\">seguridad de WordPress</a> y de <a href=\"/blog/como-saber-si-tu-servidor-esta-expuesto/\">cómo saber si tu servidor está expuesto</a>. El phishing suele ser la primera puerta, no el único riesgo.</p>"
+    },
+    {
+      "h2": "Cómo saber si tu equipo está listo (sin pentest caro)",
+      "html": "<p>Puedes medir tu exposición con señales simples: cuántos reportes de correo sospechoso recibes al mes, cuántos empleados tienen 2FA activo, si DMARC está en cuarentena o rechazo, si hay reglas de reenvío no autorizadas y cuánto tarda tu equipo en reaccionar a un intento simulado. Esas métricas te dicen más que un informe técnico que nadie lee.</p><p>La realidad de la mayoría de las pymes es que el ataque no llega una vez: llega todas las semanas, con variantes nuevas. Por eso la vigilancia continua tiene sentido: revisar correo, dominios, accesos y configuraciones de forma permanente, no solo cuando ya pasó algo. En <a href=\"/vigilancia-vs-pentest/\">vigilancia vs pentest</a> explicamos la diferencia y cuándo conviene cada enfoque. Si quieres ver cómo se adapta a tu tamaño y presupuesto, revisa los <a href=\"/planes/\">planes de Inspector Hacker</a> y agenda una revisión inicial.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿El phishing con IA siempre es perfecto?",
+      "a": "No. La redacción puede ser impecable, pero el engaño sigue necesitando una acción: un enlace, un pago, un archivo o un código. Revisa el dominio real del remitente, la URL antes de hacer clic, el cambio de canal y la petición fuera de proceso. Ahí está la señal, no en la ortografía."
+    },
+    {
+      "q": "¿Qué hago si ya di clic en un enlace de phishing?",
+      "a": "Desconecta el equipo de la red, no apagues ni borres nada, avisa de inmediato a tu responsable de TI o proveedor, cambia contraseñas desde otro dispositivo limpio y revisa sesiones activas y reglas de reenvío en tu correo. Si diste un código de verificación, revoca sesiones y activa un método más fuerte."
+    },
+    {
+      "q": "¿Basta con activar la verificación en dos pasos?",
+      "a": "Ayuda mucho, pero no basta. El atacante puede pedirte el código en el mismo engaño. Usa app autenticadora o llave física cuando se pueda, nunca compartas códigos y combina 2FA con doble autorización en pagos y cambios de datos bancarios."
+    },
+    {
+      "q": "¿Cómo protejo el nombre de mi empresa para que no manden correos falsos?",
+      "a": "Configura SPF, DKIM y DMARC en tu dominio y sube DMARC a cuarentena o rechazo cuando estés listo. Eso reduce la suplantación directa, aunque no elimina los dominios parecidos. Complementa con filtros, bloqueo de dominios suplantados y capacitación al equipo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "CISA: Recognizing and Reporting Phishing",
+      "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+    },
+    {
+      "title": "FTC: How to recognize phishing scams",
+      "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams"
+    },
+    {
+      "title": "NIST: Phishing guidance and resources",
+      "url": "https://www.nist.gov/itl/smallbusinesscyber"
+    }
+  ],
+  "related": [],
+  "generated": true
+}
